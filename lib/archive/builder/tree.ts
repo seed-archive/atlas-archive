@@ -1,12 +1,10 @@
 // The game's own build, transferred: a ship is a tree of lists, every list holds
-// exactly one part, and a held part opens its child lists (crimson-orb
-// `procgen/src/descriptor.rs`, the port of `cTkResourceDescriptor::
-// GenerateInstanceFromList`). The seed fills every list at once; the picture is the
+// exactly one part, and a held part opens its child lists, as the game builds a ship. The seed fills every list at once; the picture is the
 // walk. The page keeps the same state, one part per list of the tree (`Assignment`),
 // and derives everything from the walk: the picture, the chips, the option each
 // group stands on, the tiles. A pick writes one list (and the path to it) and
 // nothing else, so the parts of a branch the walk left keep their values and come
-// back as they were (docs/ships/part-graph.md, Step 4, in crimson-orb).
+// back as they were.
 
 import {
   firstOf,
@@ -43,7 +41,7 @@ export const NOT_A_GROUP = -1;
 const BASE = "base";
 
 // The suffix of a layer the art draws for one placement of a part the tree places
-// several times on one layer (crimson-orb `ship_art/core.py`, `TWIN`).
+// several times on one layer, as the No Man's Sky generator names it.
 const TWIN = "@1";
 
 // One part per list of the tree, every list, always: what the game's walk gives a
@@ -95,7 +93,7 @@ export function treeCore(parts: Parts, groups: PartGroup[]): TreeCore {
         // Two lists of one section can name the same part (`_Cargo_Top9` walks
         // two container descriptors whose parts share their names), and the art
         // draws them as one layer: the list whose part holds more is the one the
-        // key belongs to, as the generator reads it (`search::pick::lists`).
+        // key belongs to, as the generator reads it.
         const held = partOf.get(key);
         if (held && (held.groups.length || !part.groups.length)) {
           continue;
@@ -201,7 +199,7 @@ export function layersOf(
 }
 
 // The option each group stands on, read off the walk as the generator reads a
-// seed's walk (crimson-orb `search/src/pick.rs`, `choose`): a group is on the page
+// seed's walk: a group is on the page
 // when the walk reaches a list one of its options names; it stands on the first
 // option one of whose names the walk holds — for tied lists (`first`), on the
 // option of the part the walk reaches first. The shared None of two branches
@@ -464,7 +462,7 @@ export function branchOf(core: TreeCore, group: PartGroup) {
 // nothing of its own there, as Hull plates Without, shows the ship it leaves: the
 // parts every ship carries, without the `always` layers, which every option
 // carries. A folded length, a tied group, and a merged nose use the baked tile
-// from crimson-orb `ship_groups` instead: the part once, its sections multiplied,
+// from the No Man's Sky generator instead: the part once, its sections multiplied,
 // its mount under it, never the neighbours' state (the owner, 2026-11-08).
 export function optionLayers(
   ship: ShipModule,

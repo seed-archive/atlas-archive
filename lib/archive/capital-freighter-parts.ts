@@ -6,13 +6,12 @@ import { BASE_PATH } from "@/lib/site";
 
 // The capital freighter on /capital-freighter-finder, a builder. The groups are
 // the choices of the game's own tree of capital freighter parts, written by
-// crimson-orb `procgen/examples/ship_groups.rs` (docs/ships/freighters.md, The
-// capital freighter on the part graph); the three container lists of the cargo
+// the No Man's Sky generator; the three container lists of the cargo
 // sections are tied into one `first` group, Containers. Its colours are not in
 // the groups yet, so the ship is grey.
 export const CAPITAL_FREIGHTER: ShipModule = {
   kind: "capital-freighter",
-  // Written by crimson-orb `utils/tools/ship_art pictures capital-freighter`.
+  // Written by the No Man's Sky generator.
   folder: `${BASE_PATH}/freighter/capital`,
   format: "textured16",
   groups: groups as PartGroup[],

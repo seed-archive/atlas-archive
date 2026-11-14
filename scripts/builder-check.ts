@@ -1,5 +1,4 @@
-// The builder core's proof over every ship (docs/ships/part-graph.md, Step 4, in
-// crimson-orb): from the start, every option of every group the walk can reach is
+// The builder core's proof over every ship: from the start, every option of every group the walk can reach is
 // picked once, and the walk must then stand on that option (`pick` then `choiceOf`
 // is the identity); every group must be reached in some state, and every reached
 // group must stand on an option. Run with `npm run builder:check`.

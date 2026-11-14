@@ -10,10 +10,10 @@ import {
 // eight): colour 2 on the panels, the hull's main colour, and colour 0 on the trim,
 // its stripes and frames; the rest of the hull map is fixed. The page's hull is the
 // panels. Both are one pick of the system, so the capital and the regular freighters
-// of a system share them (docs/ships/freighters.md, Colours, in crimson-orb). The
-// page bakes the hull map from the game's layers as the game's bake shader does
-// (`bakeTexture` in `components/archive/builder/stage.ts`); the layers, the
-// averages, and the swatches are written by `utils/tools/ship_art/freighter_paint.py`.
+// of a system share them. The page bakes the hull map from the game's layers as
+// the game's bake shader does (`bakeTexture` in
+// `components/archive/builder/stage.ts`); the layers, the averages, and the
+// swatches are written by the No Man's Sky generator.
 const PAINT = looks.paint;
 
 // The palette has eight rows of eight colours.
@@ -22,8 +22,7 @@ const PALETTE_ROW = 8;
 // The layers of the painted base, bottom first: the base keeps its own colour, the
 // panels and the trim are recoloured. The unpainted base differs only in a teal
 // block of the hull map, which no photo of a freighter shows; the game draws the
-// base from the hull's model seed, which this builder has no way to know
-// (docs/ships/freighters.md, in crimson-orb).
+// base from the hull's model seed, which this builder has no way to know.
 function layersOf(panels: string, trim: string) {
   return {
     layers: [
@@ -47,7 +46,7 @@ function paintedOf(paint: Paint) {
 }
 
 // A tile shows a cell as the hull shows it: the baked band in the game's light
-// (`swatches` in `freighter_paint.py`).
+// (`panels`, `trim` of the looks file).
 function bandsOf(paint: Paint): [string | null, string | null] {
   const colour = (palette: string[], value: number | null) =>
     value === null ? null : palette[value];

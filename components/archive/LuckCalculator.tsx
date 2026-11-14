@@ -32,7 +32,7 @@ import {
 } from "@/lib/archive/luck";
 
 // The grids supercharged slots are marked on: the technology inventory of a
-// multitool, 7 by 4, and of a ship, 10 by 3 (`docs/multitools/inventory.md`).
+// multitool, 7 by 4, and of a ship, 10 by 3, as the game lays them out.
 const TOOL_GRID = { columns: 7, rows: 4 };
 const SHIP_GRID = { columns: 10, rows: 3 };
 

@@ -8,10 +8,11 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 <!-- END:nextjs-agent-rules -->
 
-# Atlas Archive
+# No Man's Sky site
 
-The site of the finds of crimson-orb, live at https://atlas-archive-tau.vercel.app/. How to work and write code here is
-`.claude/rules/`.
+The No Man's Sky section of Seed Archive, live at https://seedarchive.gg/no-mans-sky/ (`basePath` `/no-mans-sky`,
+`lib/site.ts`); the No Man's Sky generator fills its data. How to work and write code here is `.claude/rules/`; how the
+games and the portal fit together is `../.claude/rules/architecture.md`.
 
 ## Parts
 
@@ -19,7 +20,7 @@ The site of the finds of crimson-orb, live at https://atlas-archive-tau.vercel.a
 |---|---|
 | `app` | Next.js routes: the catalog (`[kind]`), `guides`, `quests`, the tools, `about`, the legal pages, `api` |
 | `components` | `archive` (screens and widgets), `legal`, `providers` (theme, intl, auth) |
-| `lib` | `archive` (queries, statistics, features, guides), `db` (Supabase client and generated types), `i18n` (messages) |
+| `lib` | `site.ts` (the section's prefix), `archive` (queries, statistics, guides), `db` (Supabase client and generated types), `i18n` (messages) |
 | `content` | Markdown of every long text, one folder a locale |
 | `public` | pictures: ship part layers, renders, module icons, fonts |
 | `supabase` | the schema: `migrations`, `config.toml` |
@@ -29,7 +30,7 @@ The site of the finds of crimson-orb, live at https://atlas-archive-tau.vercel.a
 ## Run
 
 ```bash
-npm run dev                    # the site on localhost:3000
+npm run dev                    # the site on localhost:3000/no-mans-sky
 npx supabase start             # the local database, Docker stack supabase_*_atlas-archive
 npx supabase migration up --local
 npm run supabase:generate      # types from the local database

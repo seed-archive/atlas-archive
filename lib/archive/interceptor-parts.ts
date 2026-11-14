@@ -12,12 +12,12 @@ import { BASE_PATH } from "@/lib/site";
 
 // The Sentinel Interceptor on /interceptor-finder, the Interceptor builder. The
 // groups are the forks of the game's own tree of Interceptor parts, written by
-// crimson-orb `procgen/examples/interceptor_groups.rs` (docs/ships/seed-to-picture.md).
+// the No Man's Sky generator.
 
 // Colour lies on two bands of the ship: the hull (upper hull, wing tops, closed
 // wings) and the trim (cockpit pad, wing edges, light skirting). A scheme says what
-// each band takes, and each band takes one of the 64 colours of `PAINT` in crimson-orb
-// `ship/interceptor.rs`, the colours the game paints with, in the game's own order:
+// each band takes, and each band takes one of the 64 colours the game paints the
+// Interceptor with, in the game's own order:
 // eight rows of eight, a few colours twice (the owner, 2026-11-05). A tile shows each
 // as it looks on the ship (`hull`, `trim` of the looks file).
 const PAINT = looks.paint;
@@ -38,11 +38,10 @@ const SCHEMES: Scheme[] = [
   { id: "two", label: "archive.interceptorTwo", hull: true, trim: true },
 ];
 
-// The paint of a whole pick, as `bake` in crimson-orb `utils/tools/ship_art`
-// (`interceptor.py`) bakes it: `BASE` in the primary, an overlay, and `FIXED`.
-// Overlay 1 is Sentinel orange over white, 2 a hull colour and white trim, 3 a
-// black hull and trim colour, 4 a hull colour and a trim colour
-// (`InterceptorPaint::look`): there `BASE` takes the trim colour and the overlay,
+// The paint of a whole pick, as the game's bake shader lays it: the base layer in
+// the primary, an overlay, and the fixed layer. Overlay 1 is Sentinel orange over
+// white, 2 a hull colour and white trim, 3 a black hull and trim colour, 4 a hull
+// colour and a trim colour: there the base takes the trim colour and the overlay,
 // the only one recoloured, the hull colour.
 function layersOf(option: number, primary: string, secondary: string | null) {
   return {
@@ -72,7 +71,7 @@ function paintedOf(paint: Paint) {
 }
 
 // A tile shows a colour as the ship shows it: the baked band in the game's light
-// (`write_looks` in crimson-orb `ship_art/interceptor.py`).
+// (`hull`, `trim` of the looks file).
 function bandsOf(paint: Paint): [string | null, string | null] {
   const colour = (palette: string[], value: number | null) =>
     value === null ? null : palette[value];
@@ -120,8 +119,8 @@ export const INTERCEPTOR: ShipModule = {
   format: "textured",
   groups: groups as PartGroup[],
   // The landing gear stands on every ship but one on the walker legs: they take
-  // its place (the owner, 2026-11-05). Its layer is cut from `base` by crimson-orb
-  // `utils/tools/ship_art` (`interceptor.py`) (`LANDING_GEAR`).
+  // its place (the owner, 2026-11-05). Its layer is cut from the base layer by the
+  // No Man's Sky generator.
   always: [{ layer: "_LandGear", unless: "_WingsU_Legs" }],
   paint: INTERCEPTOR_PAINT,
   label: "archive.interceptorShip",

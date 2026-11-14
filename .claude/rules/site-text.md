@@ -38,7 +38,7 @@ that answers no part of that question does not belong on the site.
   on `freighter-modules`). Formulas stay: they show why a page says what it says.
 - No number of a guide is typed into its text: the numbers of its own line go through `{{name}}`, so a recount moves
   them.
-- Every claim is proven in crimson-orb `docs`. A page states what is known and is silent on the rest: never "not researched yet". What is not known yet is researched, or, when only the game can answer, it stays in crimson-orb `docs/missing.md` and off the page.
+- Every claim is proven in the No Man's Sky generator's notes. A page states what is known and is silent on the rest: never "not researched yet". What is not known yet is researched, or, when only the game can answer, it stays in the generator's notes and off the page.
 
 ## Links
 

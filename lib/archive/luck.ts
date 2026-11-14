@@ -3,7 +3,7 @@ import { ITEMS, percentile, toolRow, type ItemRow } from "@/lib/archive/items";
 // How lucky an item is, from 0 to 100. Each stat and the slots give the share of
 // items of that type and class that beat it, and the shares combine by
 // Stouffer's method, so a poor stat pulls the score down as far as a great one
-// lifts it: `docs/luck.md` has the reasons. Stats are never added up.
+// lifts it. Stats are never added up.
 
 export type Cell = [number, number];
 
@@ -227,7 +227,7 @@ function foundDamage(
 export type FromCard = { value: number; slack: number };
 
 // The scanner of a bare tool: `SCANNER` metres times (1 + base%), the range of
-// the starter scanner (`docs/item-stats.md`, What a card adds).
+// the starter scanner.
 const SCANNER = 200;
 
 // A card prints one decimal.
@@ -245,8 +245,8 @@ export function scannerFromCard(card: number): FromCard {
   return { value: (card / SCANNER - 1) * 100, slack: NEAR };
 }
 
-// Damage Potential of a tool with no module is its best weapon
-// (`GetMaxDamagePerSecond`, `docs/item-stats.md`, What a card adds). Each is
+// Damage Potential of a tool with no module is its best weapon, as the game
+// rates it. Each is
 // whole damage points, `trunc(points × (1 + base%))`, times the weapon's rate:
 //
 // - Boltcaster (`BOLT` tech): 180 points; rate 7.4875, its 7.5 shots a second

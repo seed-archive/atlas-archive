@@ -15,7 +15,12 @@ import statisticsMenu from "@/lib/archive/statistics-menu.json";
 import { TOOLS } from "@/lib/archive/tools";
 import { groupPath, QUESTS_PATH, questPath } from "@/lib/archive/guides";
 
-type Column = { title: ReactNode; links: { href: string; label: ReactNode }[] };
+// `portal` marks a page of the domain's root (the shared legal pages): a plain link,
+// since next/link would add this section's prefix.
+type Column = {
+  title: ReactNode;
+  links: { href: string; label: ReactNode; portal?: boolean }[];
+};
 
 // The quest pages the footer names by slug and message id, so this client
 // component does not load the guides' data for their titles.
@@ -33,8 +38,16 @@ const COLUMNS: Column[] = [
     title: <FormattedMessage id="archive.game" />,
     links: [
       { href: "/about", label: <FormattedMessage id="archive.about" /> },
-      { href: "/privacy", label: <FormattedMessage id="archive.privacy" /> },
-      { href: "/terms", label: <FormattedMessage id="archive.terms" /> },
+      {
+        href: "/privacy",
+        label: <FormattedMessage id="archive.privacy" />,
+        portal: true,
+      },
+      {
+        href: "/terms",
+        label: <FormattedMessage id="archive.terms" />,
+        portal: true,
+      },
       {
         href: "/release-notes",
         label: <FormattedMessage id="archive.releaseNotes" />,
@@ -119,7 +132,7 @@ export function ArchiveShell({ children }: PropsWithChildren) {
               {column.links.map((link) => (
                 <Link
                   key={link.href}
-                  component={NextLink}
+                  component={link.portal ? "a" : NextLink}
                   href={link.href}
                   color="text.secondary"
                   variant="body2"

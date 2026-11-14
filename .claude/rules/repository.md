@@ -1,7 +1,7 @@
 # Repository, database, release
 
 - Work and commit on `dev`. `main` holds releases: a merge to `main` deploys production
-  (https://atlas-archive-tau.vercel.app/) and runs the migrations through CI, so it happens only on the owner's word.
+  (https://seedarchive.gg/no-mans-sky/; the coordinator runs the release) and runs the migrations through CI, so it happens only on the owner's word.
 - No command touches the remote database directly, not even a read: no `supabase db query --linked`,
   `db reset --linked`, `migration list --linked`, or `link`. The remote changes only through a migration, the owner's
   commit, and CI. The local database (the Docker stack `supabase_*_atlas-archive`) is free to use; production is checked
@@ -46,6 +46,6 @@ The site is Seed Archive: one Supabase project and one database for every game i
      **owner** adds it in the dashboard (Settings → Data API → Exposed schemas), since no command here touches the
      remote;
   4. the code reads `supabase.schema("nms").from("<t>")`; the types are generated for every schema in use;
-  5. every writer outside this repository names the schema too — crimson-orb's `store` writes `public.<t>` today.
+  5. every writer outside this repository names the schema too: the No Man's Sky generator writes `public.<t>` today.
 - A session working on one game creates and changes tables only in that game's schema, through migrations in this
   repository.

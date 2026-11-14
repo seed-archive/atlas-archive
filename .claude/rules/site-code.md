@@ -17,7 +17,7 @@ before using an API (`01-app/01-getting-started` covers server and client compon
 - KISS, DRY, YAGNI: the simplest code that does the asked thing, one place for one rule, nothing built for a case that
   does not exist yet. Delete code that nothing uses.
 - Name every constant: a number with a meaning (a game value, a threshold, a tolerance) gets a name and a comment on
-  where it comes from (a game file, a doc of crimson-orb, or "our own choice"). Layout numbers (spacing, sizes) are exempt.
+  where it comes from (a game file, the No Man's Sky generator, or "our own choice"). Layout numbers (spacing, sizes) are exempt.
 - The site must stay fast. A page is a server component and static where it can be; `"use client"` goes on the smallest
   component that needs a state, an effect, or a browser API. Data is read on the server. A large client library loads
   lazily where only one page needs it.
@@ -30,7 +30,7 @@ before using an API (`01-app/01-getting-started` covers server and client compon
   the open tab or group, a loaded picture, a search result.
 - Localization on two levels (the owner, 2026-11-05): every label, button, table head, row label, and short string
   through react-intl and `lib/i18n/<locale>.json`; every long text through Markdown in `content/<locale>/`. A page is
-  converted when it is next changed, with the keys `store/src/pages/` writes for it in place of English words. Never
+  converted when it is next changed, with the keys the generator writes for it in place of English words. Never
   convert everything at once.
 
 ## Data

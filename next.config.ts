@@ -76,6 +76,15 @@ function redirectList() {
     // old address keeps working until seedarchive.gg answers.
     ...(process.env.LEGACY_HOST_REDIRECT
       ? [
+          // The old home, with or without the prefix, to the section's home
+          // itself: the rules below would add a slash and one more step.
+          ...["/", BASE_PATH].map((from) => ({
+            source: from,
+            has: [legacy],
+            destination: newSite,
+            basePath: false as const,
+            permanent: true,
+          })),
           ...moves.flatMap(({ source, destination }) =>
             [source, `${BASE_PATH}${source}`].map((from) => ({
               source: from,

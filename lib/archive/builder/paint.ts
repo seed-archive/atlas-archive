@@ -1,8 +1,6 @@
 // The paint of a ship that has one: up to three bands, the hull, the trim, and a
 // third the living ship's cockpit family takes, a scheme that says what each band
-// takes, and a colour of the band's palette for each band the scheme leaves open
-// (docs/ships/interceptors.md, The colour pick, and docs/ships/living-ships.md,
-// Colours, in crimson-orb).
+// takes, and a colour of the band's palette for each band the scheme leaves open.
 
 export type Band = "hull" | "trim" | "third";
 
@@ -35,7 +33,7 @@ export const NO_PAINT: Paint = {
 // One layer of a texture the page bakes as the game's bake shader does: its maps
 // `layer-<map>.png` and `layer-<map>.alpha.png` in the ship's folder, its average
 // colour, and the colour it is recoloured to, null where it keeps its own (palette
-// `None`). Written by crimson-orb `utils/tools/ship_art` (`bake.py`).
+// `None`). Written by the No Man's Sky generator.
 export type BakeLayer = {
   map: string;
   average: number[];

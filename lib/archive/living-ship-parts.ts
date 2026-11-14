@@ -5,13 +5,13 @@ import type { ShipModule } from "@/lib/archive/builder/ship";
 import { BASE_PATH } from "@/lib/site";
 
 // The living ship on /living-ship-finder, a builder. The groups are the choices of
-// the game's own tree of living ship parts, written by crimson-orb
-// `procgen/examples/ship_groups.rs` (docs/ships/living-ships.md, The part graph).
+// the game's own tree of living ship parts, written by the No Man's
+// Sky generator.
 // Its colours are a paint, as the Interceptor's (`living-ship-paint.ts`).
 
 // The feelers: a living ship comes from a DistressSignal crash site, and the walk
-// of every such seed draws them (crimson-orb docs/ships/living-ships.md, The NMSCE
-// check), so they are on every ship and no pick of theirs is offered.
+// of every such seed draws them (checked against the ships players
+// share), so they are on every ship and no pick of theirs is offered.
 const FEELERS_GROUP = "TopAcc_A";
 const FEELERS_LAYER = "_TopAcc_A";
 
@@ -20,7 +20,7 @@ const LIVING_BARE = 200;
 
 export const LIVING_SHIP: ShipModule = {
   kind: "living-ship",
-  // Written by crimson-orb `utils/tools/ship_art pictures living-ship`.
+  // Written by the No Man's Sky generator.
   folder: `${BASE_PATH}/living-ship`,
   format: "textured16",
   groups: (groups as PartGroup[]).filter((group) => group.id !== FEELERS_GROUP),

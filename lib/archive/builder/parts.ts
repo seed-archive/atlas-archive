@@ -1,8 +1,8 @@
-// The groups of a ship builder, over crimson-orb's part graph
-// (docs/ships/part-graph.md): a group is a list of the game's tree whose parts draw
-// different things, and `names` are the tree parts behind each option. The game
+// The groups of a ship builder, over the game's part graph: a group is a list
+// of the game's tree whose parts draw different things, and `names` are the tree
+// parts behind each option. The game
 // takes one part from every list on its own, so every pick is a ship that exists.
-// Each ship type brings its own groups, written by crimson-orb
+// Each ship type brings its own groups, written by the No Man's Sky generator
 // (`interceptor-groups.json` for the Interceptor). How the page holds and walks
 // them is `tree.ts`.
 
@@ -11,10 +11,9 @@ export type PartOption = {
   label: string;
   names: string[];
   // On a folded length's option: the part its own depth falls back to when the
-  // length is cut to here, the end cap of this depth (docs/ships/part-graph.md,
-  // Folded chains, in crimson-orb).
+  // length is cut to here, the end cap of this depth.
   stop?: string;
-  // The layers the option's tile draws, baked by crimson-orb `ship_groups`: the
+  // The layers the option's tile draws, baked by the No Man's Sky generator: the
   // picked part alone with what comes along under it (the owner, 2026-11-08).
   tile?: string[];
   // On a merged nose: the carrier the kind stands on (the turret tail under the
@@ -39,12 +38,10 @@ export type PartGroup = {
   requires?: { group: string; option?: string; options?: string[] };
   // Tied lists folded into one group: each option names its part in every list
   // of the tie, and the one pick stands at every place the ship reaches, as the
-  // containers of each cargo section of a capital freighter (docs/ships/
-  // part-graph.md, Tied lists, in crimson-orb).
+  // containers of each cargo section of a capital freighter.
   first?: boolean;
   // A folded chain of nested length picks: an option stands only when the walk
-  // holds every name of it, since a longer bay holds the shorter's first pick too
-  // (docs/ships/part-graph.md, Folded chains, in crimson-orb).
+  // holds every name of it, since a longer bay holds the shorter's first pick too.
   chain?: boolean;
   // A turnout's stop group (Row, Nose): its tiles are the baked ones.
   baked?: boolean;
@@ -55,13 +52,13 @@ export type PartGroup = {
   // Layers the game shows only beside a recorder of their Id, each with its
   // recorders: the walk that skips a tied list records no Id for it, so a lower
   // row of boxes stands bare when no reached place walked a box container
-  // (crimson-orb `part_graph::echoes`; the open racks of the players' photos).
+  // (the open racks of the players' photos).
   echo?: Record<string, string[]>;
   options: PartOption[];
 };
 
 // The option each group stands on, by group id: what the page sends with a search
-// request, and what `search::pick` in crimson-orb reads a walk into.
+// request, and what the No Man's Sky generator reads a walk into.
 export type PartChoice = Record<string, string>;
 
 export function optionOf(group: PartGroup, id: string | undefined) {

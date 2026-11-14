@@ -1,3 +1,3 @@
-# Atlas Archive
+# No Man's Sky site
 
-A catalogue of generated No Man's Sky finds: galaxies, systems, planets, ships, tools, and creatures. The first screen shows the featured galaxies, the most liked records, and the latest ones, and each record opens its own card. Labels come from the translation catalogue. The database stores the short classification words, such as `vykeen` and `low`.
+The No Man's Sky section of [Seed Archive](https://seedarchive.gg/no-mans-sky/), a catalogue of No Man's Sky finds: galaxies, systems, planets, ships, tools, and creatures. The first screen shows the featured galaxies, the most liked records, and the latest ones, and each record opens its own card. Labels come from the translation catalogue. The database stores the short classification words, such as `vykeen` and `low`.

@@ -2,15 +2,15 @@ import type { BakeLayer, Painted } from "@/lib/archive/builder/paint";
 import type { Parts } from "@/lib/archive/builder/tree";
 import type { ShipModule } from "@/lib/archive/builder/ship";
 
-// The pictures of a builder in the browser, written by the ship's art script in
-// crimson-orb (`utils/tools/ship_art`). Each layer of a ship's folder holds the
+// The pictures of a builder in the browser, written by the No Man's Sky
+// generator. Each layer of a ship's folder holds the
 // shade in red and the depth, in one of three formats (`ShipModule.format`): a
 // `textured` layer keeps eight bits of depth in green and, beside it in
 // `<name>.uv.png`, where each pixel reads the paint texture, 8 bits of u in red and
-// 16 of v in green and blue (`interceptor.py`); a `grey` layer keeps sixteen bits of
-// depth in green and blue and reads no paint (`render.py`, the living ships); a
-// `textured16` layer is a grey one with a deep `<name>.uv.png`, 12 bits of u and 12
-// of v packed in red, green, and blue (`render.py` `deep_uv`, the freighters).
+// 16 of v in green and blue (the Interceptor); a `grey` layer keeps sixteen bits of
+// depth in green and blue and reads no paint (the living frigate); a `textured16`
+// layer is a grey one with a deep `<name>.uv.png`, 12 bits of u and 12 of v packed
+// in red, green, and blue (the freighters and the living ship).
 
 // The stage: the shade of each pixel and the group that stands there.
 export type Stage = {
@@ -34,12 +34,10 @@ export const HIDDEN = -2;
 const LENS = 34;
 
 // The game's light on the page: a painted pixel is the baked texel times the
-// shade times this, one constant for every builder. Measured in crimson-orb
-// (docs/ships/living-ships.md, The light on the page): the median of the
-// photo-to-bake ratio of the brightest channel, a 7 by 7 mean on a lit painted
-// face of NMSCE photos against the baked band mean, over capital and regular
-// freighters, Interceptors, and living ships (`GAME_LIGHT` in
-// `utils/tools/ship_art/bake.py`).
+// shade times this, one constant for every builder. Measured from players' photos:
+// the median of the photo-to-bake ratio of the brightest channel, a 7 by 7 mean on
+// a lit painted face of NMSCE photos against the baked band mean, over capital and
+// regular freighters, Interceptors, and living ships.
 const GAME_LIGHT = 1.3;
 
 // How dark a black band leaves a tile or a grey ship, against a white one. Our own
@@ -50,7 +48,7 @@ const TONE_FLOOR = 0.35;
 const LIT = 1.25;
 
 // The texture's coordinates of a `textured` layer: U in 1..255 (0 reads none), V over
-// 16 bits; of a `textured16` layer (`DEEP_BITS` in `render.py`): U in 1..4095 (0
+// 16 bits; of a `textured16` layer: U in 1..4095 (0
 // reads none), V over 12 bits.
 const TEXTURED = { uSteps: 254, vSteps: 65536 };
 const DEEP = { uSteps: 4094, vSteps: 4096 };
@@ -259,13 +257,10 @@ export function drawShip(
   context.putImageData(image, 0, 0);
 }
 
-// The game's bake shader for a procedural texture, as crimson-orb reads it
-// (`texture_frag_combine_diffuse_0.metallib`; `utils/tools/ship_art/living_ship_paint.py`,
-// `bake`; docs/ships/living-ships.md, The bake's shader). `GammaCorrectInput`: a
-// channel up to 1 to the power 2.2, above 1 to 2.4.
+// How the game colours a procedural texture. Gamma: a channel up to 1 to the power 2.2, above 1 to 2.4.
 const GAMMA_IN = 2.2;
 const GAMMA_IN_ABOVE_ONE = 2.4;
-// `Recolour` moves a texel's value toward the colour's by this share at a value of
+// The recolouring moves a texel's value toward the colour's by this share at a value of
 // one half, falling off as `10 ** (-10 * (v - 0.5) ** 2)`.
 const VALUE_SHARE = 0.47663;
 const VALUE_FALLOFF = 10;
@@ -296,7 +291,7 @@ function hsv(r: number, g: number, b: number): [number, number, number] {
 
 const wrap = (value: number) => value - Math.floor(value);
 
-// `Recolour` with Multiply off: the texel's hue turned by the colour's hue less the
+// The recolouring, with no multiply: the texel's hue turned by the colour's hue less the
 // layer's average hue, the lower saturation, and the texel's value moved part way
 // toward the colour's from the average's; written into `out` in linear light.
 function recolour(

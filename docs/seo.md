@@ -1,10 +1,11 @@
 # Search: the semantic core and the links
 
-How the No Man's Sky section of Seed Archive is built for search, set on 2026-11-03 before release 1.1: the sections,
-the semantic core, the link map, and the review before a release. Since 2026-11-14 the site lives at
-`seedarchive.gg/no-mans-sky/` (`basePath`, `BASE_PATH` in `lib/site.ts`); every path below is under that prefix, and the
-old `atlas-archive-tau.vercel.app` addresses redirect there permanently. The rules of the text itself (the one question, titles, words, links) are
-`.claude/rules/site-text.md`; change them there.
+What is the No Man's Sky section's own in search: its sections, its menu and the story it tells, its semantic core, and
+its link map. What every section of Seed Archive shares (the domain and the prefix, titles and the game's name, the
+header and footer, the link rules, robots, sitemaps, Search Console, redirects, analytics, and the general review before
+a release) is the portal's `docs/seo.md` (`../seed-archive/docs/seo.md`); read it first. The section lives at
+`seedarchive.gg/no-mans-sky/` (`BASE_PATH` in `lib/site.ts`); every path below is under that prefix. The rules of this
+section's text (the one question, words) are `.claude/rules/site-text.md`.
 
 ## Sections
 
@@ -136,19 +137,12 @@ ship-upgrades, organic-frigates, how-lucky-am-i.
 | each quest (`/quests/<slug>`)                                               | the quest's name and "rewards"                                                            | the quest's steps; the item it gives                                     |
 | the merchant guides of Stations (forsaken-trader … anomaly-module-merchant) | what the merchant sells                                                                   | its stock; what it takes in trade; where it stands                       |
 
-### The game's name (2026-11-11)
+### The game's name
 
-The owner found "No Man's Sky" repeated on the quest and merchant pages: in the browser title, again in the bold
-opening question ("What does the Cartographer sell in No Man's Sky?"), and again in the `fact` ("What the Cartographer
-sells in No Man's Sky: …"), which is the page's description in search. The decision: the name stands **once a page, in
-the `<title>`**, the one place a search engine needs it, since a bare "Cartographer" or "Lost in Space" names nothing
-outside the game; the template `<title> in No Man's Sky — Seed Archive` (`app/guides/[group]/[slug]/page.tsx`,
-`app/quests/[slug]/page.tsx`) stays as it is. The question and the `fact` drop it: a search result shows the title above
-the description, so the description repeating it was duplication, and the guides written before these pages never named
-the game in their question or `fact` (fishing did; it was brought in line). The facts are now an answer each, written
-by the No Man's Sky generator (a test there keeps each at 160 characters and free of the name), in place of the one template that described the page ("its N items, each with its picture…, read from the game's
-files"). No template outside these two groups changed: the catalog, tools, the group pages, and the home page name the
-game once in their own title or description, which is not a repetition. The rule is in `.claude/rules/site-text.md`.
+The shared rule (once a page, in the `<title>`) came from this section on 2026-11-11, when the quest and merchant pages
+repeated "No Man's Sky" in the title, the bold question, and the `fact`. Here the template is
+`<title> in No Man's Sky — Seed Archive` (`app/guides/[group]/[slug]/page.tsx`, `app/quests/[slug]/page.tsx`), and the
+No Man's Sky generator writes each `fact` as an answer of 160 characters or fewer, free of the name.
 
 **Quest and merchant pages outside the read-on chain** (the owner, 2026-11-11). Their closing sentence links the guide
 of what the page gives or sells, or a related merchant or quest, not the next page of the menu. The chain of the other
@@ -160,7 +154,7 @@ modules, ship types, frigates' boosts, space stations' other merchants).
 ## The links
 
 - **External.** The one external link cites a rule: Google's data policy on the privacy page.
-- **Header.** Shared with the portal and every game (the owner, 2026-11-14): "Seed Archive", a plain `<a href="/">` to the domain's root (another zone, so not `next/link`, which would add the prefix), then "No Man's Sky", a `next/link` to this section's home, then the section's own menu.
+- **Header.** The shared one (the portal's `docs/seo.md`); this section's part is its menu, below.
 - **Menus.** Header items are real links (`ArchiveBar.tsx`). The word Guides is a link to `/guides` and the arrow beside it opens the menu, where a group's name opens the group's page; there is no All guides item. Quests is a plain link to `/quests`, in the header and in the drawer. The drawer is the same list on a phone, an accordion inside the Guides one: each name opens its page, the arrow beside it what lies under it.
 - **Footer.** `ArchiveShell.tsx`, about the game: five columns, No Man's Sky first (How it works, the legal pages, release notes, game bugs), then the Catalog lists, one link a group of guides (to the group's own page), Quests (Puzzle answers, The Artemis Path, The Atlas Path, Starbirth, All quests; 2026-11-14), and the tools from `lib/archive/tools.ts`. It does not repeat the whole menu.
 - **Tools and guides.** Interceptor builder ↔ interceptors, ship-classes, ship-square; capital freighter finder ↔
@@ -168,21 +162,17 @@ modules, ship types, frigates' boosts, space stations' other merchants).
   living-ships, organic-frigates; How lucky am I? ↔ multitool-classes, multitool-stats, staffs, figures, ship-stats,
   ship-upgrades, ship-figures; Interceptor prices ↔ interceptors, farming; farming ↔ exosuit-modules (the Haz-Mat
   Gauntlet, `#every-exosuit-module`).
-- **The prefix.** Next.js adds `/no-mans-sky` only to its own links. Every path written into HTML or CSS takes
-  `BASE_PATH`: the links and pictures of the Markdown (`withBase` in `lib/archive/content.ts`), the sprites, renders,
-  galaxy pictures, placeholders, and the builders' folders. Every `h2` to `h4` of a text has an id from its words (a
-  repeat gets `-2`), so any section can be linked.
+- **The prefix and the anchors here.** `withBase` in `lib/archive/content.ts` prefixes the links and pictures of the
+  Markdown, `BASE_PATH` the sprites, renders, galaxy pictures, placeholders, and the builders' folders; `anchorHeadings`
+  in the same file gives every `h2` to `h4` its id.
 - **Records.** `RecordNote.tsx` adds one or two sentences under a card, each to a guide or tool the card links nowhere else: a tool or ship below S leads to its upgrade guide, every tool and ship to How lucky am I?, a staff to staffs, an Interceptor to its guide and finder. The class guides are not among them: the card's Class row already links there (2026-11-04). The card's own rows link their guides (`lib/archive/explain.ts`): each base stat row leads to its section of the stats guide, `multitool-stats#damage`, `#mining`, `#scanner`, and `ship-stats#damage`, `#shield`, `#hyperdrive`, `#maneuverability`; a tool card shows Base mining as the base percent, 0% for a rifle, since the game's card has no mining figure and the Mining Beam's own speed is not read; Base damage and Base scanner are the card's absolute figures, a pistol's damage being the bare beam's 333.3 (the owner, 2026-11-04). The card's values link too: Object to the catalog list of its kind (`/tool`, `/ship`, …), and Galaxy, System, and Planet to their pages, as the breadcrumbs do; the row of the record itself stays plain.
 
 ## How to review before a release
 
-1. Read the served HTML, not the source: `curl -s localhost:3000/no-mans-sky/<path>` shows what a crawler gets (the `<title>`, the
-   `<h1>`, the links). A link that only a click on a menu opens does not count.
-2. Check each page against its row in the core: the primary query in the title, the lead, and the description.
-3. Check links against the link rules (`.claude/rules/site-text.md`): count the incoming links of each guide and tool; none should have fewer than
-   two from text.
-4. Check the text rules (`.claude/rules/site-text.md`): the forbidden words, sample sizes, places on guides, and that
+The shared steps of the portal's `docs/seo.md` first, with `<slug>` = `no-mans-sky`, then:
+
+1. Check each changed page against its row in the core below: the primary query in the title, the lead, and the
+   description.
+2. Check the text rules of `.claude/rules/site-text.md`: the forbidden words, sample sizes, places on guides, and that
    every claim is proven.
-5. Add a page's row to the core when a page is added.
-6. No link or picture of the served HTML starts with a bare `/` outside `/no-mans-sky/` (`curl … | grep -o '(href|src)="/[^"]*"'`), except the
-   header's "Seed Archive".
+3. Add a page's row to the core when a page is added, and its links to the link map.

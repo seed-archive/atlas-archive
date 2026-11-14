@@ -1,5 +1,14 @@
 # Release notes
 
+## 14 November 2026: version 2.4
+
+- Added [farming](/quests/farming): every farm plant, what a harvest sells for at a space station, how long it grows, and how many plants are worth planting, with the price a crop loses as you sell it and the markup NipNip Buds take as contraband.
+- Added [Interceptor prices](/guides/interceptor-prices): what a claimed Sentinel Interceptor is worth by its cargo slots and its class.
+- The ship builders are open: [Sentinel Interceptors](/interceptor-finder), [capital freighters](/capital-freighter-finder), [regular freighters](/freighter-finder), [living ships](/living-ship-finder), and [living frigates](/living-frigate-finder), with the guides to [living ships](/guides/living-ships) and [organic frigates](/guides/organic-frigates).
+- A system's page now lists what floats in its space: space hulks, asteroid belts, ice fields, and whether it holds a Relic Gate.
+- Every guide is counted again over more than three times as many systems, so its numbers hold closer.
+- Smaller changes: every section of a guide can be linked, and farming and [exosuit modules](/guides/exosuit-modules) link the Haz-Mat Gauntlet each way.
+
 ## 11 November 2026: version 2.3
 
 - Added [quests](/quests): from [The Artemis Path](/quests/the-artemis-path) to [Lost in Space](/quests/lost-in-space), each with its steps, their hints, and every item it gives, and [puzzle answers](/quests/puzzles) for the terminals and monoliths.

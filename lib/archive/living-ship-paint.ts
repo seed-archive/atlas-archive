@@ -6,7 +6,7 @@ import {
   type ShipPaint,
 } from "@/lib/archive/builder/paint";
 
-// The colour of a living ship (docs/ships/living-ships.md, Colours, in crimson-orb).
+// The colour of a living ship.
 // Its crash site picks one of three looks of the hull texture (`BASEU`): fine ribs
 // in a colour of `BioShip_Cockpit`, stripes in a colour of `BioShip_Body`, or black
 // ridges; and a colour of `BioShip_Body` for the stripes of the shell, one of
@@ -15,7 +15,7 @@ import {
 // `BASECOLOURPALETTES.MBIN`, each colour once). The page bakes the hull texture
 // from the game's maps the way the game's bake shader does (`bakeTexture` in
 // `components/archive/builder/stage.ts`); the maps and `averages` are written by
-// `utils/tools/ship_art/living_ship_paint.py`. The page lights it with the game's light (`GAME_LIGHT` in stage.ts).
+// the No Man's Sky generator. The page lights it with the game's light (`GAME_LIGHT` in stage.ts).
 const { body, underbelly, cockpit, averages, tiles } = looks;
 
 // The palettes hold 16, 16, and 8 colours; rows of four, four, and eight.
@@ -65,7 +65,7 @@ function paintedOf(paint: Paint) {
 }
 
 // A tile shows a colour as the ship shows it: the baked band in the game's light
-// (`tiles` in `living_ship_paint.py`).
+// (`tiles` of the looks file).
 function bandsOf(paint: Paint): (string | null)[] {
   const colour = (palette: string[], value: number | null) =>
     value === null ? null : palette[value];

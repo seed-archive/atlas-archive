@@ -18,13 +18,13 @@ that answers no part of that question does not belong on the site.
 - Every page has one `<h1>`. A menu label equals the `<h1>` of the page it opens.
 - Each page opens with its question in bold, in the words a player types, and answers it in the same line. The sections
   back the answer up, biggest point first.
-- A guide's `<title>` is `<title> in No Man's Sky — Atlas Archive`, or its question for the pages worth the most
-  (`TITLES` in `app/guides/[group]/[slug]/page.tsx`); a group's is `<group> guides for No Man's Sky — Atlas Archive`.
+- A guide's `<title>` is `<title> in No Man's Sky — Seed Archive`, or its question for the pages worth the most
+  (`TITLES` in `app/guides/[group]/[slug]/page.tsx`); a group's is `<group> guides for No Man's Sky — Seed Archive`.
   A guide's description is its `fact`. A tool's `<title>` names No Man's Sky and the thing found.
 - The game's name stands once a page, in its `<title>`. The bold question, the headings, and the `fact` of a guide or
   a quest do not repeat it (the owner, 2026-11-11; `docs/seo.md`, "The game's name").
 - A quest (`/quests/<slug>`) follows the guide's rules of text, title, and description: `<title> in No Man's Sky —
-  Atlas Archive`, its `fact` as the description; `/quests` is `Quests in No Man's Sky — Atlas Archive`. A quest stands
+  Seed Archive`, its `fact` as the description; `/quests` is `Quests in No Man's Sky — Seed Archive`. A quest stands
   outside the trail of the guides: it ends with a sentence that links the guides, not a next guide.
 - A quest page answers what the quest gives and how to pass it: its steps, and every item it hands over with the
   game's description and picture, quest-only items included. An item's stats live only on the guide of its item. The

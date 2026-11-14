@@ -7,23 +7,23 @@ import {
 } from "@/components/legal/LegalDocument";
 
 export const metadata: Metadata = {
-  title: "Terms of service — Atlas Archive",
+  title: "Terms of service — Seed Archive",
   alternates: { canonical: "/terms" },
   description:
-    "Atlas Archive is an unofficial No Man's Sky fan site whose information is provided as is.",
+    "Seed Archive is an unofficial No Man's Sky fan site whose information is provided as is.",
 };
 
 export default function TermsPage() {
   return (
     <LegalDocument title="Terms of service" updated="3 November 2026">
       <LegalText>
-        By using Atlas Archive you accept these terms. If you do not accept
-        them, do not use the site.
+        By using Seed Archive you accept these terms. If you do not accept them,
+        do not use the site.
       </LegalText>
 
       <LegalSection title="A fan site">
         <LegalText>
-          Atlas Archive is an unofficial fan site and is not affiliated with or
+          Seed Archive is an unofficial fan site and is not affiliated with or
           endorsed by Hello Games. No Man&apos;s Sky and its names and images
           belong to Hello Games.
         </LegalText>

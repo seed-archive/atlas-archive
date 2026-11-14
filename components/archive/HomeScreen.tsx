@@ -23,6 +23,7 @@ import {
   type FeedSection,
 } from "@/lib/archive/read";
 import { getBrowserSupabase } from "@/lib/db/supabase.browser";
+import { BASE_PATH } from "@/lib/site";
 
 const SECTIONS: { id: FeedSection; title: string }[] = [
   { id: "galaxies", title: "archive.galaxies" },
@@ -151,7 +152,7 @@ function FeedCard(props: { row: CatalogRow }) {
         <CardMedia
           component="img"
           height="220"
-          image={row.image ?? "/assets/img/no-image.svg"}
+          image={row.image ?? `${BASE_PATH}/assets/img/no-image.svg`}
           alt={row.name}
           sx={{ objectFit: "cover" }}
         />

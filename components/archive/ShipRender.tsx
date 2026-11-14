@@ -2,6 +2,7 @@
 
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
+import { BASE_PATH } from "@/lib/site";
 
 // A ship drawn whole from the game's own model files, on a dark ground in both
 // themes, as space is. Width and height are set so the page does not jump.
@@ -68,7 +69,7 @@ export function ShipRender(props: { ship: keyof typeof RENDERS }) {
       >
         <Box
           component="img"
-          src={render.src}
+          src={`${BASE_PATH}${render.src}`}
           alt={render.alt}
           width={render.width}
           height={render.height}

@@ -16,6 +16,7 @@ import "swiper/css/pagination";
 
 import { PictureUpload } from "@/components/archive/PictureUpload";
 import { useAuth } from "@/components/providers/AuthProvider";
+import { BASE_PATH } from "@/lib/site";
 
 const FRAME = {
   display: "block",
@@ -59,7 +60,7 @@ export function PictureGallery(props: {
       {images.length === 0 ? (
         <Box
           component="img"
-          src="/assets/img/no-image.svg"
+          src={`${BASE_PATH}/assets/img/no-image.svg`}
           alt={name}
           onClick={uploadable ? add : undefined}
           sx={{ ...FRAME, cursor: uploadable ? "pointer" : "default" }}

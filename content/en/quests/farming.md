@@ -8,11 +8,11 @@ A base grows {{plants}} farm plants. Each gives a fixed harvest when it is ripe,
 
 <!-- widget:plants -->
 
-Every plant but the Echinocactus needs the Haz-Mat Gauntlet to harvest. The plants that give a stack of a resource (Frost Crystal, Star Bulb, Fungal Mould, Gamma Root, Faecium, Mordite, Solanium, Cactus Flesh) are worth little to sell; they are for crafting and refining.
+Every plant but the Echinocactus needs the [Haz-Mat Gauntlet](/guides/exosuit-modules#every-exosuit-module) to harvest, an exosuit module you build. The plants that give a stack of a resource (Frost Crystal, Star Bulb, Fungal Mould, Gamma Root, Faecium, Mordite, Solanium, Cactus Flesh) are worth little to sell; they are for crafting and refining.
 
 ## How much to plant
 
-Gathering is a short hold of the interact key, about {{harvestSeconds}} second a plant, so an hour picks about {{plantsAnHour}} plants. Plant no more than you can gather before the first ones ripen again: a Gravitino Host ripens in {{gravitinoGrowth}}, so about {{gravitinoPlants}} plants fill one round, and a crop of that size sells for about {{gravitinoCrop}} units. NipNip ripens in {{nipnipGrowth}}: {{nipnipPlants}} plants, about {{nipnipCrop}} units. Selling takes time on top of that.
+Gathering is a hold of the interact key, {{harvestSeconds}} of a second a plant, so an hour of holding picks about {{plantsAnHour}} plants; the step to the next plant comes on top. Plant no more than you can gather before the first ones ripen again: a Gravitino Host ripens in {{gravitinoGrowth}}, so about {{gravitinoPlants}} plants fill one round, worth about {{gravitinoCrop}} units at full price. NipNip ripens in {{nipnipGrowth}}: {{nipnipPlants}} plants, about {{nipnipCrop}} units. A crop that big sells at full price only spread over many stations, as below, and selling takes time on top of that.
 
 ## Where to sell
 

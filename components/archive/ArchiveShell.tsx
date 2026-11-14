@@ -30,7 +30,7 @@ const FOOTER_QUESTS = [
 // menus hold.
 const COLUMNS: Column[] = [
   {
-    title: <FormattedMessage id="archive.title" />,
+    title: <FormattedMessage id="archive.game" />,
     links: [
       { href: "/about", label: <FormattedMessage id="archive.about" /> },
       { href: "/privacy", label: <FormattedMessage id="archive.privacy" /> },

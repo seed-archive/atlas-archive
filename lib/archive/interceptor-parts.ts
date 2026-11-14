@@ -8,6 +8,7 @@ import {
 } from "@/lib/archive/builder/paint";
 import type { PartGroup } from "@/lib/archive/builder/parts";
 import type { ShipModule } from "@/lib/archive/builder/ship";
+import { BASE_PATH } from "@/lib/site";
 
 // The Sentinel Interceptor on /interceptor-finder, the Interceptor builder. The
 // groups are the forks of the game's own tree of Interceptor parts, written by
@@ -115,7 +116,7 @@ const INTERCEPTOR_PAINT: ShipPaint = {
 
 export const INTERCEPTOR: ShipModule = {
   kind: "interceptor",
-  folder: "/interceptor",
+  folder: `${BASE_PATH}/interceptor`,
   format: "textured",
   groups: groups as PartGroup[],
   // The landing gear stands on every ship but one on the walker legs: they take

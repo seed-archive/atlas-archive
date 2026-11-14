@@ -26,6 +26,7 @@ import statisticsMenu from "@/lib/archive/statistics-menu.json";
 import { groupPath, guidePath } from "@/lib/archive/guides";
 import type { StatTable, Topic } from "@/lib/archive/statistics";
 import type { ChartSpec } from "@/lib/archive/chart-spec";
+import { BASE_PATH } from "@/lib/site";
 
 const TILE = 44;
 
@@ -57,7 +58,7 @@ function iconCell(
             boxSizing: "content-box",
             border: "2px solid #fff",
             boxShadow: "0 0 0 1px rgba(0, 0, 0, 0.35)",
-            backgroundImage: `url(${sprite.src})`,
+            backgroundImage: `url(${BASE_PATH}${sprite.src})`,
             backgroundSize: `${sprite.columns * TILE}px auto`,
             backgroundPosition: `-${(tile % sprite.columns) * TILE}px -${Math.floor(tile / sprite.columns) * TILE}px`,
           }}

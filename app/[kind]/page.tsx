@@ -23,7 +23,7 @@ export async function generateMetadata(props: {
   }
   const page = CATALOG_PAGES[kind];
   return {
-    title: `${page.title} — Atlas Archive`,
+    title: `${page.title} — Seed Archive`,
     description: page.description,
     alternates: { canonical: `/${kind}` },
   };

@@ -1,5 +1,6 @@
 import stats from "@/lib/archive/about-stats.json";
 import { galaxyHref } from "@/lib/archive/galaxies";
+import { BASE_PATH } from "@/lib/site";
 
 export { stats };
 
@@ -124,7 +125,7 @@ function numbers(): Record<string, string> {
     showcaseList: regular
       .map((row) => {
         const name = row.name.replace(" Galaxy", "");
-        return `<a href="${galaxyHref(name)}">${name}</a>`;
+        return `<a href="${BASE_PATH}${galaxyHref(name)}">${name}</a>`;
       })
       .join(", "),
     showcaseGalaxies: COUNT_WORDS[regular.length] ?? String(regular.length),

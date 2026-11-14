@@ -10,7 +10,7 @@ const TRAIL = [{ name: "Home", href: "/" }, { name: "Capital freighters" }];
 
 export const metadata: Metadata = {
   title:
-    "No Man's Sky capital freighters: every capital freighter shape — Atlas Archive",
+    "No Man's Sky capital freighters: every capital freighter shape — Seed Archive",
   alternates: { canonical: "/capital-freighter-finder" },
   description:
     "Pick the hull, length, and parts of a No Man's Sky capital freighter and see the ship the game builds.",

@@ -90,14 +90,38 @@ export function ArchiveBar() {
       sx={{ borderBottom: 1, borderColor: "divider" }}
     >
       <Toolbar sx={{ gap: 1 }}>
-        <Typography
-          variant="h6"
-          component={Link}
-          href="/"
-          sx={{ color: "inherit", textDecoration: "none", flexGrow: 1 }}
+        {/* The portal's name leads to the domain's root, another zone, so it is a
+            plain link; the game's name leads to this section's home. */}
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "baseline",
+            gap: 1,
+            flexGrow: 1,
+            minWidth: 0,
+          }}
         >
-          <FormattedMessage id="archive.title" />
-        </Typography>
+          <Typography
+            variant="h6"
+            component="a"
+            href="/"
+            sx={{ color: "inherit", textDecoration: "none", flexShrink: 0 }}
+          >
+            <FormattedMessage id="archive.title" />
+          </Typography>
+          <Typography variant="h6" color="text.secondary" aria-hidden>
+            /
+          </Typography>
+          <Typography
+            variant="h6"
+            component={Link}
+            href="/"
+            noWrap
+            sx={{ color: "inherit", textDecoration: "none" }}
+          >
+            <FormattedMessage id="archive.game" />
+          </Typography>
+        </Box>
         <IconButton
           color="inherit"
           aria-label={intl.formatMessage({ id: "archive.navigation" })}

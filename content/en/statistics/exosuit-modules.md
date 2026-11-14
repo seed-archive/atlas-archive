@@ -82,7 +82,7 @@ The exosuit has three supercharged slots, and they stand in the same places for 
 
 ## Every exosuit module
 
-The modules you build or receive, apart from upgrade modules. The [Base Computer Archives](/quests/base-computer-archives) of your base give the Shield Lattice and the Neural Stimulator, and the story, [The Artemis Path](/quests/the-artemis-path), gives Artemis' Translator and, at its end, Remembrance. [The Atlas Path](/quests/the-atlas-path) ends with the Star Seed or the Mark of the Denier, by the choice you make at its last interface.
+The modules you build or receive, apart from upgrade modules. The [Base Computer Archives](/quests/base-computer-archives) of your base give the Shield Lattice and the Neural Stimulator, and the story, [The Artemis Path](/quests/the-artemis-path), gives Artemis' Translator and, at its end, Remembrance. [The Atlas Path](/quests/the-atlas-path) ends with the Star Seed or the Mark of the Denier, by the choice you make at its last interface. The Haz-Mat Gauntlet lets you harvest most [farm plants](/quests/farming).
 
 <!-- widget:built -->
 

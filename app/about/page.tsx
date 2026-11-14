@@ -6,7 +6,7 @@ import { readContent } from "@/lib/archive/content";
 
 export const metadata: Metadata = {
   title:
-    "How the best multitool is found: adjacent supercharged slots — Atlas Archive",
+    "How the best multitool is found: adjacent supercharged slots — Seed Archive",
   alternates: { canonical: "/about" },
   description:
     "How a galaxy of trillions of stars narrows to a short list of multitools and crashed ships per system, and why four adjacent supercharged slots matter most.",

@@ -1,7 +1,9 @@
 # Search: the semantic core and the links
 
-How Atlas Archive is built for search, set on 2026-11-03 before release 1.1: the sections, the semantic core, the
-link map, and the review before a release. The rules of the text itself (the one question, titles, words, links) are
+How the No Man's Sky section of Seed Archive is built for search, set on 2026-11-03 before release 1.1: the sections,
+the semantic core, the link map, and the review before a release. Since 2026-11-14 the site lives at
+`seedarchive.gg/no-mans-sky/` (`basePath`, `BASE_PATH` in `lib/site.ts`); every path below is under that prefix, and the
+old `atlas-archive-tau.vercel.app` addresses redirect there permanently. The rules of the text itself (the one question, titles, words, links) are
 `.claude/rules/site-text.md`; change them there.
 
 ## Sections
@@ -10,8 +12,8 @@ link map, and the review before a release. The rules of the text itself (the one
 | ------------ | ----------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | How it works | `/about`                                                                                                          | the method, as a funnel from the galaxy down to the one square on show                                                                         |
 | Catalog      | `/galaxy`, `/system`, `/planet`, `/ship`, `/tool`, `/creature`, and a page a record                               | finds with their portal glyphs                                                                                                                 |
-| Guides       | `/guides`, `/guides/<group>`, `/guides/<group>/<slug>`                                                            | one question a page, with the numbers as proof; built by `conveyor pages` in crimson-orb                                                       |
-| Quests       | `/quests`, `/quests/<slug>`                                                                                       | the game's quests and puzzles with their answers, read whole from the game's files; built by `conveyor pages` in crimson-orb beside the guides |
+| Guides       | `/guides`, `/guides/<group>`, `/guides/<group>/<slug>`                                                            | one question a page, with the numbers as proof; built by the No Man's Sky generator                                                                      |
+| Quests       | `/quests`, `/quests/<slug>`                                                                                       | the game's quests, puzzles, and farming, read whole from the game's files; built by the No Man's Sky generator beside the guides |
 | Tools        | `/interceptor-finder`, `/capital-freighter-finder`, `/freighter-finder`, `/living-ship-finder`, `/living-frigate-finder`, `/how-lucky-am-i` | finders give a system; the Interceptor, freighter, and living ship pages are builders that give a shape only                                   |
 
 **No flags.** The site has no feature flags since 2026-11-14 (the owner, for the last release): the finders and builders, the living ship and organic frigate guides, and every link to them are shown, and the Markdown blocks the flags kept (`<!-- living -->`, `<!-- interceptor-finder -->` and the other finders, with their `not-` twins) were unwrapped or dropped. `lib/archive/features.ts` is gone. The corvette guides lost their flag the same way on 2026-11-11.
@@ -30,7 +32,7 @@ them long when a page is read, so a guide moved to another group needs no edit o
 path, from the menu file, except `galaxies`, `systems`, and `freighters`: there a group and its first guide share a
 word, so the short path is now the group's page, which links to the guide.
 
-**Quests** (the owner, 2026-11-08) is a section of its own beside the Guides, the Catalog, and the Tools, not a group of the guides menu: its contents page `/quests` lists each quest with its question and `fact`, as a group page does, and each quest stands at `/quests/<slug>` (breadcrumb Home › Quests › quest). It has a header item between Guides and Tools, an item in the phone drawer, a footer column, and its rows in the sitemap. Its pages stay off the guides menu and their trail: no guide leads into one, and battle-moves still leads back to `/about`. `pages` writes them into `statistics.json` beside the guides, listed under `quests` (`QUESTS` in crimson-orb `pages/mod.rs`), so a quest is drawn as a guide is (`TopicScreen`, `{{name}}`, `<!-- widget:KEY -->`); its text is `content/en/quests/<slug>.md`. The paths are `QUESTS_PATH` and `questPath` in `lib/archive/guides.ts`, the pages `QUESTS` in `lib/archive/quests.ts`. Its first page is `puzzles`, the right answer to every puzzle of a building: the number sequences in one table by their numbers, the questions in words in another by their text.
+**Quests** (the owner, 2026-11-08) is a section of its own beside the Guides, the Catalog, and the Tools, not a group of the guides menu: its contents page `/quests` lists each quest with its question and `fact`, as a group page does, and each quest stands at `/quests/<slug>` (breadcrumb Home › Quests › quest). It has a header item between Guides and Tools, an item in the phone drawer, a footer column, and its rows in the sitemap. Its pages stay off the guides menu and their trail: no guide leads into one, and battle-moves still leads back to `/about`. The No Man's Sky generator writes them into `statistics.json` beside the guides, listed under `quests`, so a quest is drawn as a guide is (`TopicScreen`, `{{name}}`, `<!-- widget:KEY -->`); its text is `content/en/quests/<slug>.md`. The paths are `QUESTS_PATH` and `questPath` in `lib/archive/guides.ts`, the pages `QUESTS` in `lib/archive/quests.ts`. Its first page is `puzzles`, the right answer to every puzzle of a building: the number sequences in one table by their numbers, the questions in words in another by their text. The second, `farming` (2026-11-14), is not a quest: the farm plants, what a harvest sells for, and how much to plant; it stands here as the owner placed it, beside the base quests.
 
 ## The site map (2026-11-07)
 
@@ -85,7 +87,7 @@ Creatures 7. Problems found:
 | 9   | Exocraft   | roamer-, nomad-, pilgrim-, colossus-, nautilon-, minotaur-modules                                                                                         | unchanged inside                                                                                                                                                                                             |
 | 10  | Creatures  | creature-roles, creature-grades, creature-stats, creature-affinity, battle-moves                                                                          | who comes with you, ending in the battle they fight                                                                                                                                                          |
 
-**Done 2026-11-07 (menu pass):** `MENU_GROUPS` in crimson-orb `pages/mod.rs` holds this order, with Exosuit and
+**Done 2026-11-07 (menu pass):** the No Man's Sky generator writes this order into `statistics-menu.json`, with Exosuit and
 Exocraft as two groups (no group path changed, so no redirect was needed); the closing sentence of each page whose next guide
 changed now leads to the new next (sentinels-and-dissonance → fishing, excavation-finds → multitool-types,
 multitool-modules → ship-types, starship-modules and corvette-modules → freighters, freighter-technology →
@@ -271,6 +273,7 @@ ship-upgrades, organic-frigates, how-lucky-am-i.
 | `/capital-freighter-finder`                                        | capital freighter locations                                                               | best capital freighter; freighter battle system                          |
 | `/freighter-finder`                                                | freighter shapes                                                                          | regular freighter; freighter parts                                       |
 | `/living-ship-finder`                                              | living ship parts                                                                         | living ship types; Void Egg ship shapes                                  |
+| `/living-frigate-finder`                                           | living frigate parts                                                                      | organic frigate shapes; cosmic whale parts                               |
 | `/how-lucky-am-i`                                                  | multitool rating                                                                          | is my multitool good; ship stats calculator; best staff stats            |
 | galaxies                                                           | best galaxy                                                                               | harsh, lush galaxy; galaxy types                                         |
 | where-to-look                                                      | where to find multitools                                                                  | galaxy core or rim; uncharted systems                                    |
@@ -301,10 +304,12 @@ ship-upgrades, organic-frigates, how-lucky-am-i.
 | ship-upgrades                                                      | upgrade ship to S                                                                         | do upgrades change stats; ship supercharged slots                        |
 | ship-figures, ship-square                                          | ship supercharged slots                                                                   | adjacent; square                                                         |
 | interceptors                                                       | how to get a Sentinel Interceptor                                                         | Interceptor class S; dissonant planet                                    |
+| interceptor-prices                                                 | how much is a Sentinel Interceptor worth                                                  | Interceptor price; crashed ship value by slots; sell crashed ship        |
 | living-ships                                                       | how to get a living ship                                                                  | Void Egg; living ship quest                                              |
 | creature-roles, creature-grades, creature-stats, creature-affinity | all-S creature                                                                            | companion; Trait Potential; affinity                                     |
 | `/quests`                                                          | no man's sky quests                                                                       | puzzles and answers                                                      |
 | puzzles (`/quests/puzzles`)                                        | no man's sky puzzle answers                                                               | number sequence puzzle; manufacturing facility answers; monolith answers |
+| farming (`/quests/farming`)                                         | best plant to farm                                                                        | Gravitino Ball price; NipNip Buds sell; farming money; Haz-Mat Gauntlet  |
 | each quest (`/quests/<slug>`)                                      | the quest's name and "rewards"                                                            | the quest's steps; the item it gives                                     |
 | the merchant guides of Stations (forsaken-trader … anomaly-module-merchant) | what the merchant sells                                                          | its stock; what it takes in trade; where it stands                       |
 
@@ -314,12 +319,11 @@ The owner found "No Man's Sky" repeated on the quest and merchant pages: in the 
 opening question ("What does the Cartographer sell in No Man's Sky?"), and again in the `fact` ("What the Cartographer
 sells in No Man's Sky: …"), which is the page's description in search. The decision: the name stands **once a page, in
 the `<title>`**, the one place a search engine needs it, since a bare "Cartographer" or "Lost in Space" names nothing
-outside the game; the template `<title> in No Man's Sky — Atlas Archive` (`app/guides/[group]/[slug]/page.tsx`,
+outside the game; the template `<title> in No Man's Sky — Seed Archive` (`app/guides/[group]/[slug]/page.tsx`,
 `app/quests/[slug]/page.tsx`) stays as it is. The question and the `fact` drop it: a search result shows the title above
 the description, so the description repeating it was duplication, and the guides written before these pages never named
 the game in their question or `fact` (fishing did; it was brought in line). The facts are now an answer each, written
-in `FACTS` of crimson-orb `pages/merchants.rs` and `pages/quests.rs` (a test keeps each at 160 characters and free of the
-name), in place of the one template that described the page ("its N items, each with its picture…, read from the game's
+by the No Man's Sky generator (a test there keeps each at 160 characters and free of the name), in place of the one template that described the page ("its N items, each with its picture…, read from the game's
 files"). No template outside these two groups changed: the catalog, tools, the group pages, and the home page name the
 game once in their own title or description, which is not a repetition. The rule is in `.claude/rules/site-text.md`.
 
@@ -333,18 +337,23 @@ modules, ship types, frigates' boosts, space stations' other merchants).
 ## The links
 
 - **External.** The one external link cites a rule: Google's data policy on the privacy page.
+- **Header.** Shared with the portal and every game (the owner, 2026-11-14): "Seed Archive", a plain `<a href="/">` to the domain's root (another zone, so not `next/link`, which would add the prefix), then "No Man's Sky", a `next/link` to this section's home, then the section's own menu.
 - **Menus.** Header items are real links (`ArchiveBar.tsx`). The word Guides is a link to `/guides` and the arrow beside it opens the menu, where a group's name opens the group's page; there is no All guides item. Quests is a plain link to `/quests`, in the header and in the drawer. The drawer is the same list on a phone, an accordion inside the Guides one: each name opens its page, the arrow beside it what lies under it.
-- **Footer.** `ArchiveShell.tsx`: five columns, the legal pages first, then the Catalog lists, one link a group of
-  guides (to the group's own page), the Quests page, and the tools from `lib/archive/tools.ts`. It does not repeat the whole menu.
+- **Footer.** `ArchiveShell.tsx`, about the game: five columns, No Man's Sky first (How it works, the legal pages, release notes, game bugs), then the Catalog lists, one link a group of guides (to the group's own page), Quests (Puzzle answers, The Artemis Path, The Atlas Path, Starbirth, All quests; 2026-11-14), and the tools from `lib/archive/tools.ts`. It does not repeat the whole menu.
 - **Tools and guides.** Interceptor builder ↔ interceptors, ship-classes, ship-square; capital freighter finder ↔
   freighters, dreadnoughts, freighter-modules; freighter finder ↔ freighters, frigates; living ship finder ↔
   living-ships, organic-frigates; How lucky am I? ↔ multitool-classes, multitool-stats, staffs, figures, ship-stats,
-  ship-upgrades, ship-figures.
+  ship-upgrades, ship-figures; Interceptor prices ↔ interceptors, farming; farming ↔ exosuit-modules (the Haz-Mat
+  Gauntlet, `#every-exosuit-module`).
+- **The prefix.** Next.js adds `/no-mans-sky` only to its own links. Every path written into HTML or CSS takes
+  `BASE_PATH`: the links and pictures of the Markdown (`withBase` in `lib/archive/content.ts`), the sprites, renders,
+  galaxy pictures, placeholders, and the builders' folders. Every `h2` to `h4` of a text has an id from its words (a
+  repeat gets `-2`), so any section can be linked.
 - **Records.** `RecordNote.tsx` adds one or two sentences under a card, each to a guide or tool the card links nowhere else: a tool or ship below S leads to its upgrade guide, every tool and ship to How lucky am I?, a staff to staffs, an Interceptor to its guide and finder. The class guides are not among them: the card's Class row already links there (2026-11-04). The card's own rows link their guides (`lib/archive/explain.ts`): each base stat row leads to its section of the stats guide, `multitool-stats#damage`, `#mining`, `#scanner`, and `ship-stats#damage`, `#shield`, `#hyperdrive`, `#maneuverability`; a tool card shows Base mining as the base percent, 0% for a rifle, since the game's card has no mining figure and the Mining Beam's own speed is not read; Base damage and Base scanner are the card's absolute figures, a pistol's damage being the bare beam's 333.3 (the owner, 2026-11-04). The card's values link too: Object to the catalog list of its kind (`/tool`, `/ship`, …), and Galaxy, System, and Planet to their pages, as the breadcrumbs do; the row of the record itself stays plain.
 
 ## How to review before a release
 
-1. Read the served HTML, not the source: `curl -s localhost:3000/<path>` shows what a crawler gets (the `<title>`, the
+1. Read the served HTML, not the source: `curl -s localhost:3000/no-mans-sky/<path>` shows what a crawler gets (the `<title>`, the
    `<h1>`, the links). A link that only a click on a menu opens does not count.
 2. Check each page against its row in the core: the primary query in the title, the lead, and the description.
 3. Check links against the link rules (`.claude/rules/site-text.md`): count the incoming links of each guide and tool; none should have fewer than
@@ -352,3 +361,5 @@ modules, ship types, frigates' boosts, space stations' other merchants).
 4. Check the text rules (`.claude/rules/site-text.md`): the forbidden words, sample sizes, places on guides, and that
    every claim is proven.
 5. Add a page's row to the core when a page is added.
+6. No link or picture of the served HTML starts with a bare `/` outside `/no-mans-sky/` (`curl … | grep -o '(href|src)="/[^"]*"'`), except the
+   header's "Seed Archive".

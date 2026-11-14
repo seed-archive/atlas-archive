@@ -4,6 +4,7 @@ import { createClient } from "@supabase/supabase-js";
 
 import { supabasePublishableKey, supabaseUrl } from "@/lib/db/env";
 import type { Database } from "@/lib/db/supabase.types";
+import { BASE_PATH } from "@/lib/site";
 
 // One item of each type from the catalog, the highest class first, so a guide
 // links to items that exist whatever the showcase holds. `{{catalogTools}}` and
@@ -56,7 +57,7 @@ function sentence(rows: Row[], words: [string, string][]) {
       )[0];
     return best
       ? [
-          `<a href="/${best.kind}/${best.id}">${escaped(best.name)}</a> ${phrase}`,
+          `<a href="${BASE_PATH}/${best.kind}/${best.id}">${escaped(best.name)}</a> ${phrase}`,
         ]
       : [];
   });

@@ -2,6 +2,7 @@ import groups from "@/lib/archive/living-ship-groups.json";
 import { LIVING_SHIP_PAINT } from "@/lib/archive/living-ship-paint";
 import type { PartGroup } from "@/lib/archive/builder/parts";
 import type { ShipModule } from "@/lib/archive/builder/ship";
+import { BASE_PATH } from "@/lib/site";
 
 // The living ship on /living-ship-finder, a builder. The groups are the choices of
 // the game's own tree of living ship parts, written by crimson-orb
@@ -20,7 +21,7 @@ const LIVING_BARE = 200;
 export const LIVING_SHIP: ShipModule = {
   kind: "living-ship",
   // Written by crimson-orb `utils/tools/ship_art pictures living-ship`.
-  folder: "/living-ship",
+  folder: `${BASE_PATH}/living-ship`,
   format: "textured16",
   groups: (groups as PartGroup[]).filter((group) => group.id !== FEELERS_GROUP),
   always: [{ layer: FEELERS_LAYER }],

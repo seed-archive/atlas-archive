@@ -27,7 +27,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
   const quest = questOf((await props.params).slug);
   return quest
     ? {
-        title: `${quest.title} in No Man's Sky — Atlas Archive`,
+        title: `${quest.title} in No Man's Sky — Seed Archive`,
         description: quest.fact,
         alternates: { canonical: questPath(quest.slug) },
       }

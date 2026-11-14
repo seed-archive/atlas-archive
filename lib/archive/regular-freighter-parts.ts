@@ -2,6 +2,7 @@ import { FREIGHTER_PAINT } from "@/lib/archive/freighter-paint";
 import groups from "@/lib/archive/regular-freighter-groups.json";
 import type { PartGroup } from "@/lib/archive/builder/parts";
 import type { ShipModule } from "@/lib/archive/builder/ship";
+import { BASE_PATH } from "@/lib/site";
 
 // The regular freighter on /freighter-finder, a builder. The groups are the choices
 // of the game's own tree of regular freighter parts, written by crimson-orb
@@ -15,7 +16,7 @@ import type { ShipModule } from "@/lib/archive/builder/ship";
 export const REGULAR_FREIGHTER: ShipModule = {
   kind: "regular-freighter",
   // Written by crimson-orb `utils/tools/ship_art pictures regular-freighter`.
-  folder: "/freighter/regular",
+  folder: `${BASE_PATH}/freighter/regular`,
   format: "textured16",
   groups: groups as PartGroup[],
   always: [],

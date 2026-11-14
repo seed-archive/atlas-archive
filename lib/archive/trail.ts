@@ -27,6 +27,6 @@ export function articleData(title: string, description: string, href: string) {
     headline: title,
     description,
     url: `${base()}${href}`,
-    isPartOf: { "@type": "WebSite", name: "Atlas Archive", url: base() },
+    isPartOf: { "@type": "WebSite", name: "Seed Archive", url: base() },
   };
 }

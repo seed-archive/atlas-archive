@@ -30,7 +30,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
   const group = groupOf((await props.params).group);
   return group
     ? {
-        title: `${group.title} guides for No Man's Sky — Atlas Archive`,
+        title: `${group.title} guides for No Man's Sky — Seed Archive`,
         description: `${group.title} in No Man's Sky: ${group.pages
           .map((page) => page.title.toLowerCase())
           .join(", ")}.`,

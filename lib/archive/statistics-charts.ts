@@ -59,6 +59,14 @@ const RULES: Record<string, Record<string, Plan>> = {
     wealth: { columns: ["Class S tools", "Adjacent tools"] },
   },
   "space-stations": { kinds: NONE, merchants: NONE },
+  // One scale a chart: what a plant earns a day; the value by slots, a line a class.
+  farming: { plants: { columns: ["A plant a day"] } },
+  "interceptor-prices": {
+    prices: {
+      kind: "line",
+      columns: ["Class C", "Class B", "Class A", "Class S"],
+    },
+  },
   "supercharged-slots": {
     ceiling: NONE,
     figures: NONE,

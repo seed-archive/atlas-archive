@@ -10,7 +10,7 @@ const TRAIL = [{ name: "Home", href: "/" }, { name: "Sentinel Interceptors" }];
 
 export const metadata: Metadata = {
   title:
-    "No Man's Sky Sentinel Interceptors: every Interceptor, part by part — Atlas Archive",
+    "No Man's Sky Sentinel Interceptors: every Interceptor, part by part — Seed Archive",
   alternates: { canonical: "/interceptor-finder" },
   description:
     "Put together a No Man's Sky Sentinel Interceptor from every part the game can give it: the cockpit, the wings, the hull, the skirting, and the colour.",

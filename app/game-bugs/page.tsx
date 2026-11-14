@@ -4,7 +4,7 @@ import { Article } from "@/components/archive/Article";
 import { readContent } from "@/lib/archive/content";
 
 export const metadata: Metadata = {
-  title: "No Man's Sky game bugs — Atlas Archive",
+  title: "No Man's Sky game bugs — Seed Archive",
   alternates: { canonical: "/game-bugs" },
   description:
     "Bugs of No Man's Sky where a card says one thing and the game does another, and what each changes in what you farm.",

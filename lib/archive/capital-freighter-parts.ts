@@ -2,6 +2,7 @@ import { FREIGHTER_PAINT } from "@/lib/archive/freighter-paint";
 import groups from "@/lib/archive/capital-freighter-groups.json";
 import type { PartGroup } from "@/lib/archive/builder/parts";
 import type { ShipModule } from "@/lib/archive/builder/ship";
+import { BASE_PATH } from "@/lib/site";
 
 // The capital freighter on /capital-freighter-finder, a builder. The groups are
 // the choices of the game's own tree of capital freighter parts, written by
@@ -12,7 +13,7 @@ import type { ShipModule } from "@/lib/archive/builder/ship";
 export const CAPITAL_FREIGHTER: ShipModule = {
   kind: "capital-freighter",
   // Written by crimson-orb `utils/tools/ship_art pictures capital-freighter`.
-  folder: "/freighter/capital",
+  folder: `${BASE_PATH}/freighter/capital`,
   format: "textured16",
   groups: groups as PartGroup[],
   always: [],

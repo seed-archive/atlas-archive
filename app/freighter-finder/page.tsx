@@ -10,7 +10,7 @@ const TRAIL = [{ name: "Home", href: "/" }, { name: "Regular freighters" }];
 
 export const metadata: Metadata = {
   title:
-    "No Man's Sky regular freighters: every shape of a regular freighter — Atlas Archive",
+    "No Man's Sky regular freighters: every shape of a regular freighter — Seed Archive",
   alternates: { canonical: "/freighter-finder" },
   description:
     "Regular freighters in No Man's Sky: put a regular freighter together from its hull, length, and parts, and see every shape the game makes. Fleets bring each shape to any system.",

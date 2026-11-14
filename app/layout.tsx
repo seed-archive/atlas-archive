@@ -3,10 +3,10 @@ import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import localFont from "next/font/local";
 import InitColorSchemeScript from "@mui/material/InitColorSchemeScript";
-import { Analytics } from "@vercel/analytics/next";
 
 import { Providers } from "@/components/providers/providers";
-import { BASE_PATH, SHARED_ANALYTICS } from "@/lib/site";
+import { SharedAnalytics } from "@/components/archive/SharedAnalytics";
+import { BASE_PATH } from "@/lib/site";
 
 const manrope = Manrope({
   subsets: ["latin", "cyrillic"],
@@ -52,15 +52,7 @@ export default function RootLayout(props: PropsWithChildren) {
       <body>
         <InitColorSchemeScript attribute="class" />
         <Providers>{children}</Providers>
-        {/* Every path is given: the project's own config would send views, events,
-            and sessions to this project's counter instead of the shared one. */}
-        <Analytics
-          scriptSrc={`${SHARED_ANALYTICS}/script.js`}
-          endpoint={SHARED_ANALYTICS}
-          viewEndpoint={`${SHARED_ANALYTICS}/view`}
-          eventEndpoint={`${SHARED_ANALYTICS}/event`}
-          sessionEndpoint={`${SHARED_ANALYTICS}/session`}
-        />
+        <SharedAnalytics />
       </body>
     </html>
   );

@@ -5,6 +5,7 @@ import type { Kind } from "@/lib/archive/kinds";
 import { listRowSchema } from "@/lib/archive/schema";
 import type { Database } from "@/lib/db/supabase.types";
 import type { Step } from "@/lib/archive/read/route";
+import { BASE_PATH } from "@/lib/site";
 
 const UNAVAILABLE = "The archive could not be read.";
 
@@ -69,7 +70,7 @@ const GALAXY_IMAGES = new Set([0, 1, 2, 6, 9, 245]);
 
 export function galaxyImage(index: unknown): string | null {
   return typeof index === "number" && GALAXY_IMAGES.has(index)
-    ? `/assets/img/galaxies/${index}.jpg`
+    ? `${BASE_PATH}/assets/img/galaxies/${index}.jpg`
     : null;
 }
 

@@ -49,7 +49,7 @@ export async function generateMetadata(props: Props): Promise<Metadata> {
   const topic = topicOf(slug);
   return topic && groupOfGuide(slug)?.slug === group
     ? {
-        title: `${TITLES[topic.slug] ?? `${topic.title} in No Man's Sky`} — Atlas Archive`,
+        title: `${TITLES[topic.slug] ?? `${topic.title} in No Man's Sky`} — Seed Archive`,
         description: topic.fact,
         alternates: { canonical: guidePath(topic.slug) },
       }

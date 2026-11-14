@@ -4,9 +4,9 @@ import { Article } from "@/components/archive/Article";
 import { readContent } from "@/lib/archive/content";
 
 export const metadata: Metadata = {
-  title: "Release notes — Atlas Archive",
+  title: "Release notes — Seed Archive",
   alternates: { canonical: "/release-notes" },
-  description: "What changed on Atlas Archive, release by release.",
+  description: "What changed on Seed Archive, release by release.",
 };
 
 // A page of text: the shared Article, with no widgets of another page.

@@ -133,7 +133,7 @@ export async function generateMetadata(props: {
   }
   const meta = recordMeta(record);
   return {
-    title: `${meta.title} in No Man's Sky — Atlas Archive`,
+    title: `${meta.title} in No Man's Sky — Seed Archive`,
     description: meta.description,
     alternates: { canonical: `/${kind}/${id}` },
   };

@@ -15,7 +15,7 @@ const TITLE = "Quests";
 const TRAIL = [{ name: "Home", href: "/" }, { name: TITLE }];
 
 export const metadata: Metadata = {
-  title: `${TITLE} in No Man's Sky — Atlas Archive`,
+  title: `${TITLE} in No Man's Sky — Seed Archive`,
   description: `${TITLE} in No Man's Sky: ${QUESTS.map((quest) =>
     quest.title.toLowerCase(),
   ).join(", ")}.`,

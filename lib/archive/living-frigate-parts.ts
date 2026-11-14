@@ -1,6 +1,7 @@
 import groups from "@/lib/archive/living-frigate-groups.json";
 import type { PartGroup } from "@/lib/archive/builder/parts";
 import type { ShipModule } from "@/lib/archive/builder/ship";
+import { BASE_PATH } from "@/lib/site";
 
 // The living frigate, the whale of the Dream Aerial, on /living-frigate-finder, a
 // builder. The groups are the choices of the game's own tree of living frigate
@@ -11,7 +12,7 @@ import type { ShipModule } from "@/lib/archive/builder/ship";
 export const LIVING_FRIGATE: ShipModule = {
   kind: "living-frigate",
   // Written by crimson-orb `utils/tools/ship_art pictures living-frigate`.
-  folder: "/living-frigate",
+  folder: `${BASE_PATH}/living-frigate`,
   format: "grey",
   groups: groups as PartGroup[],
   always: [],

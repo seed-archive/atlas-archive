@@ -26,7 +26,7 @@ import { FormattedMessage, useIntl } from "react-intl";
 
 import { useAuth } from "@/components/providers/AuthProvider";
 import { PAGE_KINDS } from "@/lib/archive/kinds";
-import { GUIDE_MENU as statisticsMenu } from "@/lib/archive/features";
+import statisticsMenu from "@/lib/archive/statistics-menu.json";
 import { groupPath, guidePath } from "@/lib/archive/guides";
 import { QUESTS_PATH } from "@/lib/archive/guides";
 import { TOOLS } from "@/lib/archive/tools";
@@ -90,14 +90,38 @@ export function ArchiveBar() {
       sx={{ borderBottom: 1, borderColor: "divider" }}
     >
       <Toolbar sx={{ gap: 1 }}>
-        <Typography
-          variant="h6"
-          component={Link}
-          href="/"
-          sx={{ color: "inherit", textDecoration: "none", flexGrow: 1 }}
+        {/* The portal's name leads to the domain's root, another zone, so it is a
+            plain link; the game's name leads to this section's home. */}
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "baseline",
+            gap: 1,
+            flexGrow: 1,
+            minWidth: 0,
+          }}
         >
-          <FormattedMessage id="archive.title" />
-        </Typography>
+          <Typography
+            variant="h6"
+            component="a"
+            href="/"
+            sx={{ color: "inherit", textDecoration: "none", flexShrink: 0 }}
+          >
+            <FormattedMessage id="archive.title" />
+          </Typography>
+          <Typography variant="h6" color="text.secondary" aria-hidden>
+            /
+          </Typography>
+          <Typography
+            variant="h6"
+            component={Link}
+            href="/"
+            noWrap
+            sx={{ color: "inherit", textDecoration: "none" }}
+          >
+            <FormattedMessage id="archive.game" />
+          </Typography>
+        </Box>
         <IconButton
           color="inherit"
           aria-label={intl.formatMessage({ id: "archive.navigation" })}

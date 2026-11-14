@@ -8,17 +8,17 @@ import {
 } from "@/components/legal/LegalDocument";
 
 export const metadata: Metadata = {
-  title: "Privacy policy — Atlas Archive",
+  title: "Privacy policy — Seed Archive",
   alternates: { canonical: "/privacy" },
   description:
-    "What Atlas Archive keeps if you sign in with Google, like a record, or send a bug report.",
+    "What Seed Archive keeps if you sign in with Google, like a record, or send a bug report.",
 };
 
 export default function PrivacyPage() {
   return (
     <LegalDocument title="Privacy policy" updated="3 November 2026">
       <LegalText>
-        Atlas Archive can be read without an account. This policy describes the
+        Seed Archive can be read without an account. This policy describes the
         information the site handles and why.
       </LegalText>
 

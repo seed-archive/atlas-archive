@@ -17,13 +17,13 @@ import Link from "next/link";
 import { DonationBlock } from "@/components/archive/DonationBlock";
 import { LikeButton } from "@/components/archive/LikeButton";
 import { link } from "@/components/archive/RecordNote";
-import { FINDER_MESSAGE } from "@/lib/archive/features";
 import {
   readFeed,
   type CatalogRow,
   type FeedSection,
 } from "@/lib/archive/read";
 import { getBrowserSupabase } from "@/lib/db/supabase.browser";
+import { BASE_PATH } from "@/lib/site";
 
 const SECTIONS: { id: FeedSection; title: string }[] = [
   { id: "galaxies", title: "archive.galaxies" },
@@ -51,10 +51,7 @@ export function HomeScreen(props: { confession: string }) {
           <FormattedMessage id="archive.homeTitle" />
         </Typography>
         <Typography color="text.secondary">
-          <FormattedMessage
-            id={`archive.homeLead${FINDER_MESSAGE}`}
-            values={LEAD}
-          />
+          <FormattedMessage id="archive.homeLead" values={LEAD} />
         </Typography>
       </Stack>
       {SECTIONS.map((section) => (
@@ -155,7 +152,7 @@ function FeedCard(props: { row: CatalogRow }) {
         <CardMedia
           component="img"
           height="220"
-          image={row.image ?? "/assets/img/no-image.svg"}
+          image={row.image ?? `${BASE_PATH}/assets/img/no-image.svg`}
           alt={row.name}
           sx={{ objectFit: "cover" }}
         />

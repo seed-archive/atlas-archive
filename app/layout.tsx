@@ -6,6 +6,7 @@ import InitColorSchemeScript from "@mui/material/InitColorSchemeScript";
 import { Analytics } from "@vercel/analytics/next";
 
 import { Providers } from "@/components/providers/providers";
+import { BASE_PATH } from "@/lib/site";
 
 const manrope = Manrope({
   subsets: ["latin", "cyrillic"],
@@ -22,13 +23,13 @@ const glyphs = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_BASE_URL ?? "http://localhost:3000",
+    process.env.NEXT_PUBLIC_BASE_URL ?? `http://localhost:3000${BASE_PATH}`,
   ),
-  title: "Best items in No Man's Sky and where to find them — Atlas Archive",
+  title: "Best items in No Man's Sky and where to find them — Seed Archive",
   description:
     "Where to find the best multitools, crashed ships, and creatures in No Man's Sky: finds with portal glyphs, and guides from the galaxy down to the planet.",
   openGraph: {
-    siteName: "Atlas Archive",
+    siteName: "Seed Archive",
     type: "website",
   },
   twitter: {

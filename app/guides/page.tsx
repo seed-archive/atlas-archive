@@ -11,7 +11,7 @@ import { trailData } from "@/lib/archive/trail";
 const TRAIL = [{ name: "Home", href: "/" }, { name: "Guides" }];
 
 export const metadata: Metadata = {
-  title: "No Man's Sky guides: where to find the best items — Atlas Archive",
+  title: "No Man's Sky guides: where to find the best items — Seed Archive",
   alternates: { canonical: "/guides" },
   description:
     "No Man's Sky guides, from the galaxy down to the creature: where to find S-class multitools, ships, freighters, upgrade modules, and creatures, and how rare each one is.",

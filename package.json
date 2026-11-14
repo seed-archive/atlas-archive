@@ -5,7 +5,7 @@
     "url": "https://ethberry.io/"
   },
   "bugs": {
-    "url": "https://github.com/seed-archive/atlas-archive/issues"
+    "url": "https://github.com/seed-archive/no-mans-sky-site/issues"
   },
   "dependencies": {
     "@emotion/cache": "11.14.0",
@@ -50,11 +50,11 @@
     "node": ">=24"
   },
   "license": "MIT",
-  "name": "atlas-archive",
+  "name": "no-mans-sky-site",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/seed-archive/atlas-archive"
+    "url": "https://github.com/seed-archive/no-mans-sky-site"
   },
   "scripts": {
     "build": "next build",

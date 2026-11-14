@@ -4,7 +4,7 @@
   (https://seedarchive.gg/no-mans-sky/; the coordinator runs the release) and runs the migrations through CI, so it happens only on the owner's word.
 - No command touches the remote database directly, not even a read: no `supabase db query --linked`,
   `db reset --linked`, `migration list --linked`, or `link`. The remote changes only through a migration, the owner's
-  commit, and CI. The local database (the Docker stack `supabase_*_atlas-archive`) is free to use; production is checked
+  commit, and CI. The local database (the Docker stack `supabase_*_no-mans-sky-site`) is free to use; production is checked
   over HTTP.
 - A schema change is a new migration in `supabase/migrations`, applied locally with `npx supabase migration up --local`,
   then the types are generated again. A migration that ran on production stays as it is.
@@ -16,7 +16,7 @@
 
 This repository is the No Man's Sky app of Seed Archive (seedarchive.gg), one zone of a Next.js Multi-Zones portal:
 each game has its own app with `basePath` equal to its slug, and a small portal app will route `/<slug>/*` to each
-(the owner, 2026-11-14). It is being renamed from `atlas-archive` to `no-mans-sky-site`.
+(the owner, 2026-11-14). The repository, its folder, and its Vercel project were `atlas-archive` until 2026-11-14.
 
 - **The No Man's Sky session owns this repository**: pages, texts, data, pictures, components, and the migrations of its
   schema.

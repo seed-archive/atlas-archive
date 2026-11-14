@@ -36,7 +36,7 @@ Each kill also pays the large reward for the freighter you saved.
 
 ## Where players farm them
 
-Players have posted systems whose dreadnought comes on every arrival, one for each module. One of them explains <a href="https://www.reddit.com/r/NoMansSkyTheGame/comments/1u3zlzp/heres_how_to_farm_salvaged_freighter_module/?utm_source=atlas-archive&amp;utm_medium=referral&amp;utm_campaign=freighter-modules" rel="nofollow noreferrer">how to farm salvaged freighter modules</a>.
+Players have posted systems whose dreadnought comes on every arrival, one for each module. One of them explains <a href="https://www.reddit.com/r/NoMansSkyTheGame/comments/1u3zlzp/heres_how_to_farm_salvaged_freighter_module/?utm_source=seedarchive&amp;utm_medium=referral&amp;utm_campaign=freighter-modules" rel="nofollow noreferrer">how to farm salvaged freighter modules</a>.
 
 | Module              | Galaxy    | Race    |
 | ------------------- | --------- | ------- |

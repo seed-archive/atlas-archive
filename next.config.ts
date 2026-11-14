@@ -16,6 +16,10 @@ const MENU: { slug: string; pages: { slug: string }[] }[] = JSON.parse(
 
 type Move = { source: string; destination: string };
 
+// The domain's root, the portal, and the pages of it this section used to serve.
+const PORTAL = "https://seedarchive.gg";
+const LEGAL_PAGES = ["privacy", "terms"];
+
 // The old paths of the guides, each to its page now, inside this section.
 // Statistics became Guides on 2026-11-03, and each guide moved under its group
 // on 2026-11-05: /guides/<slug> to /guides/<group>/<slug>. Where a group and a
@@ -69,8 +73,18 @@ function guideMoves(): Move[] {
 function redirectList() {
   const moves = guideMoves();
   const legacy = { type: "host" as const, value: LEGACY_HOST };
-  const newSite = `https://seedarchive.gg${BASE_PATH}`;
+  const newSite = `${PORTAL}${BASE_PATH}`;
   return [
+    // The legal pages belong to the portal since 2026-11-14 (D12): every old
+    // address of them, on any host, straight to the portal's page.
+    ...LEGAL_PAGES.flatMap((page) =>
+      [`/${page}`, `${BASE_PATH}/${page}`].map((from) => ({
+        source: from,
+        destination: `${PORTAL}/${page}`,
+        basePath: false as const,
+        permanent: true,
+      })),
+    ),
     // The site from before the move: every path to the same page on the new
     // domain. Built in only when the deploy sets LEGACY_HOST_REDIRECT, so the
     // old address keeps working until seedarchive.gg answers.

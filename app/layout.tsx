@@ -52,9 +52,14 @@ export default function RootLayout(props: PropsWithChildren) {
       <body>
         <InitColorSchemeScript attribute="class" />
         <Providers>{children}</Providers>
+        {/* Every path is given: the project's own config would send views, events,
+            and sessions to this project's counter instead of the shared one. */}
         <Analytics
           scriptSrc={`${SHARED_ANALYTICS}/script.js`}
           endpoint={SHARED_ANALYTICS}
+          viewEndpoint={`${SHARED_ANALYTICS}/view`}
+          eventEndpoint={`${SHARED_ANALYTICS}/event`}
+          sessionEndpoint={`${SHARED_ANALYTICS}/session`}
         />
       </body>
     </html>

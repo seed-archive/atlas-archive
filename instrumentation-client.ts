@@ -6,16 +6,19 @@ import {
   replayIntegration,
 } from "@sentry/nextjs";
 
-const dsn = process.env.NEXT_PUBLIC_SENTRY_DSN;
+// Sentry runs on the production deploy alone, never locally or on a preview (the
+// owner, 2026-11-15; ../.claude/rules/architecture.md, "Sentry: production only").
+const dsn =
+  process.env.NEXT_PUBLIC_VERCEL_ENV === "production"
+    ? process.env.NEXT_PUBLIC_SENTRY_DSN
+    : undefined;
 
 if (dsn) {
   init({
     dsn,
     integrations: [
       replayIntegration(),
-      ...(process.env.NODE_ENV === "production"
-        ? [feedbackIntegration({ colorScheme: "system" })]
-        : []),
+      feedbackIntegration({ colorScheme: "system" }),
       consoleLoggingIntegration(),
     ],
     tracesSampleRate: 1,

@@ -1,322 +1,334 @@
 [
-  {
-    "pages": [
-      {
-        "slug": "galaxies",
-        "title": "Galaxies"
-      },
-      {
-        "slug": "where-to-look",
-        "title": "Where to look"
-      }
-    ],
+ {
+  "pages": [
+   {
     "slug": "galaxies",
     "title": "Galaxies"
-  },
-  {
-    "pages": [
-      {
-        "slug": "systems",
-        "title": "Star systems"
-      },
-      {
-        "slug": "economy",
-        "title": "Economy"
-      },
-      {
-        "slug": "races",
-        "title": "Races"
-      }
-    ],
+   },
+   {
+    "slug": "where-to-look",
+    "title": "Where to look"
+   }
+  ],
+  "slug": "galaxies",
+  "title": "Galaxies"
+ },
+ {
+  "pages": [
+   {
     "slug": "systems",
-    "title": "Systems"
-  },
-  {
-    "pages": [
-      {
-        "slug": "space-stations",
-        "title": "Space stations"
-      },
-      {
-        "slug": "technology-merchants",
-        "title": "Station technology merchants"
-      },
-      {
-        "slug": "forsaken-trader",
-        "title": "Forsaken Trader"
-      },
-      {
-        "slug": "fossil-collector",
-        "title": "Fossil Collector"
-      },
-      {
-        "slug": "scrap-dealer",
-        "title": "Scrap Dealer"
-      },
-      {
-        "slug": "salvage-exchange",
-        "title": "Salvage Exchange"
-      },
-      {
-        "slug": "cartographer",
-        "title": "Cartographer"
-      },
-      {
-        "slug": "autophage-merchant",
-        "title": "Autophage Synthesis Terminal"
-      },
-      {
-        "slug": "galactic-trade-terminal",
-        "title": "Galactic Trade Terminal"
-      },
-      {
-        "slug": "starship-pilots",
-        "title": "Starship Pilot"
-      },
-      {
-        "slug": "outlaw-station",
-        "title": "Outlaw Station"
-      },
-      {
-        "slug": "deep-space-outpost",
-        "title": "Deep-Space Outpost"
-      },
-      {
-        "slug": "alien-traders",
-        "title": "Alien Trader"
-      },
-      {
-        "slug": "settlement-technology-merchant",
-        "title": "Settlement Technology Merchant"
-      },
-      {
-        "slug": "anomaly-module-merchant",
-        "title": "Space Anomaly Module Merchant"
-      }
-    ],
-    "slug": "stations",
-    "title": "Stations"
-  },
-  {
-    "pages": [
-      {
-        "slug": "sources-by-size",
-        "title": "Sources by planet size"
-      },
-      {
-        "slug": "sources-by-type",
-        "title": "Sources by planet type"
-      },
-      {
-        "slug": "empty-worlds",
-        "title": "Empty worlds"
-      },
-      {
-        "slug": "sentinels-and-dissonance",
-        "title": "Sentinels and dissonance"
-      },
-      {
-        "slug": "fishing",
-        "title": "Fishing"
-      }
-    ],
-    "slug": "planets",
-    "title": "Planets"
-  },
-  {
-    "pages": [
-      {
-        "slug": "multitool-types",
-        "title": "Multitool types"
-      },
-      {
-        "slug": "multitool-classes",
-        "title": "Multitool classes"
-      },
-      {
-        "slug": "multitool-stats",
-        "title": "Multitool stats"
-      },
-      {
-        "slug": "multitool-upgrades",
-        "title": "How to upgrade a multitool"
-      },
-      {
-        "slug": "figures",
-        "title": "Tetris figures"
-      },
-      {
-        "slug": "square",
-        "title": "The square on a multitool"
-      },
-      {
-        "slug": "supercharged-slots",
-        "title": "Supercharged slots"
-      },
-      {
-        "slug": "staffs",
-        "title": "Staffs"
-      },
-      {
-        "slug": "multitool-modules",
-        "title": "Multitool modules"
-      }
-    ],
-    "slug": "multitools",
-    "title": "Multitools"
-  },
-  {
-    "pages": [
-      {
-        "slug": "ship-types",
-        "title": "Ship types"
-      },
-      {
-        "slug": "ship-classes",
-        "title": "Ship classes"
-      },
-      {
-        "slug": "ship-stats",
-        "title": "Ship stats"
-      },
-      {
-        "slug": "ship-upgrades",
-        "title": "How to upgrade a ship"
-      },
-      {
-        "slug": "ship-figures",
-        "title": "Ship figures"
-      },
-      {
-        "slug": "ship-square",
-        "title": "The square on a ship"
-      },
-      {
-        "slug": "interceptors",
-        "title": "Interceptors"
-      },
-      {
-        "slug": "interceptor-prices",
-        "title": "Interceptor prices"
-      },
-      {
-        "slug": "living-ships",
-        "title": "Living ships"
-      },
-      {
-        "slug": "starship-modules",
-        "title": "Starship modules"
-      },
-      {
-        "slug": "corvettes",
-        "title": "Corvettes"
-      },
-      {
-        "slug": "corvette-modules",
-        "title": "Corvette modules"
-      }
-    ],
-    "slug": "ships",
-    "title": "Ships"
-  },
-  {
-    "pages": [
-      {
-        "slug": "freighters",
-        "title": "Freighters"
-      },
-      {
-        "slug": "dreadnoughts",
-        "title": "Dreadnoughts"
-      },
-      {
-        "slug": "freighter-modules",
-        "title": "Freighter modules"
-      },
-      {
-        "slug": "frigates",
-        "title": "Frigates"
-      },
-      {
-        "slug": "organic-frigates",
-        "title": "Organic frigates"
-      },
-      {
-        "slug": "sentinel-capital-ship",
-        "title": "Sentinel capital ship"
-      },
-      {
-        "slug": "freighter-technology",
-        "title": "Freighter technology"
-      }
-    ],
+    "title": "Star systems"
+   },
+   {
+    "slug": "economy",
+    "title": "Economy"
+   },
+   {
+    "slug": "races",
+    "title": "Races"
+   }
+  ],
+  "slug": "systems",
+  "title": "Systems"
+ },
+ {
+  "pages": [
+   {
+    "slug": "space-stations",
+    "title": "Space stations"
+   },
+   {
+    "slug": "technology-merchants",
+    "title": "Station technology merchants"
+   },
+   {
+    "slug": "forsaken-trader",
+    "title": "Forsaken Trader"
+   },
+   {
+    "slug": "fossil-collector",
+    "title": "Fossil Collector"
+   },
+   {
+    "slug": "scrap-dealer",
+    "title": "Scrap Dealer"
+   },
+   {
+    "slug": "salvage-exchange",
+    "title": "Salvage Exchange"
+   },
+   {
+    "slug": "cartographer",
+    "title": "Cartographer"
+   },
+   {
+    "slug": "autophage-merchant",
+    "title": "Autophage Synthesis Terminal"
+   },
+   {
+    "slug": "galactic-trade-terminal",
+    "title": "Galactic Trade Terminal"
+   },
+   {
+    "slug": "starship-pilots",
+    "title": "Starship Pilot"
+   },
+   {
+    "slug": "outlaw-station",
+    "title": "Outlaw Station"
+   },
+   {
+    "slug": "deep-space-outpost",
+    "title": "Deep-Space Outpost"
+   },
+   {
+    "slug": "alien-traders",
+    "title": "Alien Trader"
+   },
+   {
+    "slug": "settlement-technology-merchant",
+    "title": "Settlement Technology Merchant"
+   },
+   {
+    "slug": "anomaly-module-merchant",
+    "title": "Space Anomaly Module Merchant"
+   }
+  ],
+  "slug": "stations",
+  "title": "Stations"
+ },
+ {
+  "pages": [
+   {
+    "slug": "sources-by-size",
+    "title": "Sources by planet size"
+   },
+   {
+    "slug": "sources-by-type",
+    "title": "Sources by planet type"
+   },
+   {
+    "slug": "empty-worlds",
+    "title": "Empty worlds"
+   },
+   {
+    "slug": "sentinels-and-dissonance",
+    "title": "Sentinels and dissonance"
+   },
+   {
+    "slug": "fishing",
+    "title": "Fishing"
+   }
+  ],
+  "slug": "planets",
+  "title": "Planets"
+ },
+ {
+  "pages": [
+   {
+    "slug": "multitool-types",
+    "title": "Multitool types"
+   },
+   {
+    "slug": "multitool-classes",
+    "title": "Multitool classes"
+   },
+   {
+    "slug": "multitool-stats",
+    "title": "Multitool stats"
+   },
+   {
+    "slug": "multitool-upgrades",
+    "title": "How to upgrade a multitool"
+   },
+   {
+    "slug": "figures",
+    "title": "Tetris figures"
+   },
+   {
+    "slug": "square",
+    "title": "The square on a multitool"
+   },
+   {
+    "slug": "supercharged-slots",
+    "title": "Supercharged slots"
+   },
+   {
+    "slug": "staffs",
+    "title": "Staffs"
+   },
+   {
+    "slug": "best-multitools",
+    "title": "Best multitools"
+   },
+   {
+    "slug": "multitool-modules",
+    "title": "Multitool modules"
+   }
+  ],
+  "slug": "multitools",
+  "title": "Multitools"
+ },
+ {
+  "pages": [
+   {
+    "slug": "ship-types",
+    "title": "Ship types"
+   },
+   {
+    "slug": "ship-classes",
+    "title": "Ship classes"
+   },
+   {
+    "slug": "ship-stats",
+    "title": "Ship stats"
+   },
+   {
+    "slug": "ship-upgrades",
+    "title": "How to upgrade a ship"
+   },
+   {
+    "slug": "ship-figures",
+    "title": "Ship figures"
+   },
+   {
+    "slug": "ship-square",
+    "title": "The square on a ship"
+   },
+   {
+    "slug": "interceptors",
+    "title": "Interceptors"
+   },
+   {
+    "slug": "interceptor-prices",
+    "title": "Interceptor prices"
+   },
+   {
+    "slug": "best-interceptors",
+    "title": "Best Interceptors"
+   },
+   {
+    "slug": "living-ships",
+    "title": "Living ships"
+   },
+   {
+    "slug": "starship-modules",
+    "title": "Starship modules"
+   },
+   {
+    "slug": "corvettes",
+    "title": "Corvettes"
+   },
+   {
+    "slug": "corvette-modules",
+    "title": "Corvette modules"
+   }
+  ],
+  "slug": "ships",
+  "title": "Ships"
+ },
+ {
+  "pages": [
+   {
     "slug": "freighters",
     "title": "Freighters"
-  },
-  {
-    "pages": [
-      {
-        "slug": "exosuit-modules",
-        "title": "Exosuit modules"
-      }
-    ],
-    "slug": "exosuit",
-    "title": "Exosuit"
-  },
-  {
-    "pages": [
-      {
-        "slug": "roamer-modules",
-        "title": "Roamer modules"
-      },
-      {
-        "slug": "nomad-modules",
-        "title": "Nomad modules"
-      },
-      {
-        "slug": "pilgrim-modules",
-        "title": "Pilgrim modules"
-      },
-      {
-        "slug": "colossus-modules",
-        "title": "Colossus modules"
-      },
-      {
-        "slug": "nautilon-modules",
-        "title": "Nautilon modules"
-      },
-      {
-        "slug": "minotaur-modules",
-        "title": "Minotaur modules"
-      }
-    ],
-    "slug": "exocraft",
-    "title": "Exocraft"
-  },
-  {
-    "pages": [
-      {
-        "slug": "creature-roles",
-        "title": "Creature roles"
-      },
-      {
-        "slug": "creature-grades",
-        "title": "Creature grades"
-      },
-      {
-        "slug": "creature-stats",
-        "title": "Creature stats"
-      },
-      {
-        "slug": "creature-affinity",
-        "title": "Creature affinity"
-      },
-      {
-        "slug": "battle-moves",
-        "title": "Battle moves"
-      }
-    ],
-    "slug": "creatures",
-    "title": "Creatures"
-  }
+   },
+   {
+    "slug": "dreadnoughts",
+    "title": "Dreadnoughts"
+   },
+   {
+    "slug": "freighter-modules",
+    "title": "Freighter modules"
+   },
+   {
+    "slug": "frigates",
+    "title": "Frigates"
+   },
+   {
+    "slug": "organic-frigates",
+    "title": "Organic frigates"
+   },
+   {
+    "slug": "sentinel-capital-ship",
+    "title": "Sentinel capital ship"
+   },
+   {
+    "slug": "freighter-technology",
+    "title": "Freighter technology"
+   }
+  ],
+  "slug": "freighters",
+  "title": "Freighters"
+ },
+ {
+  "pages": [
+   {
+    "slug": "exosuit-modules",
+    "title": "Exosuit modules"
+   }
+  ],
+  "slug": "exosuit",
+  "title": "Exosuit"
+ },
+ {
+  "pages": [
+   {
+    "slug": "roamer-modules",
+    "title": "Roamer modules"
+   },
+   {
+    "slug": "nomad-modules",
+    "title": "Nomad modules"
+   },
+   {
+    "slug": "pilgrim-modules",
+    "title": "Pilgrim modules"
+   },
+   {
+    "slug": "colossus-modules",
+    "title": "Colossus modules"
+   },
+   {
+    "slug": "nautilon-modules",
+    "title": "Nautilon modules"
+   },
+   {
+    "slug": "minotaur-modules",
+    "title": "Minotaur modules"
+   }
+  ],
+  "slug": "exocraft",
+  "title": "Exocraft"
+ },
+ {
+  "pages": [
+   {
+    "slug": "creature-roles",
+    "title": "Creature roles"
+   },
+   {
+    "slug": "creature-grades",
+    "title": "Creature grades"
+   },
+   {
+    "slug": "creature-stats",
+    "title": "Creature stats"
+   },
+   {
+    "slug": "best-creatures",
+    "title": "Best creatures"
+   },
+   {
+    "slug": "creature-affinity",
+    "title": "Creature affinity"
+   },
+   {
+    "slug": "battle-moves",
+    "title": "Battle moves"
+   }
+  ],
+  "slug": "creatures",
+  "title": "Creatures"
+ }
 ]

@@ -51,6 +51,7 @@ const COLUMNS: Column[] = [
       {
         href: "/release-notes",
         label: <FormattedMessage id="archive.releaseNotes" />,
+        portal: true,
       },
       {
         href: "/game-bugs",

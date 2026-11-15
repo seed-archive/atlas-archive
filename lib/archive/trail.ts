@@ -3,7 +3,7 @@ import { BASE_PATH } from "@/lib/site";
 export type PageStep = { name: string; href?: string };
 
 const base = () =>
-  process.env.NEXT_PUBLIC_BASE_URL ?? `http://localhost:3000${BASE_PATH}`;
+  process.env.NEXT_PUBLIC_BASE_URL ?? `http://localhost:5001${BASE_PATH}`;
 
 // The steps of a trail as a search engine reads them.
 export function trailData(steps: PageStep[]) {

@@ -30,4 +30,6 @@ Experimental and Royal tools scan best: every one at class S holds exactly 100%.
 
 <!-- widget:scanner -->
 
+How close the best class S finds come to the top of every range is on [best multitools](/guides/best-multitools).
+
 All of this holds for tools found at class S. Upgrade one from a lower class and the rules change: [how to upgrade a multitool](/guides/multitool-upgrades).

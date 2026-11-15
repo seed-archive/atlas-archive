@@ -10,4 +10,4 @@ The game prices a ship by its cargo grid, not by its looks or its weapons. Each 
 
 That is why two Interceptors of one class can sell millions of units apart. A wreck worth keeping for its slots is on [Sentinel Interceptors](/guides/interceptors); a crop that pays as much is on [farming](/quests/farming).
 
-One more ship waits to be claimed, and it is alive: [living ships](/guides/living-ships).
+How close the best wreck comes to the top of every stat is on [best Interceptors](/guides/best-interceptors).

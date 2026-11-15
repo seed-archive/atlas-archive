@@ -44,4 +44,4 @@ Count C as 0, B as 1, A as 2, and S as 3, and add the three grades. A sum of 7 o
 
 <!-- widget:trait -->
 
-Grades never look at the planet. The one thing a planet does hand its creatures is [creature affinity](/guides/creature-affinity).
+Which creatures come closest to the top of every band is on [best creatures](/guides/best-creatures).

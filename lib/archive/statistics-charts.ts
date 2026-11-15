@@ -61,6 +61,11 @@ const RULES: Record<string, Record<string, Plan>> = {
   "space-stations": { kinds: NONE, merchants: NONE },
   // One scale a chart: what a plant earns a day; the value by slots, a line a class.
   farming: { plants: { columns: ["A plant a day"] } },
+  // The best finds: shares near 100% on one scale say nothing a bar would; how
+  // often draws its levels. The creatures' steps under the ceiling, a line each.
+  "best-multitools": { tools: NONE, staffs: NONE },
+  "best-interceptors": { interceptors: NONE, interceptorsOften: NONE },
+  "best-creatures": { creatures: NONE, creaturesOften: { kind: "line" } },
   "interceptor-prices": {
     prices: {
       kind: "line",

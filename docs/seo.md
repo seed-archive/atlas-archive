@@ -59,12 +59,12 @@ The menu (2026-11-14), as the No Man's Sky generator writes it into `statistics-
 | Systems    | systems, economy, races                                                                                                                                                       |
 | Stations   | space-stations, technology-merchants, then the merchants: forsaken-trader … anomaly-module-merchant (outside the read-on chain, below)                                        |
 | Planets    | sources-by-size, sources-by-type, empty-worlds, sentinels-and-dissonance, fishing                                                                                             |
-| Multitools | multitool-types, multitool-classes, multitool-stats, multitool-upgrades, figures, square, supercharged-slots, staffs, multitool-modules                                       |
-| Ships      | ship-types, ship-classes, ship-stats, ship-upgrades, ship-figures, ship-square, interceptors, interceptor-prices, living-ships, starship-modules, corvettes, corvette-modules |
+| Multitools | multitool-types, multitool-classes, multitool-stats, multitool-upgrades, figures, square, supercharged-slots, staffs, best-multitools, multitool-modules                                    |
+| Ships      | ship-types, ship-classes, ship-stats, ship-upgrades, ship-figures, ship-square, interceptors, interceptor-prices, best-interceptors, living-ships, starship-modules, corvettes, corvette-modules |
 | Freighters | freighters, dreadnoughts, freighter-modules, frigates, organic-frigates, sentinel-capital-ship, freighter-technology                                                          |
 | Exosuit    | exosuit-modules                                                                                                                                                               |
 | Exocraft   | roamer-, nomad-, pilgrim-, colossus-, nautilon-, minotaur-modules                                                                                                             |
-| Creatures  | creature-roles, creature-grades, creature-stats, creature-affinity, battle-moves                                                                                              |
+| Creatures  | creature-roles, creature-grades, creature-stats, best-creatures, creature-affinity, battle-moves                                                                                           |
 
 **Exosuit and Exocraft stay two groups** (the owner, 2026-11-07): a merge would move their paths; if made later, it needs
 redirects of `/guides/exosuit`, `/guides/exocraft`, and every guide under them. `frigate-traits` was merged into
@@ -129,6 +129,7 @@ ship-upgrades, organic-frigates, how-lucky-am-i.
 | ship-figures, ship-square                                                   | ship supercharged slots                                                                   | adjacent; square                                                         |
 | interceptors                                                                | how to get a Sentinel Interceptor                                                         | Interceptor class S; dissonant planet                                    |
 | interceptor-prices                                                          | how much is a Sentinel Interceptor worth                                                  | Interceptor price; crashed ship value by slots; sell crashed ship        |
+| best-multitools, best-interceptors, best-creatures                          | best multitool; best Interceptor; best creature                                           | god roll; max stats; perfect S class; 100% stats                         |
 | living-ships                                                                | how to get a living ship                                                                  | Void Egg; living ship quest                                              |
 | creature-roles, creature-grades, creature-stats, creature-affinity          | all-S creature                                                                            | companion; Trait Potential; affinity                                     |
 | `/quests`                                                                   | no man's sky quests                                                                       | puzzles and answers                                                      |
@@ -156,7 +157,7 @@ modules, ship types, frigates' boosts, space stations' other merchants).
 - **External.** The one external link cites a rule: Google's data policy on the privacy page.
 - **Header.** The shared one (the portal's `docs/seo.md`); this section's part is its menu, below.
 - **Menus.** Header items are real links (`ArchiveBar.tsx`). The word Guides is a link to `/guides` and the arrow beside it opens the menu, where a group's name opens the group's page; there is no All guides item. Quests is a plain link to `/quests`, in the header and in the drawer. The drawer is the same list on a phone, an accordion inside the Guides one: each name opens its page, the arrow beside it what lies under it.
-- **Footer.** `ArchiveShell.tsx`, about the game: five columns, No Man's Sky first (How it works, the legal pages, release notes, game bugs), then the Catalog lists, one link a group of guides (to the group's own page), Quests (Puzzle answers, The Artemis Path, The Atlas Path, Starbirth, All quests; 2026-11-14), and the tools from `lib/archive/tools.ts`. It does not repeat the whole menu.
+- **Footer.** `ArchiveShell.tsx`, about the game: five columns, No Man's Sky first (How it works, the legal pages and release notes, both on the portal, game bugs), then the Catalog lists, one link a group of guides (to the group's own page), Quests (Puzzle answers, The Artemis Path, The Atlas Path, Starbirth, All quests; 2026-11-14), and the tools from `lib/archive/tools.ts`. It does not repeat the whole menu.
 - **Tools and guides.** Interceptor builder ↔ interceptors, ship-classes, ship-square; capital freighter finder ↔
   freighters, dreadnoughts, freighter-modules; freighter finder ↔ freighters, frigates; living ship finder ↔
   living-ships, organic-frigates; How lucky am I? ↔ multitool-classes, multitool-stats, staffs, figures, ship-stats,

@@ -18,4 +18,4 @@ The building makes no difference to the staff. It only changes how many there ar
 
 <!-- widget:classes -->
 
-That covers every tool you carry in your hand. What you plug into one, family by family, is on [multitool modules](/guides/multitool-modules).
+Which multitool and staff come closest to the top of their range is on [best multitools](/guides/best-multitools).

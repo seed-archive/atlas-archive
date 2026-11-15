@@ -67,7 +67,7 @@ async function recordEntries(base: string): Promise<MetadataRoute.Sitemap> {
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const base = process.env.NEXT_PUBLIC_BASE_URL ?? "http://localhost:3000";
+  const base = process.env.NEXT_PUBLIC_BASE_URL ?? "http://localhost:5001";
 
   return [
     {
@@ -133,12 +133,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })),
     {
       url: `${base}/game-bugs`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.4,
-    },
-    {
-      url: `${base}/release-notes`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.4,

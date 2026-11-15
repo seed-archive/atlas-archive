@@ -26,4 +26,4 @@ Every Sentinel wreck of a system shows the same ship: the same parts and the sam
 
 Most of that gain goes to class C and B, as [how to upgrade a ship](/guides/ship-upgrades) shows.
 
-Destroy the [Sentinel capital ship](/guides/sentinel-capital-ship) and its Carrier AI Fragment points you to one more Interceptor wreck. What a claimed Interceptor sells for is set by its cargo slots, as [Interceptor prices](/guides/interceptor-prices) shows.
+Destroy the [Sentinel capital ship](/guides/sentinel-capital-ship) and its Carrier AI Fragment points you to one more Interceptor wreck. What a claimed Interceptor sells for is set by its cargo slots, as [Interceptor prices](/guides/interceptor-prices) shows, and the wreck whose stats come closest to the top is on [best Interceptors](/guides/best-interceptors).

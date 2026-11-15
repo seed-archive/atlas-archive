@@ -58,10 +58,10 @@
   },
   "scripts": {
     "build": "next build",
-    "dev": "next dev -p 5001",
+    "dev": "next dev -p 5010",
     "lint": "eslint . --fix",
     "prepare": "husky",
-    "start": "next start -p 5101",
+    "start": "next start -p 5011",
     "supabase:generate": "supabase gen types --lang=typescript --local > ./lib/db/supabase.types.ts",
     "supabase:login": "supabase login",
     "supabase:logout": "supabase logout",

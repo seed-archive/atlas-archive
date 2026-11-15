@@ -67,7 +67,7 @@ async function recordEntries(base: string): Promise<MetadataRoute.Sitemap> {
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const base = process.env.NEXT_PUBLIC_BASE_URL ?? "http://localhost:5001";
+  const base = process.env.NEXT_PUBLIC_BASE_URL ?? "http://localhost:5010";
 
   return [
     {

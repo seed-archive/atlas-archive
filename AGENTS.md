@@ -30,7 +30,7 @@ games and the portal fit together is `../.claude/rules/architecture.md`.
 ## Run
 
 ```bash
-npm run dev                    # the site on localhost:5001/no-mans-sky
+npm run dev                    # the site on localhost:5010/no-mans-sky
 npx supabase start             # the local database, Docker stack supabase_*_no-mans-sky-site
 npx supabase migration up --local
 npm run supabase:generate      # types from the local database

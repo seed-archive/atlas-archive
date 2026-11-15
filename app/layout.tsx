@@ -23,7 +23,7 @@ const glyphs = localFont({
 
 export const metadata: Metadata = {
   metadataBase: new URL(
-    process.env.NEXT_PUBLIC_BASE_URL ?? `http://localhost:5001${BASE_PATH}`,
+    process.env.NEXT_PUBLIC_BASE_URL ?? `http://localhost:5010${BASE_PATH}`,
   ),
   title: "Best items in No Man's Sky and where to find them — Seed Archive",
   description:

@@ -4,7 +4,7 @@
 
 ## Why fish
 
-A catch is money, food, or bait. Every fish sells, and a legendary one is worth the most. The Nutrient Processor cooks each fish into a dish of its own, and the dish of a common or an uncommon fish is worth more than the fish; those dishes then go into seafood recipes such as Seafood Stew, Marine Pie, Fish and Rice, and Fish Biscuit. Flotsam cooks into nothing, but a Message in a Bottle opens to a message.
+A catch is money, food, or bait. Every fish sells, and a legendary one is worth the most. The Nutrient Processor cooks each fish into a dish of its own, as [Nutrient Processor recipes](/tools/cooking-recipes) lists, and the dish of a common or an uncommon fish is worth more than the fish ([best-selling dishes](/guides/best-selling-dishes)); those dishes then go into seafood recipes such as Seafood Stew, Marine Pie, Fish and Rice, and Fish Biscuit. Flotsam cooks into nothing, but a Message in a Bottle opens to a message.
 
 <!-- widget:values -->
 

@@ -101,4 +101,4 @@ The five medal eggs always hold the same five moves, one in each slot, with no l
 
 <!-- widget:kits -->
 
-That is the end of the trail of the [guides](/guides), from the galaxy down to the creature. [How it works](/about) walks it again, down to the short list on a system page.
+What you grow, cook, and refine on the way is the last group of guides, and it starts with [farming](/guides/farming).

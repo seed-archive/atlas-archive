@@ -106,4 +106,3 @@ A frigate's price is set by its type and class: a base with a spread, times a mu
 <!-- widget:prices -->
 
 An organic frigate draws from a list of its own and never a bad trait: [organic frigates](/guides/organic-frigates) says how to call a whale and pick the kind of its frigate.
-

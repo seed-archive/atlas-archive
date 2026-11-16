@@ -4,6 +4,7 @@ import path from "node:path";
 
 import type { NextConfig } from "next";
 
+import { TOOLS } from "./lib/archive/tools";
 import { BASE_PATH, LEGACY_HOST } from "./lib/site";
 
 // The guides menu the generator writes: each group and its guides.
@@ -18,7 +19,10 @@ type Move = { source: string; destination: string };
 
 // The domain's root, the portal, and the pages of it this section used to serve.
 const PORTAL = "https://seedarchive.gg";
-const LEGAL_PAGES = ["privacy", "terms"];
+const PORTAL_PAGES = ["privacy", "terms", "release-notes"];
+
+// The tools, each at /tools/<slug> since 2026-11-16 and at /<slug> before.
+const TOOL_SLUGS = TOOLS.map((tool) => tool.href.replace(/^\/tools\//, ""));
 
 // The old paths of the guides, each to its page now, inside this section.
 // Statistics became Guides on 2026-11-03, and each guide moved under its group
@@ -56,6 +60,15 @@ function guideMoves(): Move[] {
       "/guides/excavation-finds",
       "/guides/planets/excavation-finds",
     ].map((source) => ({ source, destination: long("fossil-collector") })),
+    // Farming left the Quests for the Crafting guides on 2026-11-16 (the owner:
+    // a header holds four questions, and farming answers "what pays best").
+    { source: "/quests/farming", destination: long("farming") },
+    // The tools moved under /tools on 2026-11-16 (the owner: a tool's address
+    // and trail name its section, as a guide's and a quest's do).
+    ...TOOL_SLUGS.map((slug) => ({
+      source: `/${slug}`,
+      destination: `/tools/${slug}`,
+    })),
     ...guides.map((slug) => ({
       source: `/statistics/${slug}`,
       destination: long(slug),
@@ -75,9 +88,10 @@ function redirectList() {
   const legacy = { type: "host" as const, value: LEGACY_HOST };
   const newSite = `${PORTAL}${BASE_PATH}`;
   return [
-    // The legal pages belong to the portal since 2026-11-14 (D12): every old
-    // address of them, on any host, straight to the portal's page.
-    ...LEGAL_PAGES.flatMap((page) =>
+    // The legal pages belong to the portal since 2026-11-14 (D12), the release
+    // notes since 2026-11-15 (D16): every old address of them, on any host,
+    // straight to the portal's page.
+    ...PORTAL_PAGES.flatMap((page) =>
       [`/${page}`, `${BASE_PATH}/${page}`].map((from) => ({
         source: from,
         destination: `${PORTAL}/${page}`,

@@ -1,6 +1,6 @@
 # Ship stats
 
-**How strong can a claimed ship be?** It depends on the ship type: a Fighter reaches {{damageFighterHigh}} damage, a Hauler {{shieldHaulerHigh}} shield, and an Exotic {{agileExoticHigh}} maneuverability, while an Interceptor reads {{hyperdriveInterceptorHigh}} hyperdrive. Every ship comes with base stats for these four, in percent. Each is rolled apart, inside a range set by its [ship type](/guides/ship-types) and [ship class](/guides/ship-classes). The tables below show what reaches your hangar, as the number on a bare card: no module installed, and the starter cannon left out. [How lucky am I?](/how-lucky-am-i) places a ship you claimed among them.
+**How strong can a claimed ship be?** It depends on the ship type: a Fighter reaches {{damageFighterHigh}} damage, a Hauler {{shieldHaulerHigh}} shield, and an Exotic {{agileExoticHigh}} maneuverability, while an Interceptor reads {{hyperdriveInterceptorHigh}} hyperdrive. Every ship comes with base stats for these four, in percent. Each is rolled apart, inside a range set by its [ship type](/guides/ship-types) and [ship class](/guides/ship-classes). The tables below show what reaches your hangar, as the number on a bare card: no module installed, and the starter cannon left out. [How lucky am I?](/tools/how-lucky-am-i) places a ship you claimed among them.
 
 ## How a stat is rolled
 

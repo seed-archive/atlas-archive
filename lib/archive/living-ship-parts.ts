@@ -4,7 +4,7 @@ import type { PartGroup } from "@/lib/archive/builder/parts";
 import type { ShipModule } from "@/lib/archive/builder/ship";
 import { BASE_PATH } from "@/lib/site";
 
-// The living ship on /living-ship-finder, a builder. The groups are the choices of
+// The living ship on /tools/living-ship-finder, a builder. The groups are the choices of
 // the game's own tree of living ship parts, written by the No Man's
 // Sky generator.
 // Its colours are a paint, as the Interceptor's (`living-ship-paint.ts`).

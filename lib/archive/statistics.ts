@@ -2,10 +2,12 @@ import { itemNumbers, itemTables } from "@/lib/archive/item-tables";
 import {
   printCell,
   printValue,
+  type ItemPart,
   type RawTable,
   type Value,
 } from "@/lib/archive/statistics-format";
 import data from "@/lib/archive/statistics.json";
+import type { LoopGroup } from "@/components/archive/RecipeTree";
 
 // A table as the page prints it.
 export type StatTable = {
@@ -22,6 +24,10 @@ export type StatTable = {
   icons?: (number | null)[];
   // The sprite: a grid of square tiles, `columns` to a row.
   sprite?: { src: string; columns: number };
+  // Columns that hold items, each with its own picture (`RawTable.items`).
+  items?: (ItemPart[] | null)[][];
+  // Refiner loops drawn as recipe trees, one group a circle (`components/archive/RecipeTree`).
+  trees?: LoopGroup[];
 };
 
 export type Topic = { slug: string; title: string; fact: string };
@@ -63,6 +69,8 @@ function printed(table: RawTable): StatTable {
     text,
     icons,
     sprite,
+    items,
+    trees,
   } = table;
   return {
     head,
@@ -75,6 +83,8 @@ function printed(table: RawTable): StatTable {
     ...(upright ? { upright } : {}),
     ...(text ? { text } : {}),
     ...(icons && sprite ? { icons, sprite } : {}),
+    ...(items && sprite ? { items, sprite } : {}),
+    ...(trees && sprite ? { trees, sprite } : {}),
   };
 }
 

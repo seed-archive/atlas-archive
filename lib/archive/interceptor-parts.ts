@@ -10,7 +10,7 @@ import type { PartGroup } from "@/lib/archive/builder/parts";
 import type { ShipModule } from "@/lib/archive/builder/ship";
 import { BASE_PATH } from "@/lib/site";
 
-// The Sentinel Interceptor on /interceptor-finder, the Interceptor builder. The
+// The Sentinel Interceptor on /tools/interceptor-finder, the Interceptor builder. The
 // groups are the forks of the game's own tree of Interceptor parts, written by
 // the No Man's Sky generator.
 

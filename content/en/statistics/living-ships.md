@@ -12,7 +12,7 @@ At the end the ship lies at a crashed ship site on a far planet, in your system 
 
 The game picks the crash site for you. Among the crashed ship sites of the planet it chose, it draws one by the clock, so you cannot choose the site, and nothing tells you in advance which one it will be.
 
-Each site holds one living ship, and always the same one: the site decides its shape, its colours, its name, its supercharged slots, and its base stats. Two players sent to the same site find the same ship under the same name and the same stats. The [living ships](/living-ship-finder) page builds a living ship from its parts and colours.
+Each site holds one living ship, and always the same one: the site decides its shape, its colours, its name, its supercharged slots, and its base stats. Two players sent to the same site find the same ship under the same name and the same stats. The [living ships](/tools/living-ship-finder) page builds a living ship from its parts and colours.
 
 ## More ships
 

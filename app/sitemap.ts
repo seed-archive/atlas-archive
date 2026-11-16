@@ -67,7 +67,7 @@ async function recordEntries(base: string): Promise<MetadataRoute.Sitemap> {
 }
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const base = process.env.NEXT_PUBLIC_BASE_URL ?? "http://localhost:3000";
+  const base = process.env.NEXT_PUBLIC_BASE_URL ?? "http://localhost:5010";
 
   return [
     {
@@ -82,13 +82,23 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "monthly",
       priority: 0.6,
     },
-    // The finders and builders.
+    // The tools, their own page first.
+    {
+      url: `${base}/tools`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.6,
+    },
+    // The finders, the builders, and the recipe books.
     ...[
-      "/interceptor-finder",
-      "/capital-freighter-finder",
-      "/freighter-finder",
-      "/living-ship-finder",
-      "/living-frigate-finder",
+      "/tools/interceptor-finder",
+      "/tools/capital-freighter-finder",
+      "/tools/freighter-finder",
+      "/tools/living-ship-finder",
+      "/tools/living-frigate-finder",
+      "/tools/refiner-recipes",
+      "/tools/cooking-recipes",
+      "/tools/crafting-recipes",
     ].map((path) => ({
       url: `${base}${path}`,
       lastModified: new Date(),
@@ -96,7 +106,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.6,
     })),
     {
-      url: `${base}/how-lucky-am-i`,
+      url: `${base}/tools/how-lucky-am-i`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.6,
@@ -133,12 +143,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     })),
     {
       url: `${base}/game-bugs`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.4,
-    },
-    {
-      url: `${base}/release-notes`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.4,

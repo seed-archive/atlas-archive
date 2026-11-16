@@ -36,9 +36,9 @@ const LEAD = {
   ships: link("/ship"),
   creatures: link("/creature"),
   guides: link("/guides"),
-  lucky: link("/how-lucky-am-i"),
-  interceptor: link("/interceptor-finder"),
-  capital: link("/capital-freighter-finder"),
+  lucky: link("/tools/how-lucky-am-i"),
+  interceptor: link("/tools/interceptor-finder"),
+  capital: link("/tools/capital-freighter-finder"),
   about: link("/about"),
 };
 

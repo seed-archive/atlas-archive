@@ -6,12 +6,16 @@ import { StructuredData } from "@/components/archive/StructuredData";
 import { readContent } from "@/lib/archive/content";
 import { trailData } from "@/lib/archive/trail";
 
-const TRAIL = [{ name: "Home", href: "/" }, { name: "How lucky am I?" }];
+const TRAIL = [
+  { name: "Home", href: "/" },
+  { name: "Tools", href: "/tools" },
+  { name: "How lucky am I?" },
+];
 
 export const metadata: Metadata = {
   title:
     "How lucky am I? Rate your No Man's Sky multitool or ship — Seed Archive",
-  alternates: { canonical: "/how-lucky-am-i" },
+  alternates: { canonical: "/tools/how-lucky-am-i" },
   description:
     "Enter a No Man's Sky multitool, staff, or claimed ship, with its supercharged slots and stats, and see how it ranks from 0 to 100.",
 };

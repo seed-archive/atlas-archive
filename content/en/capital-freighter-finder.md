@@ -18,4 +18,4 @@ A pirate system gives class S most often, as [freighters](/guides/freighters) sh
 
 ## What stays the same in a system
 
-The shape and the size are the same on every visit. The class is not: it is rolled again on every try. The [regular freighters](/freighter-finder) page shows the shapes of regular freighters, and the [Sentinel Interceptors](/interceptor-finder) page shows the shapes of crashed Sentinel ships.
+The shape and the size are the same on every visit. The class is not: it is rolled again on every try. The [regular freighters](/tools/freighter-finder) page shows the shapes of regular freighters, and the [Sentinel Interceptors](/tools/interceptor-finder) page shows the shapes of crashed Sentinel ships.

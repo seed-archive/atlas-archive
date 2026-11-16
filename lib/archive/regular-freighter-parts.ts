@@ -4,7 +4,7 @@ import type { PartGroup } from "@/lib/archive/builder/parts";
 import type { ShipModule } from "@/lib/archive/builder/ship";
 import { BASE_PATH } from "@/lib/site";
 
-// The regular freighter on /freighter-finder, a builder. The groups are the choices
+// The regular freighter on /tools/freighter-finder, a builder. The groups are the choices
 // of the game's own tree of regular freighter parts, written by the No Man's
 // Sky generator: the container lists of each kind are tied into one `first`
 // group (the spine's Containers and Boxes, and the box's lower, upper, row, and end

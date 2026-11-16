@@ -154,6 +154,10 @@
         "title": "Supercharged slots"
       },
       {
+        "slug": "best-multitools",
+        "title": "Best multitools"
+      },
+      {
         "slug": "staffs",
         "title": "Staffs"
       },
@@ -194,6 +198,10 @@
       {
         "slug": "interceptors",
         "title": "Interceptors"
+      },
+      {
+        "slug": "best-interceptors",
+        "title": "Best Interceptors"
       },
       {
         "slug": "interceptor-prices",
@@ -308,6 +316,10 @@
         "title": "Creature stats"
       },
       {
+        "slug": "best-creatures",
+        "title": "Best creatures"
+      },
+      {
         "slug": "creature-affinity",
         "title": "Creature affinity"
       },
@@ -318,5 +330,35 @@
     ],
     "slug": "creatures",
     "title": "Creatures"
+  },
+  {
+    "pages": [
+      {
+        "slug": "farming",
+        "title": "Farming"
+      },
+      {
+        "slug": "best-selling-dishes",
+        "title": "Best-selling dishes"
+      },
+      {
+        "slug": "food-for-scanning",
+        "title": "Food for scanning"
+      },
+      {
+        "slug": "food-for-hazards",
+        "title": "Food for hazards"
+      },
+      {
+        "slug": "refiner-loops",
+        "title": "Refiner loops"
+      },
+      {
+        "slug": "refining-for-money",
+        "title": "Refining for money"
+      }
+    ],
+    "slug": "crafting",
+    "title": "Crafting"
   }
 ]

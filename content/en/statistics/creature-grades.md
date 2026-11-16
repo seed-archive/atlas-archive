@@ -42,6 +42,8 @@ No [creature affinity](/guides/creature-affinity) is favoured: each holds the sa
 
 Two all-S creatures on a four-creature list happen about {{fourTwo}} times, and we have seen it. Three on one planet are far rarer still.
 
+How close a creature graded S, S, S comes to the top of its bands is on [best creatures](/guides/best-creatures).
+
 One more place to look: a creature of a role seen at another size is a separate species, with its own name and grades. The odds here count each creature at the size of its role.
 
 An S on the card is a number, and not always a bigger one than an A: [creature stats](/guides/creature-stats).

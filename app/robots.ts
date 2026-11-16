@@ -6,7 +6,7 @@ import { BASE_PATH } from "@/lib/site";
 // (next.config.ts). Its rules name paths from the root of the domain.
 export default function robots(): MetadataRoute.Robots {
   const base =
-    process.env.NEXT_PUBLIC_BASE_URL ?? `http://localhost:3000${BASE_PATH}`;
+    process.env.NEXT_PUBLIC_BASE_URL ?? `http://localhost:5010${BASE_PATH}`;
 
   return {
     rules: {

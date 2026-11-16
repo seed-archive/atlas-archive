@@ -4,7 +4,7 @@
 
 ## How close the best come
 
-A class S multitool rolls each of its base stats somewhere inside a range, the one on [multitool stats](/guides/multitool-stats). The table takes only multitools whose supercharged slots form a [square](/guides/square), since that is the shape the strongest build needs, and shows the best of each type: its weakest stat and every stat, as a share of the range.
+A class S multitool rolls each of its base stats somewhere inside a range, the one on [multitool stats](/guides/multitool-stats). The table takes only multitools whose supercharged slots form a [square](/guides/square), since that is the shape the strongest build needs, and shows the best of each type: its weakest stat and every stat, as a share of the range. Where your own multitool stands, [How lucky am I?](/tools/how-lucky-am-i) scores from 0 to 100.
 
 <!-- widget:tools -->
 
@@ -26,4 +26,4 @@ And how often a staff with a square comes close to the top:
 
 <!-- widget:staffsOften -->
 
-That covers the best of every tool you carry in your hand. What you plug into one, family by family, is on [multitool modules](/guides/multitool-modules).
+A staff is not found but built, from the head you bring to a terminal, as [staffs](/guides/staffs) shows.

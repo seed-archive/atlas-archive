@@ -2,7 +2,7 @@
 
 **What are the best stats a multitool can have?** At class S, 50% damage on a Sentinel or a staff, 50% mining on an Atlantid, and 100% scanner on an Experimental or a Royal. Every tool comes with base stats for these three, in percent. Each is rolled apart, inside a range set by the tool's [multitool type](/guides/multitool-types) and [multitool class](/guides/multitool-classes). Modules come on top, and these tables leave them out. These tables hold tools found at class S.
 
-A class S tool can still be weak in one stat. Two tools of one type can sit far apart, and a staff's damage shows it best. [How lucky am I?](/how-lucky-am-i) places yours among them.
+A class S tool can still be weak in one stat. Two tools of one type can sit far apart, and a staff's damage shows it best. [How lucky am I?](/tools/how-lucky-am-i) places yours among them.
 
 ## How a stat is rolled
 

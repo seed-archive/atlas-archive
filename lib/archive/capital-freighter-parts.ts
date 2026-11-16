@@ -4,7 +4,7 @@ import type { PartGroup } from "@/lib/archive/builder/parts";
 import type { ShipModule } from "@/lib/archive/builder/ship";
 import { BASE_PATH } from "@/lib/site";
 
-// The capital freighter on /capital-freighter-finder, a builder. The groups are
+// The capital freighter on /tools/capital-freighter-finder, a builder. The groups are
 // the choices of the game's own tree of capital freighter parts, written by
 // the No Man's Sky generator; the three container lists of the cargo
 // sections are tied into one `first` group, Containers. Its colours are not in

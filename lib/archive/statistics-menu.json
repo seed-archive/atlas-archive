@@ -154,12 +154,12 @@
         "title": "Supercharged slots"
       },
       {
-        "slug": "staffs",
-        "title": "Staffs"
-      },
-      {
         "slug": "best-multitools",
         "title": "Best multitools"
+      },
+      {
+        "slug": "staffs",
+        "title": "Staffs"
       },
       {
         "slug": "multitool-modules",
@@ -200,12 +200,12 @@
         "title": "Interceptors"
       },
       {
-        "slug": "interceptor-prices",
-        "title": "Interceptor prices"
-      },
-      {
         "slug": "best-interceptors",
         "title": "Best Interceptors"
+      },
+      {
+        "slug": "interceptor-prices",
+        "title": "Interceptor prices"
       },
       {
         "slug": "living-ships",
@@ -330,5 +330,35 @@
     ],
     "slug": "creatures",
     "title": "Creatures"
+  },
+  {
+    "pages": [
+      {
+        "slug": "farming",
+        "title": "Farming"
+      },
+      {
+        "slug": "best-selling-dishes",
+        "title": "Best-selling dishes"
+      },
+      {
+        "slug": "food-for-scanning",
+        "title": "Food for scanning"
+      },
+      {
+        "slug": "food-for-hazards",
+        "title": "Food for hazards"
+      },
+      {
+        "slug": "refiner-loops",
+        "title": "Refiner loops"
+      },
+      {
+        "slug": "refining-for-money",
+        "title": "Refining for money"
+      }
+    ],
+    "slug": "crafting",
+    "title": "Crafting"
   }
 ]

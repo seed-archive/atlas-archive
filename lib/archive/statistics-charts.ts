@@ -61,6 +61,13 @@ const RULES: Record<string, Record<string, Plan>> = {
   "space-stations": { kinds: NONE, merchants: NONE },
   // One scale a chart: what a plant earns a day; the value by slots, a line a class.
   farming: { plants: { columns: ["A plant a day"] } },
+  // The Crafting guides: lists of dishes and recipes by name, with a bonus as the
+  // game prints it; only what a scan pays is a scale to draw.
+  "best-selling-dishes": { dishes: NONE },
+  "food-for-scanning": { best: NONE, dishes: NONE },
+  "food-for-hazards": { best: NONE, dishes: NONE },
+  "refiner-loops": { loops: NONE },
+  "refining-for-money": { money: NONE, nanites: NONE },
   // The best finds: shares near 100% on one scale say nothing a bar would; how
   // often draws its levels. The creatures' steps under the ceiling, a line each.
   "best-multitools": { tools: NONE, staffs: NONE },

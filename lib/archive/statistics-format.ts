@@ -1,3 +1,5 @@
+import type { LoopGroup } from "@/components/archive/RecipeTree";
+
 // How a value of statistics.json prints: the one place a share, a count, or a
 // "one in N" becomes text. The file holds numbers, so tables can be charted and
 // localised.
@@ -23,6 +25,9 @@ export type Cell = Value | number | null;
 
 export type ColumnKind = Kind | "text" | "mixed";
 
+// One item of a table cell: its name, how many (0 prints no count), and its tile.
+export type ItemPart = [string, number, number | null];
+
 export type RawTable = {
   head: string[];
   kinds: ColumnKind[];
@@ -40,6 +45,11 @@ export type RawTable = {
   icons?: (number | null)[];
   // The sprite: a grid of square tiles, `columns` to a row.
   sprite?: { src: string; columns: number };
+  // Columns that hold items: for each row, each column's items as `[name,
+  // amount, tile]`, or null where the column holds plain text or a number.
+  items?: (ItemPart[] | null)[][];
+  // Refiner loops drawn as recipe trees, one group a circle (`components/archive/RecipeTree`).
+  trees?: LoopGroup[];
 };
 
 export const DASH = "—";

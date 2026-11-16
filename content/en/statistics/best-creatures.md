@@ -14,4 +14,6 @@ The ceiling takes a roll at exactly the top of the band, about one species in {{
 
 <!-- widget:creaturesOften -->
 
+A creature pays for its scan too, and a dish in the Nutrient Ingestor multiplies that pay: [food for scanning](/guides/food-for-scanning) has the dish closest to its own ceiling.
+
 Grades never look at the planet. The one thing a planet does hand its creatures is [creature affinity](/guides/creature-affinity).

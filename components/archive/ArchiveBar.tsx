@@ -134,7 +134,6 @@ export function ArchiveBar() {
         <Drawer anchor="right" open={drawer} onClose={() => setDrawer(false)}>
           <Box component="nav" sx={{ width: 260 }}>
             <List>
-              {drawerLink("/about", "archive.about")}
               <ListItemButton onClick={() => toggleSection("browse")}>
                 <ListItemText
                   primary={<FormattedMessage id="archive.browse" />}
@@ -229,14 +228,12 @@ export function ArchiveBar() {
                 {section === "tools" ? <ExpandLess /> : <ExpandMore />}
               </ListItemButton>
               <Collapse in={section === "tools"} unmountOnExit>
+                {drawerLink("/tools", "archive.allTools", true)}
                 {TOOLS.map((tool) => drawerLink(tool.href, tool.id, true))}
               </Collapse>
             </List>
           </Box>
         </Drawer>
-        <Button component={Link} href="/about" color="inherit" sx={DESKTOP}>
-          <FormattedMessage id="archive.about" />
-        </Button>
         <Button
           color="inherit"
           onClick={(event) => setMenu(event.currentTarget)}
@@ -348,6 +345,13 @@ export function ArchiveBar() {
           onClose={() => setToolsMenu(null)}
           slotProps={{ list: { "aria-labelledby": "tools-button" } }}
         >
+          <MenuItem
+            component={Link}
+            href="/tools"
+            onClick={() => setToolsMenu(null)}
+          >
+            <FormattedMessage id="archive.allTools" />
+          </MenuItem>
           {TOOLS.map((tool) => (
             <MenuItem
               key={tool.href}

@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import MuiLink from "@mui/material/Link";
-import Box from "@mui/material/Box";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 
@@ -14,6 +13,8 @@ import {
 } from "@/components/archive/Article";
 import { ChartBlock } from "@/components/archive/ChartBlock";
 import { SentinelMeme } from "@/components/archive/SentinelMeme";
+import { LoopList } from "@/components/archive/RecipeTree";
+import { SlotTile } from "@/components/archive/SlotTile";
 import {
   DreadnoughtCannons,
   DreadnoughtEngines,
@@ -25,14 +26,11 @@ import {
 import statisticsMenu from "@/lib/archive/statistics-menu.json";
 import { groupPath, guidePath } from "@/lib/archive/guides";
 import type { StatTable, Topic } from "@/lib/archive/statistics";
+import type { ItemPart } from "@/lib/archive/statistics-format";
 import type { ChartSpec } from "@/lib/archive/chart-spec";
-import { BASE_PATH } from "@/lib/site";
-
-const TILE = 44;
 
 // A module's picture from the game, then its name: one tile of the page's
-// sprite, framed as an inventory slot. A row with no picture keeps the room,
-// so the names stay in one column.
+// sprite, framed as an inventory slot.
 function iconCell(
   cell: string,
   tile: number | null | undefined,
@@ -45,26 +43,35 @@ function iconCell(
       spacing={1.5}
       sx={{ alignItems: "center", minHeight: 52 }}
     >
-      {tile === null || tile === undefined ? (
-        <Box sx={{ width: TILE + 4, height: TILE + 4, flexShrink: 0 }} />
-      ) : (
-        <Box
-          role="img"
-          aria-hidden
-          sx={{
-            width: TILE,
-            height: TILE,
-            flexShrink: 0,
-            boxSizing: "content-box",
-            border: "2px solid #fff",
-            boxShadow: "0 0 0 1px rgba(0, 0, 0, 0.35)",
-            backgroundImage: `url(${BASE_PATH}${sprite.src})`,
-            backgroundSize: `${sprite.columns * TILE}px auto`,
-            backgroundPosition: `-${(tile % sprite.columns) * TILE}px -${Math.floor(tile / sprite.columns) * TILE}px`,
-          }}
-        />
-      )}
+      <SlotTile tile={tile} sprite={sprite} />
       <Typography variant="body2">{cell}</Typography>
+    </Stack>
+  );
+}
+
+// Items of one cell, one under another, each on its slot with its count, as the
+// recipe pages draw them.
+function itemsCell(
+  key: number,
+  parts: ItemPart[],
+  sprite: { src: string; columns: number },
+) {
+  return (
+    <Stack key={key} spacing={0.5}>
+      {parts.map(([name, amount, tile], at) => (
+        <Stack
+          key={at}
+          direction="row"
+          spacing={1.5}
+          sx={{ alignItems: "center" }}
+        >
+          <SlotTile tile={tile} sprite={sprite} />
+          <Typography variant="body2">
+            {amount > 1 ? `${amount.toLocaleString("en")} × ` : ""}
+            {name}
+          </Typography>
+        </Stack>
+      ))}
     </Stack>
   );
 }
@@ -116,14 +123,21 @@ function StatisticsTable(props: { table: StatTable; noted?: boolean }) {
                 </Stack>,
                 ...row.slice(1),
               ]
-            : table.icons && table.sprite
-              ? [
-                  iconCell(row[0], table.icons[index], table.sprite),
-                  ...row.slice(1),
-                ]
-              : table.head[0] === "Galaxy"
-                ? [galaxyCell(row[0]), ...row.slice(1)]
-                : row,
+            : table.items && table.sprite
+              ? row.map((cell, at) => {
+                  const parts = table.items?.[index]?.[at];
+                  return parts && table.sprite
+                    ? itemsCell(at, parts, table.sprite)
+                    : cell;
+                })
+              : table.icons && table.sprite
+                ? [
+                    iconCell(row[0], table.icons[index], table.sprite),
+                    ...row.slice(1),
+                  ]
+                : table.head[0] === "Galaxy"
+                  ? [galaxyCell(row[0]), ...row.slice(1)]
+                  : row,
         }))}
       />
       {noted && table.note ? <TableNote note={table.note} /> : null}
@@ -152,6 +166,15 @@ function widgetsOf(
       name,
       function Widget() {
         const spec = charts[name];
+        if (table.trees && table.sprite) {
+          return (
+            <LoopList
+              groups={table.trees}
+              sprite={table.sprite}
+              note={table.note}
+            />
+          );
+        }
         return spec ? (
           <Stack spacing={0.75}>
             <ChartBlock spec={spec}>

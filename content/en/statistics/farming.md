@@ -26,4 +26,4 @@ NipNip Buds are contraband. Outside a pirate system they sell with the smuggler'
 
 A claimed Sentinel Interceptor at class C sells for {{interceptorLow}} to {{interceptorHigh}} units, by its cargo slots, as [Interceptor prices](/guides/interceptor-prices) shows. One Interceptor a crop's growing time is worth as much as hundreds of Gravitino Hosts, so farming pays for those who build a big farm and sell over many stations; [Sentinel Interceptors](/guides/interceptors) says where the wrecks lie.
 
-What the game's items are worth to keep, and where they come from, is in the [guides](/guides).
+What a crop is worth more as, once it is cooked, is on [best-selling dishes](/guides/best-selling-dishes).

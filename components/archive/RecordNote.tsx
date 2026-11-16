@@ -21,8 +21,8 @@ export function link(href: string) {
 }
 
 const TOOLS = {
-  lucky: link("/how-lucky-am-i"),
-  finder: link("/interceptor-finder"),
+  lucky: link("/tools/how-lucky-am-i"),
+  finder: link("/tools/interceptor-finder"),
 };
 
 // Every guide a note can lead to, by the tag its messages use.

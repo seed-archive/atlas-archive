@@ -82,7 +82,7 @@ The exosuit has three supercharged slots, and they stand in the same places for 
 
 ## Every exosuit module
 
-The modules you build or receive, apart from upgrade modules. The [Base Computer Archives](/quests/base-computer-archives) of your base give the Shield Lattice and the Neural Stimulator, and the story, [The Artemis Path](/quests/the-artemis-path), gives Artemis' Translator and, at its end, Remembrance. [The Atlas Path](/quests/the-atlas-path) ends with the Star Seed or the Mark of the Denier, by the choice you make at its last interface. The Haz-Mat Gauntlet lets you harvest most [farm plants](/quests/farming).
+The modules you build or receive, apart from upgrade modules. The [Base Computer Archives](/quests/base-computer-archives) of your base give the Shield Lattice and the Neural Stimulator, and the story, [The Artemis Path](/quests/the-artemis-path), gives Artemis' Translator and, at its end, Remembrance. [The Atlas Path](/quests/the-atlas-path) ends with the Star Seed or the Mark of the Denier, by the choice you make at its last interface. The Haz-Mat Gauntlet lets you harvest most [farm plants](/guides/farming). The Nutrient Ingestor eats the dishes you cook, one at a time, for a bonus: to scan rewards, as [food for scanning](/guides/food-for-scanning) shows, or to a hazard's drain, on [food for hazards](/guides/food-for-hazards).
 
 <!-- widget:built -->
 

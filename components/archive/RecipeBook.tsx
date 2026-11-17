@@ -25,6 +25,7 @@ import TextField from "@mui/material/TextField";
 import ToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import Typography from "@mui/material/Typography";
+import { SlotTile } from "@seed-archive/ui/slot-tile";
 
 import { Article } from "@/components/archive/Article";
 import {
@@ -35,7 +36,7 @@ import {
   type RecipeRow,
 } from "@/lib/archive/recipes";
 import { RecipeTree, type TreeNode } from "@/components/archive/RecipeTree";
-import { SlotTile } from "@/components/archive/SlotTile";
+import { BASE_PATH } from "@/lib/site";
 
 // The sprite's tiles sit in rows of 16 (`recipes_emit.py`).
 const SPRITE_COLUMNS = 16;
@@ -66,6 +67,7 @@ function Tile(props: { tile: number | null; sprite: string }) {
     <SlotTile
       tile={props.tile}
       sprite={{ src: props.sprite, columns: SPRITE_COLUMNS }}
+      basePath={BASE_PATH}
     />
   );
 }

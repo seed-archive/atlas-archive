@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
+import { PageTrail } from "@seed-archive/ui/page-trail";
 
-import { PageTrail } from "@/components/archive/PageTrail";
 import { RecipeBook } from "@/components/archive/RecipeBook";
 import { StructuredData } from "@/components/archive/StructuredData";
 import { readContent } from "@/lib/archive/content";

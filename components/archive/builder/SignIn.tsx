@@ -2,8 +2,7 @@ import { useEffect, useRef } from "react";
 import Alert from "@mui/material/Alert";
 import Stack from "@mui/material/Stack";
 import { FormattedMessage } from "react-intl";
-
-import { useAuth } from "@/components/providers/AuthProvider";
+import { useAuth } from "@seed-archive/ui/auth";
 
 // One Tap on the click, and a Google button beside it for when One Tap refuses.
 export function SignIn() {

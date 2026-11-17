@@ -4,6 +4,7 @@ import Link from "next/link";
 import MuiLink from "@mui/material/Link";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
+import { SlotTile } from "@seed-archive/ui/slot-tile";
 
 import {
   Article,
@@ -14,7 +15,6 @@ import {
 import { ChartBlock } from "@/components/archive/ChartBlock";
 import { SentinelMeme } from "@/components/archive/SentinelMeme";
 import { LoopList } from "@/components/archive/RecipeTree";
-import { SlotTile } from "@/components/archive/SlotTile";
 import {
   DreadnoughtCannons,
   DreadnoughtEngines,
@@ -28,6 +28,7 @@ import { groupPath, guidePath } from "@/lib/archive/guides";
 import type { StatTable, Topic } from "@/lib/archive/statistics";
 import type { ItemPart } from "@/lib/archive/statistics-format";
 import type { ChartSpec } from "@/lib/archive/chart-spec";
+import { BASE_PATH } from "@/lib/site";
 
 // A module's picture from the game, then its name: one tile of the page's
 // sprite, framed as an inventory slot.
@@ -43,7 +44,7 @@ function iconCell(
       spacing={1.5}
       sx={{ alignItems: "center", minHeight: 52 }}
     >
-      <SlotTile tile={tile} sprite={sprite} />
+      <SlotTile tile={tile} sprite={sprite} basePath={BASE_PATH} />
       <Typography variant="body2">{cell}</Typography>
     </Stack>
   );
@@ -65,7 +66,7 @@ function itemsCell(
           spacing={1.5}
           sx={{ alignItems: "center" }}
         >
-          <SlotTile tile={tile} sprite={sprite} />
+          <SlotTile tile={tile} sprite={sprite} basePath={BASE_PATH} />
           <Typography variant="body2">
             {amount > 1 ? `${amount.toLocaleString("en")} × ` : ""}
             {name}

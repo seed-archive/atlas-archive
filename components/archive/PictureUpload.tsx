@@ -10,8 +10,8 @@ import { useMutation } from "@tanstack/react-query";
 import { useSnackbar } from "notistack";
 import { useDropzone } from "react-dropzone";
 import { FormattedMessage, useIntl } from "react-intl";
+import { useAuth } from "@seed-archive/ui/auth";
 
-import { useAuth } from "@/components/providers/AuthProvider";
 import { shrinkPicture } from "@/lib/archive/shrink";
 import { getBrowserSupabase } from "@/lib/db/supabase.browser";
 

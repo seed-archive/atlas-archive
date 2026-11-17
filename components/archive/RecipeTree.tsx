@@ -8,9 +8,10 @@ import Card from "@mui/material/Card";
 import Collapse from "@mui/material/Collapse";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
+import { SLOT_TILE, SlotTile } from "@seed-archive/ui/slot-tile";
 
-import { SLOT_TILE, SlotTile } from "@/components/archive/SlotTile";
 import type { ItemPart } from "@/lib/archive/statistics-format";
+import { BASE_PATH } from "@/lib/site";
 
 // A recipe drawn as the game draws "Item Assembly Steps": what you make on top,
 // what it takes under it on bracket lines, down to the raw resources.
@@ -48,7 +49,7 @@ function Slot(props: { part: ItemPart; sprite: Sprite }) {
         {name}
       </Typography>
       <Box sx={{ position: "relative" }}>
-        <SlotTile tile={tile} sprite={props.sprite} />
+        <SlotTile tile={tile} sprite={props.sprite} basePath={BASE_PATH} />
         {amount > 0 ? (
           <Typography
             variant="caption"

@@ -9,8 +9,8 @@ import Typography from "@mui/material/Typography";
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { useSnackbar } from "notistack";
 import { useIntl } from "react-intl";
+import { useAuth } from "@seed-archive/ui/auth";
 
-import { useAuth } from "@/components/providers/AuthProvider";
 import { LIKABLE, type Kind } from "@/lib/archive/kinds";
 import { getBrowserSupabase } from "@/lib/db/supabase.browser";
 

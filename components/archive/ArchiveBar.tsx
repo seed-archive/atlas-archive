@@ -22,9 +22,9 @@ import MenuItem from "@mui/material/MenuItem";
 import Toolbar from "@mui/material/Toolbar";
 import { useTheme } from "@mui/material/styles";
 import Typography from "@mui/material/Typography";
+import { useAuth } from "@seed-archive/ui/auth";
 import { FormattedMessage, useIntl } from "react-intl";
 
-import { useAuth } from "@/components/providers/AuthProvider";
 import { PAGE_KINDS } from "@/lib/archive/kinds";
 import statisticsMenu from "@/lib/archive/statistics-menu.json";
 import { groupPath, guidePath } from "@/lib/archive/guides";
@@ -228,7 +228,6 @@ export function ArchiveBar() {
                 {section === "tools" ? <ExpandLess /> : <ExpandMore />}
               </ListItemButton>
               <Collapse in={section === "tools"} unmountOnExit>
-                {drawerLink("/tools", "archive.allTools", true)}
                 {TOOLS.map((tool) => drawerLink(tool.href, tool.id, true))}
               </Collapse>
             </List>
@@ -345,13 +344,6 @@ export function ArchiveBar() {
           onClose={() => setToolsMenu(null)}
           slotProps={{ list: { "aria-labelledby": "tools-button" } }}
         >
-          <MenuItem
-            component={Link}
-            href="/tools"
-            onClick={() => setToolsMenu(null)}
-          >
-            <FormattedMessage id="archive.allTools" />
-          </MenuItem>
           {TOOLS.map((tool) => (
             <MenuItem
               key={tool.href}

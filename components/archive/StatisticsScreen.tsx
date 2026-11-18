@@ -4,6 +4,7 @@ import Link from "next/link";
 import MuiLink from "@mui/material/Link";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
+import { ChartBlock } from "@seed-archive/ui/chart";
 import { SlotTile } from "@seed-archive/ui/slot-tile";
 
 import {
@@ -12,7 +13,6 @@ import {
   DataTable,
   GalaxyLink,
 } from "@/components/archive/Article";
-import { ChartBlock } from "@/components/archive/ChartBlock";
 import { SentinelMeme } from "@/components/archive/SentinelMeme";
 import { LoopList } from "@/components/archive/RecipeTree";
 import {

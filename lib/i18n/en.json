@@ -178,6 +178,10 @@
     "quests": "Quests",
     "allQuests": "All quests",
     "linkCopied": "Link copied",
+    "chart": {
+      "chart": "Chart",
+      "table": "Table"
+    },
     "puzzleAnswers": "Puzzle answers",
     "artemisPath": "The Artemis Path",
     "atlasPath": "The Atlas Path",

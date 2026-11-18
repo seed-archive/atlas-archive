@@ -1,3 +1,5 @@
+import { count, roundEven, share, twoFigures } from "@seed-archive/ui/numbers";
+
 import type { LoopGroup } from "@/components/archive/RecipeTree";
 
 // How a value of statistics.json prints: the one place a share, a count, or a
@@ -54,39 +56,7 @@ export type RawTable = {
 
 export const DASH = "—";
 
-// Rounds to a whole number with a tie going to the even one, as the data does.
-function roundEven(value: number) {
-  const floor = Math.floor(value);
-  const gap = value - floor;
-  if (gap !== 0.5) {
-    return Math.round(value);
-  }
-  return floor % 2 === 0 ? floor : floor + 1;
-}
-
-function twoFigures(value: number) {
-  return Number(value.toExponential(1));
-}
-
-function commas(digits: string) {
-  return digits.replace(/\B(?=(\d{3})+$)/g, ",");
-}
-
-export function count(value: number) {
-  const rounded = roundEven(value);
-  return rounded < 0 ? `-${commas(String(-rounded))}` : commas(String(rounded));
-}
-
-export function share(value: number) {
-  const percent = value * 100;
-  if (percent === 0) {
-    return "0%";
-  }
-  if (percent >= 99.5 && value < 1) {
-    return "over 99%";
-  }
-  return percent >= 10 ? `${roundEven(percent)}%` : `${twoFigures(percent)}%`;
-}
+export { count, share };
 
 function median(value: number) {
   return value >= 10 || value === Math.trunc(value)

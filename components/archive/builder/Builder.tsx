@@ -9,13 +9,13 @@ import Button from "@mui/material/Button";
 import Card from "@mui/material/Card";
 import Chip from "@mui/material/Chip";
 import Stack from "@mui/material/Stack";
+import { useAuth } from "@seed-archive/ui/auth";
 
 import { ColourTiles } from "@/components/archive/builder/ColourTiles";
 import { PartTiles } from "@/components/archive/builder/PartTiles";
 import { Ship } from "@/components/archive/builder/Ship";
 import { SignIn } from "@/components/archive/builder/SignIn";
 import { INK, SURFACE } from "@/components/archive/builder/style";
-import { useAuth } from "@/components/providers/AuthProvider";
 import { NO_PAINT, type Paint } from "@/lib/archive/builder/paint";
 import { chipNames, optionOf } from "@/lib/archive/builder/parts";
 import type { ShipModule } from "@/lib/archive/builder/ship";

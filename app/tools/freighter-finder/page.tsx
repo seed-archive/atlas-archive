@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
+import { PageTrail } from "@seed-archive/ui/page-trail";
 
 import { RegularFreighterFinder } from "@/components/archive/RegularFreighterFinder";
-import { PageTrail } from "@/components/archive/PageTrail";
 import { StructuredData } from "@/components/archive/StructuredData";
 import { readContent } from "@/lib/archive/content";
 import { trailData } from "@/lib/archive/trail";

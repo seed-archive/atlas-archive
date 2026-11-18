@@ -25,6 +25,7 @@ import TextField from "@mui/material/TextField";
 import ToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import Typography from "@mui/material/Typography";
+import { SlotTile } from "@seed-archive/ui/slot-tile";
 
 import { Article } from "@/components/archive/Article";
 import {
@@ -34,8 +35,9 @@ import {
   type Part,
   type RecipeRow,
 } from "@/lib/archive/recipes";
-import { RecipeTree, type TreeNode } from "@/components/archive/RecipeTree";
-import { SlotTile } from "@/components/archive/SlotTile";
+import { RecipeTreeSwitch } from "@/components/archive/RecipeTree";
+import { recipeTrees } from "@/lib/archive/recipe-tree";
+import { BASE_PATH } from "@/lib/site";
 
 // The sprite's tiles sit in rows of 16 (`recipes_emit.py`).
 const SPRITE_COLUMNS = 16;
@@ -66,6 +68,7 @@ function Tile(props: { tile: number | null; sprite: string }) {
     <SlotTile
       tile={props.tile}
       sprite={{ src: props.sprite, columns: SPRITE_COLUMNS }}
+      basePath={BASE_PATH}
     />
   );
 }
@@ -238,37 +241,6 @@ function ItemField(props: {
   );
 }
 
-// How deep an assembly tree goes before it stops: our own choice, deeper than any
-// chain of one station the game's tables hold.
-const TREE_DEPTH = 5;
-
-// An item's assembly steps, as the game draws them: the item on top, the
-// ingredients of its first recipe under it, each of them made the same way, down
-// to what no recipe of this station makes. `amount` is how many are needed; a
-// step makes whole batches. An item already on the path stops there, so a loop
-// draws once.
-function assembly(
-  book: Book,
-  id: string,
-  amount: number,
-  path: string[],
-): TreeNode {
-  const item = book.items[id];
-  const recipe =
-    path.length < TREE_DEPTH && !path.includes(id)
-      ? book.rows.find((row) => row[0] === id)
-      : undefined;
-  const batches = recipe ? Math.ceil(amount / recipe[1]) : 0;
-  return {
-    item: [item.name, amount, item.tile],
-    parts: recipe
-      ? recipe[2].map(([part, count]) =>
-          assembly(book, part, count * batches, [...path, id]),
-        )
-      : [],
-  };
-}
-
 function ItemCard(props: {
   id: string;
   book: Book;
@@ -336,12 +308,15 @@ function ItemCard(props: {
           ) : null}
           {made.length ? (
             <Box>
-              <Typography variant="subtitle2" gutterBottom>
-                <FormattedMessage id="recipes.assembly" />
-              </Typography>
-              <RecipeTree
-                tree={assembly(book, id, made[0][1], [])}
+              <RecipeTreeSwitch
+                title={
+                  <Typography variant="subtitle2">
+                    <FormattedMessage id="recipes.assembly" />
+                  </Typography>
+                }
+                {...recipeTrees(made[0], book.station)}
                 sprite={{ src: book.sprite, columns: SPRITE_COLUMNS }}
+                initial={item.food?.full ? "full" : "short"}
               />
               <Typography variant="subtitle2" gutterBottom>
                 <FormattedMessage id="recipes.madeFrom" />

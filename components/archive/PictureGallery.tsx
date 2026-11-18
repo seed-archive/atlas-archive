@@ -13,9 +13,9 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { useAuth } from "@seed-archive/ui/auth";
 
 import { PictureUpload } from "@/components/archive/PictureUpload";
-import { useAuth } from "@/components/providers/AuthProvider";
 import { BASE_PATH } from "@/lib/site";
 
 const FRAME = {

@@ -70,10 +70,5 @@ const NEXT = [
   "#f9a825",
 ];
 
-export function colorOf(label: string, at: number) {
-  return NAMED[label] ?? NEXT[at % NEXT.length];
-}
-
-export function isNamed(label: string) {
-  return label in NAMED;
-}
+// The site's colours as the shared chart spec takes them.
+export const CHART_COLORS = { named: NAMED, next: NEXT };

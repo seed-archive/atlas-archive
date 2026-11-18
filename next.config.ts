@@ -164,6 +164,14 @@ function redirectList() {
       basePath: false as const,
       permanent: true,
     },
+    // The game's name once more after the prefix, as an outside link wrote it
+    // (`/no-mans-sky/no-man's-sky/guides/…`, seen in the visits of 2026-11-18):
+    // the stray segment goes, the rest stays.
+    {
+      source: "/:stray(no-man(?:'|%27)s-sky|no-mans-sky)/:path*",
+      destination: "/:path*",
+      permanent: true,
+    },
     // The old guide paths inside this section.
     ...moves.map((move) => ({ ...move, permanent: true })),
   ];

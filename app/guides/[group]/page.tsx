@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { PageTrail } from "@seed-archive/ui/page-trail";
 
-import { PageTrail } from "@/components/archive/PageTrail";
 import { TopicList } from "@/components/archive/StatisticsScreen";
 import { StructuredData } from "@/components/archive/StructuredData";
 import { guideQuestions } from "@/lib/archive/content";

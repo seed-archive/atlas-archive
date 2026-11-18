@@ -3,10 +3,10 @@ import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import localFont from "next/font/local";
 import InitColorSchemeScript from "@mui/material/InitColorSchemeScript";
+import { SharedAnalytics } from "@seed-archive/ui/analytics";
 
 import { Providers } from "@/components/providers/providers";
-import { SharedAnalytics } from "@/components/archive/SharedAnalytics";
-import { BASE_PATH } from "@/lib/site";
+import { BASE_PATH, SHARED_ANALYTICS } from "@/lib/site";
 
 const manrope = Manrope({
   subsets: ["latin", "cyrillic"],
@@ -52,7 +52,7 @@ export default function RootLayout(props: PropsWithChildren) {
       <body>
         <InitColorSchemeScript attribute="class" />
         <Providers>{children}</Providers>
-        <SharedAnalytics />
+        <SharedAnalytics basePath={BASE_PATH} endpoint={SHARED_ANALYTICS} />
       </body>
     </html>
   );

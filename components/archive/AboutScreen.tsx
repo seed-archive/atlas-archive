@@ -6,8 +6,8 @@ import Typography from "@mui/material/Typography";
 import { alpha } from "@mui/material/styles";
 import type { ReactNode } from "react";
 import { FormattedMessage, useIntl } from "react-intl";
+import { ChartBlock } from "@seed-archive/ui/chart";
 
-import { ChartBlock } from "@/components/archive/ChartBlock";
 import { chartSpec } from "@/lib/archive/chart-spec";
 import {
   Article,

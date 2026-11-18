@@ -1,9 +1,9 @@
 import { HydrationBoundary, dehydrate } from "@tanstack/react-query";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { PageTrail } from "@seed-archive/ui/page-trail";
 
 import { CatalogScreen } from "@/components/archive/CatalogScreen";
-import { PageTrail } from "@/components/archive/PageTrail";
 import { StructuredData } from "@/components/archive/StructuredData";
 import { CATALOG_PAGES, isKind, KIND_TITLES } from "@/lib/archive/kinds";
 import { catalogKey, parseCatalogQuery } from "@/lib/archive/query";

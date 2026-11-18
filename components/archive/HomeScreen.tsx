@@ -8,7 +8,7 @@ import Grid from "@mui/material/Grid";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 import { useQuery } from "@tanstack/react-query";
-import { Fragment, useEffect } from "react";
+import { Fragment, useEffect, type ReactNode } from "react";
 import { FormattedMessage } from "react-intl";
 import { useSnackbar } from "notistack";
 
@@ -17,6 +17,7 @@ import Link from "next/link";
 import { DonationBlock } from "@/components/archive/DonationBlock";
 import { LikeButton } from "@/components/archive/LikeButton";
 import { link } from "@/components/archive/RecordNote";
+import { guidePath } from "@/lib/archive/guides";
 import {
   readFeed,
   type CatalogRow,
@@ -32,10 +33,13 @@ const SECTIONS: { id: FeedSection; title: string }[] = [
 
 // The site's question and where each answer lives.
 const LEAD = {
+  b: (chunks: ReactNode[]) => <strong>{chunks}</strong>,
   tools: link("/tool"),
   ships: link("/ship"),
   creatures: link("/creature"),
   guides: link("/guides"),
+  forsaken: link(guidePath("forsaken-trader")),
+  toolsPage: link("/tools"),
   lucky: link("/tools/how-lucky-am-i"),
   interceptor: link("/tools/interceptor-finder"),
   capital: link("/tools/capital-freighter-finder"),

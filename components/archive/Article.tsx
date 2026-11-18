@@ -12,6 +12,8 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import type { ReactNode } from "react";
+import { FormattedMessage } from "react-intl";
+import { AnchorHeadings } from "@seed-archive/ui/anchor-heading";
 
 import { galaxyHref } from "@/lib/archive/galaxies";
 
@@ -125,14 +127,13 @@ export function DataTable(props: {
   );
 }
 
-// Rendered Markdown, cut at its widget marks.
+// Rendered Markdown between widget marks and section headings.
 function Prose(props: { html: string }) {
   return (
     <Box
       dangerouslySetInnerHTML={{ __html: props.html }}
       sx={{
         "& h1": { typography: "h4", mt: 0, mb: 2 },
-        "& h2": { typography: "h5", mt: 3, mb: 1, scrollMarginTop: 80 },
         "& h3": { typography: "h6", mt: 2, mb: 1 },
         "& p, & li": { typography: "body1" },
         "& p": { mt: 0, mb: 2 },
@@ -159,20 +160,75 @@ function Prose(props: { html: string }) {
   );
 }
 
+type Section = { heading: string; items: ReactNode[] };
+
+const H2_END = "</h2>";
+
+// The article in sections: each `<h2>` opens one that holds every text and
+// widget up to the next. The heading is a child of its section, so it stays
+// under the bar over the section's tables too. Every heading is an anchor: a
+// chain icon, a click copies the address.
 export function Article(props: {
   html: string;
   widgets: Record<string, () => ReactNode>;
 }) {
-  const parts = props.html.split(/<!-- widget:(\w+) -->/);
+  const sections: Section[] = [{ heading: "", items: [] }];
+  props.html.split(/<!-- widget:(\w+) -->/).forEach((part, index) => {
+    if (index % 2 === 1) {
+      const Widget = props.widgets[part];
+      if (Widget) {
+        sections.at(-1)!.items.push(<Widget key={index} />);
+      }
+      return;
+    }
+    part.split(/(?=<h2[\s>])/).forEach((chunk, at) => {
+      let text = chunk;
+      if (chunk.startsWith("<h2")) {
+        const end = chunk.indexOf(H2_END) + H2_END.length;
+        sections.push({ heading: chunk.slice(0, end), items: [] });
+        text = chunk.slice(end);
+      }
+      if (text.trim()) {
+        sections
+          .at(-1)!
+          .items.push(<Prose key={`${index}.${at}`} html={text} />);
+      }
+    });
+  });
   return (
-    <Stack component="article" spacing={2.5} sx={{ maxWidth: 760, pb: 2 }}>
-      {parts.map((part, index) => {
-        if (index % 2 === 0) {
-          return part.trim() ? <Prose key={index} html={part} /> : null;
-        }
-        const Widget = props.widgets[part];
-        return Widget ? <Widget key={index} /> : null;
-      })}
-    </Stack>
+    <AnchorHeadings
+      component="article"
+      copied={<FormattedMessage id="archive.linkCopied" />}
+      sx={{
+        maxWidth: 760,
+        pb: 2,
+        "& h2": {
+          typography: "h5",
+          mt: 0,
+          mb: 1,
+          py: 1,
+          scrollMarginTop: 80,
+          position: "sticky",
+          // The bar's height: the Toolbar's default and its bottom border.
+          top: { xs: 57, sm: 65 },
+          zIndex: 1,
+          bgcolor: "background.default",
+        },
+      }}
+    >
+      <Stack spacing={2.5}>
+        {sections.map((section, index) => (
+          <Box key={index} component="section">
+            {section.heading ? (
+              <Box
+                sx={{ display: "contents" }}
+                dangerouslySetInnerHTML={{ __html: section.heading }}
+              />
+            ) : null}
+            <Stack spacing={2.5}>{section.items}</Stack>
+          </Box>
+        ))}
+      </Stack>
+    </AnchorHeadings>
   );
 }

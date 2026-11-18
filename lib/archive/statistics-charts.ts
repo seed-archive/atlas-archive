@@ -200,6 +200,18 @@ const RULES: Record<string, Record<string, Plan>> = {
   "fossil-collector": {
     displays: NONE,
   },
+  charts: { charts: NONE, planetary: NONE },
+  "station-decoration": { parts: NONE },
+  "deep-space-outpost": { processor: NONE, couriers: NONE },
+  expeditions: {
+    expeditions: NONE,
+    twitchKinds: NONE,
+    twitchItems: NONE,
+    platform: NONE,
+  },
+  "forsaken-trader": {
+    horrors: { columns: ["Horrors at most"] },
+  },
   "battle-moves": {
     edits: NONE,
     kits: NONE,

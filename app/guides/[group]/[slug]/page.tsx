@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import { PageTrail } from "@seed-archive/ui/page-trail";
 
-import { PageTrail } from "@/components/archive/PageTrail";
 import { TopicScreen } from "@/components/archive/StatisticsScreen";
 import { StructuredData } from "@/components/archive/StructuredData";
 import { fillCatalogExamples } from "@/lib/archive/catalog-examples";
@@ -35,6 +35,8 @@ const TITLES: Record<string, string> = {
   "where-to-look": "Where in a galaxy to look for class S items",
   staffs: "Which staff head to pick in No Man's Sky",
   economy: "Wealthy systems and economy in No Man's Sky",
+  "forsaken-trader":
+    "Forsaken Trader and Haunting Mementos: where to find them in No Man's Sky",
 };
 
 export function generateStaticParams() {

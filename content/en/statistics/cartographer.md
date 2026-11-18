@@ -12,4 +12,4 @@ Every chart, with the description the game gives it and its price in Navigation 
 
 <!-- widget:stock -->
 
-A distress signal marks a crashed starship, which you can claim; how to find a good one is under [ship classes](/guides/ship-classes). Navigation Data is on sale at a [Galactic Trade Terminal](/guides/galactic-trade-terminal) off a station, and now and then from a [Starship Pilot](/guides/starship-pilots) or an [Alien Trader](/guides/alien-traders).
+A distress signal marks a crashed starship, which you can claim; how to find a good one is under [ship classes](/guides/ship-classes). Navigation Data is on sale at a [Galactic Trade Terminal](/guides/galactic-trade-terminal) off a station, and now and then from a [Starship Pilot](/guides/starship-pilots) or an [Alien Trader](/guides/alien-traders). The charts other places hand out, and what each Planetary Chart marks, are on [charts](/guides/charts).

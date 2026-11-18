@@ -6,6 +6,12 @@
 
 <!-- widget:best -->
 
+## How to make them
+
+Each of these dishes, and the Anomalous Doughnut, made from what you gather: every step through the Nutrient Processor and the refiners, the cheapest way. Short shows the last step alone.
+
+<!-- widget:made -->
+
 No dish goes past {{ceiling}}. A dish's bonus is fixed: the same dish gives the same bonus every time you cook it, so the table is all you need to pick one. The same hunt for a ceiling, among creatures, is on [best creatures](/guides/best-creatures).
 
 ## How the bonus works

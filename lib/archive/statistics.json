@@ -2,7 +2,7 @@
   "numbers": {
     "census": { "k": "count", "v": 229680 },
     "systems": { "k": "count", "v": 229680 },
-    "topics": "74",
+    "topics": "76",
     "voxels": "3828"
   },
   "order": [
@@ -18,11 +18,13 @@
     "scrap-dealer",
     "salvage-exchange",
     "cartographer",
+    "charts",
     "autophage-merchant",
     "galactic-trade-terminal",
     "starship-pilots",
     "outlaw-station",
     "deep-space-outpost",
+    "station-decoration",
     "alien-traders",
     "settlement-technology-merchant",
     "anomaly-module-merchant",
@@ -4153,6 +4155,151 @@
       },
       "title": "Cartographer"
     },
+    "charts": {
+      "fact": "Every chart and what it finds: buildings, settlements, wrecks, hulks, asteroids for a space base, and Holo-Arena fights, and where to get each one.",
+      "numbers": {},
+      "tables": {
+        "charts": {
+          "head": ["Chart", "Kind", "What it finds", "Where to get it"],
+          "icons": [0, 1, 2, 3, 4, 10, 5, 6, 7, 8, 16, 11, 12, 13, 15, 9, 14],
+          "kinds": ["text", "text", "text", "text"],
+          "note": "Every chart a player holds, grouped by the look of its picture.",
+          "rows": [
+            [
+              "Planetary Chart",
+              "Planet chart",
+              "one building of a kind on this planet, the nearest, by the chart's sort (below)",
+              "the Cartographer, 1 Navigation Data each; people's tips in conversation"
+            ],
+            [
+              "Artifact Chart",
+              "Planet chart",
+              "a treasure ruin to dig",
+              "the Cartographer, 3 Navigation Data; Print Chart at a library terminal, 15 nanites"
+            ],
+            [
+              "Exosuit Upgrade Chart",
+              "Planet chart",
+              "a drop pod with an exosuit slot",
+              "the Cartographer, 3 Navigation Data; now and then station technology merchants, starship pilots, alien traders, and settlement merchants; mission rewards"
+            ],
+            [
+              "Settlement Chart",
+              "Planet chart",
+              "a settlement without an overseer, anywhere on the planet",
+              "the Cartographer, 5 Navigation Data"
+            ],
+            [
+              "Autophage Settlement Chart",
+              "Planet chart",
+              "an Autophage settlement",
+              "the Autophage Synthesis Terminal, 1,499 Void Motes"
+            ],
+            [
+              "Sentinel Boundary Map",
+              "Planet chart",
+              "a Sentinel hive on this planet",
+              "Sentinels now and then; salvage; the pirate mission board; the Warriors Guild"
+            ],
+            [
+              "Habitable Asteroid Chart",
+              "Space chart",
+              "an asteroid or ice platform to build a space base on, here or in a near system",
+              "a Deep-Space Outpost, 30,000 units"
+            ],
+            [
+              "Salvage Claim",
+              "Space chart",
+              "a space hulk, or now and then an infested outpost, in this system",
+              "a Deep-Space Outpost, 45,000 units; one free from the outpost's first contract"
+            ],
+            [
+              "Emergency Signal Scanner",
+              "Capsule",
+              "this system's derelict freighter",
+              "the Scrap Dealer of a space station, Acquire coordinates, for millions of units; crates aboard derelict freighters"
+            ],
+            [
+              "Carrier AI Fragment",
+              "Capsule",
+              "a crashed Sentinel Interceptor on this planet",
+              "a Sentinel capital ship, as its description says; now and then the Nexus"
+            ],
+            [
+              "Debris Rangefinder",
+              "Capsule",
+              "the wreckage of starships in deep space",
+              "crafted from a Solar Mirror, a Quantum Computer, and Metal Plating"
+            ],
+            [
+              "Challenger's Invitation",
+              "Invitation",
+              "a challenger's Holo-Arena",
+              "winning Oceanus's training battle, or against a System Champion"
+            ],
+            [
+              "Champion's Invitation",
+              "Invitation",
+              "the System Champion, here or in a near system",
+              "every third challenger you beat"
+            ],
+            [
+              "Anomaly Detector",
+              "Locator",
+              "a space anomaly of this system",
+              "small space wrecks, one in two; the Explorers Guild"
+            ],
+            [
+              "Deep-Space Lure",
+              "Locator",
+              "a deep-space Gaseous Sentience",
+              "crafted from 40 each of Silver, Gold, and Chromatic Metal"
+            ],
+            [
+              "Echo Locator",
+              "Locator",
+              "a harmonic camp",
+              "Sentinel minihives and spiders"
+            ],
+            [
+              "Dream Aerial",
+              "Aerial",
+              "a space whale",
+              "crafted from a Solar Mirror and three Living Glass"
+            ]
+          ],
+          "sprite": { "columns": 16, "src": "/charts/charts.webp" },
+          "text": 4
+        },
+        "planetary": {
+          "head": ["Planetary Chart", "Marks", "Chance"],
+          "kinds": ["text", "text", "share"],
+          "note": "What each sort of Planetary Chart marks, and how likely each building is.",
+          "rows": [
+            ["Emergency", "Observatory", 0.07792207792],
+            ["Commercial", "Library", 0.08771929825],
+            ["Commercial", "Outpost", 0.08771929825],
+            ["Emergency", "Someone in distress", 0.1038961039],
+            ["Emergency", "Crashed freighter", 0.1038961039],
+            ["Commercial", "Shelter", 0.1403508772],
+            ["Commercial", "Radio tower", 0.1403508772],
+            ["Commercial", "Observatory", 0.1403508772],
+            ["Commercial", "Dig site", 0.1403508772],
+            ["Emergency", "Distress signal", 0.1948051948],
+            ["Secret", "Depot", 0.25],
+            ["Secret", "Harvester", 0.25],
+            ["Commercial", "Shop", 0.2631578947],
+            ["Alien", "Plaque", 0.3333333333],
+            ["Alien", "Monolith", 0.3333333333],
+            ["Alien", "Ruin", 0.3333333333],
+            ["Secret", "Factory", 0.5],
+            ["Emergency", "Abandoned building", 0.5194805195]
+          ],
+          "text": 2
+        }
+      },
+      "title": "Charts"
+    },
     "colossus-modules": {
       "fact": "The Colossus has the most room of the land exocraft, 30 technology slots, and two modules no other takes: the Excavation Blade and the Mineral Processing Rig.",
       "numbers": {},
@@ -5711,11 +5858,81 @@
     "deep-space-outpost": {
       "fact": "The Habitable Asteroid Chart and the Salvage Claim always, beside hulk salvage and contraband.",
       "numbers": {
+        "courierShare": { "k": "share", "v": 0.2173913043 },
+        "courierShareDone": { "k": "share", "v": 0.5 },
         "shownMax": { "k": "plain", "v": 6 },
         "shownMin": { "k": "plain", "v": 6 },
         "wares": { "k": "plain", "v": 12 }
       },
       "tables": {
+        "couriers": {
+          "head": [
+            "Contract",
+            "Delivers to",
+            "Parcels",
+            "Units, when it pays units",
+            "Standing"
+          ],
+          "kinds": ["text", "text", "text", "text", "text"],
+          "note": "Each contract pays one reward drawn by weight: units are the likeliest, then nanites, then inventory tokens, salvaged data, navigation data, and rarer goods.",
+          "rows": [
+            [
+              "Courier",
+              "a postbox on a planet of the system",
+              "1",
+              "70,000 to 120,000",
+              "+1"
+            ],
+            [
+              "Courier to a station",
+              "the space station of the system",
+              "1",
+              "70,000 to 120,000",
+              "+1"
+            ],
+            [
+              "Bulk courier",
+              "a postbox on a planet of the system",
+              "2 to 5",
+              "300,000 to 500,000",
+              "+2"
+            ]
+          ],
+          "text": 5
+        },
+        "processor": {
+          "head": ["Throw in", "Found at", "You get"],
+          "kinds": ["text", "text", "text"],
+          "note": "What the Salvage Processor takes, one item back for each object.",
+          "rows": [
+            [
+              "Salvage on a space hulk",
+              "a space hulk",
+              "Industrial Salvage, and now and then a corvette part"
+            ],
+            ["Radioactive canister", "a space hulk", "Compressed Plasma"],
+            ["Auxiliary core", "a space hulk", "Auxiliary Core"],
+            ["Data core", "a space hulk", "CPU Harness"],
+            ["Radioactive core", "a space hulk", "Reactor Core"],
+            ["Reactor bulb", "a space hulk", "Fuel Rod"],
+            ["Precious lockbox", "a space hulk", "Stasis Locker"],
+            ["Smuggled contraband", "a space hulk", "Suspicious Cargo"],
+            ["Encrypted black box", "a space hulk", "Data Packet"],
+            [
+              "Memento jar or crate",
+              "a space hulk or an infested outpost",
+              "its Haunting Memento"
+            ],
+            ["Small slime star", "an infested outpost", "Pathogen Sac"],
+            ["Slime star", "an infested outpost", "Viral Heart"],
+            [
+              "Broken crystal asteroid",
+              "an asteroid belt or an ice field",
+              "Condensed Stellar Ice"
+            ]
+          ],
+          "text": 3
+        },
         "stock": {
           "head": ["Item", "What it is", "On sale", "Value"],
           "icons": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11],
@@ -7706,6 +7923,311 @@
         }
       },
       "title": "Expanding the Base"
+    },
+    "expeditions": {
+      "fact": "Every expedition and what it gives; its rewards unlock on your account, and any save collects them at the Quicksilver Synthesis Companion.",
+      "numbers": {
+        "expeditionShips": { "k": "plain", "v": 8 },
+        "expeditions": { "k": "plain", "v": 23 },
+        "platformRewards": { "k": "plain", "v": 3 },
+        "seasonRewards": { "k": "plain", "v": 293 },
+        "twitchRewards": { "k": "plain", "v": 435 }
+      },
+      "tables": {
+        "expeditions": {
+          "head": [
+            "Expedition",
+            "Name",
+            "Title",
+            "Rewards",
+            "Starships",
+            "Multitools"
+          ],
+          "kinds": ["plain", "text", "text", "plain", "text", "text"],
+          "note": "Every expedition with the rewards it unlocks on the account: its title, then its starships and multitools by name.",
+          "rows": [
+            [2, "Beachhead", "Paragon", 6, null, null],
+            [1, "The Pioneers", "Pioneer", 8, "Golden Vector", null],
+            [4, "Emergence", "Worm Lord", 8, null, null],
+            [5, "Exobiology", "Exobiologist", 10, null, null],
+            [7, "Leviathan", "Looper", 10, null, null],
+            [9, "Utopia", "Utopia Dignitary", 10, "Utopia Speeder", null],
+            [12, "Omega", "the Starborn", 10, "Starborn Runner", null],
+            [17, "Titan", "Surveyor of Worlds", 10, "The Wraith", null],
+            [19, "Corvette", "Shipwright", 10, null, null],
+            [16, "The Cursed", "the Haunted", 11, "Boundary Herald", null],
+            [3, "The Cartographers", "Globemaster", 12, null, null],
+            [8, "Polestar", "the Seeker", 12, null, null],
+            [11, "Voyagers", "the Intrepid", 12, null, null],
+            [15, "Aquarius", "the Fisher", 13, null, null],
+            [6, "The Blighted", "Hunter of the Blight", 15, null, null],
+            [18, "Relics", "Excavator", 15, null, null],
+            [21, "Remnant", "Mag-Field Expert", 15, null, null],
+            [10, "Singularity", "the Construct", 16, null, null],
+            [13, "Adrift", "the Drifter", 16, "Iron Vulture", null],
+            [20, "Breach", "the Celestial", 16, null, null],
+            [14, "Liquidators", "Broodling", 17, null, null],
+            [
+              23,
+              "Our Journey Continues",
+              "Time Traveller",
+              17,
+              "Golden Rasamama S36, Vintage Interceptor",
+              "Starbound v0.27"
+            ],
+            [22, "Swarm", "the Fragmented", 24, null, "Direwasp Disintegrator"]
+          ]
+        },
+        "platform": {
+          "head": ["Item", "What it is"],
+          "kinds": ["text", "text"],
+          "note": "Rewards of a platform or an edition of the game.",
+          "rows": [
+            ["Starborn Phoenix", "Exclusive Spacecraft"],
+            ["Horizon Vector NX", "Exclusive Spacecraft"],
+            [
+              "Infinite Neon Mark XXII",
+              "Exclusive Multifunction Survival Device"
+            ]
+          ],
+          "text": 2
+        },
+        "twitchItems": {
+          "head": ["Item", "What it is"],
+          "kinds": ["text", "text"],
+          "note": "The starships and multitools of the Twitch drops.",
+          "rows": [
+            [
+              "Memories of the Ancients",
+              "Exclusive Multifunction Survival Device"
+            ],
+            [
+              "Improvised Ion Generator",
+              "Exclusive Multifunction Survival Device"
+            ],
+            [
+              "Silent Shock Injector",
+              "Exclusive Multifunction Survival Device"
+            ],
+            ["WK5 Mimar", "Exclusive Spacecraft"],
+            ["Ratsu's Prospect", "Exclusive Spacecraft"],
+            ["Unjiwua's Voyage LO5", "Exclusive Spacecraft"],
+            ["Mookaw NI8", "Exclusive Spacecraft"],
+            ["Halcyon Dance VQ6", "Exclusive Spacecraft"],
+            ["Art of Esenyov-XVI", "Exclusive Multifunction Survival Device"],
+            [
+              "Obedience of Solemnity",
+              "Exclusive Multifunction Survival Device"
+            ],
+            [
+              "Conceptual Vatezh Beam",
+              "Exclusive Multifunction Survival Device"
+            ],
+            ["Tahikok Roamer V", "Exclusive Spacecraft"],
+            ["Reckless Prophecy HF3", "Exclusive Spacecraft"],
+            ["The Master of Sleep", "Exclusive Spacecraft"],
+            ["Oigaya's Redemption PV4", "Exclusive Spacecraft"],
+            ["DX7 Ibail", "Exclusive Spacecraft"],
+            [
+              "Kalimskyv's Raycast Analyser",
+              "Exclusive Multifunction Survival Device"
+            ],
+            ["Negative Ion Puncher", "Exclusive Multifunction Survival Device"],
+            [
+              "Gleaming Light Injector",
+              "Exclusive Multifunction Survival Device"
+            ],
+            ["Sword of the Ribetsus", "Exclusive Spacecraft"],
+            ["Bukaidor Prospector XII", "Exclusive Spacecraft"],
+            ["Magnificent Omen T09", "Exclusive Spacecraft"],
+            ["Oomoribe's Halcyon War-Spear", "Exclusive Spacecraft"],
+            ["Speedy Noichir V", "Exclusive Spacecraft"],
+            ["Legacy of Thought", "Exclusive Multifunction Survival Device"],
+            ["Art of Storms", "Exclusive Multifunction Survival Device"],
+            [
+              "Improvised Volodov Clarifier",
+              "Exclusive Multifunction Survival Device"
+            ],
+            ["Otenba's Airborne Gambit", "Exclusive Spacecraft"],
+            ["Buyamak Liberator XIII", "Exclusive Spacecraft"],
+            ["Taganon of Gravity", "Exclusive Spacecraft"],
+            ["Toontu SJ3", "Exclusive Spacecraft"],
+            ["The Forge of the Gek", "Exclusive Spacecraft"],
+            ["Pillar of the Dance", "Exclusive Multifunction Survival Device"],
+            [
+              "Harbinger of the Stars",
+              "Exclusive Multifunction Survival Device"
+            ],
+            [
+              "Darny's Oxide Entangler",
+              "Exclusive Multifunction Survival Device"
+            ],
+            ["Nidaitai's Pride HM3", "Exclusive Spacecraft"],
+            ["The Departure of Fire", "Exclusive Spacecraft"],
+            ["Oroza's Abyssal Coup", "Exclusive Spacecraft"],
+            ["Iobana LW1", "Exclusive Spacecraft"],
+            ["Limitless Master PH1", "Exclusive Spacecraft"],
+            [
+              "Inertial Focuser NL4-0/9",
+              "Exclusive Multifunction Survival Device"
+            ],
+            [
+              "Defiance of the Horizon Y-74B-O",
+              "Exclusive Multifunction Survival Device"
+            ],
+            ["Kiss of Clarity", "Exclusive Multifunction Survival Device"],
+            ["Gravity Nemesis RE5", "Exclusive Spacecraft"],
+            ["Ultimate Falcon UD7", "Exclusive Spacecraft"],
+            ["Iiyaw JU4", "Exclusive Spacecraft"],
+            ["Iasayasu's Halcyon Surveyor", "Exclusive Spacecraft"],
+            ["Nabaeto of the Void", "Exclusive Spacecraft"],
+            [
+              "Obedience of the Dance",
+              "Exclusive Multifunction Survival Device"
+            ],
+            ["Loop of Lachinos-XVI", "Exclusive Multifunction Survival Device"],
+            [
+              "Destroyer of the Horizon 45P/98T",
+              "Exclusive Multifunction Survival Device"
+            ],
+            ["Razawag of the Abyss", "Exclusive Spacecraft"],
+            ["Okoroza Peacemaker X", "Exclusive Spacecraft"],
+            ["Stellar Nojuku XV", "Exclusive Spacecraft"],
+            ["Iyosh's Colourless Flight", "Exclusive Spacecraft"],
+            ["Visionary Eagle QL9", "Exclusive Spacecraft"],
+            [
+              "Hand-made Light Capacitor",
+              "Exclusive Multifunction Survival Device"
+            ],
+            ["Touch of Silence 8-T", "Exclusive Multifunction Survival Device"],
+            ["Ikawaji's Defeat", "Exclusive Spacecraft"],
+            ["The Ashes of Devastation", "Exclusive Spacecraft"],
+            ["Morozawa's Ultimate Hand", "Exclusive Spacecraft"],
+            ["TV2 Aebashi", "Exclusive Spacecraft"],
+            ["Tahama's Limitless Regret", "Exclusive Spacecraft"],
+            ["Final Ashes PL4", "Exclusive Spacecraft"],
+            ["Habika BF3", "Exclusive Spacecraft"],
+            ["The Son of the Sun", "Exclusive Spacecraft"],
+            ["Inzakita's Folly PY9", "Exclusive Spacecraft"],
+            ["Hiwamiha of Destiny", "Exclusive Spacecraft"],
+            [
+              "Whispers of the Abyss 4-F33-QP4",
+              "Exclusive Multifunction Survival Device"
+            ],
+            [
+              "Yauza's Quantum Tuner",
+              "Exclusive Multifunction Survival Device"
+            ],
+            [
+              "Ozone Auditor Mark XI",
+              "Exclusive Multifunction Survival Device"
+            ],
+            [
+              "Isotope Tuner Mark XVII",
+              "Exclusive Multifunction Survival Device"
+            ],
+            [
+              "Memories of the Abyss Z80-10L-N",
+              "Exclusive Multifunction Survival Device"
+            ],
+            ["MS4 Maiseha", "Exclusive Spacecraft"],
+            ["The Nemesis of the Korvax", "Exclusive Spacecraft"],
+            ["Sesakis's Gamble HX8", "Exclusive Spacecraft"],
+            ["End of the Kumiok", "Exclusive Spacecraft"],
+            ["Moganonj's Infinite Protector", "Exclusive Spacecraft"],
+            ["Boribets's Voyage YZ7", "Exclusive Spacecraft"],
+            ["UB7 Datebaya", "Exclusive Spacecraft"],
+            ["Prime Voice TU7", "Exclusive Spacecraft"],
+            ["Final Iuranono II", "Exclusive Spacecraft"],
+            ["Neyam's Lucent Conqueror", "Exclusive Spacecraft"],
+            ["VV5 Ariyaz", "Exclusive Spacecraft"],
+            ["Jirishi's Prospect", "Exclusive Spacecraft"],
+            ["Hadach's Discovery KH3", "Exclusive Spacecraft"],
+            ["Ultimate Sleep LO1", "Exclusive Spacecraft"],
+            ["Hiwamiha of Destiny", "Exclusive Spacecraft"],
+            ["Eokai's Prime Inquirer", "Exclusive Spacecraft"],
+            ["Hoshis HP7", "Exclusive Spacecraft"],
+            ["Nemesis of the Kudama", "Exclusive Spacecraft"],
+            ["Ultimate Pride JB2", "Exclusive Spacecraft"],
+            ["Prime Song JZ4", "Exclusive Spacecraft"],
+            [
+              "Quantum Harmoniser Mark IV",
+              "Exclusive Multifunction Survival Device"
+            ],
+            ["Loop Scoop Mark IV", "Exclusive Multifunction Survival Device"],
+            [
+              "Arc Capacitor W/17l-15P",
+              "Exclusive Multifunction Survival Device"
+            ],
+            [
+              "Hunevar's Dream Charger",
+              "Exclusive Multifunction Survival Device"
+            ],
+            [
+              "Imperfect Loop Reflector",
+              "Exclusive Multifunction Survival Device"
+            ]
+          ],
+          "text": 2
+        },
+        "twitchKinds": {
+          "head": ["What it is", "Twitch drops"],
+          "kinds": ["text", "plain"],
+          "note": "Every Twitch drop of the game by its kind, as the game names it.",
+          "rows": [
+            ["Aquatic Observation Module", 1],
+            ["Betentacled Steward", 1],
+            ["Captured Space Protozoa", 1],
+            ["Decorative Aqueduct", 1],
+            ["Dynamic Signpost", 1],
+            ["Floating Primitive", 1],
+            ["Furniture", 1],
+            ["Horrific Spawn", 1],
+            ["Inefficient Heat Source", 1],
+            ["Minotaur Limb Replacement", 1],
+            ["Organic Lighting", 1],
+            ["Ornamental Base Companion", 1],
+            ["Ornamental Skull", 1],
+            ["Personal Drone Valet", 1],
+            ["Robotic Spawn Capsule", 1],
+            ["Secure Map Containment", 1],
+            ["Sentinel Spawn Capsule", 1],
+            ["Simulated Trader Lifeform", 1],
+            ["Specialised Creature Enclosure", 1],
+            ["System Simulation Device", 1],
+            ["Titanic Spawn", 1],
+            ["Unlockable Armour", 1],
+            ["Unlockable Boots", 1],
+            ["Unlockable Gloves", 1],
+            ["Unlockable Hood", 1],
+            ["Unlockable Leg Customisation", 1],
+            ["Unlockable Torso Customisation", 1],
+            ["Exosuit Visual Enhancement", 3],
+            ["Space Anomaly Replica Part", 3],
+            ["Bespoke Personal Identification", 5],
+            ["Exclusive Flag", 5],
+            ["Freighter Engine Flare Override", 5],
+            ["Multifunction Survival Device Upgrade", 5],
+            ["Unlockable Cape", 5],
+            ["Unlockable Companion Accessory", 5],
+            ["Starship Interior Adornment", 6],
+            ["Starship Exhaust Override", 7],
+            ["Unlockable Helmet", 7],
+            ["Unlockable Decoration", 9],
+            ["Jetpack Exhaust Override", 12],
+            ["Anomalous Face Transformation", 13],
+            ["Unlockable Gesture", 13],
+            ["Exclusive Companion Egg", 27],
+            ["Organic Decoration", 28],
+            ["Exclusive Multifunction Survival Device", 33],
+            ["Exclusive Spacecraft", 65],
+            ["Pyrotechnics Multi-Pack", 65],
+            ["Decoration", 87]
+          ],
+          "text": 1
+        }
+      },
+      "title": "Expeditions"
     },
     "farming": {
       "fact": {
@@ -9731,6 +10253,18 @@
           "sprite": { "columns": 16, "src": "/recipes/cooking.webp" },
           "text": 3
         },
+        "made": {
+          "dishes": [
+            "FOOD_MC_PCAT",
+            "FOOD_CM_JAM",
+            "FOOD_CG_CARM",
+            "FOOD_DNUT_AJAM"
+          ],
+          "head": [],
+          "kinds": [],
+          "note": "Each dish made from what you gather; Short shows its last step alone.",
+          "rows": []
+        },
         "worth": {
           "head": ["Reward", "Common", "Uncommon", "Rare"],
           "kinds": ["text", "count", "count", "count"],
@@ -9746,21 +10280,43 @@
       "title": "Food for scanning"
     },
     "forsaken-trader": {
-      "fact": "Biomechanical corvette parts, from cockpits to wings, for Haunting Mementos, and the Larva Cannon, a multitool, for an offering of Preserved Grubs.",
+      "fact": "Biomechanical corvette parts for Haunting Mementos, found in space hulks, derelict freighters, infested outposts, and dig sites; and the Larva Cannon.",
       "numbers": {
         "barter": "0.7",
+        "cacheDrain": { "k": "plain", "v": 70 },
+        "destroyedMax": { "k": "plain", "v": 45 },
+        "destroyedMin": { "k": "plain", "v": 20 },
+        "elixirRestore": { "k": "plain", "v": 50 },
         "fewer": { "k": "plain", "v": 2 },
+        "firstHorror": { "k": "share", "v": 0.2 },
         "floor": { "k": "share", "v": 0.8999999762 },
+        "horrorHealth": { "k": "plain", "v": 2250 },
+        "meltdownMax": { "k": "plain", "v": 4 },
+        "meltdownMin": { "k": "plain", "v": 3 },
         "offeringAmount": { "k": "plain", "v": 5 },
+        "packFrom": { "k": "share", "v": 0.9 },
         "shownMax": { "k": "plain", "v": 29 },
         "shownMin": { "k": "plain", "v": 29 },
         "slots": { "k": "plain", "v": 3 },
         "threeChance": { "k": "share", "v": 1 },
+        "titleMementos": { "k": "plain", "v": 20 },
         "twoChance": { "k": "share", "v": 1 },
         "wantedValue": "140,000",
         "wares": { "k": "plain", "v": 29 }
       },
       "tables": {
+        "horrors": {
+          "head": ["Boundary weakened by", "Horrors at most"],
+          "kinds": ["share", "plain"],
+          "note": "The weaker the boundary, the more Boundary Horrors come at once, on a planet and in space alike.",
+          "rows": [
+            [0.2, 1],
+            [0.5, 2],
+            [0.75, 4],
+            [0.9, 5],
+            [1, 6]
+          ]
+        },
         "offerings": {
           "head": ["Gives", "Costs"],
           "kinds": ["text", "text"],
@@ -9772,6 +10328,48 @@
             ]
           ],
           "text": 2
+        },
+        "sources": {
+          "head": [
+            "Place",
+            "What holds them",
+            "How many there",
+            "What one gives",
+            "How many a system has"
+          ],
+          "kinds": ["text", "text", "text", "text", "text"],
+          "note": "Each jar or crate holds one of the six mementos, each as likely as the others; a derelict freighter's cache holds two to four of one.",
+          "rows": [
+            [
+              "Dig site",
+              "buried Haunted Caches",
+              "2 to 5",
+              "one memento each, and the boundary weakens",
+              "a building any planet can hold"
+            ],
+            [
+              "Derelict freighter",
+              "a Haunted Cache in the room of its last terminal",
+              "1",
+              "two to four of one memento, and the boundary weakens",
+              "one, hidden, in every system"
+            ],
+            [
+              "Space hulk",
+              "jars in its open habs, and crates",
+              "3 to 5",
+              "one memento each",
+              "none to three in sight and two hidden, in every system but an uncharted one"
+            ],
+            [
+              "Infested outpost",
+              "jars",
+              "5 to 10",
+              "one memento each",
+              "one hidden in every system but an uncharted one, and one in sight in one system in five"
+            ]
+          ],
+          "text": 5
         },
         "stock": {
           "head": ["Item", "What it is", "Value", "For a sure trade"],
@@ -18691,6 +19289,7 @@
           "text": 2,
           "trees": [
             {
+              "path": "Gold → Chromatic Metal → Emeril → Gold",
               "variants": [
                 {
                   "hour": 2428802.0,
@@ -18830,6 +19429,7 @@
               ]
             },
             {
+              "path": "Gold → Pyrite → Ferrite Dust → Gold",
               "variants": [
                 {
                   "hour": 2149551.0,
@@ -18883,6 +19483,7 @@
               ]
             },
             {
+              "path": "Salt → Chlorine → Chlorine → Salt",
               "variants": [
                 {
                   "hour": 2096154.0,
@@ -19029,6 +19630,7 @@
               ]
             },
             {
+              "path": "Cobalt → Ionised Cobalt → Ionised Cobalt → Cobalt",
               "variants": [
                 {
                   "hour": 2500000.0,
@@ -19175,6 +19777,7 @@
               ]
             },
             {
+              "path": "Lemmium → Gold → Platinum → Lemmium",
               "variants": [
                 {
                   "hour": 1520239.0,
@@ -19229,6 +19832,7 @@
               ]
             },
             {
+              "path": "Dirty Bronze → Silver → Dirty Bronze",
               "variants": [
                 {
                   "hour": 1553486.0,
@@ -19271,6 +19875,7 @@
               ]
             },
             {
+              "path": "Lemmium → Gold → Lemmium",
               "variants": [
                 {
                   "hour": 1553486.0,
@@ -19309,6 +19914,7 @@
               ]
             },
             {
+              "path": "Dirty Bronze → Silver → Platinum → Dirty Bronze",
               "variants": [
                 {
                   "hour": 1494938.0,
@@ -19363,6 +19969,7 @@
               ]
             },
             {
+              "path": "Salt → Chlorine → Salt",
               "variants": [
                 {
                   "hour": 1707692.0,
@@ -19403,6 +20010,7 @@
               ]
             },
             {
+              "path": "Aronium → Silver → Paraffinium → Aronium",
               "variants": [
                 {
                   "hour": 1305991.0,
@@ -19607,6 +20215,7 @@
               ]
             },
             {
+              "path": "Condensed Carbon → Oxygen → Condensed Carbon",
               "variants": [
                 {
                   "hour": 348667.0,
@@ -19931,6 +20540,7 @@
               ]
             },
             {
+              "path": "Cobalt → Ionised Cobalt → Cobalt",
               "variants": [
                 {
                   "hour": 2025000.0,
@@ -19971,6 +20581,7 @@
               ]
             },
             {
+              "path": "Pure Ferrite → Magnetised Ferrite → Pure Ferrite",
               "variants": [
                 {
                   "hour": 580000.0,
@@ -20068,6 +20679,7 @@
               ]
             },
             {
+              "path": "Sodium → Sodium Nitrate → Sodium Nitrate → Sodium",
               "variants": [
                 {
                   "hour": 393529.0,
@@ -21598,6 +22210,7 @@
               ]
             },
             {
+              "path": "Magno-Gold → Gold → Platinum → Magno-Gold",
               "variants": [
                 {
                   "hour": 1296056.0,
@@ -21652,6 +22265,7 @@
               ]
             },
             {
+              "path": "Grantine → Gold → Platinum → Grantine",
               "variants": [
                 {
                   "hour": 1296056.0,
@@ -21706,6 +22320,7 @@
               ]
             },
             {
+              "path": "Aronium → Silver → Aronium",
               "variants": [
                 {
                   "hour": 1323576.0,
@@ -21744,6 +22359,7 @@
               ]
             },
             {
+              "path": "Herox → Silver → Herox",
               "variants": [
                 {
                   "hour": 1324046.0,
@@ -21782,6 +22398,7 @@
               ]
             },
             {
+              "path": "Magno-Gold → Gold → Magno-Gold",
               "variants": [
                 {
                   "hour": 1323576.0,
@@ -21824,6 +22441,7 @@
               ]
             },
             {
+              "path": "Grantine → Gold → Grantine",
               "variants": [
                 {
                   "hour": 1323576.0,
@@ -21862,6 +22480,7 @@
               ]
             },
             {
+              "path": "Aronium → Silver → Platinum → Aronium",
               "variants": [
                 {
                   "hour": 1270639.0,
@@ -21916,6 +22535,7 @@
               ]
             },
             {
+              "path": "Herox → Silver → Platinum → Herox",
               "variants": [
                 {
                   "hour": 1270749.0,
@@ -21970,6 +22590,7 @@
               ]
             },
             {
+              "path": "Oxygen → Salt → Kelp Sac → Oxygen",
               "variants": [
                 {
                   "hour": 198367.0,
@@ -22130,6 +22751,7 @@
               ]
             },
             {
+              "path": "Sodium → Sodium Nitrate → Marrow Bulb → Sodium",
               "variants": [
                 {
                   "hour": 377273.0,
@@ -22856,6 +23478,7 @@
               ]
             },
             {
+              "path": "Sodium → Sodium Nitrate → Sodium",
               "variants": [
                 {
                   "hour": 424286.0,
@@ -23004,6 +23627,7 @@
               ]
             },
             {
+              "path": "Cobalt → Marrow Bulb → Ionised Cobalt → Cobalt",
               "variants": [
                 {
                   "hour": 745714.0,
@@ -23104,6 +23728,7 @@
               ]
             },
             {
+              "path": "Sodium Nitrate → Marrow Bulb → Sodium Nitrate",
               "variants": [
                 {
                   "hour": 740000.0,
@@ -23146,6 +23771,7 @@
               ]
             },
             {
+              "path": "Sodium → Marrow Bulb → Sodium Nitrate → Sodium",
               "variants": [
                 {
                   "hour": 308750.0,
@@ -23198,6 +23824,7 @@
               ]
             },
             {
+              "path": "Condensed Carbon → Oxygen → Faecium → Condensed Carbon",
               "variants": [
                 {
                   "hour": 212600.0,
@@ -23624,6 +24251,7 @@
               ]
             },
             {
+              "path": "Oxygen → Star Bulb → Star Bulb → Oxygen",
               "variants": [
                 {
                   "hour": 150000.0,
@@ -23654,6 +24282,7 @@
               ]
             },
             {
+              "path": "Oxygen → Cactus Flesh → Cactus Flesh → Oxygen",
               "variants": [
                 {
                   "hour": 150000.0,
@@ -23684,6 +24313,7 @@
               ]
             },
             {
+              "path": "Oxygen → Fungal Mould → Fungal Mould → Oxygen",
               "variants": [
                 {
                   "hour": 150000.0,
@@ -23714,6 +24344,7 @@
               ]
             },
             {
+              "path": "Oxygen → Gamma Root → Gamma Root → Oxygen",
               "variants": [
                 {
                   "hour": 150000.0,
@@ -23744,6 +24375,7 @@
               ]
             },
             {
+              "path": "Oxygen → Frost Crystal → Frost Crystal → Oxygen",
               "variants": [
                 {
                   "hour": 150000.0,
@@ -23774,6 +24406,7 @@
               ]
             },
             {
+              "path": "Oxygen → Solanium → Solanium → Oxygen",
               "variants": [
                 {
                   "hour": 150000.0,
@@ -23804,6 +24437,7 @@
               ]
             },
             {
+              "path": "Carbon → Oxygen → Condensed Carbon → Carbon",
               "variants": [
                 {
                   "hour": 167500.0,
@@ -23856,6 +24490,7 @@
               ]
             },
             {
+              "path": "Pyrite → Ferrite Dust → Magnetised Ferrite → Pyrite",
               "variants": [
                 {
                   "hour": 685000.0,
@@ -24229,6 +24864,7 @@
               ]
             },
             {
+              "path": "Condensed Carbon → Faecium → Condensed Carbon",
               "variants": [
                 {
                   "hour": 256000.0,
@@ -24277,6 +24913,7 @@
               ]
             },
             {
+              "path": "Condensed Carbon → Faecium → Faecium → Condensed Carbon",
               "variants": [
                 {
                   "hour": 221176.0,
@@ -24337,6 +24974,7 @@
               ]
             },
             {
+              "path": "Indium → Chromatic Metal → Indium",
               "variants": [
                 {
                   "hour": 759000.0,
@@ -24396,6 +25034,7 @@
               ]
             },
             {
+              "path": "Quartzite → Chromatic Metal → Quartzite",
               "variants": [
                 {
                   "hour": 759000.0,
@@ -24457,6 +25096,7 @@
               ]
             },
             {
+              "path": "Carbon → Condensed Carbon → Oxygen → Carbon",
               "variants": [
                 {
                   "hour": 39123.0,
@@ -24831,6 +25471,7 @@
               ]
             },
             {
+              "path": "Carbon → Condensed Carbon → Condensed Carbon → Carbon",
               "variants": [
                 {
                   "hour": 180000.0,
@@ -24977,6 +25618,7 @@
               ]
             },
             {
+              "path": "Mordite → Faecium → Mordite",
               "variants": [
                 {
                   "hour": 116364.0,
@@ -25017,6 +25659,7 @@
               ]
             },
             {
+              "path": "Mordite → Faecium → Faecium → Mordite",
               "variants": [
                 {
                   "hour": 92308.0,
@@ -25072,6 +25715,7 @@
               ]
             },
             {
+              "path": "Carbon → Faecium → Condensed Carbon → Carbon",
               "variants": [
                 {
                   "hour": 114286.0,
@@ -25148,6 +25792,7 @@
               ]
             },
             {
+              "path": "Sodium → Marrow Bulb → Sodium",
               "variants": [
                 {
                   "hour": 220000.0,
@@ -25208,6 +25853,7 @@
               ]
             },
             {
+              "path": "Emeril → Chromatic Metal → Emeril",
               "variants": [
                 {
                   "hour": 488100.0,
@@ -25267,6 +25913,7 @@
               ]
             },
             {
+              "path": "Oxygen → Star Bulb → Oxygen",
               "variants": [
                 {
                   "hour": 106364.0,
@@ -25291,6 +25938,7 @@
               ]
             },
             {
+              "path": "Oxygen → Cactus Flesh → Oxygen",
               "variants": [
                 {
                   "hour": 106364.0,
@@ -25315,6 +25963,7 @@
               ]
             },
             {
+              "path": "Oxygen → Fungal Mould → Oxygen",
               "variants": [
                 {
                   "hour": 106364.0,
@@ -25339,6 +25988,7 @@
               ]
             },
             {
+              "path": "Oxygen → Gamma Root → Oxygen",
               "variants": [
                 {
                   "hour": 106364.0,
@@ -25363,6 +26013,7 @@
               ]
             },
             {
+              "path": "Oxygen → Frost Crystal → Oxygen",
               "variants": [
                 {
                   "hour": 106364.0,
@@ -25387,6 +26038,7 @@
               ]
             },
             {
+              "path": "Oxygen → Solanium → Oxygen",
               "variants": [
                 {
                   "hour": 106364.0,
@@ -25411,6 +26063,7 @@
               ]
             },
             {
+              "path": "Mordite → Condensed Carbon → Faecium → Mordite",
               "variants": [
                 {
                   "hour": 76000.0,
@@ -25439,6 +26092,7 @@
               ]
             },
             {
+              "path": "Di-hydrogen Jelly → Di-hydrogen → Di-hydrogen Jelly",
               "variants": [
                 {
                   "hour": 2857.0,
@@ -25463,6 +26117,7 @@
               ]
             },
             {
+              "path": "Carbon → Condensed Carbon → Carbon",
               "variants": [
                 {
                   "hour": 105000.0,
@@ -25485,6 +26140,7 @@
               ]
             },
             {
+              "path": "Cadmium → Chromatic Metal → Cadmium",
               "variants": [
                 {
                   "hour": 183333.0,
@@ -25528,6 +26184,7 @@
               ]
             },
             {
+              "path": "Pure Ferrite → Magnetised Ferrite → Magnetised Ferrite → Pure Ferrite",
               "variants": [
                 {
                   "hour": 98710.0,
@@ -25589,6 +26246,7 @@
               ]
             },
             {
+              "path": "Ferrite Dust → Pure Ferrite → Rusted Metal → Ferrite Dust",
               "variants": [
                 {
                   "hour": 16000.0,
@@ -25616,6 +26274,7 @@
               ]
             },
             {
+              "path": "Sodium Nitrate → Dioxite → Ferrite Dust → Sodium Nitrate",
               "variants": [
                 {
                   "hour": 31765.0,
@@ -25650,6 +26309,7 @@
               ]
             },
             {
+              "path": "Ferrite Dust → Magnetised Ferrite → Paraffinium → Ferrite Dust",
               "variants": [
                 {
                   "hour": 6923.0,
@@ -25684,6 +26344,7 @@
               ]
             },
             {
+              "path": "Ferrite Dust → Magnetised Ferrite → Uranium → Ferrite Dust",
               "variants": [
                 {
                   "hour": 6923.0,
@@ -25718,6 +26379,7 @@
               ]
             },
             {
+              "path": "Kelp Sac → Chlorine → Salt → Kelp Sac",
               "variants": [
                 {
                   "hour": 18000.0,
@@ -25746,6 +26408,7 @@
               ]
             },
             {
+              "path": "Condensed Carbon → Magnetised Ferrite → Uranium → Condensed Carbon",
               "variants": [
                 {
                   "hour": 30000.0,
@@ -32268,6 +32931,1893 @@
       },
       "title": "Starship Pilot"
     },
+    "station-decoration": {
+      "fact": "Every exterior decoration of your space station: Nanite blueprints and rare finds from deep space, built from the salvage of hulks and outposts.",
+      "numbers": {
+        "parts": { "k": "plain", "v": 99 },
+        "rare": { "k": "plain", "v": 15 }
+      },
+      "tables": {
+        "parts": {
+          "head": ["Decoration", "Blueprint from", "Build cost"],
+          "items": [
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 40.0, 0],
+                ["Ferrite Dust", 45.0, 1]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 70.0, 0],
+                ["Ferrite Dust", 75.0, 1]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 50.0, 0],
+                ["Ferrite Dust", 60.0, 1]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 70.0, 0],
+                ["Ferrite Dust", 75.0, 1]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Gold", 40.0, 2],
+                ["Ferrite Dust", 75.0, 1]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Gold", 40.0, 2],
+                ["Ferrite Dust", 75.0, 1]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Isotopic Dust", 60.0, 3],
+                ["Chromatic Metal", 30.0, 0]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Isotopic Dust", 120.0, 3],
+                ["Industrial Salvage", 2.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Isotopic Dust", 120.0, 3],
+                ["Industrial Salvage", 2.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 90.0, 0],
+                ["Industrial Salvage", 1.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 90.0, 0],
+                ["Industrial Salvage", 1.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 90.0, 0],
+                ["Industrial Salvage", 1.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 90.0, 0],
+                ["Industrial Salvage", 1.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 90.0, 0],
+                ["Industrial Salvage", 1.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 70.0, 0],
+                ["Industrial Salvage", 1.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 70.0, 0],
+                ["Industrial Salvage", 1.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 70.0, 0],
+                ["Industrial Salvage", 1.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 70.0, 0],
+                ["Industrial Salvage", 1.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 70.0, 0],
+                ["Industrial Salvage", 1.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Industrial Salvage", 3.0, 4],
+                ["Isotopic Dust", 80.0, 3]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Industrial Salvage", 3.0, 4],
+                ["Isotopic Dust", 80.0, 3]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Industrial Salvage", 3.0, 4],
+                ["Isotopic Dust", 80.0, 3]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Industrial Salvage", 3.0, 4],
+                ["Isotopic Dust", 80.0, 3]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Industrial Salvage", 3.0, 4],
+                ["Isotopic Dust", 80.0, 3]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Industrial Salvage", 3.0, 4],
+                ["Isotopic Dust", 80.0, 3]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 90.0, 0],
+                ["Industrial Salvage", 1.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 90.0, 0],
+                ["Industrial Salvage", 1.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Condensed Carbon", 250.0, 5],
+                ["Gelatinous Fibres", 100.0, 6],
+                ["Living Pearl", 3.0, 7]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Condensed Carbon", 300.0, 5],
+                ["Gelatinous Fibres", 100.0, 6],
+                ["Polished Stone", 70.0, 8]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Industrial Salvage", 3.0, 4],
+                ["Isotopic Dust", 120.0, 3]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Industrial Salvage", 4.0, 4],
+                ["Auxiliary Core", 1.0, 9],
+                ["Magnetised Ferrite", 45.0, 10]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Industrial Salvage", 4.0, 4],
+                ["Auxiliary Core", 1.0, 9],
+                ["Chromatic Metal", 45.0, 0]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Industrial Salvage", 1.0, 4],
+                ["Auxiliary Core", 1.0, 9],
+                ["Cadmium", 15.0, 11]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Industrial Salvage", 1.0, 4],
+                ["Auxiliary Core", 1.0, 9],
+                ["Indium", 15.0, 12]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Industrial Salvage", 1.0, 4],
+                ["Auxiliary Core", 1.0, 9],
+                ["Chromatic Metal", 15.0, 0]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Industrial Salvage", 8.0, 4],
+                ["Chromatic Metal", 40.0, 0],
+                ["Reactor Core", 1.0, 13]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Industrial Salvage", 8.0, 4],
+                ["Magnetised Ferrite", 90.0, 10],
+                ["Gravitino Ball", 1.0, 14]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Isotopic Dust", 120.0, 3],
+                ["Polished Stone", 90.0, 8]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Industrial Salvage", 3.0, 4],
+                ["Isotopic Dust", 80.0, 3]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Industrial Salvage", 3.0, 4],
+                ["Isotopic Dust", 80.0, 3]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["CPU Harness", 3.0, 15],
+                ["Auxiliary Core", 2.0, 9],
+                ["Industrial Salvage", 1.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Condensed Stellar Ice", 7.0, 16],
+                ["Cadmium", 10.0, 11]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Industrial Salvage", 3.0, 4],
+                ["Isotopic Dust", 120.0, 3],
+                ["CPU Harness", 1.0, 15]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Polished Stone", 60.0, 8],
+                ["Industrial Salvage", 2.0, 4],
+                ["Auxiliary Core", 1.0, 9]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Gelatinous Fibres", 130.0, 6],
+                ["Indium", 75.0, 12]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Industrial Salvage", 3.0, 4],
+                ["Fuel Rod", 3.0, 17],
+                ["Isotopic Dust", 80.0, 3]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Industrial Salvage", 3.0, 4],
+                ["Vigilant Stone", 1.0, 18],
+                ["Auxiliary Core", 1.0, 9]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Industrial Salvage", 4.0, 4],
+                ["Chromatic Metal", 70.0, 0],
+                ["Auxiliary Core", 1.0, 9]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Compressed Plasma", 4.0, 19],
+                ["Magnetised Ferrite", 90.0, 10]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 90.0, 0],
+                ["Industrial Salvage", 2.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 90.0, 0],
+                ["Industrial Salvage", 2.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 90.0, 0],
+                ["Industrial Salvage", 2.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Industrial Salvage", 2.0, 4],
+                ["Compressed Plasma", 6.0, 19]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Industrial Salvage", 2.0, 4],
+                ["Compressed Plasma", 6.0, 19]
+              ]
+            ],
+            [null, null, [["Industrial Salvage", 7.0, 4]]],
+            [null, null, [["Industrial Salvage", 7.0, 4]]],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 90.0, 0],
+                ["Industrial Salvage", 2.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Condensed Stellar Ice", 5.0, 16],
+                ["Comet Dust", 90.0, 20],
+                ["Silicate Powder", 60.0, 21]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Condensed Stellar Ice", 5.0, 16],
+                ["Comet Dust", 90.0, 20],
+                ["Di-hydrogen", 25.0, 22]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Viral Heart", 1.0, 23],
+                ["Gelatinous Fibres", 60.0, 6]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Viral Heart", 1.0, 23],
+                ["Gelatinous Fibres", 60.0, 6]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Pathogen Sac", 1.0, 24],
+                ["Gelatinous Fibres", 60.0, 6]
+              ]
+            ],
+            [null, null, [["Industrial Salvage", 7.0, 4]]],
+            [null, null, [["Industrial Salvage", 7.0, 4]]],
+            [null, null, [["Industrial Salvage", 7.0, 4]]],
+            [
+              null,
+              null,
+              [
+                ["Industrial Salvage", 7.0, 4],
+                ["Chromatic Metal", 160.0, 0],
+                ["Di-hydrogen", 80.0, 22]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Polished Stone", 70.0, 8],
+                ["Auxiliary Core", 1.0, 9]
+              ]
+            ],
+            [null, null, [["Polished Stone", 130.0, 8]]],
+            [
+              null,
+              null,
+              [
+                ["Industrial Salvage", 3.0, 4],
+                ["Auxiliary Core", 1.0, 9]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Industrial Salvage", 3.0, 4],
+                ["Auxiliary Core", 1.0, 9]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Pure Ferrite", 30.0, 25],
+                ["Condensed Stellar Ice", 1.0, 16]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Industrial Salvage", 7.0, 4],
+                ["Chromatic Metal", 30.0, 0]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Industrial Salvage", 7.0, 4],
+                ["Chromatic Metal", 30.0, 0]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Industrial Salvage", 7.0, 4],
+                ["Chromatic Metal", 30.0, 0],
+                ["Reactor Core", 1.0, 13]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Industrial Salvage", 7.0, 4],
+                ["Chromatic Metal", 30.0, 0],
+                ["Reactor Core", 1.0, 13]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Industrial Salvage", 7.0, 4],
+                ["Chromatic Metal", 30.0, 0],
+                ["Reactor Core", 1.0, 13]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Glass", 3.0, 26],
+                ["Condensed Carbon", 120.0, 5],
+                ["Silicate Powder", 120.0, 21]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Glass", 2.0, 26],
+                ["Industrial Salvage", 2.0, 4],
+                ["Silicate Powder", 120.0, 21]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Glass", 1.0, 26],
+                ["Industrial Salvage", 2.0, 4],
+                ["Silicate Powder", 120.0, 21]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 50.0, 0],
+                ["Industrial Salvage", 3.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 50.0, 0],
+                ["Industrial Salvage", 1.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 50.0, 0],
+                ["Industrial Salvage", 1.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 50.0, 0],
+                ["Industrial Salvage", 1.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 50.0, 0],
+                ["Industrial Salvage", 1.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 50.0, 0],
+                ["Industrial Salvage", 1.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 50.0, 0],
+                ["Industrial Salvage", 1.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 50.0, 0],
+                ["Industrial Salvage", 1.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 50.0, 0],
+                ["Industrial Salvage", 1.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 50.0, 0],
+                ["Industrial Salvage", 1.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 50.0, 0],
+                ["Industrial Salvage", 1.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 50.0, 0],
+                ["Industrial Salvage", 1.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 50.0, 0],
+                ["Industrial Salvage", 1.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 50.0, 0],
+                ["Industrial Salvage", 1.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 50.0, 0],
+                ["Industrial Salvage", 1.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 50.0, 0],
+                ["Industrial Salvage", 1.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 50.0, 0],
+                ["Industrial Salvage", 1.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 50.0, 0],
+                ["Industrial Salvage", 1.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 50.0, 0],
+                ["Industrial Salvage", 1.0, 4]
+              ]
+            ],
+            [
+              null,
+              null,
+              [
+                ["Chromatic Metal", 50.0, 0],
+                ["Industrial Salvage", 1.0, 4]
+              ]
+            ]
+          ],
+          "kinds": ["text", "text", "text"],
+          "note": "Every exterior decoration of a space station you direct, as the build menu lists them.",
+          "rows": [
+            [
+              "Red Floodlight",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Industrial Salvage, {1} × Auxiliary Core, {2} × Cadmium",
+                "v": [
+                  { "k": "plain", "v": 1 },
+                  { "k": "plain", "v": 1 },
+                  { "k": "plain", "v": 15 }
+                ]
+              }
+            ],
+            [
+              "Blue Floodlight",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Industrial Salvage, {1} × Auxiliary Core, {2} × Indium",
+                "v": [
+                  { "k": "plain", "v": 1 },
+                  { "k": "plain", "v": 1 },
+                  { "k": "plain", "v": 15 }
+                ]
+              }
+            ],
+            [
+              "White Floodlight",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Industrial Salvage, {1} × Auxiliary Core, {2} × Chromatic Metal",
+                "v": [
+                  { "k": "plain", "v": 1 },
+                  { "k": "plain", "v": 1 },
+                  { "k": "plain", "v": 15 }
+                ]
+              }
+            ],
+            [
+              "Infested Entrail",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Viral Heart, {1} × Gelatinous Fibres",
+                "v": [
+                  { "k": "plain", "v": 1 },
+                  { "k": "plain", "v": 60 }
+                ]
+              }
+            ],
+            [
+              "Infested Tendril",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Viral Heart, {1} × Gelatinous Fibres",
+                "v": [
+                  { "k": "plain", "v": 1 },
+                  { "k": "plain", "v": 60 }
+                ]
+              }
+            ],
+            [
+              "Infested Nodule",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Pathogen Sac, {1} × Gelatinous Fibres",
+                "v": [
+                  { "k": "plain", "v": 1 },
+                  { "k": "plain", "v": 60 }
+                ]
+              }
+            ],
+            [
+              "Botanical Pod I",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Glass, {1} × Industrial Salvage, {2} × Silicate Powder",
+                "v": [
+                  { "k": "plain", "v": 1 },
+                  { "k": "plain", "v": 2 },
+                  { "k": "plain", "v": 120 }
+                ]
+              }
+            ],
+            [
+              "Storage Canisters",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Industrial Salvage, {1} × Compressed Plasma",
+                "v": [
+                  { "k": "plain", "v": 2 },
+                  { "k": "plain", "v": 6 }
+                ]
+              }
+            ],
+            [
+              "Storage Spheres",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Industrial Salvage, {1} × Compressed Plasma",
+                "v": [
+                  { "k": "plain", "v": 2 },
+                  { "k": "plain", "v": 6 }
+                ]
+              }
+            ],
+            [
+              "Botanical Pod II",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Glass, {1} × Industrial Salvage, {2} × Silicate Powder",
+                "v": [
+                  { "k": "plain", "v": 2 },
+                  { "k": "plain", "v": 2 },
+                  { "k": "plain", "v": 120 }
+                ]
+              }
+            ],
+            [
+              "Horizontal Annexe",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Industrial Salvage, {1} × Isotopic Dust",
+                "v": [
+                  { "k": "plain", "v": 3 },
+                  { "k": "plain", "v": 80 }
+                ]
+              }
+            ],
+            [
+              "Vertical Annexe",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Industrial Salvage, {1} × Isotopic Dust",
+                "v": [
+                  { "k": "plain", "v": 3 },
+                  { "k": "plain", "v": 80 }
+                ]
+              }
+            ],
+            [
+              "Cylindrical Annexe",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Industrial Salvage, {1} × Isotopic Dust",
+                "v": [
+                  { "k": "plain", "v": 3 },
+                  { "k": "plain", "v": 80 }
+                ]
+              }
+            ],
+            [
+              "Pentagonal Annexe",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Industrial Salvage, {1} × Isotopic Dust",
+                "v": [
+                  { "k": "plain", "v": 3 },
+                  { "k": "plain", "v": 80 }
+                ]
+              }
+            ],
+            [
+              "Receiver Annexe",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Industrial Salvage, {1} × Isotopic Dust",
+                "v": [
+                  { "k": "plain", "v": 3 },
+                  { "k": "plain", "v": 80 }
+                ]
+              }
+            ],
+            [
+              "Sphere Annexe",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Industrial Salvage, {1} × Isotopic Dust",
+                "v": [
+                  { "k": "plain", "v": 3 },
+                  { "k": "plain", "v": 80 }
+                ]
+              }
+            ],
+            [
+              "Resonance Chamber",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Industrial Salvage, {1} × Isotopic Dust",
+                "v": [
+                  { "k": "plain", "v": 3 },
+                  { "k": "plain", "v": 120 }
+                ]
+              }
+            ],
+            [
+              "Ornate Pyramid",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Industrial Salvage, {1} × Isotopic Dust",
+                "v": [
+                  { "k": "plain", "v": 3 },
+                  { "k": "plain", "v": 80 }
+                ]
+              }
+            ],
+            [
+              "Storage Block",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Industrial Salvage, {1} × Isotopic Dust",
+                "v": [
+                  { "k": "plain", "v": 3 },
+                  { "k": "plain", "v": 80 }
+                ]
+              }
+            ],
+            [
+              "Hyperspace Beacon",
+              "the object it is in deep space",
+              {
+                "t": "{0} × CPU Harness, {1} × Auxiliary Core, {2} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 3 },
+                  { "k": "plain", "v": 2 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Shelter Pod",
+              "the object it is in deep space",
+              {
+                "t": "{0} × Industrial Salvage, {1} × Isotopic Dust, {2} × CPU Harness",
+                "v": [
+                  { "k": "plain", "v": 3 },
+                  { "k": "plain", "v": 120 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Anomalous Timepiece",
+              "the object it is in deep space",
+              {
+                "t": "{0} × Industrial Salvage, {1} × Fuel Rod, {2} × Isotopic Dust",
+                "v": [
+                  { "k": "plain", "v": 3 },
+                  { "k": "plain", "v": 3 },
+                  { "k": "plain", "v": 80 }
+                ]
+              }
+            ],
+            [
+              "Dyson Lens",
+              "the object it is in deep space",
+              {
+                "t": "{0} × Industrial Salvage, {1} × Vigilant Stone, {2} × Auxiliary Core",
+                "v": [
+                  { "k": "plain", "v": 3 },
+                  { "k": "plain", "v": 1 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Shaped-Beam Receiver",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Industrial Salvage, {1} × Auxiliary Core",
+                "v": [
+                  { "k": "plain", "v": 3 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Entrance Ring",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Industrial Salvage, {1} × Auxiliary Core",
+                "v": [
+                  { "k": "plain", "v": 3 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Botanical Pod IV",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Glass, {1} × Condensed Carbon, {2} × Silicate Powder",
+                "v": [
+                  { "k": "plain", "v": 3 },
+                  { "k": "plain", "v": 120 },
+                  { "k": "plain", "v": 120 }
+                ]
+              }
+            ],
+            [
+              "Radio Matrix",
+              "the object it is in deep space",
+              {
+                "t": "{0} × Industrial Salvage, {1} × Auxiliary Core, {2} × Magnetised Ferrite",
+                "v": [
+                  { "k": "plain", "v": 4 },
+                  { "k": "plain", "v": 1 },
+                  { "k": "plain", "v": 45 }
+                ]
+              }
+            ],
+            [
+              "Reconstructed Metalloid",
+              "the object it is in deep space",
+              {
+                "t": "{0} × Industrial Salvage, {1} × Auxiliary Core, {2} × Chromatic Metal",
+                "v": [
+                  { "k": "plain", "v": 4 },
+                  { "k": "plain", "v": 1 },
+                  { "k": "plain", "v": 45 }
+                ]
+              }
+            ],
+            [
+              "Hazard Containment Field",
+              "the object it is in deep space",
+              {
+                "t": "{0} × Industrial Salvage, {1} × Chromatic Metal, {2} × Auxiliary Core",
+                "v": [
+                  { "k": "plain", "v": 4 },
+                  { "k": "plain", "v": 70 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Recovered Silo",
+              "the object it is in deep space",
+              {
+                "t": "{0} × Compressed Plasma, {1} × Magnetised Ferrite",
+                "v": [
+                  { "k": "plain", "v": 4 },
+                  { "k": "plain", "v": 90 }
+                ]
+              }
+            ],
+            [
+              "Rock Asteroid",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Condensed Stellar Ice, {1} × Comet Dust, {2} × Silicate Powder",
+                "v": [
+                  { "k": "plain", "v": 5 },
+                  { "k": "plain", "v": 90 },
+                  { "k": "plain", "v": 60 }
+                ]
+              }
+            ],
+            [
+              "Frozen Asteroid",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Condensed Stellar Ice, {1} × Comet Dust, {2} × Di-hydrogen",
+                "v": [
+                  { "k": "plain", "v": 5 },
+                  { "k": "plain", "v": 90 },
+                  { "k": "plain", "v": 25 }
+                ]
+              }
+            ],
+            [
+              "Condensed Stellar Ice",
+              "the object it is in deep space",
+              {
+                "t": "{0} × Condensed Stellar Ice, {1} × Cadmium",
+                "v": [
+                  { "k": "plain", "v": 7 },
+                  { "k": "plain", "v": 10 }
+                ]
+              }
+            ],
+            [
+              "Angled Tower",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Industrial Salvage",
+                "v": [{ "k": "plain", "v": 7 }]
+              }
+            ],
+            [
+              "Tower Block",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Industrial Salvage",
+                "v": [{ "k": "plain", "v": 7 }]
+              }
+            ],
+            [
+              "Compound Alloy Annexe",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Industrial Salvage",
+                "v": [{ "k": "plain", "v": 7 }]
+              }
+            ],
+            [
+              "Sleek Alloy Annexe",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Industrial Salvage",
+                "v": [{ "k": "plain", "v": 7 }]
+              }
+            ],
+            [
+              "Stag Alloy Annexe",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Industrial Salvage",
+                "v": [{ "k": "plain", "v": 7 }]
+              }
+            ],
+            [
+              "Stellar Fragment",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Industrial Salvage, {1} × Chromatic Metal, {2} × Di-hydrogen",
+                "v": [
+                  { "k": "plain", "v": 7 },
+                  { "k": "plain", "v": 160 },
+                  { "k": "plain", "v": 80 }
+                ]
+              }
+            ],
+            [
+              "Deflection Generator",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Industrial Salvage, {1} × Chromatic Metal",
+                "v": [
+                  { "k": "plain", "v": 7 },
+                  { "k": "plain", "v": 30 }
+                ]
+              }
+            ],
+            [
+              "Aeron Pyramid",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Industrial Salvage, {1} × Chromatic Metal",
+                "v": [
+                  { "k": "plain", "v": 7 },
+                  { "k": "plain", "v": 30 }
+                ]
+              }
+            ],
+            [
+              "High-Energy Orb",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Industrial Salvage, {1} × Chromatic Metal, {2} × Reactor Core",
+                "v": [
+                  { "k": "plain", "v": 7 },
+                  { "k": "plain", "v": 30 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Aeron Orb",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Industrial Salvage, {1} × Chromatic Metal, {2} × Reactor Core",
+                "v": [
+                  { "k": "plain", "v": 7 },
+                  { "k": "plain", "v": 30 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Station Defence",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Industrial Salvage, {1} × Chromatic Metal, {2} × Reactor Core",
+                "v": [
+                  { "k": "plain", "v": 7 },
+                  { "k": "plain", "v": 30 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Containment Device",
+              "the object it is in deep space",
+              {
+                "t": "{0} × Industrial Salvage, {1} × Chromatic Metal, {2} × Reactor Core",
+                "v": [
+                  { "k": "plain", "v": 8 },
+                  { "k": "plain", "v": 40 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Ironbound Relic",
+              "the object it is in deep space",
+              {
+                "t": "{0} × Industrial Salvage, {1} × Magnetised Ferrite, {2} × Gravitino Ball",
+                "v": [
+                  { "k": "plain", "v": 8 },
+                  { "k": "plain", "v": 90 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Contained Fissure",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Pure Ferrite, {1} × Condensed Stellar Ice",
+                "v": [
+                  { "k": "plain", "v": 30 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Satellite Sign",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Ferrite Dust",
+                "v": [
+                  { "k": "plain", "v": 40 },
+                  { "k": "plain", "v": 45 }
+                ]
+              }
+            ],
+            [
+              "Lift-Off Statue",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Gold, {1} × Ferrite Dust",
+                "v": [
+                  { "k": "plain", "v": 40 },
+                  { "k": "plain", "v": 75 }
+                ]
+              }
+            ],
+            [
+              "Tribute to Balaron",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Gold, {1} × Ferrite Dust",
+                "v": [
+                  { "k": "plain", "v": 40 },
+                  { "k": "plain", "v": 75 }
+                ]
+              }
+            ],
+            [
+              "Holographic Sign",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Ferrite Dust",
+                "v": [
+                  { "k": "plain", "v": 50 },
+                  { "k": "plain", "v": 60 }
+                ]
+              }
+            ],
+            [
+              "Hand of Approval Display",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 50 },
+                  { "k": "plain", "v": 3 }
+                ]
+              }
+            ],
+            [
+              "Flight Path Display",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 50 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Blue Stripes Display",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 50 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Golden Gek Display",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 50 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Ship Sale Display",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 50 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Korvax Guild Display",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 50 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Atlas Infinity Display",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 50 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Anomalous Home Display",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 50 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Milk? Display",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 50 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Atlas Cake Display",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 50 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Counterfeit Pass Display",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 50 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Friend-Entity Display",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 50 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Hazard Display",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 50 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Warning Display",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 50 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Horrific Display",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 50 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Cosmic Flight Display",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 50 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "ByteBeat Display",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 50 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Blob Display",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 50 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Curious Fauna Display",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 50 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Atlas Display",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 50 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Nano-Fibre Drapery",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Isotopic Dust, {1} × Chromatic Metal",
+                "v": [
+                  { "k": "plain", "v": 60 },
+                  { "k": "plain", "v": 30 }
+                ]
+              }
+            ],
+            [
+              "Surveillance Asteroid",
+              "the object it is in deep space",
+              {
+                "t": "{0} × Polished Stone, {1} × Industrial Salvage, {2} × Auxiliary Core",
+                "v": [
+                  { "k": "plain", "v": 60 },
+                  { "k": "plain", "v": 2 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Hologram Display",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Ferrite Dust",
+                "v": [
+                  { "k": "plain", "v": 70 },
+                  { "k": "plain", "v": 75 }
+                ]
+              }
+            ],
+            [
+              "Culinary Advertisement",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Ferrite Dust",
+                "v": [
+                  { "k": "plain", "v": 70 },
+                  { "k": "plain", "v": 75 }
+                ]
+              }
+            ],
+            [
+              "Autophage Sign",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 70 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Traveller Sign",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 70 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Gek Sign",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 70 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Korvax Sign",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 70 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Vy'keen Sign",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 70 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Relic Eye",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Polished Stone, {1} × Auxiliary Core",
+                "v": [
+                  { "k": "plain", "v": 70 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Autophage Holo-Sculpture",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 90 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Traveller Holo-Sculpture",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 90 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Gek Holo-Sculpture",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 90 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Korvax Holo-Sculpture",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 90 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Vy'keen Holo-Sculpture",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 90 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Minotaur Holo-Sculpture",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 90 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Starship Holo-Sculpture",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 90 },
+                  { "k": "plain", "v": 1 }
+                ]
+              }
+            ],
+            [
+              "Circular Plasma Display",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 90 },
+                  { "k": "plain", "v": 2 }
+                ]
+              }
+            ],
+            [
+              "Hexagonal Plasma Display",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 90 },
+                  { "k": "plain", "v": 2 }
+                ]
+              }
+            ],
+            [
+              "Triangular Plasma Display",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 90 },
+                  { "k": "plain", "v": 2 }
+                ]
+              }
+            ],
+            [
+              "Plasma Display",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Chromatic Metal, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 90 },
+                  { "k": "plain", "v": 2 }
+                ]
+              }
+            ],
+            [
+              "Refueling Dock",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Isotopic Dust, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 120 },
+                  { "k": "plain", "v": 2 }
+                ]
+              }
+            ],
+            [
+              "Data Tower",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Isotopic Dust, {1} × Industrial Salvage",
+                "v": [
+                  { "k": "plain", "v": 120 },
+                  { "k": "plain", "v": 2 }
+                ]
+              }
+            ],
+            [
+              "First Spawn Replica",
+              "the object it is in deep space",
+              {
+                "t": "{0} × Isotopic Dust, {1} × Polished Stone",
+                "v": [
+                  { "k": "plain", "v": 120 },
+                  { "k": "plain", "v": 90 }
+                ]
+              }
+            ],
+            [
+              "Plasmic Accident",
+              "the object it is in deep space",
+              {
+                "t": "{0} × Gelatinous Fibres, {1} × Indium",
+                "v": [
+                  { "k": "plain", "v": 130 },
+                  { "k": "plain", "v": 75 }
+                ]
+              }
+            ],
+            [
+              "Relic Gazebo",
+              "nanites, at the Construction Research Station",
+              { "t": "{0} × Polished Stone", "v": [{ "k": "plain", "v": 130 }] }
+            ],
+            [
+              "Vacated Shell",
+              "nanites, at the Construction Research Station",
+              {
+                "t": "{0} × Condensed Carbon, {1} × Gelatinous Fibres, {2} × Living Pearl",
+                "v": [
+                  { "k": "plain", "v": 250 },
+                  { "k": "plain", "v": 100 },
+                  { "k": "plain", "v": 3 }
+                ]
+              }
+            ],
+            [
+              "Titanic Skull",
+              "the object it is in deep space",
+              {
+                "t": "{0} × Condensed Carbon, {1} × Gelatinous Fibres, {2} × Polished Stone",
+                "v": [
+                  { "k": "plain", "v": 300 },
+                  { "k": "plain", "v": 100 },
+                  { "k": "plain", "v": 70 }
+                ]
+              }
+            ]
+          ],
+          "sprite": { "columns": 16, "src": "/stations/decor.webp" },
+          "text": 3
+        }
+      },
+      "title": "Space station decoration"
+    },
     "supercharged-slots": {
       "fact": "Put a weapon's three modules on the supercharged slots and the weapon where it touches the fewest of them, the same for every weapon: measured on the Boltcaster, a square of a 50% Sentinel multitool or staff takes it to 15535.7 Damage Potential with three Illegal modules at their best.",
       "numbers": {
@@ -34104,6 +36654,7 @@
     }
   },
   "quests": [
+    "expeditions",
     "puzzles",
     "a-trace-of-metal",
     "in-stellar-multitudes",

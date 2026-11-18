@@ -33,19 +33,15 @@ that answers no part of that question does not belong on the site.
 - A guide ends with a sentence that links the next guide of the menu; the last leads back to `/about`. It links in its
   text to the guides it relies on, the tool that acts on it, and the catalog list it describes. Every guide is reached
   from at least two other pages.
-- Guides say what to farm and never name a system, a planet, or coordinates; those are for the catalog. The one
-  exception is farm systems players already posted publicly, listed with their coordinates and a credit (the farm table
-  on `freighter-modules`). Formulas stay: they show why a page says what it says.
 - No number of a guide is typed into its text: the numbers of its own line go through `{{name}}`, so a recount moves
   them.
-- Every claim is proven in the No Man's Sky generator's notes. A page states what is known and is silent on the rest: never "not researched yet". What is not known yet is researched, or, when only the game can answer, it stays in the generator's notes and off the page.
+- What to farm, proof of claims, and sample sizes follow the archive's `site-text.md`; the publicly posted farm
+  systems of `freighter-modules` are its exception, with their credit.
 
 ## Links
 
-- A link stands inside a sentence, and its anchor text appears on the page it opens (its `<h1>`, lead, or title). No
-  "See also" or "See more" rows.
-- No page links to itself in its own text; the header and the footer are the only exception.
-- No links to Reddit (they leak rank). External links only where a page cites a rule.
+The rules of links are the portal's `docs/seo.md`. Here besides:
+
 - A galaxy's name links to its page; in a sentence, only the first Euclid of a page links.
 - A link to a guide is the short `/guides/<slug>`; the site makes it long.
 

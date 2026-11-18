@@ -4,7 +4,7 @@
 
 ## Where to find one
 
-The Scrap Dealer stands behind the [Galactic Trade Terminal](/guides/galactic-trade-terminal) of a space station. Beside his shop he sells the place of a derelict freighter, whose walk is the quest [Lost in Space](/quests/lost-in-space).
+The Scrap Dealer stands behind the [Galactic Trade Terminal](/guides/galactic-trade-terminal) of a space station. Beside his shop he sells the place of a derelict freighter, the Emergency Signal Scanner among the [charts](/guides/charts), and its walk is the quest [Lost in Space](/quests/lost-in-space). The room of its last terminal holds a Haunted Cache, one of the Haunting Mementos the [Forsaken Trader](/guides/forsaken-trader) takes.
 
 ## What he sells
 

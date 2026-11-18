@@ -62,6 +62,10 @@
         "title": "Cartographer"
       },
       {
+        "slug": "charts",
+        "title": "Charts"
+      },
+      {
         "slug": "autophage-merchant",
         "title": "Autophage Synthesis Terminal"
       },
@@ -80,6 +84,10 @@
       {
         "slug": "deep-space-outpost",
         "title": "Deep-Space Outpost"
+      },
+      {
+        "slug": "station-decoration",
+        "title": "Space station decoration"
       },
       {
         "slug": "alien-traders",

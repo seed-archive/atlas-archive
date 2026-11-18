@@ -7,7 +7,28 @@ import {
   type Value,
 } from "@/lib/archive/statistics-format";
 import data from "@/lib/archive/statistics.json";
-import type { LoopGroup } from "@/components/archive/RecipeTree";
+import type { DishCard, LoopGroup } from "@/components/archive/RecipeTree";
+import { dishTrees } from "@/lib/archive/recipe-tree";
+import recipes from "@/lib/archive/recipes.json";
+import type { Stored } from "@/lib/archive/recipes";
+
+// Each dish named by a table, with its whole recipe and what it raises.
+function dishCards(ids: string[]): DishCard[] {
+  const items = recipes.items as Record<string, Stored>;
+  return ids.flatMap((id) => {
+    const trees = dishTrees(id);
+    const item = items[id];
+    return trees && item
+      ? [
+          {
+            name: item.name,
+            caption: item.food ? `${item.food.stat} ${item.food.bonus}` : "",
+            ...trees,
+          },
+        ]
+      : [];
+  });
+}
 
 // A table as the page prints it.
 export type StatTable = {
@@ -28,6 +49,8 @@ export type StatTable = {
   items?: (ItemPart[] | null)[][];
   // Refiner loops drawn as recipe trees, one group a circle (`components/archive/RecipeTree`).
   trees?: LoopGroup[];
+  // Dishes drawn with their whole recipe, built here from `recipes.json`.
+  dishes?: DishCard[];
 };
 
 export type Topic = { slug: string; title: string; fact: string };
@@ -71,6 +94,7 @@ function printed(table: RawTable): StatTable {
     sprite,
     items,
     trees,
+    dishes,
   } = table;
   return {
     head,
@@ -85,6 +109,7 @@ function printed(table: RawTable): StatTable {
     ...(icons && sprite ? { icons, sprite } : {}),
     ...(items && sprite ? { items, sprite } : {}),
     ...(trees && sprite ? { trees, sprite } : {}),
+    ...(dishes ? { dishes: dishCards(dishes) } : {}),
   };
 }
 

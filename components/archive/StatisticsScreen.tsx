@@ -14,7 +14,7 @@ import {
   GalaxyLink,
 } from "@/components/archive/Article";
 import { SentinelMeme } from "@/components/archive/SentinelMeme";
-import { LoopList } from "@/components/archive/RecipeTree";
+import { DishList, LoopList } from "@/components/archive/RecipeTree";
 import {
   DreadnoughtCannons,
   DreadnoughtEngines,
@@ -167,6 +167,9 @@ function widgetsOf(
       name,
       function Widget() {
         const spec = charts[name];
+        if (table.dishes) {
+          return <DishList dishes={table.dishes} note={table.note} />;
+        }
         if (table.trees && table.sprite) {
           return (
             <LoopList

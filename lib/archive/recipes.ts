@@ -14,7 +14,14 @@ export type Part = [string, number];
 // blueprint, null for every other recipe.
 export type RecipeRow = [string, number, Part[], number, number | null];
 
-export type Food = { stat: string; bonus: string; seconds: number };
+// `full`: the dish's recipe opens whole, down to what you gather (a scan bonus of
+// +6,000% or more, as the No Man's Sky generator marks it).
+export type Food = {
+  stat: string;
+  bonus: string;
+  seconds: number;
+  full: boolean;
+};
 
 export type Item = {
   name: string;
@@ -37,13 +44,15 @@ export type Book = {
 // crafting menu take up to three as well.
 export const SLOTS = 3;
 
-type Stored = {
+// `substance`: gathered, not made, so a whole recipe tree stops at it.
+export type Stored = {
   name: string;
   subtitle: string;
   description: string;
   value: number;
   tiles: Partial<Record<Station, number>>;
   food: Food | null;
+  substance: boolean;
 };
 
 // One station's recipes and only the items they name, so a page sends no more

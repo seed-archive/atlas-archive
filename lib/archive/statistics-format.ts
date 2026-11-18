@@ -52,6 +52,8 @@ export type RawTable = {
   items?: (ItemPart[] | null)[][];
   // Refiner loops drawn as recipe trees, one group a circle (`components/archive/RecipeTree`).
   trees?: LoopGroup[];
+  // Dishes whose whole recipe the site draws (`lib/archive/recipe-tree`), by id.
+  dishes?: string[];
 };
 
 export const DASH = "—";

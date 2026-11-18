@@ -25,7 +25,7 @@ A won battle can drop one, most often the daily challenge of Iteration: Oceanus,
 Pet battles are fought at Holo-Arenas, and the Arena League runs them. A player meets it in this order.
 
 1. **Iteration: Oceanus.** A collector at the Holo-Arena aboard the Space Anomaly. They teach the first battle and hand over a Retroviral Pellet, then a Holo-Arena Invitation.
-2. **Challengers.** A Challenger's Invitation marks a Holo-Arena on a nearby planet. Beat the challenger and the next invitation comes on its own.
+2. **Challengers.** A Challenger's Invitation, one of the game's [charts](/guides/charts), marks a Holo-Arena on a nearby planet. Beat the challenger and the next invitation comes on its own.
 3. **The champion.** After every {{challengers}} challenger wins, the next invitation is a Champion's Invitation instead: the system champion, who fights with creatures from the planets of that system. Beat them and a new Challenger's Invitation starts the round again, so it is {{challengers}} challengers, then a champion, for as long as you play.
 4. **Oceanus again.** On request Oceanus gives a training battle, which pays little but always hands out a Challenger's Invitation. Each day they also hold a hard daily challenge with the same team for every Traveller; it pays the most Nanites and the best pellet chance.
 

@@ -64,6 +64,8 @@ export type TreeCore = {
   groups: PartGroup[];
   lists: ListRow[];
   listOf: Map<string, number>;
+  // Every list that names a part key; most keys stand in one.
+  copiesOf: Map<string, number[]>;
   partOf: Map<string, TreePart>;
   // The child lists of a part, by its key.
   under: Map<string, number[]>;
@@ -82,6 +84,10 @@ export function treeCore(parts: Parts, groups: PartGroup[]): TreeCore {
   const tree = parts.tree;
   const lists: ListRow[] = [];
   const listOf = new Map<string, number>();
+  // Every list that names a part: the explorer's wing D hangs one sub-wing
+  // descriptor on its left and its right scene, so two lists name the same parts,
+  // and the game, which keys a pick by its Id, shows one pick at both.
+  const copiesOf = new Map<string, number[]>();
   const partOf = new Map<string, TreePart>();
   const under = new Map<string, number[]>();
   const add = (rows: TreePart[][], parent: ListRow["parent"]) => {
@@ -90,6 +96,7 @@ export function treeCore(parts: Parts, groups: PartGroup[]): TreeCore {
       lists.push({ parts, parent });
       for (const part of parts) {
         const key = keyOf(part);
+        copiesOf.set(key, [...(copiesOf.get(key) ?? []), at]);
         // Two lists of one section can name the same part (`_Cargo_Top9` walks
         // two container descriptors whose parts share their names), and the art
         // draws them as one layer: the list whose part holds more is the one the
@@ -128,6 +135,7 @@ export function treeCore(parts: Parts, groups: PartGroup[]): TreeCore {
     groups,
     lists,
     listOf,
+    copiesOf,
     partOf,
     under,
     groupOf,
@@ -273,22 +281,39 @@ export function pick(
     return assignment;
   }
   const next = assignment.slice();
-  const climb = (name: string) => {
-    let up = core.lists[core.listOf.get(name) as number]?.parent;
-    while (up) {
-      next[up.list] = up.part;
-      up = core.lists[up.list].parent;
+  // A tied pick climbs only up to the pick its group hangs on (the Shuttle's
+  // sub-wing kinds stand under a heading inside their own group) and forces
+  // nothing above it open; any other pick climbs to the top.
+  const needs = group.requires;
+  const wanted = new Set([
+    ...(needs?.option ? [needs.option] : []),
+    ...(needs?.options ?? []),
+  ]);
+  const above = new Set(
+    core.groups
+      .find((other) => other.id === needs?.group)
+      ?.options.filter((other) => wanted.has(other.id))
+      .flatMap((other) => other.names) ?? [],
+  );
+  const climb = (name: string, within: boolean) => {
+    for (const list of core.copiesOf.get(name) ?? []) {
+      let up = core.lists[list]?.parent;
+      while (up && !(within && above.has(up.part))) {
+        next[up.list] = up.part;
+        up = core.lists[up.list].parent;
+      }
     }
   };
   for (const name of row.names) {
-    const list = core.listOf.get(name);
-    if (list !== undefined) {
+    for (const list of core.copiesOf.get(name) ?? []) {
       next[list] = name;
     }
   }
-  if (!group.first) {
-    for (const name of row.names) {
-      climb(name);
+  for (const name of row.names) {
+    if (!group.first) {
+      climb(name, false);
+    } else if (group.requires) {
+      climb(name, true);
     }
   }
   // A cut length falls back on its depth's own stop: where the depth's list still
@@ -301,7 +326,7 @@ export function pick(
       if (goes.has(next[list])) {
         next[list] = row.stop;
       }
-      climb(row.stop);
+      climb(row.stop, false);
     }
   }
   return opened(core, next, group, row);

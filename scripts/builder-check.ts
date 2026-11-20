@@ -27,6 +27,12 @@ const SHIPS: [string, string, string | null][] = [
   ["regular-freighter", "public/freighter/regular", null],
   ["living-ship", "public/living-ship", "TopAcc_A"],
   ["living-frigate", "public/living-frigate", null],
+  ["exotic", "public/exotic", null],
+  ["sail", "public/sail", null],
+  ["fighter", "public/fighter", null],
+  ["dropship", "public/dropship", null],
+  ["scientific", "public/scientific", null],
+  ["shuttle", "public/shuttle", null],
 ];
 
 let failures = 0;

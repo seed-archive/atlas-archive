@@ -1,0 +1,2044 @@
+[
+  {
+    "id": "Cockpit_ARoot",
+    "options": [
+      {
+        "id": "Cockpit_ARoot",
+        "label": "Variant 1",
+        "names": ["_Cockpit_ARoot"],
+        "tile": [
+          "_Cockpit_ARoot",
+          "_Back_B",
+          "_logo2_A",
+          "_logo1_A",
+          "_Cockpit_A",
+          "_SmallSign2_A",
+          "_SmallSign1_A"
+        ]
+      },
+      {
+        "id": "Cockpit_DRoot",
+        "label": "Variant 2",
+        "names": ["_Cockpit_DRoot"],
+        "tile": [
+          "_Cockpit_DRoot",
+          "_RRearWing_1",
+          "_RRearWing_1._logo2_A2",
+          "_RRearWing_1._logo1_A1",
+          "_LRearWing_1",
+          "_LRearWing_1._logo2_A2",
+          "_LRearWing_1._logo1_A1",
+          "_Cockpit_D",
+          "_Letter1_A",
+          "_Letter2_A",
+          "_Number_A1"
+        ]
+      }
+    ],
+    "title": "Cockpit"
+  },
+  {
+    "id": "AccFront_A",
+    "options": [
+      {
+        "id": "AccFront_A",
+        "label": "Variant 1",
+        "names": ["_AccFront_A"],
+        "tile": ["_AccFront_A"]
+      },
+      {
+        "id": "AccFront_B",
+        "label": "Variant 2",
+        "names": ["_AccFront_B"],
+        "tile": ["_AccFront_B"]
+      },
+      {
+        "id": "AccFront_C",
+        "label": "Variant 3",
+        "names": ["_AccFront_C"],
+        "tile": ["_AccFront_C"]
+      },
+      {
+        "empty": true,
+        "id": "AccFront_None",
+        "label": "None",
+        "names": ["_AccFront_None"],
+        "tile": []
+      }
+    ],
+    "requires": {
+      "group": "Cockpit_ARoot",
+      "option": "Cockpit_ARoot"
+    },
+    "title": "Front accessory"
+  },
+  {
+    "id": "BackAcc_0",
+    "options": [
+      {
+        "id": "BackAcc_1",
+        "label": "Variant 1",
+        "names": ["_BackAcc_1"],
+        "tile": ["_BackAcc_1", "_BackAcc_1._logo2_A2", "_BackAcc_1._logo1_A1"]
+      },
+      {
+        "id": "BackAcc_2",
+        "label": "Variant 2",
+        "names": ["_BackAcc_2"],
+        "tile": ["_BackAcc_2"]
+      },
+      {
+        "empty": true,
+        "id": "BackAcc_0",
+        "label": "None",
+        "names": ["_BackAcc_0"],
+        "tile": []
+      }
+    ],
+    "requires": {
+      "group": "Cockpit_ARoot",
+      "option": "Cockpit_ARoot"
+    },
+    "title": "Back accessory"
+  },
+  {
+    "id": "Wings_Sym",
+    "options": [
+      {
+        "id": "WingJNT_A2",
+        "label": "WingJNT 1",
+        "names": ["_WingJNT_A2"],
+        "tile": ["_WingJNT_A2"]
+      },
+      {
+        "id": "WingJNT_B2",
+        "label": "WingJNT 2",
+        "names": ["_WingJNT_B2"],
+        "tile": ["_WingJNT_B2"]
+      },
+      {
+        "id": "Wings_ASym",
+        "label": "Variant 2",
+        "names": ["_Wings_ASym"],
+        "tile": ["_Wings_ASym"]
+      },
+      {
+        "empty": true,
+        "id": "none",
+        "label": "None",
+        "names": [
+          "_WingJNT_A2",
+          "_WingTop_NULL",
+          "_WingsL_None2",
+          "_AccCanopy_None"
+        ],
+        "nothing": true,
+        "tile": []
+      }
+    ],
+    "requires": {
+      "group": "Cockpit_ARoot",
+      "option": "Cockpit_ARoot"
+    },
+    "title": "Wings"
+  },
+  {
+    "id": "WingsL_A4",
+    "options": [
+      {
+        "id": "WingsL_A4",
+        "label": "Variant 1",
+        "names": ["_WingsL_A4"],
+        "tile": ["_WingsL_A4"]
+      },
+      {
+        "id": "WingsL_B4",
+        "label": "Variant 2",
+        "names": ["_WingsL_B4"],
+        "tile": [
+          "_WingsL_B4",
+          "_WingsL_B4._Subwing1_R",
+          "_WingsL_B4._Subwing2_R",
+          "_WingsL_B4._Subwing1_L",
+          "_WingsL_B4._Subwing2_L"
+        ]
+      },
+      {
+        "id": "WingsL_C4",
+        "label": "Variant 3",
+        "names": ["_WingsL_C4"],
+        "tile": [
+          "_WingsL_C4",
+          "_WingsL_C4._WCAcc_1",
+          "_WingsL_C4._Letter_A1",
+          "_WingsL_C4._logo_A1"
+        ]
+      },
+      {
+        "id": "WingsL_D4",
+        "label": "Variant 4",
+        "names": ["_WingsL_D4"],
+        "tile": [
+          "_WingsL_D4",
+          "_WingsL_D4._logo_A1",
+          "_WingsL_D4._Subwing1_L1",
+          "_WingsL_D4._Subwing2_L2"
+        ]
+      },
+      {
+        "id": "WingsL_E4",
+        "label": "Variant 5",
+        "names": ["_WingsL_E4"],
+        "tile": ["_WingsL_E4", "_WingsR_E6"]
+      },
+      {
+        "id": "WingsL_F4",
+        "label": "Variant 6",
+        "names": ["_WingsL_F4"],
+        "tile": ["_WingsL_F4", "_WingsL_F4._Letter_A1"]
+      },
+      {
+        "id": "WingsL_G4",
+        "label": "Variant 7",
+        "names": ["_WingsL_G4"],
+        "tile": [
+          "_WingsL_G4",
+          "_WingsL_G4._SmallSign_A1",
+          "_WingsL_G4._Letter_A1"
+        ]
+      },
+      {
+        "id": "WingsL_H4",
+        "label": "Variant 8",
+        "names": ["_WingsL_H4"],
+        "tile": [
+          "_WingsL_H4",
+          "_WingsL_H4._Subwing1_L",
+          "_WingsL_H4._Subwing2_L",
+          "_WingsL_H4._Subwing1_R",
+          "_WingsL_H4._Subwing2_R"
+        ]
+      },
+      {
+        "id": "WingsL_I4",
+        "label": "Variant 9",
+        "names": ["_WingsL_I4"],
+        "tile": ["_WingsL_I4", "_WingsL_I4._logo2_A2", "_WingsL_I4._logo1_A1"]
+      },
+      {
+        "id": "WingsL_K3",
+        "label": "Variant 10",
+        "names": ["_WingsL_K3"],
+        "tile": [
+          "_WingsL_K3",
+          "_WLK3_NULL",
+          "_WingsL_K3._Rectangle_A1",
+          "_WingsL_K3._Subwing1_L",
+          "_WingsL_K3._Subwing2_L",
+          "_WingsL_K3._Subwing1_L2",
+          "_WingsL_K3._Subwing2_L1"
+        ]
+      },
+      {
+        "id": "WingsL_L1",
+        "label": "Variant 11",
+        "names": ["_WingsL_L1"],
+        "tile": ["_WingsL_L1", "_WingsL_L1._Letter_A1"]
+      },
+      {
+        "empty": true,
+        "id": "WingsL_None2",
+        "label": "None",
+        "names": ["_WingsL_None2"],
+        "tile": []
+      }
+    ],
+    "requires": {
+      "group": "Wings_Sym",
+      "option": "WingJNT_A2"
+    },
+    "title": "Left wing"
+  },
+  {
+    "first": true,
+    "id": "WingsL_B4._Subwing1_R._SubWingL_A",
+    "options": [
+      {
+        "id": "WingsL_B4._Subwing1_R._SubWingL_A",
+        "label": "Variant 1",
+        "names": [
+          "_WingsL_B4._Subwing1_R._SubWingL_A",
+          "_WingsL_B4._Subwing2_R._SubWingL_A",
+          "_WingsL_B4._Subwing1_L._SubWingL_A",
+          "_WingsL_B4._Subwing2_L._SubWingL_A"
+        ],
+        "tile": ["_WingsL_B4._Subwing1_R._SubWingL_A"]
+      },
+      {
+        "id": "WingsL_B4._Subwing1_R._SubWingL_B",
+        "label": "Variant 2",
+        "names": [
+          "_WingsL_B4._Subwing1_R._SubWingL_B",
+          "_WingsL_B4._Subwing2_R._SubWingL_B",
+          "_WingsL_B4._Subwing1_L._SubWingL_B",
+          "_WingsL_B4._Subwing2_L._SubWingL_B"
+        ],
+        "tile": ["_WingsL_B4._Subwing1_R._SubWingL_B"]
+      },
+      {
+        "id": "WingsL_B4._Subwing1_R._SubWingL_C",
+        "label": "Variant 3",
+        "names": [
+          "_WingsL_B4._Subwing1_R._SubWingL_C",
+          "_WingsL_B4._Subwing2_R._SubWingL_C",
+          "_WingsL_B4._Subwing1_L._SubWingL_C",
+          "_WingsL_B4._Subwing2_L._SubWingL_C"
+        ],
+        "tile": ["_WingsL_B4._Subwing1_R._SubWingL_C"]
+      },
+      {
+        "id": "WingsL_B4._Subwing1_R._SubWingL_D",
+        "label": "Variant 4",
+        "names": [
+          "_WingsL_B4._Subwing1_R._SubWingL_D",
+          "_WingsL_B4._Subwing2_R._SubWingL_D",
+          "_WingsL_B4._Subwing1_L._SubWingL_D",
+          "_WingsL_B4._Subwing2_L._SubWingL_D"
+        ],
+        "tile": ["_WingsL_B4._Subwing1_R._SubWingL_D"]
+      }
+    ],
+    "requires": {
+      "group": "WingsL_A4",
+      "option": "WingsL_B4"
+    },
+    "title": "Left sub-wing"
+  },
+  {
+    "first": true,
+    "id": "WingsL_D4._Subwing1_L1._SubWingL_A",
+    "options": [
+      {
+        "id": "WingsL_D4._Subwing1_L1._SubWingL_A",
+        "label": "Variant 1",
+        "names": [
+          "_WingsL_D4._Subwing1_L1._SubWingL_A",
+          "_WingsL_D4._Subwing1_L1._SubWingL_A",
+          "_WingsL_D4._Subwing2_L2._SubWingL_A",
+          "_WingsL_D4._Subwing2_L2._SubWingL_A"
+        ],
+        "tile": ["_WingsL_D4._Subwing1_L1._SubWingL_A"]
+      },
+      {
+        "id": "WingsL_D4._Subwing1_L1._SubWingL_B",
+        "label": "Variant 2",
+        "names": [
+          "_WingsL_D4._Subwing1_L1._SubWingL_B",
+          "_WingsL_D4._Subwing1_L1._SubWingL_B",
+          "_WingsL_D4._Subwing2_L2._SubWingL_B",
+          "_WingsL_D4._Subwing2_L2._SubWingL_B"
+        ],
+        "tile": ["_WingsL_D4._Subwing1_L1._SubWingL_B"]
+      },
+      {
+        "id": "WingsL_D4._Subwing1_L1._SubWingL_C",
+        "label": "Variant 3",
+        "names": [
+          "_WingsL_D4._Subwing1_L1._SubWingL_C",
+          "_WingsL_D4._Subwing1_L1._SubWingL_C",
+          "_WingsL_D4._Subwing2_L2._SubWingL_C",
+          "_WingsL_D4._Subwing2_L2._SubWingL_C"
+        ],
+        "tile": ["_WingsL_D4._Subwing1_L1._SubWingL_C"]
+      },
+      {
+        "id": "WingsL_D4._Subwing1_L1._SubWingL_D",
+        "label": "Variant 4",
+        "names": [
+          "_WingsL_D4._Subwing1_L1._SubWingL_D",
+          "_WingsL_D4._Subwing1_L1._SubWingL_D",
+          "_WingsL_D4._Subwing2_L2._SubWingL_D",
+          "_WingsL_D4._Subwing2_L2._SubWingL_D"
+        ],
+        "tile": ["_WingsL_D4._Subwing1_L1._SubWingL_D"]
+      }
+    ],
+    "requires": {
+      "group": "WingsL_A4",
+      "option": "WingsL_D4"
+    },
+    "title": "Left sub-wing"
+  },
+  {
+    "id": "WF4A_NULL",
+    "options": [
+      {
+        "id": "WF4A_1",
+        "label": "With",
+        "names": ["_WF4A_1"],
+        "tile": ["_WF4A_1", "_WF4A_1._logo_A1"]
+      },
+      {
+        "empty": true,
+        "id": "WF4A_NULL",
+        "label": "None",
+        "names": ["_WF4A_NULL"],
+        "tile": []
+      }
+    ],
+    "requires": {
+      "group": "WingsL_A4",
+      "option": "WingsL_F4"
+    },
+    "title": "Wing accessory"
+  },
+  {
+    "id": "WLG4A_NULL",
+    "options": [
+      {
+        "id": "WLG4A_1",
+        "label": "With",
+        "names": ["_WLG4A_1"],
+        "tile": ["_WLG4A_1", "_WLG4A_1._logo_A1"]
+      },
+      {
+        "empty": true,
+        "id": "WLG4A_NULL",
+        "label": "None",
+        "names": ["_WLG4A_NULL"],
+        "tile": []
+      }
+    ],
+    "requires": {
+      "group": "WingsL_A4",
+      "option": "WingsL_G4"
+    },
+    "title": "Wing accessory"
+  },
+  {
+    "first": true,
+    "id": "WingsL_H4._Subwing1_L._SubWingL_A",
+    "options": [
+      {
+        "id": "WingsL_H4._Subwing1_L._SubWingL_A",
+        "label": "Variant 1",
+        "names": [
+          "_WingsL_H4._Subwing1_L._SubWingL_A",
+          "_WingsL_H4._Subwing2_L._SubWingL_A",
+          "_WingsL_H4._Subwing1_R._SubWingL_A",
+          "_WingsL_H4._Subwing2_R._SubWingL_A"
+        ],
+        "tile": ["_WingsL_H4._Subwing1_L._SubWingL_A"]
+      },
+      {
+        "id": "WingsL_H4._Subwing1_L._SubWingL_B",
+        "label": "Variant 2",
+        "names": [
+          "_WingsL_H4._Subwing1_L._SubWingL_B",
+          "_WingsL_H4._Subwing2_L._SubWingL_B",
+          "_WingsL_H4._Subwing1_R._SubWingL_B",
+          "_WingsL_H4._Subwing2_R._SubWingL_B"
+        ],
+        "tile": ["_WingsL_H4._Subwing1_L._SubWingL_B"]
+      },
+      {
+        "id": "WingsL_H4._Subwing1_L._SubWingL_C",
+        "label": "Variant 3",
+        "names": [
+          "_WingsL_H4._Subwing1_L._SubWingL_C",
+          "_WingsL_H4._Subwing2_L._SubWingL_C",
+          "_WingsL_H4._Subwing1_R._SubWingL_C",
+          "_WingsL_H4._Subwing2_R._SubWingL_C"
+        ],
+        "tile": ["_WingsL_H4._Subwing1_L._SubWingL_C"]
+      },
+      {
+        "id": "WingsL_H4._Subwing1_L._SubWingL_D",
+        "label": "Variant 4",
+        "names": [
+          "_WingsL_H4._Subwing1_L._SubWingL_D",
+          "_WingsL_H4._Subwing2_L._SubWingL_D",
+          "_WingsL_H4._Subwing1_R._SubWingL_D",
+          "_WingsL_H4._Subwing2_R._SubWingL_D"
+        ],
+        "tile": ["_WingsL_H4._Subwing1_L._SubWingL_D"]
+      }
+    ],
+    "requires": {
+      "group": "WingsL_A4",
+      "option": "WingsL_H4"
+    },
+    "title": "Left sub-wing"
+  },
+  {
+    "first": true,
+    "id": "WingsL_K3._Subwing1_L._SubWingL_A",
+    "options": [
+      {
+        "id": "WingsL_K3._Subwing1_L._SubWingL_A",
+        "label": "Variant 1",
+        "names": [
+          "_WingsL_K3._Subwing1_L._SubWingL_A",
+          "_WingsL_K3._Subwing2_L._SubWingL_A",
+          "_WingsL_K3._Subwing1_L2._SubWingL_A",
+          "_WingsL_K3._Subwing2_L1._SubWingL_A"
+        ],
+        "tile": ["_WingsL_K3._Subwing1_L._SubWingL_A"]
+      },
+      {
+        "id": "WingsL_K3._Subwing1_L._SubWingL_B",
+        "label": "Variant 2",
+        "names": [
+          "_WingsL_K3._Subwing1_L._SubWingL_B",
+          "_WingsL_K3._Subwing2_L._SubWingL_B",
+          "_WingsL_K3._Subwing1_L2._SubWingL_B",
+          "_WingsL_K3._Subwing2_L1._SubWingL_B"
+        ],
+        "tile": ["_WingsL_K3._Subwing1_L._SubWingL_B"]
+      },
+      {
+        "id": "WingsL_K3._Subwing1_L._SubWingL_C",
+        "label": "Variant 3",
+        "names": [
+          "_WingsL_K3._Subwing1_L._SubWingL_C",
+          "_WingsL_K3._Subwing2_L._SubWingL_C",
+          "_WingsL_K3._Subwing1_L2._SubWingL_C",
+          "_WingsL_K3._Subwing2_L1._SubWingL_C"
+        ],
+        "tile": ["_WingsL_K3._Subwing1_L._SubWingL_C"]
+      },
+      {
+        "id": "WingsL_K3._Subwing1_L._SubWingL_D",
+        "label": "Variant 4",
+        "names": [
+          "_WingsL_K3._Subwing1_L._SubWingL_D",
+          "_WingsL_K3._Subwing2_L._SubWingL_D",
+          "_WingsL_K3._Subwing1_L2._SubWingL_D",
+          "_WingsL_K3._Subwing2_L1._SubWingL_D"
+        ],
+        "tile": ["_WingsL_K3._Subwing1_L._SubWingL_D"]
+      }
+    ],
+    "requires": {
+      "group": "WingsL_A4",
+      "option": "WingsL_K3"
+    },
+    "title": "Left sub-wing"
+  },
+  {
+    "id": "AccCanopy_A",
+    "options": [
+      {
+        "id": "AccCanopy_A",
+        "label": "Variant 1",
+        "names": ["_AccCanopy_A"],
+        "shared": true,
+        "tile": ["_AccCanopy_A"]
+      },
+      {
+        "id": "AccCanopy_B",
+        "label": "Variant 2",
+        "names": ["_AccCanopy_B"],
+        "shared": true,
+        "tile": ["_AccCanopy_B"]
+      },
+      {
+        "empty": true,
+        "id": "AccCanopy_None",
+        "label": "None",
+        "names": ["_AccCanopy_None"],
+        "tile": []
+      }
+    ],
+    "requires": {
+      "group": "Wings_Sym",
+      "option": "WingJNT_A2"
+    },
+    "title": "Canopy accessory"
+  },
+  {
+    "id": "WLeftT_A2",
+    "options": [
+      {
+        "id": "WLeftT_A2",
+        "label": "Variant 1",
+        "names": ["_WLeftT_A2"],
+        "tile": ["_WLeftT_A2"]
+      },
+      {
+        "id": "WLeftT_C2",
+        "label": "Variant 2",
+        "names": ["_WLeftT_C2"],
+        "tile": [
+          "_WLeftT_C2",
+          "_WLeftT_C2._WCAcc_1",
+          "_WLeftT_C2._Letter_A1",
+          "_WLeftT_C2._logo_A1"
+        ]
+      },
+      {
+        "id": "WLeftT_F2",
+        "label": "Variant 3",
+        "names": ["_WLeftT_F2"],
+        "tile": ["_WLeftT_F2", "_WLeftT_F2._Letter_A1"]
+      },
+      {
+        "id": "WLeftT_G2",
+        "label": "Variant 4",
+        "names": ["_WLeftT_G2"],
+        "tile": [
+          "_WLeftT_G2",
+          "_WLeftT_G2._SmallSign_A1",
+          "_WLeftT_G2._Letter_A1"
+        ]
+      },
+      {
+        "id": "WLeftT_I2",
+        "label": "Variant 5",
+        "names": ["_WLeftT_I2"],
+        "tile": ["_WLeftT_I2", "_WLeftT_I2._logo2_A2", "_WLeftT_I2._logo1_A1"]
+      }
+    ],
+    "requires": {
+      "group": "Wings_Sym",
+      "option": "WingJNT_B2"
+    },
+    "title": "Left wing tip"
+  },
+  {
+    "id": "AccCanopy_None1",
+    "options": [
+      {
+        "id": "AccCanopy_B1",
+        "label": "Variant 1",
+        "names": ["_AccCanopy_B1"],
+        "shared": true,
+        "tile": ["_AccCanopy_B1"]
+      },
+      {
+        "id": "AccCanopy_A1",
+        "label": "Variant 2",
+        "names": ["_AccCanopy_A1"],
+        "shared": true,
+        "tile": ["_AccCanopy_A1"]
+      },
+      {
+        "empty": true,
+        "id": "AccCanopy_None1",
+        "label": "None",
+        "names": ["_AccCanopy_None1"],
+        "tile": []
+      }
+    ],
+    "requires": {
+      "group": "Wings_Sym",
+      "option": "WingJNT_B2"
+    },
+    "title": "Canopy accessory"
+  },
+  {
+    "id": "WingJointL_A",
+    "options": [
+      {
+        "id": "WingJointL_A",
+        "label": "Variant 1",
+        "names": ["_WingJointL_A"],
+        "tile": ["_WingJointL_A"]
+      },
+      {
+        "id": "WingJointL_B",
+        "label": "Variant 2",
+        "names": ["_WingJointL_B"],
+        "tile": ["_WingJointL_B"]
+      }
+    ],
+    "requires": {
+      "group": "Wings_Sym",
+      "option": "Wings_ASym"
+    },
+    "title": "Left wing joint"
+  },
+  {
+    "id": "WingsL_A",
+    "options": [
+      {
+        "id": "WingsL_A",
+        "label": "Variant 1",
+        "names": ["_WingsL_A"],
+        "tile": ["_WingsL_A"]
+      },
+      {
+        "id": "WingsL_B",
+        "label": "Variant 2",
+        "names": ["_WingsL_B"],
+        "tile": ["_WingsL_B", "_WingsL_B._Subwing1_L", "_WingsL_B._Subwing2_L"]
+      },
+      {
+        "id": "WingsL_C",
+        "label": "Variant 3",
+        "names": ["_WingsL_C"],
+        "tile": [
+          "_WingsL_C",
+          "_WingsL_C._WCAcc_1",
+          "_WingsL_C._Letter_A1",
+          "_WingsL_C._logo_A1"
+        ]
+      },
+      {
+        "id": "WingsL_D",
+        "label": "Variant 4",
+        "names": ["_WingsL_D"],
+        "tile": [
+          "_WingsL_D",
+          "_WingsL_D._logo_A1",
+          "_WingsL_D._Subwing1_L1",
+          "_WingsL_D._Subwing2_L2"
+        ]
+      },
+      {
+        "id": "WingsL_E",
+        "label": "Variant 5",
+        "names": ["_WingsL_E"],
+        "tile": ["_WingsL_E"]
+      },
+      {
+        "id": "WingsL_F",
+        "label": "Variant 6",
+        "names": ["_WingsL_F"],
+        "tile": ["_WingsL_F", "_WingsL_F._Letter_A1"]
+      },
+      {
+        "id": "WingsL_G",
+        "label": "Variant 7",
+        "names": ["_WingsL_G"],
+        "tile": ["_WingsL_G", "_WingsL_G._SmallSign_A1", "_WingsL_G._Letter_A1"]
+      },
+      {
+        "id": "WingsL_H",
+        "label": "Variant 8",
+        "names": ["_WingsL_H"],
+        "tile": ["_WingsL_H", "_WingsL_H._Subwing1_L", "_WingsL_H._Subwing2_L"]
+      },
+      {
+        "id": "WingsL_I",
+        "label": "Variant 9",
+        "names": ["_WingsL_I"],
+        "tile": ["_WingsL_I", "_WingsL_I._logo2_A2", "_WingsL_I._logo1_A1"]
+      },
+      {
+        "id": "WingsL_K",
+        "label": "Variant 10",
+        "names": ["_WingsL_K"],
+        "tile": [
+          "_WingsL_K",
+          "_WingsL_K._Rectangle_A1",
+          "_WingsL_K._Subwing1_L",
+          "_WingsL_K._Subwing2_L"
+        ]
+      },
+      {
+        "empty": true,
+        "id": "WingsL_None",
+        "label": "None",
+        "names": ["_WingsL_None"],
+        "tile": []
+      }
+    ],
+    "requires": {
+      "group": "WingJointL_A",
+      "option": "WingJointL_A"
+    },
+    "title": "Left wing"
+  },
+  {
+    "first": true,
+    "free": true,
+    "id": "WingsL_B._Subwing1_L._SubWingL_A",
+    "options": [
+      {
+        "id": "WingsL_B._Subwing1_L._SubWingL_A",
+        "label": "Variant 1",
+        "names": [
+          "_WingsL_B._Subwing1_L._SubWingL_A",
+          "_WingsL_B._Subwing2_L._SubWingL_A",
+          "_WingsL_D._Subwing1_L1._SubWingL_A",
+          "_WingsL_D._Subwing2_L2._SubWingL_A",
+          "_WingsL_H._Subwing1_L._SubWingL_A",
+          "_WingsL_H._Subwing2_L._SubWingL_A",
+          "_WingsL_K._Subwing1_L._SubWingL_A",
+          "_WingsL_K._Subwing2_L._SubWingL_A",
+          "_WingsR_B4._Subwing1_R._SubWingL_A",
+          "_WingsR_B4._Subwing2_R._SubWingL_A",
+          "_WingsR_D4._Subwing1_L1._SubWingL_A",
+          "_WingsR_D4._Subwing2_L2._SubWingL_A",
+          "_WingsR_H4._Subwing1_R._SubWingL_A",
+          "_WingsR_H4._Subwing2_R._SubWingL_A",
+          "_WingsR_K3._Subwing1_L2._SubWingL_A",
+          "_WingsR_K3._Subwing2_L1._SubWingL_A"
+        ],
+        "tile": ["_WingsL_B._Subwing1_L._SubWingL_A"]
+      },
+      {
+        "id": "WingsL_B._Subwing1_L._SubWingL_B",
+        "label": "Variant 2",
+        "names": [
+          "_WingsL_B._Subwing1_L._SubWingL_B",
+          "_WingsL_B._Subwing2_L._SubWingL_B",
+          "_WingsL_D._Subwing1_L1._SubWingL_B",
+          "_WingsL_D._Subwing2_L2._SubWingL_B",
+          "_WingsL_H._Subwing1_L._SubWingL_B",
+          "_WingsL_H._Subwing2_L._SubWingL_B",
+          "_WingsL_K._Subwing1_L._SubWingL_B",
+          "_WingsL_K._Subwing2_L._SubWingL_B",
+          "_WingsR_B4._Subwing1_R._SubWingL_B",
+          "_WingsR_B4._Subwing2_R._SubWingL_B",
+          "_WingsR_D4._Subwing1_L1._SubWingL_B",
+          "_WingsR_D4._Subwing2_L2._SubWingL_B",
+          "_WingsR_H4._Subwing1_R._SubWingL_B",
+          "_WingsR_H4._Subwing2_R._SubWingL_B",
+          "_WingsR_K3._Subwing1_L2._SubWingL_B",
+          "_WingsR_K3._Subwing2_L1._SubWingL_B"
+        ],
+        "tile": ["_WingsL_B._Subwing1_L._SubWingL_B"]
+      },
+      {
+        "id": "WingsL_B._Subwing1_L._SubWingL_C",
+        "label": "Variant 3",
+        "names": [
+          "_WingsL_B._Subwing1_L._SubWingL_C",
+          "_WingsL_B._Subwing2_L._SubWingL_C",
+          "_WingsL_D._Subwing1_L1._SubWingL_C",
+          "_WingsL_D._Subwing2_L2._SubWingL_C",
+          "_WingsL_H._Subwing1_L._SubWingL_C",
+          "_WingsL_H._Subwing2_L._SubWingL_C",
+          "_WingsL_K._Subwing1_L._SubWingL_C",
+          "_WingsL_K._Subwing2_L._SubWingL_C",
+          "_WingsR_B4._Subwing1_R._SubWingL_C",
+          "_WingsR_B4._Subwing2_R._SubWingL_C",
+          "_WingsR_D4._Subwing1_L1._SubWingL_C",
+          "_WingsR_D4._Subwing2_L2._SubWingL_C",
+          "_WingsR_H4._Subwing1_R._SubWingL_C",
+          "_WingsR_H4._Subwing2_R._SubWingL_C",
+          "_WingsR_K3._Subwing1_L2._SubWingL_C",
+          "_WingsR_K3._Subwing2_L1._SubWingL_C"
+        ],
+        "tile": ["_WingsL_B._Subwing1_L._SubWingL_C"]
+      },
+      {
+        "id": "WingsL_B._Subwing1_L._SubWingL_D",
+        "label": "Variant 4",
+        "names": [
+          "_WingsL_B._Subwing1_L._SubWingL_D",
+          "_WingsL_B._Subwing2_L._SubWingL_D",
+          "_WingsL_D._Subwing1_L1._SubWingL_D",
+          "_WingsL_D._Subwing2_L2._SubWingL_D",
+          "_WingsL_H._Subwing1_L._SubWingL_D",
+          "_WingsL_H._Subwing2_L._SubWingL_D",
+          "_WingsL_K._Subwing1_L._SubWingL_D",
+          "_WingsL_K._Subwing2_L._SubWingL_D",
+          "_WingsR_B4._Subwing1_R._SubWingL_D",
+          "_WingsR_B4._Subwing2_R._SubWingL_D",
+          "_WingsR_D4._Subwing1_L1._SubWingL_D",
+          "_WingsR_D4._Subwing2_L2._SubWingL_D",
+          "_WingsR_H4._Subwing1_R._SubWingL_D",
+          "_WingsR_H4._Subwing2_R._SubWingL_D",
+          "_WingsR_K3._Subwing1_L2._SubWingL_D",
+          "_WingsR_K3._Subwing2_L1._SubWingL_D"
+        ],
+        "tile": ["_WingsL_B._Subwing1_L._SubWingL_D"]
+      }
+    ],
+    "requires": {
+      "group": "Wings_Sym",
+      "option": "Wings_ASym"
+    },
+    "title": "Left sub-wing"
+  },
+  {
+    "id": "WLeftT_A",
+    "options": [
+      {
+        "id": "WLeftT_A",
+        "label": "Variant 1",
+        "names": ["_WLeftT_A"],
+        "tile": ["_WLeftT_A"]
+      },
+      {
+        "id": "WLeftT_C",
+        "label": "Variant 2",
+        "names": ["_WLeftT_C"],
+        "tile": [
+          "_WLeftT_C",
+          "_WLeftT_C._WCAcc_1",
+          "_WLeftT_C._Letter_A1",
+          "_WLeftT_C._logo_A1"
+        ]
+      },
+      {
+        "id": "WLeftT_F",
+        "label": "Variant 3",
+        "names": ["_WLeftT_F"],
+        "tile": ["_WLeftT_F", "_WLeftT_F._Letter_A1"]
+      },
+      {
+        "id": "WLeftT_G",
+        "label": "Variant 4",
+        "names": ["_WLeftT_G"],
+        "tile": ["_WLeftT_G", "_WLeftT_G._SmallSign_A1", "_WLeftT_G._Letter_A1"]
+      },
+      {
+        "id": "WLeftT_I",
+        "label": "Variant 5",
+        "names": ["_WLeftT_I"],
+        "tile": ["_WLeftT_I", "_WLeftT_I._logo2_A2", "_WLeftT_I._logo1_A1"]
+      }
+    ],
+    "requires": {
+      "group": "WingJointL_A",
+      "option": "WingJointL_B"
+    },
+    "title": "Left wing tip"
+  },
+  {
+    "id": "WingJointR_A3",
+    "options": [
+      {
+        "id": "WingJointR_A3",
+        "label": "Variant 1",
+        "names": ["_WingJointR_A3"],
+        "tile": ["_WingJointR_A3"]
+      },
+      {
+        "id": "WingJointR_B3",
+        "label": "Variant 2",
+        "names": ["_WingJointR_B3"],
+        "tile": ["_WingJointR_B3"]
+      }
+    ],
+    "requires": {
+      "group": "Wings_Sym",
+      "option": "Wings_ASym"
+    },
+    "title": "Right wing joint"
+  },
+  {
+    "id": "WingsR_A4",
+    "options": [
+      {
+        "id": "WingsR_A4",
+        "label": "Variant 1",
+        "names": ["_WingsR_A4"],
+        "tile": ["_WingsR_A4"]
+      },
+      {
+        "id": "WingsR_B4",
+        "label": "Variant 2",
+        "names": ["_WingsR_B4"],
+        "tile": [
+          "_WingsR_B4",
+          "_WingsR_B4._Subwing1_R",
+          "_WingsR_B4._Subwing2_R"
+        ]
+      },
+      {
+        "id": "WingsR_C4",
+        "label": "Variant 3",
+        "names": ["_WingsR_C4"],
+        "tile": [
+          "_WingsR_C4",
+          "_WingsR_C4._WCAcc_1",
+          "_WingsR_C4._Letter_A1",
+          "_WingsR_C4._logo_A1"
+        ]
+      },
+      {
+        "id": "WingsR_D4",
+        "label": "Variant 4",
+        "names": ["_WingsR_D4"],
+        "tile": [
+          "_WingsR_D4",
+          "_WingsR_D4._logo_A1",
+          "_WingsR_D4._Subwing1_L1",
+          "_WingsR_D4._Subwing2_L2"
+        ]
+      },
+      {
+        "id": "WingsR_E5",
+        "label": "Variant 5",
+        "names": ["_WingsR_E5"],
+        "tile": ["_WingsR_E5"]
+      },
+      {
+        "id": "WingsR_F4",
+        "label": "Variant 6",
+        "names": ["_WingsR_F4"],
+        "tile": ["_WingsR_F4", "_WingsR_F4._Letter_A1"]
+      },
+      {
+        "id": "WingsR_G4",
+        "label": "Variant 7",
+        "names": ["_WingsR_G4"],
+        "tile": [
+          "_WingsR_G4",
+          "_WingsR_G4._SmallSign_A1",
+          "_WingsR_G4._Letter_A1"
+        ]
+      },
+      {
+        "id": "WingsR_H4",
+        "label": "Variant 8",
+        "names": ["_WingsR_H4"],
+        "tile": [
+          "_WingsR_H4",
+          "_WingsR_H4._Subwing1_R",
+          "_WingsR_H4._Subwing2_R"
+        ]
+      },
+      {
+        "id": "WingsR_I4",
+        "label": "Variant 9",
+        "names": ["_WingsR_I4"],
+        "tile": ["_WingsR_I4", "_WingsR_I4._logo2_A2", "_WingsR_I4._logo1_A1"]
+      },
+      {
+        "id": "WingsR_K3",
+        "label": "Variant 10",
+        "names": ["_WingsR_K3"],
+        "tile": [
+          "_WingsR_K3",
+          "_WingsR_K3._Rectangle_A1",
+          "_WingsR_K3._Subwing1_L2",
+          "_WingsR_K3._Subwing2_L1"
+        ]
+      },
+      {
+        "empty": true,
+        "id": "WingsR_None2",
+        "label": "None",
+        "names": ["_WingsR_None2"],
+        "tile": []
+      }
+    ],
+    "requires": {
+      "group": "WingJointR_A3",
+      "option": "WingJointR_A3"
+    },
+    "title": "Right wing"
+  },
+  {
+    "id": "WRightT_A2",
+    "options": [
+      {
+        "id": "WRightT_A2",
+        "label": "Variant 1",
+        "names": ["_WRightT_A2"],
+        "tile": ["_WRightT_A2"]
+      },
+      {
+        "id": "WRightT_C2",
+        "label": "Variant 2",
+        "names": ["_WRightT_C2"],
+        "tile": [
+          "_WRightT_C2",
+          "_WRightT_C2._WCAcc_1",
+          "_WRightT_C2._Letter_A1",
+          "_WRightT_C2._logo_A1"
+        ]
+      },
+      {
+        "id": "WRightT_F2",
+        "label": "Variant 3",
+        "names": ["_WRightT_F2"],
+        "tile": ["_WRightT_F2", "_WRightT_F2._Letter_A1"]
+      },
+      {
+        "id": "WRightT_G2",
+        "label": "Variant 4",
+        "names": ["_WRightT_G2"],
+        "tile": [
+          "_WRightT_G2",
+          "_WRightT_G2._SmallSign_A1",
+          "_WRightT_G2._Letter_A1"
+        ]
+      },
+      {
+        "id": "WRightT_I2",
+        "label": "Variant 5",
+        "names": ["_WRightT_I2"],
+        "tile": [
+          "_WRightT_I2",
+          "_WRightT_I2._logo2_A2",
+          "_WRightT_I2._logo1_A1"
+        ]
+      }
+    ],
+    "requires": {
+      "group": "WingJointR_A3",
+      "option": "WingJointR_B3"
+    },
+    "title": "Right wing tip"
+  },
+  {
+    "id": "Cockpit_A._Canopy_A",
+    "options": [
+      {
+        "id": "Cockpit_A._Canopy_A",
+        "label": "Variant 1",
+        "names": ["_Cockpit_A._Canopy_A"],
+        "tile": ["_Cockpit_A._Canopy_A"]
+      },
+      {
+        "id": "Cockpit_A._Canopy_B",
+        "label": "Variant 2",
+        "names": ["_Cockpit_A._Canopy_B"],
+        "tile": ["_Cockpit_A._Canopy_B"]
+      }
+    ],
+    "requires": {
+      "group": "Cockpit_ARoot",
+      "option": "Cockpit_ARoot"
+    },
+    "title": "Canopy"
+  },
+  {
+    "id": "Cockpit_A._Canopy_B._CAcc_A",
+    "options": [
+      {
+        "id": "Cockpit_A._Canopy_B._CAcc_A",
+        "label": "Variant 1",
+        "names": ["_Cockpit_A._Canopy_B._CAcc_A"],
+        "tile": ["_Cockpit_A._Canopy_B._CAcc_A"]
+      },
+      {
+        "id": "Cockpit_A._Canopy_B._CAcc_B",
+        "label": "Variant 2",
+        "names": ["_Cockpit_A._Canopy_B._CAcc_B"],
+        "tile": ["_Cockpit_A._Canopy_B._CAcc_B"]
+      },
+      {
+        "empty": true,
+        "id": "Cockpit_A._Canopy_B._CAcc_None",
+        "label": "None",
+        "names": ["_Cockpit_A._Canopy_B._CAcc_None"],
+        "tile": []
+      }
+    ],
+    "requires": {
+      "group": "Cockpit_A._Canopy_A",
+      "option": "Cockpit_A._Canopy_B"
+    },
+    "title": "Cockpit accessory"
+  },
+  {
+    "id": "Wings_Sym1",
+    "options": [
+      {
+        "id": "WingJoint_A3",
+        "label": "WingJoint 1",
+        "names": ["_WingJoint_A3"],
+        "tile": ["_WingJoint_A3"]
+      },
+      {
+        "id": "WingJoint_B3",
+        "label": "WingJoint 2",
+        "names": ["_WingJoint_B3"],
+        "tile": ["_WingJoint_B3"]
+      },
+      {
+        "id": "Wings_ASym1",
+        "label": "Variant 2",
+        "names": ["_Wings_ASym1"],
+        "tile": ["_Wings_ASym1"]
+      }
+    ],
+    "requires": {
+      "group": "Cockpit_ARoot",
+      "option": "Cockpit_DRoot"
+    },
+    "title": "Wings"
+  },
+  {
+    "id": "WingsLeft_A6",
+    "options": [
+      {
+        "id": "WingsLeft_A6",
+        "label": "Variant 1",
+        "names": ["_WingsLeft_A6"],
+        "tile": ["_WingsLeft_A6"]
+      },
+      {
+        "id": "WingsLeft_B6",
+        "label": "Variant 2",
+        "names": ["_WingsLeft_B6"],
+        "tile": [
+          "_WingsLeft_B6",
+          "_WingsLeft_B6._Subwing1_R",
+          "_WingsLeft_B6._Subwing2_R",
+          "_WingsLeft_B6._Subwing1_L",
+          "_WingsLeft_B6._Subwing2_L"
+        ]
+      },
+      {
+        "id": "WingsLeft_C6",
+        "label": "Variant 3",
+        "names": ["_WingsLeft_C6"],
+        "tile": [
+          "_WingsLeft_C6",
+          "_WingsLeft_C6._WCAcc_1",
+          "_WingsLeft_C6._Letter_A1",
+          "_WingsLeft_C6._logo_A1"
+        ]
+      },
+      {
+        "id": "WingsLeft_D6",
+        "label": "Variant 4",
+        "names": ["_WingsLeft_D6"],
+        "tile": [
+          "_WingsLeft_D6",
+          "_WingsLeft_D6._logo_A1",
+          "_WingsLeft_D6._Subwing1_L1",
+          "_WingsLeft_D6._Subwing2_L2"
+        ]
+      },
+      {
+        "id": "WingsLeft_E6",
+        "label": "Variant 5",
+        "names": ["_WingsLeft_E6"],
+        "tile": ["_WingsLeft_E6", "_WingsRight_E7"]
+      },
+      {
+        "id": "WingsLeft_F6",
+        "label": "Variant 6",
+        "names": ["_WingsLeft_F6"],
+        "tile": ["_WingsLeft_F6", "_WLF5_NULL", "_WingsLeft_F6._Letter_A1"]
+      },
+      {
+        "id": "WingsLeft_G6",
+        "label": "Variant 7",
+        "names": ["_WingsLeft_G6"],
+        "tile": [
+          "_WingsLeft_G6",
+          "_WLG5_NULL",
+          "_WingsLeft_G6._SmallSign_A1",
+          "_WingsLeft_G6._Letter_A1"
+        ]
+      },
+      {
+        "id": "WingsLeft_H6",
+        "label": "Variant 8",
+        "names": ["_WingsLeft_H6"],
+        "tile": [
+          "_WingsLeft_H6",
+          "_WingsLeft_H6._Subwing1_L",
+          "_WingsLeft_H6._Subwing2_L",
+          "_WingsLeft_H6._Subwing1_R",
+          "_WingsLeft_H6._Subwing2_R"
+        ]
+      },
+      {
+        "id": "WingsLeft_I6",
+        "label": "Variant 9",
+        "names": ["_WingsLeft_I6"],
+        "tile": [
+          "_WingsLeft_I6",
+          "_WingsLeft_I6._logo2_A2",
+          "_WingsLeft_I6._logo1_A1"
+        ]
+      },
+      {
+        "id": "WingsLeft_K5",
+        "label": "Variant 10",
+        "names": ["_WingsLeft_K5"],
+        "tile": [
+          "_WingsLeft_K5",
+          "_WingsLeft_K5._Rectangle_A1",
+          "_WingsLeft_K5._Subwing1_L",
+          "_WingsLeft_K5._Subwing2_L",
+          "_WingsLeft_K5._Subwing1_L2",
+          "_WingsLeft_K5._Subwing2_L1"
+        ]
+      },
+      {
+        "id": "WingsLeft_L2",
+        "label": "Variant 11",
+        "names": ["_WingsLeft_L2"],
+        "tile": ["_WingsLeft_L2", "_WingsLeft_L2._Letter_A1"]
+      },
+      {
+        "empty": true,
+        "id": "WingsLeft_None4",
+        "label": "None",
+        "names": ["_WingsLeft_None4"],
+        "tile": []
+      }
+    ],
+    "requires": {
+      "group": "Wings_Sym1",
+      "option": "WingJoint_A3"
+    },
+    "title": "Left wing"
+  },
+  {
+    "first": true,
+    "id": "WingsLeft_B6._Subwing1_R._SubWingL_A",
+    "options": [
+      {
+        "id": "WingsLeft_B6._Subwing1_R._SubWingL_A",
+        "label": "Variant 1",
+        "names": [
+          "_WingsLeft_B6._Subwing1_R._SubWingL_A",
+          "_WingsLeft_B6._Subwing2_R._SubWingL_A",
+          "_WingsLeft_B6._Subwing1_L._SubWingL_A",
+          "_WingsLeft_B6._Subwing2_L._SubWingL_A"
+        ],
+        "tile": ["_WingsLeft_B6._Subwing1_R._SubWingL_A"]
+      },
+      {
+        "id": "WingsLeft_B6._Subwing1_R._SubWingL_B",
+        "label": "Variant 2",
+        "names": [
+          "_WingsLeft_B6._Subwing1_R._SubWingL_B",
+          "_WingsLeft_B6._Subwing2_R._SubWingL_B",
+          "_WingsLeft_B6._Subwing1_L._SubWingL_B",
+          "_WingsLeft_B6._Subwing2_L._SubWingL_B"
+        ],
+        "tile": ["_WingsLeft_B6._Subwing1_R._SubWingL_B"]
+      },
+      {
+        "id": "WingsLeft_B6._Subwing1_R._SubWingL_C",
+        "label": "Variant 3",
+        "names": [
+          "_WingsLeft_B6._Subwing1_R._SubWingL_C",
+          "_WingsLeft_B6._Subwing2_R._SubWingL_C",
+          "_WingsLeft_B6._Subwing1_L._SubWingL_C",
+          "_WingsLeft_B6._Subwing2_L._SubWingL_C"
+        ],
+        "tile": ["_WingsLeft_B6._Subwing1_R._SubWingL_C"]
+      },
+      {
+        "id": "WingsLeft_B6._Subwing1_R._SubWingL_D",
+        "label": "Variant 4",
+        "names": [
+          "_WingsLeft_B6._Subwing1_R._SubWingL_D",
+          "_WingsLeft_B6._Subwing2_R._SubWingL_D",
+          "_WingsLeft_B6._Subwing1_L._SubWingL_D",
+          "_WingsLeft_B6._Subwing2_L._SubWingL_D"
+        ],
+        "tile": ["_WingsLeft_B6._Subwing1_R._SubWingL_D"]
+      }
+    ],
+    "requires": {
+      "group": "WingsLeft_A6",
+      "option": "WingsLeft_B6"
+    },
+    "title": "Left sub-wing"
+  },
+  {
+    "first": true,
+    "id": "WingsLeft_D6._Subwing1_L1._SubWingL_A",
+    "options": [
+      {
+        "id": "WingsLeft_D6._Subwing1_L1._SubWingL_A",
+        "label": "Variant 1",
+        "names": [
+          "_WingsLeft_D6._Subwing1_L1._SubWingL_A",
+          "_WingsLeft_D6._Subwing1_L1._SubWingL_A",
+          "_WingsLeft_D6._Subwing2_L2._SubWingL_A",
+          "_WingsLeft_D6._Subwing2_L2._SubWingL_A"
+        ],
+        "tile": ["_WingsLeft_D6._Subwing1_L1._SubWingL_A"]
+      },
+      {
+        "id": "WingsLeft_D6._Subwing1_L1._SubWingL_B",
+        "label": "Variant 2",
+        "names": [
+          "_WingsLeft_D6._Subwing1_L1._SubWingL_B",
+          "_WingsLeft_D6._Subwing1_L1._SubWingL_B",
+          "_WingsLeft_D6._Subwing2_L2._SubWingL_B",
+          "_WingsLeft_D6._Subwing2_L2._SubWingL_B"
+        ],
+        "tile": ["_WingsLeft_D6._Subwing1_L1._SubWingL_B"]
+      },
+      {
+        "id": "WingsLeft_D6._Subwing1_L1._SubWingL_C",
+        "label": "Variant 3",
+        "names": [
+          "_WingsLeft_D6._Subwing1_L1._SubWingL_C",
+          "_WingsLeft_D6._Subwing1_L1._SubWingL_C",
+          "_WingsLeft_D6._Subwing2_L2._SubWingL_C",
+          "_WingsLeft_D6._Subwing2_L2._SubWingL_C"
+        ],
+        "tile": ["_WingsLeft_D6._Subwing1_L1._SubWingL_C"]
+      },
+      {
+        "id": "WingsLeft_D6._Subwing1_L1._SubWingL_D",
+        "label": "Variant 4",
+        "names": [
+          "_WingsLeft_D6._Subwing1_L1._SubWingL_D",
+          "_WingsLeft_D6._Subwing1_L1._SubWingL_D",
+          "_WingsLeft_D6._Subwing2_L2._SubWingL_D",
+          "_WingsLeft_D6._Subwing2_L2._SubWingL_D"
+        ],
+        "tile": ["_WingsLeft_D6._Subwing1_L1._SubWingL_D"]
+      }
+    ],
+    "requires": {
+      "group": "WingsLeft_A6",
+      "option": "WingsLeft_D6"
+    },
+    "title": "Left sub-wing"
+  },
+  {
+    "first": true,
+    "id": "WingsLeft_H6._Subwing1_L._SubWingL_A",
+    "options": [
+      {
+        "id": "WingsLeft_H6._Subwing1_L._SubWingL_A",
+        "label": "Variant 1",
+        "names": [
+          "_WingsLeft_H6._Subwing1_L._SubWingL_A",
+          "_WingsLeft_H6._Subwing2_L._SubWingL_A",
+          "_WingsLeft_H6._Subwing1_R._SubWingL_A",
+          "_WingsLeft_H6._Subwing2_R._SubWingL_A"
+        ],
+        "tile": ["_WingsLeft_H6._Subwing1_L._SubWingL_A"]
+      },
+      {
+        "id": "WingsLeft_H6._Subwing1_L._SubWingL_B",
+        "label": "Variant 2",
+        "names": [
+          "_WingsLeft_H6._Subwing1_L._SubWingL_B",
+          "_WingsLeft_H6._Subwing2_L._SubWingL_B",
+          "_WingsLeft_H6._Subwing1_R._SubWingL_B",
+          "_WingsLeft_H6._Subwing2_R._SubWingL_B"
+        ],
+        "tile": ["_WingsLeft_H6._Subwing1_L._SubWingL_B"]
+      },
+      {
+        "id": "WingsLeft_H6._Subwing1_L._SubWingL_C",
+        "label": "Variant 3",
+        "names": [
+          "_WingsLeft_H6._Subwing1_L._SubWingL_C",
+          "_WingsLeft_H6._Subwing2_L._SubWingL_C",
+          "_WingsLeft_H6._Subwing1_R._SubWingL_C",
+          "_WingsLeft_H6._Subwing2_R._SubWingL_C"
+        ],
+        "tile": ["_WingsLeft_H6._Subwing1_L._SubWingL_C"]
+      },
+      {
+        "id": "WingsLeft_H6._Subwing1_L._SubWingL_D",
+        "label": "Variant 4",
+        "names": [
+          "_WingsLeft_H6._Subwing1_L._SubWingL_D",
+          "_WingsLeft_H6._Subwing2_L._SubWingL_D",
+          "_WingsLeft_H6._Subwing1_R._SubWingL_D",
+          "_WingsLeft_H6._Subwing2_R._SubWingL_D"
+        ],
+        "tile": ["_WingsLeft_H6._Subwing1_L._SubWingL_D"]
+      }
+    ],
+    "requires": {
+      "group": "WingsLeft_A6",
+      "option": "WingsLeft_H6"
+    },
+    "title": "Left sub-wing"
+  },
+  {
+    "first": true,
+    "id": "WingsLeft_K5._Subwing1_L._SubWingL_A",
+    "options": [
+      {
+        "id": "WingsLeft_K5._Subwing1_L._SubWingL_A",
+        "label": "Variant 1",
+        "names": [
+          "_WingsLeft_K5._Subwing1_L._SubWingL_A",
+          "_WingsLeft_K5._Subwing2_L._SubWingL_A",
+          "_WingsLeft_K5._Subwing1_L2._SubWingL_A",
+          "_WingsLeft_K5._Subwing2_L1._SubWingL_A"
+        ],
+        "tile": ["_WingsLeft_K5._Subwing1_L._SubWingL_A"]
+      },
+      {
+        "id": "WingsLeft_K5._Subwing1_L._SubWingL_B",
+        "label": "Variant 2",
+        "names": [
+          "_WingsLeft_K5._Subwing1_L._SubWingL_B",
+          "_WingsLeft_K5._Subwing2_L._SubWingL_B",
+          "_WingsLeft_K5._Subwing1_L2._SubWingL_B",
+          "_WingsLeft_K5._Subwing2_L1._SubWingL_B"
+        ],
+        "tile": ["_WingsLeft_K5._Subwing1_L._SubWingL_B"]
+      },
+      {
+        "id": "WingsLeft_K5._Subwing1_L._SubWingL_C",
+        "label": "Variant 3",
+        "names": [
+          "_WingsLeft_K5._Subwing1_L._SubWingL_C",
+          "_WingsLeft_K5._Subwing2_L._SubWingL_C",
+          "_WingsLeft_K5._Subwing1_L2._SubWingL_C",
+          "_WingsLeft_K5._Subwing2_L1._SubWingL_C"
+        ],
+        "tile": ["_WingsLeft_K5._Subwing1_L._SubWingL_C"]
+      },
+      {
+        "id": "WingsLeft_K5._Subwing1_L._SubWingL_D",
+        "label": "Variant 4",
+        "names": [
+          "_WingsLeft_K5._Subwing1_L._SubWingL_D",
+          "_WingsLeft_K5._Subwing2_L._SubWingL_D",
+          "_WingsLeft_K5._Subwing1_L2._SubWingL_D",
+          "_WingsLeft_K5._Subwing2_L1._SubWingL_D"
+        ],
+        "tile": ["_WingsLeft_K5._Subwing1_L._SubWingL_D"]
+      }
+    ],
+    "requires": {
+      "group": "WingsLeft_A6",
+      "option": "WingsLeft_K5"
+    },
+    "title": "Left sub-wing"
+  },
+  {
+    "id": "WLeftT_A4",
+    "options": [
+      {
+        "id": "WLeftT_A4",
+        "label": "Variant 1",
+        "names": ["_WLeftT_A4"],
+        "tile": ["_WLeftT_A4"]
+      },
+      {
+        "id": "WLeftT_C4",
+        "label": "Variant 2",
+        "names": ["_WLeftT_C4"],
+        "tile": [
+          "_WLeftT_C4",
+          "_WLeftT_C4._WCAcc_1",
+          "_WLeftT_C4._Letter_A1",
+          "_WLeftT_C4._logo_A1"
+        ]
+      },
+      {
+        "id": "WLeftT_F4",
+        "label": "Variant 3",
+        "names": ["_WLeftT_F4"],
+        "tile": ["_WLeftT_F4", "_WLeftT_F4._Letter_A1"]
+      },
+      {
+        "id": "WLeftT_G4",
+        "label": "Variant 4",
+        "names": ["_WLeftT_G4"],
+        "tile": [
+          "_WLeftT_G4",
+          "_WLeftT_G4._SmallSign_A1",
+          "_WLeftT_G4._Letter_A1"
+        ]
+      },
+      {
+        "id": "WLeftT_I4",
+        "label": "Variant 5",
+        "names": ["_WLeftT_I4"],
+        "tile": ["_WLeftT_I4", "_WLeftT_I4._logo2_A2", "_WLeftT_I4._logo1_A1"]
+      }
+    ],
+    "requires": {
+      "group": "Wings_Sym1",
+      "option": "WingJoint_B3"
+    },
+    "title": "Left wing tip"
+  },
+  {
+    "id": "WingJointL_A1",
+    "options": [
+      {
+        "id": "WingsLeft_A5",
+        "label": "Left wing 1",
+        "names": ["_WingsLeft_A5"],
+        "tile": ["_WingsLeft_A5"]
+      },
+      {
+        "id": "WingsLeft_B5",
+        "label": "Left wing 2",
+        "names": ["_WingsLeft_B5"],
+        "tile": [
+          "_WingsLeft_B5",
+          "_WingsLeft_B5._Subwing1_L",
+          "_WingsLeft_B5._Subwing2_L"
+        ]
+      },
+      {
+        "id": "WingsLeft_C5",
+        "label": "Left wing 3",
+        "names": ["_WingsLeft_C5"],
+        "tile": [
+          "_WingsLeft_C5",
+          "_WingsLeft_C5._WCAcc_1",
+          "_WingsLeft_C5._Letter_A1",
+          "_WingsLeft_C5._logo_A1"
+        ]
+      },
+      {
+        "id": "WingsLeft_D5",
+        "label": "Left wing 4",
+        "names": ["_WingsLeft_D5"],
+        "tile": [
+          "_WingsLeft_D5",
+          "_WingsLeft_D5._logo_A1",
+          "_WingsLeft_D5._Subwing1_L1",
+          "_WingsLeft_D5._Subwing2_L2"
+        ]
+      },
+      {
+        "id": "WingsLeft_E5",
+        "label": "Left wing 5",
+        "names": ["_WingsLeft_E5"],
+        "tile": ["_WingsLeft_E5"]
+      },
+      {
+        "id": "WingsLeft_F5",
+        "label": "Left wing 6",
+        "names": ["_WingsLeft_F5"],
+        "tile": ["_WingsLeft_F5", "_WingsLeft_F5._Letter_A1"]
+      },
+      {
+        "id": "WingsLeft_G5",
+        "label": "Left wing 7",
+        "names": ["_WingsLeft_G5"],
+        "tile": [
+          "_WingsLeft_G5",
+          "_WingsLeft_G5._SmallSign_A1",
+          "_WingsLeft_G5._Letter_A1"
+        ]
+      },
+      {
+        "id": "WingsLeft_H5",
+        "label": "Left wing 8",
+        "names": ["_WingsLeft_H5"],
+        "tile": [
+          "_WingsLeft_H5",
+          "_WingsLeft_H5._Subwing1_L",
+          "_WingsLeft_H5._Subwing2_L"
+        ]
+      },
+      {
+        "id": "WingsLeft_I5",
+        "label": "Left wing 9",
+        "names": ["_WingsLeft_I5"],
+        "tile": [
+          "_WingsLeft_I5",
+          "_WingsLeft_I5._logo2_A2",
+          "_WingsLeft_I5._logo1_A1"
+        ]
+      },
+      {
+        "id": "WingsLeft_K4",
+        "label": "Left wing 10",
+        "names": ["_WingsLeft_K4"],
+        "tile": [
+          "_WingsLeft_K4",
+          "_WingsLeft_K4._Rectangle_A1",
+          "_WingsLeft_K4._Subwing1_L",
+          "_WingsLeft_K4._Subwing2_L"
+        ]
+      },
+      {
+        "id": "WingJointL_B1",
+        "label": "Variant 2",
+        "names": ["_WingJointL_B1"],
+        "tile": ["_WingJointL_B1"]
+      }
+    ],
+    "requires": {
+      "group": "Wings_Sym1",
+      "option": "Wings_ASym1"
+    },
+    "title": "Left wing joint"
+  },
+  {
+    "first": true,
+    "free": true,
+    "id": "WingsLeft_B5._Subwing1_L._SubWingL_A",
+    "options": [
+      {
+        "id": "WingsLeft_B5._Subwing1_L._SubWingL_A",
+        "label": "Variant 1",
+        "names": [
+          "_WingsLeft_B5._Subwing1_L._SubWingL_A",
+          "_WingsLeft_B5._Subwing2_L._SubWingL_A",
+          "_WingsLeft_D5._Subwing1_L1._SubWingL_A",
+          "_WingsLeft_D5._Subwing2_L2._SubWingL_A",
+          "_WingsLeft_H5._Subwing1_L._SubWingL_A",
+          "_WingsLeft_H5._Subwing2_L._SubWingL_A",
+          "_WingsLeft_K4._Subwing1_L._SubWingL_A",
+          "_WingsLeft_K4._Subwing2_L._SubWingL_A",
+          "_WingsRight_B5._Subwing1_R._SubWingL_A",
+          "_WingsRight_B5._Subwing2_R._SubWingL_A",
+          "_WingsRight_D5._Subwing1_L1._SubWingL_A",
+          "_WingsRight_D5._Subwing2_L2._SubWingL_A",
+          "_WingsRight_H5._Subwing1_R._SubWingL_A",
+          "_WingsRight_H5._Subwing2_R._SubWingL_A",
+          "_WingsRight_K4._Subwing1_L2._SubWingL_A",
+          "_WingsRight_K4._Subwing2_L1._SubWingL_A"
+        ],
+        "tile": ["_WingsLeft_B5._Subwing1_L._SubWingL_A"]
+      },
+      {
+        "id": "WingsLeft_B5._Subwing1_L._SubWingL_B",
+        "label": "Variant 2",
+        "names": [
+          "_WingsLeft_B5._Subwing1_L._SubWingL_B",
+          "_WingsLeft_B5._Subwing2_L._SubWingL_B",
+          "_WingsLeft_D5._Subwing1_L1._SubWingL_B",
+          "_WingsLeft_D5._Subwing2_L2._SubWingL_B",
+          "_WingsLeft_H5._Subwing1_L._SubWingL_B",
+          "_WingsLeft_H5._Subwing2_L._SubWingL_B",
+          "_WingsLeft_K4._Subwing1_L._SubWingL_B",
+          "_WingsLeft_K4._Subwing2_L._SubWingL_B",
+          "_WingsRight_B5._Subwing1_R._SubWingL_B",
+          "_WingsRight_B5._Subwing2_R._SubWingL_B",
+          "_WingsRight_D5._Subwing1_L1._SubWingL_B",
+          "_WingsRight_D5._Subwing2_L2._SubWingL_B",
+          "_WingsRight_H5._Subwing1_R._SubWingL_B",
+          "_WingsRight_H5._Subwing2_R._SubWingL_B",
+          "_WingsRight_K4._Subwing1_L2._SubWingL_B",
+          "_WingsRight_K4._Subwing2_L1._SubWingL_B"
+        ],
+        "tile": ["_WingsLeft_B5._Subwing1_L._SubWingL_B"]
+      },
+      {
+        "id": "WingsLeft_B5._Subwing1_L._SubWingL_C",
+        "label": "Variant 3",
+        "names": [
+          "_WingsLeft_B5._Subwing1_L._SubWingL_C",
+          "_WingsLeft_B5._Subwing2_L._SubWingL_C",
+          "_WingsLeft_D5._Subwing1_L1._SubWingL_C",
+          "_WingsLeft_D5._Subwing2_L2._SubWingL_C",
+          "_WingsLeft_H5._Subwing1_L._SubWingL_C",
+          "_WingsLeft_H5._Subwing2_L._SubWingL_C",
+          "_WingsLeft_K4._Subwing1_L._SubWingL_C",
+          "_WingsLeft_K4._Subwing2_L._SubWingL_C",
+          "_WingsRight_B5._Subwing1_R._SubWingL_C",
+          "_WingsRight_B5._Subwing2_R._SubWingL_C",
+          "_WingsRight_D5._Subwing1_L1._SubWingL_C",
+          "_WingsRight_D5._Subwing2_L2._SubWingL_C",
+          "_WingsRight_H5._Subwing1_R._SubWingL_C",
+          "_WingsRight_H5._Subwing2_R._SubWingL_C",
+          "_WingsRight_K4._Subwing1_L2._SubWingL_C",
+          "_WingsRight_K4._Subwing2_L1._SubWingL_C"
+        ],
+        "tile": ["_WingsLeft_B5._Subwing1_L._SubWingL_C"]
+      },
+      {
+        "id": "WingsLeft_B5._Subwing1_L._SubWingL_D",
+        "label": "Variant 4",
+        "names": [
+          "_WingsLeft_B5._Subwing1_L._SubWingL_D",
+          "_WingsLeft_B5._Subwing2_L._SubWingL_D",
+          "_WingsLeft_D5._Subwing1_L1._SubWingL_D",
+          "_WingsLeft_D5._Subwing2_L2._SubWingL_D",
+          "_WingsLeft_H5._Subwing1_L._SubWingL_D",
+          "_WingsLeft_H5._Subwing2_L._SubWingL_D",
+          "_WingsLeft_K4._Subwing1_L._SubWingL_D",
+          "_WingsLeft_K4._Subwing2_L._SubWingL_D",
+          "_WingsRight_B5._Subwing1_R._SubWingL_D",
+          "_WingsRight_B5._Subwing2_R._SubWingL_D",
+          "_WingsRight_D5._Subwing1_L1._SubWingL_D",
+          "_WingsRight_D5._Subwing2_L2._SubWingL_D",
+          "_WingsRight_H5._Subwing1_R._SubWingL_D",
+          "_WingsRight_H5._Subwing2_R._SubWingL_D",
+          "_WingsRight_K4._Subwing1_L2._SubWingL_D",
+          "_WingsRight_K4._Subwing2_L1._SubWingL_D"
+        ],
+        "tile": ["_WingsLeft_B5._Subwing1_L._SubWingL_D"]
+      }
+    ],
+    "requires": {
+      "group": "Wings_Sym1",
+      "option": "Wings_ASym1"
+    },
+    "title": "Left sub-wing"
+  },
+  {
+    "id": "WLeftT_A3",
+    "options": [
+      {
+        "id": "WLeftT_A3",
+        "label": "Variant 1",
+        "names": ["_WLeftT_A3"],
+        "tile": ["_WLeftT_A3"]
+      },
+      {
+        "id": "WLeftT_C3",
+        "label": "Variant 2",
+        "names": ["_WLeftT_C3"],
+        "tile": [
+          "_WLeftT_C3",
+          "_WLeftT_C3._WCAcc_1",
+          "_WLeftT_C3._Letter_A1",
+          "_WLeftT_C3._logo_A1"
+        ]
+      },
+      {
+        "id": "WLeftT_F3",
+        "label": "Variant 3",
+        "names": ["_WLeftT_F3"],
+        "tile": ["_WLeftT_F3", "_WLeftT_F3._Letter_A1"]
+      },
+      {
+        "id": "WLeftT_G3",
+        "label": "Variant 4",
+        "names": ["_WLeftT_G3"],
+        "tile": [
+          "_WLeftT_G3",
+          "_WLeftT_G3._SmallSign_A1",
+          "_WLeftT_G3._Letter_A1"
+        ]
+      },
+      {
+        "id": "WLeftT_I3",
+        "label": "Variant 5",
+        "names": ["_WLeftT_I3"],
+        "tile": ["_WLeftT_I3", "_WLeftT_I3._logo2_A2", "_WLeftT_I3._logo1_A1"]
+      }
+    ],
+    "requires": {
+      "group": "WingJointL_A1",
+      "option": "WingJointL_B1"
+    },
+    "title": "Left wing tip"
+  },
+  {
+    "id": "WingJointR_A4",
+    "options": [
+      {
+        "id": "WingJointR_A4",
+        "label": "Variant 1",
+        "names": ["_WingJointR_A4"],
+        "tile": ["_WingJointR_A4"]
+      },
+      {
+        "id": "WingJointR_B4",
+        "label": "Variant 2",
+        "names": ["_WingJointR_B4"],
+        "tile": ["_WingJointR_B4"]
+      }
+    ],
+    "requires": {
+      "group": "Wings_Sym1",
+      "option": "Wings_ASym1"
+    },
+    "title": "Right wing joint"
+  },
+  {
+    "id": "WingsRight_A5",
+    "options": [
+      {
+        "id": "WingsRight_A5",
+        "label": "Variant 1",
+        "names": ["_WingsRight_A5"],
+        "tile": ["_WingsRight_A5"]
+      },
+      {
+        "id": "WingsRight_B5",
+        "label": "Variant 2",
+        "names": ["_WingsRight_B5"],
+        "tile": [
+          "_WingsRight_B5",
+          "_WingsRight_B5._Subwing1_R",
+          "_WingsRight_B5._Subwing2_R"
+        ]
+      },
+      {
+        "id": "WingsRight_C5",
+        "label": "Variant 3",
+        "names": ["_WingsRight_C5"],
+        "tile": [
+          "_WingsRight_C5",
+          "_WingsRight_C5._WCAcc_1",
+          "_WingsRight_C5._Letter_A1",
+          "_WingsRight_C5._logo_A1"
+        ]
+      },
+      {
+        "id": "WingsRight_D5",
+        "label": "Variant 4",
+        "names": ["_WingsRight_D5"],
+        "tile": [
+          "_WingsRight_D5",
+          "_WingsRight_D5._logo_A1",
+          "_WingsRight_D5._Subwing1_L1",
+          "_WingsRight_D5._Subwing2_L2"
+        ]
+      },
+      {
+        "id": "WingsRight_E6",
+        "label": "Variant 5",
+        "names": ["_WingsRight_E6"],
+        "tile": ["_WingsRight_E6"]
+      },
+      {
+        "id": "WingsRight_F5",
+        "label": "Variant 6",
+        "names": ["_WingsRight_F5"],
+        "tile": ["_WingsRight_F5", "_WingsRight_F5._Letter_A1"]
+      },
+      {
+        "id": "WingsRight_G5",
+        "label": "Variant 7",
+        "names": ["_WingsRight_G5"],
+        "tile": [
+          "_WingsRight_G5",
+          "_WingsRight_G5._SmallSign_A1",
+          "_WingsRight_G5._Letter_A1"
+        ]
+      },
+      {
+        "id": "WingsRight_H5",
+        "label": "Variant 8",
+        "names": ["_WingsRight_H5"],
+        "tile": [
+          "_WingsRight_H5",
+          "_WingsRight_H5._Subwing1_R",
+          "_WingsRight_H5._Subwing2_R"
+        ]
+      },
+      {
+        "id": "WingsRight_I5",
+        "label": "Variant 9",
+        "names": ["_WingsRight_I5"],
+        "tile": [
+          "_WingsRight_I5",
+          "_WingsRight_I5._logo2_A2",
+          "_WingsRight_I5._logo1_A1"
+        ]
+      },
+      {
+        "id": "WingsRight_K4",
+        "label": "Variant 10",
+        "names": ["_WingsRight_K4"],
+        "tile": [
+          "_WingsRight_K4",
+          "_WingsRight_K4._Rectangle_A1",
+          "_WingsRight_K4._Subwing1_L2",
+          "_WingsRight_K4._Subwing2_L1"
+        ]
+      },
+      {
+        "empty": true,
+        "id": "WingsRight_None3",
+        "label": "None",
+        "names": ["_WingsRight_None3"],
+        "tile": []
+      }
+    ],
+    "requires": {
+      "group": "WingJointR_A4",
+      "option": "WingJointR_A4"
+    },
+    "title": "Right wing"
+  },
+  {
+    "id": "WRightT_A3",
+    "options": [
+      {
+        "id": "WRightT_A3",
+        "label": "Variant 1",
+        "names": ["_WRightT_A3"],
+        "tile": ["_WRightT_A3"]
+      },
+      {
+        "id": "WRightT_C3",
+        "label": "Variant 2",
+        "names": ["_WRightT_C3"],
+        "tile": [
+          "_WRightT_C3",
+          "_WRightT_C3._WCAcc_1",
+          "_WRightT_C3._Letter_A1",
+          "_WRightT_C3._logo_A1"
+        ]
+      },
+      {
+        "id": "WRightT_F3",
+        "label": "Variant 3",
+        "names": ["_WRightT_F3"],
+        "tile": ["_WRightT_F3", "_WRightT_F3._Letter_A1"]
+      },
+      {
+        "id": "WRightT_G3",
+        "label": "Variant 4",
+        "names": ["_WRightT_G3"],
+        "tile": [
+          "_WRightT_G3",
+          "_WRightT_G3._SmallSign_A1",
+          "_WRightT_G3._Letter_A1"
+        ]
+      },
+      {
+        "id": "WRightT_I3",
+        "label": "Variant 5",
+        "names": ["_WRightT_I3"],
+        "tile": [
+          "_WRightT_I3",
+          "_WRightT_I3._logo2_A2",
+          "_WRightT_I3._logo1_A1"
+        ]
+      }
+    ],
+    "requires": {
+      "group": "WingJointR_A4",
+      "option": "WingJointR_B4"
+    },
+    "title": "Right wing tip"
+  },
+  {
+    "id": "Cockpit_D._Canopy_A",
+    "options": [
+      {
+        "id": "Cockpit_D._Canopy_A",
+        "label": "Variant 1",
+        "names": ["_Cockpit_D._Canopy_A"],
+        "tile": ["_Cockpit_D._Canopy_A"]
+      },
+      {
+        "id": "Cockpit_D._Canopy_B",
+        "label": "Variant 2",
+        "names": ["_Cockpit_D._Canopy_B"],
+        "tile": ["_Cockpit_D._Canopy_B"]
+      }
+    ],
+    "requires": {
+      "group": "Cockpit_ARoot",
+      "option": "Cockpit_DRoot"
+    },
+    "title": "Canopy"
+  },
+  {
+    "id": "Cockpit_D._Canopy_B._CAcc_A",
+    "options": [
+      {
+        "id": "Cockpit_D._Canopy_B._CAcc_A",
+        "label": "Variant 1",
+        "names": ["_Cockpit_D._Canopy_B._CAcc_A"],
+        "tile": ["_Cockpit_D._Canopy_B._CAcc_A"]
+      },
+      {
+        "id": "Cockpit_D._Canopy_B._CAcc_B",
+        "label": "Variant 2",
+        "names": ["_Cockpit_D._Canopy_B._CAcc_B"],
+        "tile": ["_Cockpit_D._Canopy_B._CAcc_B"]
+      },
+      {
+        "empty": true,
+        "id": "Cockpit_D._Canopy_B._CAcc_None",
+        "label": "None",
+        "names": ["_Cockpit_D._Canopy_B._CAcc_None"],
+        "tile": []
+      }
+    ],
+    "requires": {
+      "group": "Cockpit_D._Canopy_A",
+      "option": "Cockpit_D._Canopy_B"
+    },
+    "title": "Cockpit accessory"
+  }
+]

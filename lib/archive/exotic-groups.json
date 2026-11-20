@@ -1,0 +1,215 @@
+[
+  {
+    "id": "SClassShip_Royal",
+    "options": [
+      {
+        "id": "SClassShip_Royal",
+        "label": "Royal",
+        "names": ["_SClassShip_Royal"],
+        "tile": ["_SClassShip_Royal", "_CockPit_A", "_LandingGear_A"]
+      },
+      {
+        "id": "SClassShip_SquidxRARE",
+        "label": "Squid",
+        "names": ["_SClassShip_SquidxRARE"],
+        "tile": ["_SClassShip_SquidxRARE"]
+      }
+    ],
+    "title": "Body"
+  },
+  {
+    "id": "Engine_A",
+    "options": [
+      {
+        "id": "Engine_A",
+        "label": "Variant 1",
+        "names": ["_Engine_A"],
+        "tile": ["_Engine_A"]
+      },
+      {
+        "id": "Engine_B",
+        "label": "Variant 2",
+        "names": ["_Engine_B"],
+        "tile": ["_Engine_B"]
+      },
+      {
+        "id": "Engine_C",
+        "label": "Variant 3",
+        "names": ["_Engine_C"],
+        "tile": ["_Engine_C"]
+      }
+    ],
+    "requires": {
+      "group": "SClassShip_Royal",
+      "option": "SClassShip_Royal"
+    },
+    "title": "Engine"
+  },
+  {
+    "id": "Thruster_1",
+    "options": [
+      {
+        "id": "Thruster_1",
+        "label": "Variant 1",
+        "names": ["_Thruster_1"],
+        "tile": ["_Thruster_1"]
+      },
+      {
+        "id": "Thruster_2",
+        "label": "Variant 2",
+        "names": ["_Thruster_2"],
+        "tile": ["_Thruster_2"]
+      }
+    ],
+    "requires": {
+      "group": "Engine_A",
+      "option": "Engine_A"
+    },
+    "title": "Thrusters"
+  },
+  {
+    "id": "Wings_A",
+    "options": [
+      {
+        "id": "Wings_A",
+        "label": "Variant 1",
+        "names": ["_Wings_A"],
+        "tile": ["_Wings_A"]
+      },
+      {
+        "id": "Wings_B",
+        "label": "Variant 2",
+        "names": ["_Wings_B"],
+        "tile": ["_Wings_B"]
+      },
+      {
+        "id": "Wings_C",
+        "label": "Variant 3",
+        "names": ["_Wings_C"],
+        "tile": ["_Wings_C"]
+      }
+    ],
+    "requires": {
+      "group": "SClassShip_Royal",
+      "option": "SClassShip_Royal"
+    },
+    "title": "Wings"
+  },
+  {
+    "id": "SClassShip_Royal._TopWing_A",
+    "options": [
+      {
+        "id": "SClassShip_Royal._TopWing_A",
+        "label": "Variant 1",
+        "names": ["_SClassShip_Royal._TopWing_A"],
+        "tile": [
+          "_SClassShip_Royal._TopWing_A",
+          "_SClassShip_Royal._TopWing_A._TopWing_A"
+        ]
+      },
+      {
+        "id": "SClassShip_Royal._TopWing_B",
+        "label": "Variant 2",
+        "names": ["_SClassShip_Royal._TopWing_B"],
+        "tile": [
+          "_SClassShip_Royal._TopWing_B",
+          "_SClassShip_Royal._TopWing_B._TopWing_B"
+        ]
+      },
+      {
+        "id": "SClassShip_Royal._TopWing_C",
+        "label": "Variant 3",
+        "names": ["_SClassShip_Royal._TopWing_C"],
+        "tile": [
+          "_SClassShip_Royal._TopWing_C",
+          "_SClassShip_Royal._TopWing_C._TopWing_C"
+        ]
+      }
+    ],
+    "requires": {
+      "group": "SClassShip_Royal",
+      "option": "SClassShip_Royal"
+    },
+    "title": "Top wing"
+  },
+  {
+    "id": "SClassShip_Royal._TopWing_A._DetailAcc_1",
+    "options": [
+      {
+        "id": "SClassShip_Royal._TopWing_A._DetailAcc_1",
+        "label": "Variant 1",
+        "names": ["_SClassShip_Royal._TopWing_A._DetailAcc_1"],
+        "tile": ["_SClassShip_Royal._TopWing_A._DetailAcc_1"]
+      },
+      {
+        "id": "SClassShip_Royal._TopWing_A._DetailAcc_2",
+        "label": "Variant 2",
+        "names": ["_SClassShip_Royal._TopWing_A._DetailAcc_2"],
+        "tile": ["_SClassShip_Royal._TopWing_A._DetailAcc_2"]
+      },
+      {
+        "id": "SClassShip_Royal._TopWing_A._DetailAcc_3",
+        "label": "Variant 3",
+        "names": ["_SClassShip_Royal._TopWing_A._DetailAcc_3"],
+        "tile": ["_SClassShip_Royal._TopWing_A._DetailAcc_3"]
+      },
+      {
+        "id": "SClassShip_Royal._TopWing_A._DetailAcc_4",
+        "label": "Variant 4",
+        "names": ["_SClassShip_Royal._TopWing_A._DetailAcc_4"],
+        "tile": ["_SClassShip_Royal._TopWing_A._DetailAcc_4"]
+      },
+      {
+        "id": "SClassShip_Royal._TopWing_A._DetailAcc_5",
+        "label": "Variant 5",
+        "names": ["_SClassShip_Royal._TopWing_A._DetailAcc_5"],
+        "tile": ["_SClassShip_Royal._TopWing_A._DetailAcc_5"]
+      }
+    ],
+    "requires": {
+      "group": "SClassShip_Royal._TopWing_A",
+      "option": "SClassShip_Royal._TopWing_A"
+    },
+    "title": "Top wing detail"
+  },
+  {
+    "id": "SClassShip_Royal._TopWing_B._DetailAcc_1",
+    "options": [
+      {
+        "id": "SClassShip_Royal._TopWing_B._DetailAcc_1",
+        "label": "Variant 1",
+        "names": ["_SClassShip_Royal._TopWing_B._DetailAcc_1"],
+        "tile": ["_SClassShip_Royal._TopWing_B._DetailAcc_1"]
+      },
+      {
+        "id": "SClassShip_Royal._TopWing_B._DetailAcc_2",
+        "label": "Variant 2",
+        "names": ["_SClassShip_Royal._TopWing_B._DetailAcc_2"],
+        "tile": ["_SClassShip_Royal._TopWing_B._DetailAcc_2"]
+      },
+      {
+        "id": "SClassShip_Royal._TopWing_B._DetailAcc_3",
+        "label": "Variant 3",
+        "names": ["_SClassShip_Royal._TopWing_B._DetailAcc_3"],
+        "tile": ["_SClassShip_Royal._TopWing_B._DetailAcc_3"]
+      },
+      {
+        "id": "SClassShip_Royal._TopWing_B._DetailAcc_4",
+        "label": "Variant 4",
+        "names": ["_SClassShip_Royal._TopWing_B._DetailAcc_4"],
+        "tile": ["_SClassShip_Royal._TopWing_B._DetailAcc_4"]
+      },
+      {
+        "id": "SClassShip_Royal._TopWing_B._DetailAcc_5",
+        "label": "Variant 5",
+        "names": ["_SClassShip_Royal._TopWing_B._DetailAcc_5"],
+        "tile": ["_SClassShip_Royal._TopWing_B._DetailAcc_5"]
+      }
+    ],
+    "requires": {
+      "group": "SClassShip_Royal._TopWing_A",
+      "option": "SClassShip_Royal._TopWing_B"
+    },
+    "title": "Top wing detail"
+  }
+]

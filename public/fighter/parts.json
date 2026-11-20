@@ -1,0 +1,744 @@
+{
+  "width": 1000,
+  "height": 528,
+  "layers": {
+    "_ANose_C": [15, 299, 523, 219],
+    "_ANose_D": [82, 323, 327, 189],
+    "_ANose_E": [203, 324, 206, 104],
+    "_Acc_A": [434, 10, 151, 257],
+    "_Acc_A1": [434, 10, 151, 257],
+    "_Acc_A10": [434, 10, 151, 257],
+    "_Acc_A2": [434, 10, 151, 257],
+    "_Acc_A3": [434, 10, 151, 257],
+    "_Acc_A4": [434, 10, 151, 257],
+    "_Acc_A5": [434, 10, 151, 257],
+    "_Acc_A6": [434, 10, 151, 257],
+    "_Cockpit_A": [331, 226, 234, 215],
+    "_Cockpit_B": [218, 224, 349, 221],
+    "_Cockpit_D": [186, 217, 379, 227],
+    "_Cockpit_E": [173, 212, 394, 246],
+    "_Cockpit_F": [168, 226, 397, 262],
+    "_Engine_B": [429, 118, 180, 248],
+    "_Engine_C": [439, 192, 201, 162],
+    "_Engine_D": [434, 168, 179, 194],
+    "_NoseA_BaseLOD0": [170, 324, 239, 143],
+    "_NoseB_BaseLOD0": [320, 322, 90, 91],
+    "_SubWings_A1": [254, 22, 731, 351],
+    "_SubWings_B1": [231, 234, 482, 153],
+    "_SubWings_C1": [297, 198, 409, 192],
+    "_SubWings_F": [307, 130, 385, 297],
+    "_Wings2_GLOD0": [537, 204, 332, 233],
+    "_WingsJ_Full": [293, 87, 555, 332],
+    "_WingsJ_Low": [293, 261, 493, 158],
+    "_WingsJ_Mid": [293, 87, 493, 332],
+    "_WingsK_A": [255, 204, 483, 212],
+    "_WingsK_A._SubWings_A": [172, 239, 601, 231],
+    "_WingsK_B": [332, 224, 328, 170],
+    "_Wings_A": [283, 238, 468, 196],
+    "_Wings_B": [189, 206, 485, 240],
+    "_Wings_B._SubWings_A": [234, 253, 494, 172],
+    "_Wings_B._SubWings_B": [234, 124, 496, 274],
+    "_Wings_B._SubWings_C": [324, 88, 337, 334],
+    "_Wings_B._SubWings_D": [287, 190, 424, 247],
+    "_Wings_D": [361, 112, 286, 319],
+    "_Wings_E": [347, 203, 295, 194],
+    "_Wings_E._SubWings_A": [240, 258, 478, 161],
+    "_Wings_E._SubWings_B": [234, 113, 497, 274],
+    "_Wings_E._SubWings_C": [338, 76, 316, 328],
+    "_Wings_E._SubWings_D": [322, 152, 406, 242],
+    "_Wings_E._SubWings_E": [269, 56, 677, 336],
+    "_Wings_F": [215, 261, 478, 153],
+    "_Wings_F._SubWings_C": [202, 99, 490, 378],
+    "_Wings_F._SubWings_D": [173, 201, 567, 288],
+    "_Wings_F._SubWings_E": [173, 214, 597, 226],
+    "_Wings_G": [293, 239, 457, 166],
+    "_Wings_GLOD0": [266, 56, 174, 259],
+    "_Wings_H": [293, 249, 352, 132],
+    "_Wings_H._SubWings_A": [235, 258, 475, 194],
+    "_Wings_H._SubWings_B": [148, 142, 664, 323],
+    "_Wings_H._SubWings_C": [299, 94, 350, 338],
+    "_Wings_H._SubWings_D": [283, 196, 412, 243],
+    "_Wings_I": [337, 141, 297, 262],
+    "_Wings_J": [327, 288, 232, 83]
+  },
+  "tree": [
+    [
+      { "name": "_Engine_B", "layer": "_Engine_B", "groups": [] },
+      { "name": "_Engine_C", "layer": "_Engine_C", "groups": [] },
+      { "name": "_Engine_D", "layer": "_Engine_D", "groups": [] }
+    ],
+    [
+      {
+        "name": "_Wings_A",
+        "layer": "_Wings_A",
+        "groups": [
+          [
+            { "name": "_Acc_A", "layer": "_Acc_A", "groups": [] },
+            { "name": "_Acc_None", "layer": "_Acc_None", "groups": [] }
+          ]
+        ]
+      },
+      {
+        "name": "_Wings_B",
+        "layer": "_Wings_B",
+        "groups": [
+          [
+            { "name": "_Acc_A1", "layer": "_Acc_A1", "groups": [] },
+            { "name": "_Acc_None1", "layer": "_Acc_None1", "groups": [] }
+          ],
+          [
+            {
+              "name": "_SubWings_A",
+              "layer": "_Wings_B._SubWings_A",
+              "groups": []
+            },
+            {
+              "name": "_SubWings_B",
+              "layer": "_Wings_B._SubWings_B",
+              "groups": [
+                [
+                  {
+                    "name": "_CornerDecalA_",
+                    "layer": "_Wings_B._SubWings_B._CornerDecalA_",
+                    "decal": true,
+                    "groups": []
+                  }
+                ]
+              ]
+            },
+            {
+              "name": "_SubWings_C",
+              "layer": "_Wings_B._SubWings_C",
+              "groups": [
+                [
+                  {
+                    "name": "_DecalA_A2",
+                    "layer": "_Wings_B._SubWings_C._DecalA_A2",
+                    "groups": []
+                  }
+                ]
+              ]
+            },
+            {
+              "name": "_SubWings_D",
+              "layer": "_Wings_B._SubWings_D",
+              "groups": [
+                [
+                  {
+                    "name": "_D_Left",
+                    "layer": "_D_Left",
+                    "groups": [
+                      [
+                        {
+                          "name": "_DecalA_A1",
+                          "layer": "_D_Left._DecalA_A1",
+                          "groups": []
+                        }
+                      ],
+                      [
+                        {
+                          "name": "_CDecal1_A1",
+                          "layer": "_D_Left._CDecal1_A1",
+                          "groups": []
+                        }
+                      ]
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "name": "_DecalA_A1",
+                    "layer": "_Wings_B._SubWings_D._DecalA_A1",
+                    "groups": []
+                  }
+                ],
+                [
+                  {
+                    "name": "_CDecal1_A1",
+                    "layer": "_Wings_B._SubWings_D._CDecal1_A1",
+                    "groups": []
+                  }
+                ]
+              ]
+            },
+            {
+              "name": "_SubWings_None",
+              "layer": "_Wings_B._SubWings_None",
+              "decal": true,
+              "groups": [
+                [
+                  {
+                    "name": "_RectDecalLD_A",
+                    "layer": "_RectDecalLD_A",
+                    "decal": true,
+                    "groups": []
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      { "name": "_Wings_D", "layer": "_Wings_D", "groups": [] },
+      {
+        "name": "_Wings_E",
+        "layer": "_Wings_E",
+        "groups": [
+          [
+            { "name": "_Acc_A2", "layer": "_Acc_A2", "groups": [] },
+            { "name": "_Acc_None2", "layer": "_Acc_None2", "groups": [] }
+          ],
+          [
+            {
+              "name": "_SubWings_A",
+              "layer": "_Wings_E._SubWings_A",
+              "groups": []
+            },
+            {
+              "name": "_SubWings_B",
+              "layer": "_Wings_E._SubWings_B",
+              "groups": [
+                [
+                  {
+                    "name": "_CornerDecalA_",
+                    "layer": "_Wings_E._SubWings_B._CornerDecalA_",
+                    "decal": true,
+                    "groups": []
+                  }
+                ]
+              ]
+            },
+            {
+              "name": "_SubWings_C",
+              "layer": "_Wings_E._SubWings_C",
+              "groups": [
+                [
+                  {
+                    "name": "_DecalA_A2",
+                    "layer": "_Wings_E._SubWings_C._DecalA_A2",
+                    "groups": []
+                  }
+                ]
+              ]
+            },
+            {
+              "name": "_SubWings_D",
+              "layer": "_Wings_E._SubWings_D",
+              "groups": [
+                [
+                  {
+                    "name": "_DecalA_A1",
+                    "layer": "_Wings_E._SubWings_D._DecalA_A1",
+                    "groups": []
+                  }
+                ],
+                [
+                  {
+                    "name": "_CDecal1_A1",
+                    "layer": "_Wings_E._SubWings_D._CDecal1_A1",
+                    "groups": []
+                  }
+                ]
+              ]
+            },
+            {
+              "name": "_SubWings_E",
+              "layer": "_Wings_E._SubWings_E",
+              "groups": []
+            },
+            { "name": "_SubWings_F", "layer": "_SubWings_F", "groups": [] }
+          ]
+        ]
+      },
+      {
+        "name": "_Wings_F",
+        "layer": "_Wings_F",
+        "groups": [
+          [
+            { "name": "_Acc_A3", "layer": "_Acc_A3", "groups": [] },
+            { "name": "_Acc_None3", "layer": "_Acc_None3", "groups": [] }
+          ],
+          [
+            {
+              "name": "_SubWings_C",
+              "layer": "_Wings_F._SubWings_C",
+              "groups": [
+                [
+                  {
+                    "name": "_DecalA_A2",
+                    "layer": "_Wings_F._SubWings_C._DecalA_A2",
+                    "groups": []
+                  }
+                ]
+              ]
+            },
+            {
+              "name": "_SubWings_D",
+              "layer": "_Wings_F._SubWings_D",
+              "groups": [
+                [
+                  {
+                    "name": "_DecalA_A1",
+                    "layer": "_Wings_F._SubWings_D._DecalA_A1",
+                    "groups": []
+                  }
+                ],
+                [
+                  {
+                    "name": "_CDecal1_A1",
+                    "layer": "_Wings_F._SubWings_D._CDecal1_A1",
+                    "groups": []
+                  }
+                ]
+              ]
+            },
+            {
+              "name": "_SubWings_E",
+              "layer": "_Wings_F._SubWings_E",
+              "groups": [
+                [
+                  {
+                    "name": "_logo_A",
+                    "layer": "_logo_A",
+                    "decal": true,
+                    "groups": []
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "name": "_Wings_G",
+        "layer": "_Wings_G",
+        "groups": [
+          [
+            { "name": "_Acc_A4", "layer": "_Acc_A4", "groups": [] },
+            { "name": "_Acc_None4", "layer": "_Acc_None4", "groups": [] }
+          ],
+          [
+            {
+              "name": "_LetterR_A",
+              "layer": "_LetterR_A",
+              "decal": true,
+              "groups": []
+            }
+          ],
+          [{ "name": "_Wings2_GLOD0", "layer": "_Wings2_GLOD0", "groups": [] }],
+          [
+            {
+              "name": "_SmallSignL_A",
+              "layer": "_SmallSignL_A",
+              "decal": true,
+              "groups": []
+            }
+          ],
+          [
+            {
+              "name": "_SmallSignR_A",
+              "layer": "_SmallSignR_A",
+              "decal": true,
+              "groups": []
+            }
+          ],
+          [{ "name": "_Wings_GLOD0", "layer": "_Wings_GLOD0", "groups": [] }],
+          [
+            {
+              "name": "_LetterL_A",
+              "layer": "_Wings_G._LetterL_A",
+              "decal": true,
+              "groups": []
+            }
+          ]
+        ]
+      },
+      {
+        "name": "_Wings_H",
+        "layer": "_Wings_H",
+        "groups": [
+          [
+            { "name": "_Acc_A5", "layer": "_Acc_A5", "groups": [] },
+            { "name": "_Acc_None5", "layer": "_Acc_None5", "groups": [] }
+          ],
+          [
+            {
+              "name": "_sadsadas_A",
+              "layer": "_sadsadas_A",
+              "decal": true,
+              "groups": []
+            }
+          ],
+          [
+            {
+              "name": "_LetterL_A",
+              "layer": "_Wings_H._LetterL_A",
+              "decal": true,
+              "groups": []
+            }
+          ],
+          [
+            {
+              "name": "_SubWings_A",
+              "layer": "_Wings_H._SubWings_A",
+              "groups": []
+            },
+            {
+              "name": "_SubWings_B",
+              "layer": "_Wings_H._SubWings_B",
+              "groups": [
+                [
+                  {
+                    "name": "_CornerDecalA_",
+                    "layer": "_Wings_H._SubWings_B._CornerDecalA_",
+                    "decal": true,
+                    "groups": []
+                  }
+                ]
+              ]
+            },
+            {
+              "name": "_SubWings_C",
+              "layer": "_Wings_H._SubWings_C",
+              "groups": [
+                [
+                  {
+                    "name": "_DecalA_A2",
+                    "layer": "_Wings_H._SubWings_C._DecalA_A2",
+                    "groups": []
+                  }
+                ]
+              ]
+            },
+            {
+              "name": "_SubWings_D",
+              "layer": "_Wings_H._SubWings_D",
+              "groups": [
+                [
+                  {
+                    "name": "_DecalA_A1",
+                    "layer": "_Wings_H._SubWings_D._DecalA_A1",
+                    "groups": []
+                  }
+                ],
+                [
+                  {
+                    "name": "_CDecal1_A1",
+                    "layer": "_Wings_H._SubWings_D._CDecal1_A1",
+                    "groups": []
+                  }
+                ]
+              ]
+            },
+            {
+              "name": "_SubWings_None",
+              "layer": "_Wings_H._SubWings_None",
+              "groups": []
+            }
+          ]
+        ]
+      },
+      {
+        "name": "_Wings_I",
+        "layer": "_Wings_I",
+        "groups": [
+          [
+            { "name": "_Acc_None6", "layer": "_Acc_None6", "groups": [] },
+            { "name": "_Acc_A10", "layer": "_Acc_A10", "groups": [] }
+          ]
+        ]
+      },
+      {
+        "name": "_Wings_J",
+        "layer": "_Wings_J",
+        "groups": [
+          [{ "name": "_Acc_A6", "layer": "_Acc_A6", "groups": [] }],
+          [
+            { "name": "_WingsJ_Full", "layer": "_WingsJ_Full", "groups": [] },
+            { "name": "_WingsJ_Low", "layer": "_WingsJ_Low", "groups": [] },
+            { "name": "_WingsJ_Mid", "layer": "_WingsJ_Mid", "groups": [] }
+          ]
+        ]
+      },
+      {
+        "name": "_Wings_K",
+        "layer": "_Wings_K",
+        "groups": [
+          [
+            {
+              "name": "_WingsK_A",
+              "layer": "_WingsK_A",
+              "groups": [
+                [
+                  {
+                    "name": "_RectangleRight_A1LOD1",
+                    "layer": "_RectangleRight_A1LOD1",
+                    "groups": []
+                  },
+                  {
+                    "name": "_RectangleRight_ALOD1",
+                    "layer": "_RectangleRight_ALOD1",
+                    "groups": []
+                  }
+                ],
+                [
+                  {
+                    "name": "_logoRight_A1LOD1",
+                    "layer": "_logoRight_A1LOD1",
+                    "groups": []
+                  },
+                  {
+                    "name": "_logoRight_ALOD1",
+                    "layer": "_logoRight_ALOD1",
+                    "groups": []
+                  }
+                ],
+                [
+                  {
+                    "name": "_SubWings_None",
+                    "layer": "_WingsK_A._SubWings_None",
+                    "groups": []
+                  },
+                  {
+                    "name": "_SubWings_A",
+                    "layer": "_WingsK_A._SubWings_A",
+                    "groups": []
+                  }
+                ],
+                [
+                  {
+                    "name": "_LetterRight_A1LOD1",
+                    "layer": "_LetterRight_A1LOD1",
+                    "groups": []
+                  },
+                  {
+                    "name": "_LetterRight_ALOD1",
+                    "layer": "_LetterRight_ALOD1",
+                    "groups": []
+                  }
+                ]
+              ]
+            },
+            {
+              "name": "_WingsK_B",
+              "layer": "_WingsK_B",
+              "groups": [
+                [
+                  {
+                    "name": "_RectangleRight_A4LOD1",
+                    "layer": "_RectangleRight_A4LOD1",
+                    "groups": []
+                  }
+                ],
+                [
+                  {
+                    "name": "_SubWings_A1",
+                    "layer": "_SubWings_A1",
+                    "groups": [
+                      [
+                        {
+                          "name": "_RectangleRight_A3",
+                          "layer": "_RectangleRight_A3",
+                          "decal": true,
+                          "groups": []
+                        }
+                      ],
+                      [
+                        {
+                          "name": "_RectangleLeft_A",
+                          "layer": "_RectangleLeft_A",
+                          "decal": true,
+                          "groups": []
+                        }
+                      ]
+                    ]
+                  },
+                  {
+                    "name": "_SubWings_B1",
+                    "layer": "_SubWings_B1",
+                    "groups": []
+                  },
+                  {
+                    "name": "_SubWings_C1",
+                    "layer": "_SubWings_C1",
+                    "groups": [
+                      [
+                        {
+                          "name": "_DecalA_A2",
+                          "layer": "_SubWings_C1._DecalA_A2",
+                          "groups": []
+                        }
+                      ]
+                    ]
+                  }
+                ],
+                [
+                  {
+                    "name": "_RectangleLeft_A2LOD1",
+                    "layer": "_RectangleLeft_A2LOD1",
+                    "groups": []
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      {
+        "name": "_Cockpit_A",
+        "layer": "_Cockpit_A",
+        "groups": [
+          [
+            {
+              "name": "_ANose_A",
+              "layer": "_ANose_A",
+              "groups": [
+                [
+                  {
+                    "name": "_NoseA_BaseLOD0",
+                    "layer": "_NoseA_BaseLOD0",
+                    "groups": []
+                  }
+                ]
+              ]
+            },
+            {
+              "name": "_ANose_B",
+              "layer": "_ANose_B",
+              "groups": [
+                [
+                  {
+                    "name": "_NoseB_BaseLOD0",
+                    "layer": "_NoseB_BaseLOD0",
+                    "groups": []
+                  }
+                ]
+              ]
+            },
+            {
+              "name": "_ANose_C",
+              "layer": "_ANose_C",
+              "groups": [
+                [
+                  {
+                    "name": "_logoR_A",
+                    "layer": "_logoR_A",
+                    "decal": true,
+                    "groups": []
+                  }
+                ],
+                [
+                  {
+                    "name": "_logoL_A",
+                    "layer": "_logoL_A",
+                    "decal": true,
+                    "groups": []
+                  }
+                ]
+              ]
+            },
+            { "name": "_ANose_D", "layer": "_ANose_D", "groups": [] },
+            { "name": "_ANose_E", "layer": "_ANose_E", "groups": [] }
+          ],
+          [
+            {
+              "name": "_logo1_A2",
+              "layer": "_logo1_A2",
+              "decal": true,
+              "groups": []
+            }
+          ],
+          [
+            {
+              "name": "_Number4_A4",
+              "layer": "_Number4_A4",
+              "decal": true,
+              "groups": []
+            }
+          ],
+          [
+            {
+              "name": "_Number3_A3",
+              "layer": "_Number3_A3",
+              "decal": true,
+              "groups": []
+            }
+          ],
+          [
+            {
+              "name": "_logo2_A3",
+              "layer": "_logo2_A3",
+              "decal": true,
+              "groups": []
+            }
+          ],
+          [
+            {
+              "name": "_Number2_A3",
+              "layer": "_Number2_A3",
+              "decal": true,
+              "groups": []
+            }
+          ],
+          [
+            {
+              "name": "_Number1_A2",
+              "layer": "_Number1_A2",
+              "decal": true,
+              "groups": []
+            }
+          ]
+        ]
+      },
+      {
+        "name": "_Cockpit_B",
+        "layer": "_Cockpit_B",
+        "groups": [
+          [
+            {
+              "name": "_CockpitBNose_Nose1",
+              "layer": "_CockpitBNose_Nose1",
+              "groups": []
+            }
+          ],
+          [
+            {
+              "name": "_Cockpit_B2",
+              "layer": "_Cockpit_B2",
+              "groups": [
+                [{ "name": "_B_Hatch2", "layer": "_B_Hatch2", "groups": [] }]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "name": "_Cockpit_D",
+        "layer": "_Cockpit_D",
+        "groups": [
+          [{ "name": "_LogoR_A2", "layer": "_LogoR_A2", "groups": [] }],
+          [{ "name": "_LogoL_A1", "layer": "_LogoL_A1", "groups": [] }]
+        ]
+      },
+      {
+        "name": "_Cockpit_E",
+        "layer": "_Cockpit_E",
+        "groups": [
+          [{ "name": "_logoLeft_A", "layer": "_logoLeft_A", "groups": [] }],
+          [{ "name": "_LetterLeft_A", "layer": "_LetterLeft_A", "groups": [] }],
+          [{ "name": "_logoRight_A", "layer": "_logoRight_A", "groups": [] }],
+          [
+            {
+              "name": "_LetterRight_A",
+              "layer": "_LetterRight_A",
+              "groups": []
+            }
+          ]
+        ]
+      },
+      { "name": "_Cockpit_F", "layer": "_Cockpit_F", "groups": [] }
+    ]
+  ]
+}

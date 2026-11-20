@@ -1,0 +1,176 @@
+{
+  "width": 1000,
+  "height": 1336,
+  "layers": {
+    "_CockPit_A": [493, 806, 238, 255],
+    "_Engine_A": [655, 819, 104, 172],
+    "_Engine_B": [662, 758, 197, 231],
+    "_Engine_C": [657, 727, 328, 262],
+    "_LandingGear_A": [501, 883, 252, 268],
+    "_SClassShip_Royal._TopWing_A._DetailAcc_1": [601, 43, 100, 103],
+    "_SClassShip_Royal._TopWing_A._DetailAcc_2": [612, 68, 88, 200],
+    "_SClassShip_Royal._TopWing_A._DetailAcc_3": [591, 398, 114, 135],
+    "_SClassShip_Royal._TopWing_A._DetailAcc_4": [588, 99, 108, 410],
+    "_SClassShip_Royal._TopWing_A._DetailAcc_5": [607, 427, 79, 90],
+    "_SClassShip_Royal._TopWing_A._TopWing_A": [368, 22, 465, 1062],
+    "_SClassShip_Royal._TopWing_B": [445, 672, 251, 286],
+    "_SClassShip_Royal._TopWing_B._DetailAcc_1": [647, 597, 32, 90],
+    "_SClassShip_Royal._TopWing_B._DetailAcc_2": [611, 607, 71, 88],
+    "_SClassShip_Royal._TopWing_B._DetailAcc_3": [635, 622, 44, 59],
+    "_SClassShip_Royal._TopWing_B._DetailAcc_4": [597, 607, 83, 99],
+    "_SClassShip_Royal._TopWing_B._DetailAcc_5": [638, 606, 34, 53],
+    "_SClassShip_Royal._TopWing_B._TopWing_B": [136, 581, 564, 598],
+    "_SClassShip_Royal._TopWing_C._TopWing_C": [472, 898, 88, 147],
+    "_SClassShip_SquidxRARE": [15, 612, 838, 702],
+    "_Thruster_1": [708, 827, 59, 133],
+    "_Thruster_2": [706, 810, 97, 151],
+    "_Wings_A": [294, 254, 550, 743],
+    "_Wings_B": [455, 871, 371, 276],
+    "_Wings_C": [484, 797, 428, 237]
+  },
+  "tree": [
+    [
+      {
+        "name": "_SClassShip_Royal",
+        "layer": "_SClassShip_Royal",
+        "groups": [
+          [
+            {
+              "name": "_Engine_A",
+              "layer": "_Engine_A",
+              "groups": [
+                [
+                  {
+                    "name": "_Thruster_1",
+                    "layer": "_Thruster_1",
+                    "groups": []
+                  },
+                  {
+                    "name": "_Thruster_2",
+                    "layer": "_Thruster_2",
+                    "groups": []
+                  }
+                ]
+              ]
+            },
+            { "name": "_Engine_B", "layer": "_Engine_B", "groups": [] },
+            { "name": "_Engine_C", "layer": "_Engine_C", "groups": [] }
+          ],
+          [
+            { "name": "_Wings_A", "layer": "_Wings_A", "groups": [] },
+            { "name": "_Wings_B", "layer": "_Wings_B", "groups": [] },
+            { "name": "_Wings_C", "layer": "_Wings_C", "groups": [] }
+          ],
+          [{ "name": "_CockPit_A", "layer": "_CockPit_A", "groups": [] }],
+          [
+            {
+              "name": "_LandingGear_A",
+              "layer": "_LandingGear_A",
+              "groups": []
+            }
+          ],
+          [
+            {
+              "name": "_TopWing_A",
+              "layer": "_SClassShip_Royal._TopWing_A",
+              "groups": [
+                [
+                  {
+                    "name": "_DetailAcc_1",
+                    "layer": "_SClassShip_Royal._TopWing_A._DetailAcc_1",
+                    "groups": []
+                  },
+                  {
+                    "name": "_DetailAcc_2",
+                    "layer": "_SClassShip_Royal._TopWing_A._DetailAcc_2",
+                    "groups": []
+                  },
+                  {
+                    "name": "_DetailAcc_3",
+                    "layer": "_SClassShip_Royal._TopWing_A._DetailAcc_3",
+                    "groups": []
+                  },
+                  {
+                    "name": "_DetailAcc_4",
+                    "layer": "_SClassShip_Royal._TopWing_A._DetailAcc_4",
+                    "groups": []
+                  },
+                  {
+                    "name": "_DetailAcc_5",
+                    "layer": "_SClassShip_Royal._TopWing_A._DetailAcc_5",
+                    "groups": []
+                  }
+                ],
+                [
+                  {
+                    "name": "_TopWing_A",
+                    "layer": "_SClassShip_Royal._TopWing_A._TopWing_A",
+                    "groups": []
+                  }
+                ]
+              ]
+            },
+            {
+              "name": "_TopWing_B",
+              "layer": "_SClassShip_Royal._TopWing_B",
+              "groups": [
+                [
+                  {
+                    "name": "_DetailAcc_1",
+                    "layer": "_SClassShip_Royal._TopWing_B._DetailAcc_1",
+                    "groups": []
+                  },
+                  {
+                    "name": "_DetailAcc_2",
+                    "layer": "_SClassShip_Royal._TopWing_B._DetailAcc_2",
+                    "groups": []
+                  },
+                  {
+                    "name": "_DetailAcc_3",
+                    "layer": "_SClassShip_Royal._TopWing_B._DetailAcc_3",
+                    "groups": []
+                  },
+                  {
+                    "name": "_DetailAcc_4",
+                    "layer": "_SClassShip_Royal._TopWing_B._DetailAcc_4",
+                    "groups": []
+                  },
+                  {
+                    "name": "_DetailAcc_5",
+                    "layer": "_SClassShip_Royal._TopWing_B._DetailAcc_5",
+                    "groups": []
+                  }
+                ],
+                [
+                  {
+                    "name": "_TopWing_B",
+                    "layer": "_SClassShip_Royal._TopWing_B._TopWing_B",
+                    "groups": []
+                  }
+                ]
+              ]
+            },
+            {
+              "name": "_TopWing_C",
+              "layer": "_SClassShip_Royal._TopWing_C",
+              "groups": [
+                [
+                  {
+                    "name": "_TopWing_C",
+                    "layer": "_SClassShip_Royal._TopWing_C._TopWing_C",
+                    "groups": []
+                  }
+                ]
+              ]
+            }
+          ]
+        ]
+      },
+      {
+        "name": "_SClassShip_SquidxRARE",
+        "layer": "_SClassShip_SquidxRARE",
+        "groups": []
+      }
+    ]
+  ]
+}

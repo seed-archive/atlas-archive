@@ -12,7 +12,7 @@ This site is an item guide for No Man's Sky. It lists three things, each with th
 
 - **[Multitools](/tool)** from shops, monoliths, harmonic camps, sentinel pillars, space stations, and Autophage terminals.
 - **[Crashed ships](/ship)** you can claim where they lie.
-- **[Creatures](/creature)** you can adopt, each with its [grades](/guides/creature-grades).
+- **[Creatures](/creature)** you can adopt whose three [grades](/guides/creature-grades) are S.
 
 The [guides](/guides) say where each kind of item comes from, from the galaxy down to the planet. The [Sentinel Interceptors](/tools/interceptor-finder) page shows every Interceptor the game can build, part by part. The [capital freighters](/tools/capital-freighter-finder) page shows the shapes of capital freighters. Already holding one? [How lucky am I?](/tools/how-lucky-am-i) scores it from 0 to 100.
 

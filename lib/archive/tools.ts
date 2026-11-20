@@ -8,6 +8,7 @@ export const TOOLS = [
   { href: "/tools/freighter-finder", id: "archive.freighterFinder" },
   { href: "/tools/living-ship-finder", id: "archive.livingShipFinder" },
   { href: "/tools/living-frigate-finder", id: "archive.livingFrigateFinder" },
+  { href: "/tools/starship-finder", id: "archive.starshipFinder" },
   { href: "/tools/how-lucky-am-i", id: "archive.luckCalculator" },
   { href: "/tools/refiner-recipes", id: "archive.refinerRecipes" },
   { href: "/tools/cooking-recipes", id: "archive.cookingRecipes" },

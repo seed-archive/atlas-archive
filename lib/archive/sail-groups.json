@@ -1,0 +1,146 @@
+[
+  {
+    "id": "Tips_A",
+    "options": [
+      {
+        "id": "Tips_A",
+        "label": "Variant 1",
+        "names": ["_Tips_A"],
+        "tile": ["_Tips_A"]
+      },
+      {
+        "id": "Tips_B",
+        "label": "Variant 2",
+        "names": ["_Tips_B"],
+        "tile": ["_Tips_B"]
+      },
+      {
+        "id": "Tips_C",
+        "label": "Variant 3",
+        "names": ["_Tips_C"],
+        "tile": ["_Tips_C"]
+      },
+      {
+        "id": "Tips_D",
+        "label": "Variant 4",
+        "names": ["_Tips_D"],
+        "tile": ["_Tips_D"]
+      },
+      {
+        "id": "Tips_E",
+        "label": "Variant 5",
+        "names": ["_Tips_E"],
+        "tile": ["_Tips_E"]
+      }
+    ],
+    "title": "Wing tips"
+  },
+  {
+    "id": "Wings_A",
+    "options": [
+      {
+        "id": "Wings_A",
+        "label": "Variant 1",
+        "names": ["_Wings_A"],
+        "tile": ["_Wings_A", "_Wings_A._JNT_parentConstraint1"]
+      },
+      {
+        "id": "Wings_B",
+        "label": "Variant 2",
+        "names": ["_Wings_B"],
+        "tile": ["_Wings_B", "_Wings_B._JNT_parentConstraint1"]
+      },
+      {
+        "id": "Wings_C",
+        "label": "Variant 3",
+        "names": ["_Wings_C"],
+        "tile": ["_Wings_C", "_Wings_C._JNT_parentConstraint1"]
+      },
+      {
+        "id": "Wings_D",
+        "label": "Variant 4",
+        "names": ["_Wings_D"],
+        "tile": ["_Wings_D", "_Wings_D._JNT_parentConstraint1"]
+      },
+      {
+        "id": "Wings_E",
+        "label": "Variant 5",
+        "names": ["_Wings_E"],
+        "tile": ["_Wings_E", "_Wings_E._JNT_parentConstraint1"]
+      },
+      {
+        "id": "Wings_F",
+        "label": "Variant 6",
+        "names": ["_Wings_F"],
+        "tile": ["_Wings_F", "_Wings_F._JNT_parentConstraint1"]
+      }
+    ],
+    "title": "Wings"
+  },
+  {
+    "id": "Body_A",
+    "options": [
+      {
+        "id": "Body_A",
+        "label": "Variant 1",
+        "names": ["_Body_A"],
+        "tile": ["_Body_A"]
+      },
+      {
+        "id": "Body_B",
+        "label": "Variant 2",
+        "names": ["_Body_B"],
+        "tile": ["_Body_B"]
+      },
+      {
+        "id": "Body_C",
+        "label": "Variant 3",
+        "names": ["_Body_C"],
+        "tile": ["_Body_C"]
+      },
+      {
+        "id": "Body_D",
+        "label": "Variant 4",
+        "names": ["_Body_D"],
+        "tile": ["_Body_D"]
+      },
+      {
+        "id": "Body_E",
+        "label": "Variant 5",
+        "names": ["_Body_E"],
+        "tile": ["_Body_E", "_ProcDummy_E"]
+      },
+      {
+        "id": "Body_F",
+        "label": "Variant 6",
+        "names": ["_Body_F"],
+        "tile": ["_Body_F"]
+      }
+    ],
+    "title": "Body"
+  },
+  {
+    "id": "Sails_A",
+    "options": [
+      {
+        "id": "Sails_A",
+        "label": "Variant 1",
+        "names": ["_Sails_A"],
+        "tile": ["_Sails_A"]
+      },
+      {
+        "id": "Sails_B",
+        "label": "Variant 2",
+        "names": ["_Sails_B"],
+        "tile": ["_Sails_B"]
+      },
+      {
+        "id": "Sails_C",
+        "label": "Variant 3",
+        "names": ["_Sails_C"],
+        "tile": ["_Sails_C"]
+      }
+    ],
+    "title": "Sails"
+  }
+]

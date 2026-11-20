@@ -1,0 +1,136 @@
+{
+  "width": 1000,
+  "height": 920,
+  "layers": {
+    "_Body_A": [305, 427, 454, 194],
+    "_Body_B": [375, 420, 358, 175],
+    "_Body_C": [259, 367, 415, 251],
+    "_Body_D": [319, 318, 388, 298],
+    "_Body_E": [359, 409, 298, 210],
+    "_Body_F": [349, 364, 446, 251],
+    "_Sails_A": [46, 167, 793, 709],
+    "_Sails_B": [15, 57, 709, 834],
+    "_Sails_C": [17, 16, 705, 888],
+    "_Tips_A": [197, 470, 377, 217],
+    "_Tips_B": [204, 436, 399, 244],
+    "_Tips_C": [160, 402, 427, 289],
+    "_Tips_D": [138, 480, 421, 186],
+    "_Tips_E": [200, 409, 352, 265],
+    "_Wings_A": [286, 351, 643, 263],
+    "_Wings_B": [283, 349, 646, 276],
+    "_Wings_C": [260, 351, 669, 269],
+    "_Wings_D": [287, 333, 689, 271],
+    "_Wings_E": [290, 349, 693, 258],
+    "_Wings_F": [278, 350, 651, 273],
+    "base": [239, 415, 524, 225]
+  },
+  "tree": [
+    [{ "name": "_RootJNT_", "layer": "_RootJNT_", "groups": [] }],
+    [
+      { "name": "_Tips_A", "layer": "_Tips_A", "groups": [] },
+      { "name": "_Tips_B", "layer": "_Tips_B", "groups": [] },
+      { "name": "_Tips_C", "layer": "_Tips_C", "groups": [] },
+      { "name": "_Tips_D", "layer": "_Tips_D", "groups": [] },
+      { "name": "_Tips_E", "layer": "_Tips_E", "groups": [] }
+    ],
+    [
+      {
+        "name": "_Wings_A",
+        "layer": "_Wings_A",
+        "groups": [
+          [
+            {
+              "name": "_JNT_parentConstraint1",
+              "layer": "_Wings_A._JNT_parentConstraint1",
+              "groups": []
+            }
+          ]
+        ]
+      },
+      {
+        "name": "_Wings_B",
+        "layer": "_Wings_B",
+        "groups": [
+          [
+            {
+              "name": "_JNT_parentConstraint1",
+              "layer": "_Wings_B._JNT_parentConstraint1",
+              "groups": []
+            }
+          ]
+        ]
+      },
+      {
+        "name": "_Wings_C",
+        "layer": "_Wings_C",
+        "groups": [
+          [
+            {
+              "name": "_JNT_parentConstraint1",
+              "layer": "_Wings_C._JNT_parentConstraint1",
+              "groups": []
+            }
+          ]
+        ]
+      },
+      {
+        "name": "_Wings_D",
+        "layer": "_Wings_D",
+        "groups": [
+          [
+            {
+              "name": "_JNT_parentConstraint1",
+              "layer": "_Wings_D._JNT_parentConstraint1",
+              "groups": []
+            }
+          ]
+        ]
+      },
+      {
+        "name": "_Wings_E",
+        "layer": "_Wings_E",
+        "groups": [
+          [
+            {
+              "name": "_JNT_parentConstraint1",
+              "layer": "_Wings_E._JNT_parentConstraint1",
+              "groups": []
+            }
+          ]
+        ]
+      },
+      {
+        "name": "_Wings_F",
+        "layer": "_Wings_F",
+        "groups": [
+          [
+            {
+              "name": "_JNT_parentConstraint1",
+              "layer": "_Wings_F._JNT_parentConstraint1",
+              "groups": []
+            }
+          ]
+        ]
+      }
+    ],
+    [
+      { "name": "_Body_A", "layer": "_Body_A", "groups": [] },
+      { "name": "_Body_B", "layer": "_Body_B", "groups": [] },
+      { "name": "_Body_C", "layer": "_Body_C", "groups": [] },
+      { "name": "_Body_D", "layer": "_Body_D", "groups": [] },
+      {
+        "name": "_Body_E",
+        "layer": "_Body_E",
+        "groups": [
+          [{ "name": "_ProcDummy_E", "layer": "_ProcDummy_E", "groups": [] }]
+        ]
+      },
+      { "name": "_Body_F", "layer": "_Body_F", "groups": [] }
+    ],
+    [
+      { "name": "_Sails_A", "layer": "_Sails_A", "groups": [] },
+      { "name": "_Sails_B", "layer": "_Sails_B", "groups": [] },
+      { "name": "_Sails_C", "layer": "_Sails_C", "groups": [] }
+    ]
+  ]
+}

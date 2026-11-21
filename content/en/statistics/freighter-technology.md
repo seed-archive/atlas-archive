@@ -28,6 +28,8 @@ One table per family: each class, how many stats one install raises, and the lim
 
 <!-- widget:frHypTop -->
 
+The freighter's hyperdrive modules climb by class with no overlap: no A-Class install reaches the worst S-Class one in Hyperdrive Range. So every class up is a sure gain, and a derelict freighter that hands you an S-Class module has given you the best there is for that place.
+
 ### Expedition Speed Control
 
 <!-- widget:frSpeed -->
@@ -35,6 +37,8 @@ One table per family: each class, how many stats one install raises, and the lim
 <!-- widget:frSpeedRolls -->
 
 <!-- widget:frSpeedTop -->
+
+An S-Class Speed Control module always adds the same Expedition Speed, and no A-Class install reaches it. There is nothing to roll for at S: the first one is as good as the last.
 
 ### Expedition Efficiency Control
 
@@ -44,6 +48,8 @@ One table per family: each class, how many stats one install raises, and the lim
 
 <!-- widget:frFuelTop -->
 
+Efficiency Control is the one expedition family whose S-Class module still varies, so two S-Class installs can differ; even so, no A-Class install reaches the worst of them.
+
 ### Expedition Defences Control
 
 <!-- widget:frCom -->
@@ -51,6 +57,8 @@ One table per family: each class, how many stats one install raises, and the lim
 <!-- widget:frComRolls -->
 
 <!-- widget:frComTop -->
+
+Defences Control follows Speed Control: one fixed value at S-Class, out of reach of any A-Class install.
 
 ### Expedition Trade Control
 
@@ -60,6 +68,8 @@ One table per family: each class, how many stats one install raises, and the lim
 
 <!-- widget:frTradeTop -->
 
+Trade Control is the same again: S-Class adds one fixed value, and no A-Class install reaches it.
+
 ### Expedition Scientific Control
 
 <!-- widget:frExp -->
@@ -68,6 +78,8 @@ One table per family: each class, how many stats one install raises, and the lim
 
 <!-- widget:frExpTop -->
 
+Scientific Control: one fixed value at S-Class, and A-Class always below it.
+
 ### Expedition Mining Control
 
 <!-- widget:frMine -->
@@ -75,5 +87,7 @@ One table per family: each class, how many stats one install raises, and the lim
 <!-- widget:frMineRolls -->
 
 <!-- widget:frMineTop -->
+
+Mining Control closes the set the same way. Across all six expedition families the rule is one: an S-Class module is the ceiling, and which family to fill first depends only on the expeditions your [frigates](/guides/frigates) fly.
 
 That covers the freighter. What is left is the gear you never find and only upgrade, starting with the suit you wear: [exosuit modules](/guides/exosuit-modules).

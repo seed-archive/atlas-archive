@@ -38,7 +38,7 @@ The kinds differ in the class of their module. A heavy booster brings a class A 
 
 ### Tractor beam
 
-<!-- widget:partsTractor -->
+There is one tractor beam part, the Tractor Beam, and it brings an A-Class Salvage Recovery System.
 
 The upgrade modules you install yourself, beside the parts' modules, are those of any [starship](/guides/starship-modules).
 

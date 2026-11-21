@@ -4,9 +4,7 @@
 
 ## Regular and capital
 
-The game has two kinds of freighter. A regular freighter is the smaller ship you see in the fleets of a system, and you buy it. A capital freighter is the giant one, and you get it only by saving it from a battle. Besides where you get it and how it looks, the kind sets one thing: the slots it starts with.
-
-<!-- widget:kinds -->
+The game has two kinds of freighter. A regular freighter is the smaller ship you see in the fleets of a system, and you buy it. A capital freighter is the giant one, and you get it only by saving it from a battle. Besides where you get it and how it looks, the kind sets one thing: the slots it starts with. A regular freighter is Small nearly always and Medium now and then; you buy it from its captain. A capital freighter is Medium or Large, half each, the same in every battle of a system, and it comes from your third battle on. The size sets the slots a freighter starts with, not the most it can hold.
 
 Everything else follows the class, and a freighter keeps its class for good: no terminal, item, or reward upgrades it. What grows is the inventory. A Cargo Bulkhead opens one slot, general or technology, up to the most the class allows, and that most is the same for both kinds.
 

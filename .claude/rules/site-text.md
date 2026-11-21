@@ -30,9 +30,19 @@ that answers no part of that question does not belong on the site.
   game's description and picture, quest-only items included. An item's stats live only on the guide of its item. The
   quest page links that guide for them, and the guide names the quest in the item's source, linked back (the owner,
   2026-11-11).
-- A guide ends with a sentence that links the next guide of the menu; the last leads back to `/about`. It links in its
-  text to the guides it relies on, the tool that acts on it, and the catalog list it describes. Every guide is reached
-  from at least two other pages.
+- A guide ends with its conclusion, what the reader should now do, and in the same lines the link to the next guide
+  of the menu; the last leads back to `/about`. A bare "the next one is X" is not an ending (the owner, 2026-11-21).
+  It links in its text to the guides it relies on, the tool that acts on it, and the catalog list it describes. Every
+  guide is reached from at least two other pages.
+- **A conclusion stands under the data** (the owner, 2026-11-21: the analysed data is what the site brings, and a
+  table without its conclusion is not analysis): under a table, or under the tables of one thing, a sentence or two
+  say what to take, buy, keep or skip, and why, with the numbers that decide it through `{{name}}`.
+- **A table has three rows or more of one kind.** One or two values are a sentence with the values in it
+  (the owner, 2026-11-21). A quest's items keep their table at any count: it carries their pictures.
+- **A section heading is a question only where a player types that question**: where the page's row of the semantic
+  core (`docs/seo.md`) lists it, the heading is that question in his words, and the section's first sentence answers
+  it. Every other heading is a short name a reader scans for. The site is written for a living reader who came with
+  a question; a heading is never turned into a question for a search engine alone (the owner, 2026-11-21).
 - No number of a guide is typed into its text: the numbers of its own line go through `{{name}}`, so a recount moves
   them.
 - What to farm, proof of claims, and sample sizes follow the archive's `site-text.md`; the publicly posted farm

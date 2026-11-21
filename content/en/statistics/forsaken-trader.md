@@ -34,8 +34,6 @@ The trader takes the Haunting Mementos, each counted at {{wantedValue}}, and ask
 
 ## The Larva Cannon
 
-Outside its stock, the trader takes an offering for one item: choose Make Offering when you talk to it. The Larva Cannon is an Alien multitool of class A, with the same layout of slots and the same supercharged slots for every player, and comes with its mining beam, scanner, analysis visor, terrain manipulator, and Boltcaster installed, two upgrade modules of class X among them. Think before upgrading it to class S: the upgrade rolls its base stats again as a pistol's, which have no damage.
-
-<!-- widget:offerings -->
+Outside its stock, the trader takes an offering for one item: choose Make Offering when you talk to it, and {{offeringAmount}} Preserved Grubs buy the Larva Cannon. The Larva Cannon is an Alien multitool of class A, with the same layout of slots and the same supercharged slots for every player, and comes with its mining beam, scanner, analysis visor, terrain manipulator, and Boltcaster installed, two upgrade modules of class X among them. Think before upgrading it to class S: the upgrade rolls its base stats again as a pistol's, which have no damage.
 
 What the parts add to a corvette is in the [corvette modules](/guides/corvette-modules) guide. The [Salvage Exchange](/guides/salvage-exchange) of a space station trades corvette parts too, part for part.

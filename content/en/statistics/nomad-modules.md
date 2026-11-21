@@ -30,6 +30,8 @@ One table per family: each class, how many stats one install raises, and the lim
 
 <!-- widget:exengTop -->
 
+The engine is the one exocraft family where the classes touch: an A-Class install can reach S-Class's Top Speed, but only {{exengAAtTypicalS}} of them match a middling S-Class one, and most raise just one of the two stats. S-Class raises both every time, so it is the one to buy.
+
 ### Exocraft Boosters
 
 <!-- widget:boost -->
@@ -37,6 +39,8 @@ One table per family: each class, how many stats one install raises, and the lim
 <!-- widget:boostRolls -->
 
 <!-- widget:boostTop -->
+
+The boosters' classes do not overlap: no A-Class install reaches the worst S-Class one in Boost Power, and the tank grows the same way. Each class up is a sure gain.
 
 ### Exocraft Mining Laser
 
@@ -46,6 +50,8 @@ One table per family: each class, how many stats one install raises, and the lim
 
 <!-- widget:exlasTop -->
 
+The mining laser follows the boosters: no A-Class install reaches the worst S-Class one in Mining Laser Power, so S-Class is the only module worth one of the three places once you can buy it.
+
 ### Mounted Cannon
 
 <!-- widget:exgun -->
@@ -54,4 +60,6 @@ One table per family: each class, how many stats one install raises, and the lim
 
 <!-- widget:exgunTop -->
 
-The next land exocraft is the [Pilgrim](/guides/pilgrim-modules).
+The cannon's Damage climbs by class with no overlap either: the best A-Class install stops where the worst S-Class one starts. If you fight from the exocraft at all, go straight to S.
+
+The Nomad and the [Pilgrim](/guides/pilgrim-modules) have the least room of the four land exocraft, so the hard choice is made here: which upgrade family to leave out. The [Roamer](/guides/roamer-modules) and the [Colossus](/guides/colossus-modules) fit more and ask less of you.

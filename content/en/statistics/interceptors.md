@@ -22,7 +22,7 @@ Every Sentinel wreck of a system shows the same ship: the same parts and the sam
 
 {{adjacent}} of Interceptors hold adjacent slots at class S, against {{otherAdjacent}} of other wrecks. An ordinary wreck takes its slots from the ship. An Interceptor takes its first slots from the wreck's own rolls, and those same rolls decide that a Sentinel wreck stands on that spot at all. So its first slot always lies in the middle row of the grid, where other slots can sit on both sides of it. How often each ship type makes a square is under [the square on a ship](/guides/ship-square).
 
-<!-- widget:compare -->
+The square gains the same way: {{squareAll}} of Interceptors hold one at class S, against {{otherSquareAll}} of other wrecks, and among the ones with adjacent slots it is {{square}} against {{otherSquare}}. A square stays rare on an Interceptor too: it beats other wrecks, not the odds.
 
 Most of that gain goes to class C and B, as [how to upgrade a ship](/guides/ship-upgrades) shows.
 

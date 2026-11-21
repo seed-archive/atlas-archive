@@ -26,6 +26,8 @@ One table per family: each class, how many stats one install raises, and the lim
 
 <!-- widget:subTop -->
 
+An S-Class Humboldt Drive module always adds the same Top Speed and always raises all three stats, so the first one you buy is as fast as any. No A-Class install reaches it, and most A-Class installs skip one of the three stats.
+
 ### Nautilon Cannon
 
 <!-- widget:subgun -->
@@ -33,5 +35,7 @@ One table per family: each class, how many stats one install raises, and the lim
 <!-- widget:subgunRolls -->
 
 <!-- widget:subgunTop -->
+
+The Nautilon Cannon's classes do not overlap in Damage: the best A-Class install stops where the worst S-Class one starts, and Rate of Fire climbs the same way. Each class up is a sure gain, and S-Class is the one to keep.
 
 The last exocraft walks on legs, and the [Minotaur](/guides/minotaur-modules) has a set of its own.

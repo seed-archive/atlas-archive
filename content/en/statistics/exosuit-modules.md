@@ -8,6 +8,8 @@ Each stat reads as the module's card prints it. A protection module's card shows
 
 One table per family: each class, how many stats one install raises, and the limits of each stat. Below each table a second one shows what one install rolls: how many stats it raises, how often it comes near the best its kind can add to the stat it names, and how often each stat is raised; a third shows how often a raised stat lands in the top tenth of its limits, where the Illegal, Forbidden, and salvaged modules stand out by a one-in-ten draw that raises the most stats their kind allows.
 
+Under the three tables of a family stands what to take: how an A-Class or an Illegal install compares with an S-Class one in what the family is for, as often as it adds at least what a middling S-Class install adds, more than the best one, or less than the worst.
+
 ### Movement System
 
 <!-- widget:jet -->
@@ -15,6 +17,8 @@ One table per family: each class, how many stats one install raises, and the lim
 <!-- widget:jetRolls -->
 
 <!-- widget:jetTop -->
+
+For the jetpack, buy S-Class: it comes near its own best far more often than an A-Class or an Illegal install does, and it always adds Initial Boost Power. An Illegal install holds more Jetpack Tanks than the best S-Class one only {{jetXOverBestS}} of the time, and {{jetXUnderWorstS}} hold less than the worst. An A-Class install matches a middling S-Class one {{jetAAtTypicalS}} of the time.
 
 ### Life Support
 
@@ -24,6 +28,8 @@ One table per family: each class, how many stats one install raises, and the lim
 
 <!-- widget:energyTop -->
 
+Life Support is the suit's best case for an Illegal module: {{energyXAtTypicalS}} of installs match a middling S-Class one, and {{energyXOverBestS}} beat the best. Below S the classes do not overlap: no A-Class install reaches the worst S-Class one.
+
 ### Defence Systems
 
 <!-- widget:shield -->
@@ -32,13 +38,11 @@ One table per family: each class, how many stats one install raises, and the lim
 
 <!-- widget:shieldTop -->
 
+For the shield there is nothing above S-Class: an Illegal install almost never beats the best S-Class one, and {{shieldXUnderWorstS}} fall below the worst. No A-Class install reaches the worst S-Class one either, so three S-Class modules are the whole answer.
+
 ### Hazard Protection
 
-<!-- widget:haz -->
-
-<!-- widget:hazRolls -->
-
-<!-- widget:hazTop -->
+Hazard Protection has no classes from C to S: only an Illegal and a Rusted module. An Illegal one adds {{hazIllegalLimits}}, and {{hazIllegalNear}} of installs come near its best. A Rusted one adds {{hazRustedLimits}}, so it is worth a slot only until an Illegal one replaces it.
 
 ### Thermal protection against cold
 
@@ -62,19 +66,11 @@ One table per family: each class, how many stats one install raises, and the lim
 
 ### Forbidden module
 
-<!-- widget:sentsuit -->
-
-<!-- widget:sentsuitRolls -->
-
-<!-- widget:sentsuitTop -->
+A Forbidden module is one module for the whole suit: an install raises some of six stats, {{sentsuitForbiddenLimits}}. How many it raises is a draw: {{sentsuitForbiddenStats}}. Its Life Support Tanks and Solar Panel Power can go past an S-Class Life Support module's, and its Shield Strength as high as an S-Class Defence Systems module's, so read the card of each one you get: the stats it happened to raise decide whether it earns a slot. {{sentsuitForbiddenNear}} of installs come near the most Shield Strength it can add.
 
 ### Salvaged components
 
-<!-- widget:robosuit -->
-
-<!-- widget:robosuitRolls -->
-
-<!-- widget:robosuitTop -->
+The Autophage's salvaged components roll exactly as a Forbidden module does: the same six stats, the same limits, and the same draw of how many are raised.
 
 ## Supercharged slots
 

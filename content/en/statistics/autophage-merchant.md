@@ -11,3 +11,5 @@ The terminal stands in Autophage settlements. Its other option, staff assembly, 
 Every item it can show, with the description the game gives it and its price in Void Motes.
 
 <!-- widget:stock -->
+
+Most of the stock is looks. The salvaged exosuit upgrade is the one whose stats are a draw, and what one install of it can roll is on [exosuit modules](/guides/exosuit-modules).

@@ -6,7 +6,7 @@ Each stat reads as the module's card prints it. Illegal modules are sold at an [
 
 ## Upgrade modules
 
-One table per family: each class, how many stats one install raises, and the limits of each stat. Below each table a second one shows what one install rolls: how many stats it raises, how often it comes near the best its kind can add to the stat it names, and how often each stat is raised; a third shows how often a raised stat lands in the top tenth of its limits, where the Illegal and Forbidden modules stand out by a one-in-ten draw that raises the most stats their kind allows. Where to put them for the most damage is on [supercharged slots](/guides/supercharged-slots).
+One table per family: each class, how many stats one install raises, and the limits of each stat. Below each table a second one shows what one install rolls: how many stats it raises, how often it comes near the best its kind can add to the stat it names, and how often each stat is raised; a third shows how often a raised stat lands in the top tenth of its limits, where the Illegal and Forbidden modules stand out by a one-in-ten draw that raises the most stats their kind allows. Under the three tables stands what to take: how an A-Class or an Illegal install compares with an S-Class one in what the family is for, as often as it adds at least what a middling S-Class install adds, more than the best one, or less than the worst. Where to put them for the most damage is on [supercharged slots](/guides/supercharged-slots).
 
 ### Mining Beam
 
@@ -16,6 +16,8 @@ One table per family: each class, how many stats one install raises, and the lim
 
 <!-- widget:laserTop -->
 
+Take S-Class and leave the Illegal ones on the shelf. No Illegal install mines faster than the best S-Class one, and {{laserXUnderWorstS}} mine slower than the worst. An A-Class install does as well as a middling S-Class one {{laserAAtTypicalS}} of the time, so it is a fair stopgap until you can pay for S.
+
 ### Analysis Visor
 
 <!-- widget:scan -->
@@ -23,6 +25,8 @@ One table per family: each class, how many stats one install raises, and the lim
 <!-- widget:scanRolls -->
 
 <!-- widget:scanTop -->
+
+The scanner is where an Illegal module can pay: {{scanXOverBestS}} of installs give more analysis rewards than the best S-Class one. It is still a gamble, since {{scanXUnderWorstS}} give less than the worst S-Class install. Buy S-Class to be sure, and roll Illegal ones only if you mean to keep rolling until one lands. A-Class is a poor substitute here: {{scanAAtTypicalS}} of its installs match a middling S-Class one.
 
 ### Boltcaster
 
@@ -32,6 +36,8 @@ One table per family: each class, how many stats one install raises, and the lim
 
 <!-- widget:boltTop -->
 
+The Boltcaster's classes overlap more than any other weapon's: {{boltAAtTypicalS}} of A-Class installs and {{boltXAtTypicalS}} of Illegal ones add as much damage per second as a middling S-Class one. Only an Illegal install goes past the best S-Class one, {{boltXOverBestS}} of the time, and that is where the ceiling on [supercharged slots](/guides/supercharged-slots) comes from. S-Class gets you most of the way with no rolling; the last step is Illegal modules, bought until three good ones land.
+
 ### Scatter Blaster
 
 <!-- widget:shotgun -->
@@ -39,6 +45,8 @@ One table per family: each class, how many stats one install raises, and the lim
 <!-- widget:shotgunRolls -->
 
 <!-- widget:shotgunTop -->
+
+The Scatter Blaster is the best case for Illegal modules: {{shotgunXAtTypicalS}} of installs match a middling S-Class one, and {{shotgunXOverBestS}} beat the best. The other side of the draw is {{shotgunXUnderWorstS}} below the worst S-Class install. A-Class rarely keeps up, {{shotgunAAtTypicalS}} of the time, so go from whatever you have straight to S-Class, then chase Illegal ones.
 
 ### Pulse Spitter
 
@@ -48,6 +56,8 @@ One table per family: each class, how many stats one install raises, and the lim
 
 <!-- widget:smgTop -->
 
+The Pulse Spitter rewards the same gamble as the Scatter Blaster: {{smgXOverBestS}} of Illegal installs beat the best S-Class one, {{smgXAtTypicalS}} match a middling one, and {{smgXUnderWorstS}} fall below the worst. An A-Class install matches a middling S-Class one {{smgAAtTypicalS}} of the time.
+
 ### Blaze Javelin
 
 <!-- widget:rail -->
@@ -55,6 +65,8 @@ One table per family: each class, how many stats one install raises, and the lim
 <!-- widget:railRolls -->
 
 <!-- widget:railTop -->
+
+Here the class is a wall: no A-Class install reaches even the worst S-Class one, so an A-Class Blaze Javelin module is never worth keeping once you can buy S. An Illegal one beats the best S-Class install {{railXOverBestS}} of the time and falls below the worst {{railXUnderWorstS}} of the time.
 
 ### Plasma Launcher
 
@@ -64,6 +76,8 @@ One table per family: each class, how many stats one install raises, and the lim
 
 <!-- widget:grenadeTop -->
 
+Read the card before you install a Plasma Launcher module: Damage is not a stat every install raises, even at S-Class, as the second table shows, and a module without it adds nothing to the blast. Counting every install, an Illegal one beats the best S-Class one {{grenadeXOverBestS}} of the time, and an A-Class one matches a middling S-Class install {{grenadeAAtTypicalS}} of the time.
+
 ### Geology Cannon
 
 <!-- widget:gren -->
@@ -71,6 +85,8 @@ One table per family: each class, how many stats one install raises, and the lim
 <!-- widget:grenRolls -->
 
 <!-- widget:grenTop -->
+
+The Geology Cannon follows the Plasma Launcher: not every install raises Damage, so the card decides, not the class alone. {{grenXOverBestS}} of Illegal installs beat the best S-Class one, and {{grenAAtTypicalS}} of A-Class ones match a middling S-Class install.
 
 ### Neutron Cannon
 
@@ -80,13 +96,11 @@ One table per family: each class, how many stats one install raises, and the lim
 
 <!-- widget:cannonTop -->
 
+The Neutron Cannon is the one weapon where Illegal modules cannot win: none beats the best S-Class install, and {{cannonXUnderWorstS}} fall below the worst. No A-Class install reaches the worst S-Class one either. Buy S-Class and stop.
+
 ### Forbidden module
 
-<!-- widget:sentgun -->
-
-<!-- widget:sentgunRolls -->
-
-<!-- widget:sentgunTop -->
+The Forbidden module is the Sentinel upgrade for the Boltcaster, and one install can raise {{sentgunForbiddenLimits}}. How many of the three it raises is a draw: {{sentgunForbiddenStats}}. {{sentgunForbiddenNear}} of installs come near the most damage per second its kind can add.
 
 ## Every multitool module
 
@@ -96,14 +110,10 @@ The modules you build or receive, apart from upgrade modules. A blueprint is bou
 
 ### Sentinel multitool only
 
-A Sentinel multitool comes with its own beam in the place of the Mining Beam, and no other multitool takes it.
-
-<!-- widget:onlySentinel -->
+A Sentinel multitool comes with its own beam, the Hijacked Laser, in the place of the Mining Beam, and no other multitool takes it.
 
 ### Atlantid multitool only
 
-An Atlantid multitool's Runic Lens mines like a Mining Beam with more heat to spare, and hides you as it does.
-
-<!-- widget:onlyAtlantid -->
+An Atlantid multitool's Runic Lens mines like a Mining Beam with more heat to spare, and hides you as it does. No other multitool takes it.
 
 The tool covered, the next find is the ship you fly, and it starts with [ship types](/guides/ship-types).

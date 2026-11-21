@@ -50,9 +50,7 @@ Gold tiles: {{legendaryCount}} fish.
 
 ## Special catches
 
-{{specialCount}} jellies are legendary catches on the blue tile of an uncommon fish, so they stand apart: Child of Aquarius, a Precious Spawn, and Spawn of Arcadia, a Fragile Medusoid, which bites only during its mission.
-
-<!-- widget:special -->
+{{specialCount}} jellies are legendary catches on the blue tile of an uncommon fish, so they stand apart: Child of Aquarius, a Precious Spawn, and Spawn of Arcadia, a Fragile Medusoid, which bites only during its mission. Both are small and bite on any planet but a gas giant, the first at any time of day.
 
 ## Bait
 

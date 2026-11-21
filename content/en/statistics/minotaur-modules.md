@@ -40,6 +40,8 @@ One table per family: each class, how many stats one install raises, and the lim
 
 <!-- widget:mclasTop -->
 
+The Minotaur Laser's classes do not overlap: no A-Class install reaches the worst S-Class one in Mining Laser Power, and its efficiency climbs the same way. S-Class is the one to keep.
+
 ### Minotaur Flamethrower
 
 <!-- widget:mfire -->
@@ -47,6 +49,8 @@ One table per family: each class, how many stats one install raises, and the lim
 <!-- widget:mfireRolls -->
 
 <!-- widget:mfireTop -->
+
+An S-Class Flamethrower module always adds the same Damage, the most the family allows, and always raises all three stats. No A-Class install reaches that Damage, and most A-Class installs raise two stats, not three. This family has no C-Class module, so the climb is short: B, A, then S.
 
 ### Minotaur Cannon
 
@@ -56,6 +60,8 @@ One table per family: each class, how many stats one install raises, and the lim
 
 <!-- widget:mcgunTop -->
 
+The Minotaur Cannon's Damage climbs by class with no overlap: the best A-Class install stops where the worst S-Class one starts. For a Minotaur you fight in, S-Class is the only module worth one of the three places.
+
 ### Daedalus Engine
 
 <!-- widget:mceng -->
@@ -63,5 +69,7 @@ One table per family: each class, how many stats one install raises, and the lim
 <!-- widget:mcengRolls -->
 
 <!-- widget:mcengTop -->
+
+The Daedalus Engine follows the rest: no A-Class install reaches the worst S-Class one in Boost Tank Size, and an S-Class install comes near its own best more often than any other class does.
 
 That covers everything you wear and drive. What is left to claim on a planet is alive: [creature roles](/guides/creature-roles).

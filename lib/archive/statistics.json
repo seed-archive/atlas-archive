@@ -3669,58 +3669,23 @@
     "best-interceptors": {
       "fact": "The best class S Sentinel Interceptors: how close their four base stats come to the top of the range, and how often a wreck gets there.",
       "numbers": {
+        "at95": { "k": "smallShare", "v": 0 },
+        "at99": { "k": "smallShare", "v": 0 },
+        "best": "ζ-Blessing",
+        "everyStat": {
+          "t": "{0} · {1} · {2} · {3}",
+          "v": [
+            { "k": "plain", "v": 99.66 },
+            { "k": "plain", "v": 98.86 },
+            { "k": "plain", "v": 90.16 },
+            { "k": "plain", "v": 91.81 }
+          ]
+        },
         "lowest": { "k": "plain", "v": 90.16 },
         "near": { "k": "smallShare", "v": 0.00262283616 },
         "oneTop": { "k": "oneIn", "v": 33294320.12 }
       },
-      "tables": {
-        "interceptors": {
-          "head": [
-            "Type",
-            "Best find",
-            "Lowest stat, % of the range",
-            "Every stat, % of the range"
-          ],
-          "kinds": ["text", "text", "plain", "text"],
-          "note": "The class S Sentinel Interceptors with supercharged slots in a square whose base stats lie highest in their range.",
-          "rows": [
-            [
-              "Sentinel Interceptor",
-              "ζ-Blessing",
-              90.16,
-              {
-                "t": "{0} · {1} · {2} · {3}",
-                "v": [
-                  { "k": "plain", "v": 99.66 },
-                  { "k": "plain", "v": 98.86 },
-                  { "k": "plain", "v": 90.16 },
-                  { "k": "plain", "v": 91.81 }
-                ]
-              }
-            ]
-          ]
-        },
-        "interceptorsOften": {
-          "head": [
-            "Type",
-            "Every stat at 90% or more",
-            "Every stat at 95% or more",
-            "Every stat at 99% or more",
-            "Every stat at 99.9% or more",
-            "Every stat at the top"
-          ],
-          "kinds": [
-            "text",
-            "smallShare",
-            "smallShare",
-            "smallShare",
-            "smallShare",
-            "smallShare"
-          ],
-          "note": "The share of class S Sentinel Interceptors with supercharged slots in a square whose every base stat reaches each share of its range, in Euclid.",
-          "rows": [["Sentinel Interceptor", 0.00262283616, 0, 0, 0, 0]]
-        }
-      },
+      "tables": {},
       "title": "Best Interceptors"
     },
     "best-multitools": {
@@ -4302,7 +4267,20 @@
     },
     "colossus-modules": {
       "fact": "The Colossus has the most room of the land exocraft, 30 technology slots, and two modules no other takes: the Excavation Blade and the Mineral Processing Rig.",
-      "numbers": {},
+      "numbers": {
+        "boostAAtTypicalS": "0%",
+        "boostAOverBestS": "0%",
+        "boostAUnderWorstS": "100%",
+        "exengAAtTypicalS": "6.3%",
+        "exengAOverBestS": "0%",
+        "exengAUnderWorstS": "89.5%",
+        "exgunAAtTypicalS": "0%",
+        "exgunAOverBestS": "0%",
+        "exgunAUnderWorstS": "100%",
+        "exlasAAtTypicalS": "0%",
+        "exlasAOverBestS": "0%",
+        "exlasAUnderWorstS": "100%"
+      },
       "tables": {
         "boost": {
           "head": ["Module", "Stats raised", "Boost Power", "Boost Tank Size"],
@@ -4938,17 +4916,6 @@
               "B-Class Deflector Shield",
               "Shield Strength +7 to +15%"
             ]
-          ],
-          "sprite": { "columns": 16, "src": "/modules/corvette-modules.webp" },
-          "text": 3
-        },
-        "partsTractor": {
-          "head": ["Part", "Module", "What it can add"],
-          "icons": [60],
-          "kinds": ["text", "text", "text"],
-          "note": "Each part by its name, the upgrade module it brings, and the weakest and the strongest card of that module.",
-          "rows": [
-            ["Tractor Beam", "A-Class Salvage Recovery System", "Tractor Beam"]
           ],
           "sprite": { "columns": 16, "src": "/modules/corvette-modules.webp" },
           "text": 3
@@ -6897,7 +6864,38 @@
     },
     "exosuit-modules": {
       "fact": "An S-Class Movement System upgrade always raises jetpack tanks and initial boost power, and two more of four other stats.",
-      "numbers": {},
+      "numbers": {
+        "energyAAtTypicalS": "0%",
+        "energyAOverBestS": "0%",
+        "energyAUnderWorstS": "100%",
+        "energyXAtTypicalS": "33.2%",
+        "energyXOverBestS": "10.9%",
+        "energyXUnderWorstS": "59.1%",
+        "hazIllegalLimits": "+1% to +11% to each of Heat Resistance, Cold Resistance, Radiation Resistance, and Toxic Resistance",
+        "hazIllegalNear": "9.7%",
+        "hazIllegalStats": "four",
+        "hazRustedLimits": "+1% to +3% to each of Heat Resistance, Cold Resistance, Radiation Resistance, and Toxic Resistance",
+        "hazRustedNear": "0.1%",
+        "hazRustedStats": "four",
+        "jetAAtTypicalS": "8.4%",
+        "jetAOverBestS": "0%",
+        "jetAUnderWorstS": "84.6%",
+        "jetXAtTypicalS": "20.5%",
+        "jetXOverBestS": "4%",
+        "jetXUnderWorstS": "76.3%",
+        "robosuitSalvagedLimits": "Shield Strength +10% to +35%, Core Health +33%, Life Support Tanks +5% to +110%, Solar Panel Power +1% to +75%, Fuel Efficiency +6% to +31%, and Sprint Distance +10% to +60%",
+        "robosuitSalvagedNear": "8.7%",
+        "robosuitSalvagedStats": "two 63.7%, three 20.2%, four 16.1%",
+        "sentsuitForbiddenLimits": "Shield Strength +10% to +35%, Core Health +33%, Life Support Tanks +5% to +110%, Solar Panel Power +1% to +75%, Fuel Efficiency +6% to +31%, and Sprint Distance +10% to +60%",
+        "sentsuitForbiddenNear": "8.7%",
+        "sentsuitForbiddenStats": "two 63.7%, three 20.2%, four 16.1%",
+        "shieldAAtTypicalS": "0%",
+        "shieldAOverBestS": "0%",
+        "shieldAUnderWorstS": "100%",
+        "shieldXAtTypicalS": "17.1%",
+        "shieldXOverBestS": "under 0.1%",
+        "shieldXUnderWorstS": "80.4%"
+      },
       "tables": {
         "built": {
           "head": ["Module", "What it does", "Built from"],
@@ -7146,77 +7144,6 @@
           ],
           "sprite": { "columns": 16, "src": "/modules/exosuit-modules.webp" },
           "text": 3
-        },
-        "haz": {
-          "head": [
-            "Module",
-            "Stats raised",
-            "Heat Resistance",
-            "Cold Resistance",
-            "Radiation Resistance",
-            "Toxic Resistance"
-          ],
-          "icons": [56, 57],
-          "kinds": ["text", "text", "text", "text", "text", "text"],
-          "note": "Hazard Protection upgrade modules, their limits as the game's card prints them. Stats raised is how many stats one install shows on its card.",
-          "rows": [
-            [
-              "Illegal",
-              "4",
-              "+1% to +11%",
-              "+1% to +11%",
-              "+1% to +11%",
-              "+1% to +11%"
-            ],
-            [
-              "Rusted",
-              "4",
-              "+1% to +3%",
-              "+1% to +3%",
-              "+1% to +3%",
-              "+1% to +3%"
-            ]
-          ],
-          "sprite": { "columns": 16, "src": "/modules/exosuit-modules.webp" },
-          "text": 2
-        },
-        "hazRolls": {
-          "head": [
-            "Module",
-            "Stats raised",
-            "Near best hazard resistance",
-            "Heat Resistance",
-            "Cold Resistance",
-            "Radiation Resistance",
-            "Toxic Resistance"
-          ],
-          "icons": [56, 57],
-          "kinds": ["text", "text", "text", "text", "text", "text", "text"],
-          "note": "What one install of each Hazard Protection upgrade module rolls, exact over every install. Stats raised: how often its card shows each number of stats. Near best: how often it adds at least nine tenths of the most hazard resistance any install of its kind adds, a dash where hazard resistance has one value. Each stat: how often an install raises it.",
-          "rows": [
-            ["Illegal", "4", "9.7%", "100%", "100%", "100%", "100%"],
-            ["Rusted", "4", "0.1%", "100%", "100%", "100%", "100%"]
-          ],
-          "sprite": { "columns": 16, "src": "/modules/exosuit-modules.webp" },
-          "text": 7
-        },
-        "hazTop": {
-          "head": [
-            "Module",
-            "Heat Resistance",
-            "Cold Resistance",
-            "Radiation Resistance",
-            "Toxic Resistance"
-          ],
-          "icons": [56, 57],
-          "kinds": ["text", "text", "text", "text", "text"],
-          "note": "How often a raised stat of each Hazard Protection upgrade module lands in the top tenth of its limits, a dash where the module has no such stat or the stat has one value.",
-          "rows": [
-            ["Illegal", "11.1%", "11.1%", "8.9%", "8.9%"],
-            ["Rusted", "5.1%", "5.1%", "2.6%", "2.6%"]
-          ],
-          "sprite": { "columns": 16, "src": "/modules/exosuit-modules.webp" },
-          "text": 5
         },
         "hotprot": {
           "head": ["Module"],
@@ -7472,202 +7399,6 @@
           "rows": [["B-Class"], ["A-Class"], ["S-Class"]],
           "sprite": { "columns": 16, "src": "/modules/exosuit-modules.webp" },
           "text": 1
-        },
-        "robosuit": {
-          "head": [
-            "Module",
-            "Stats raised",
-            "Shield Strength",
-            "Core Health",
-            "Life Support Tanks",
-            "Solar Panel Power",
-            "Fuel Efficiency",
-            "Sprint Distance"
-          ],
-          "icons": [71],
-          "kinds": [
-            "text",
-            "text",
-            "text",
-            "text",
-            "text",
-            "text",
-            "text",
-            "text"
-          ],
-          "note": "Exosuit, salvaged upgrade modules, their limits as the game's card prints them. Stats raised is how many stats one install shows on its card.",
-          "rows": [
-            [
-              "Salvaged",
-              "2 to 4",
-              "+10% to +35%",
-              "+33%",
-              "+5% to +110%",
-              "+1% to +75%",
-              "+6% to +31%",
-              "+10% to +60%"
-            ]
-          ],
-          "sprite": { "columns": 16, "src": "/modules/exosuit-modules.webp" },
-          "text": 2
-        },
-        "robosuitRolls": {
-          "head": [
-            "Module",
-            "Stats raised",
-            "Near best Shield Strength",
-            "Shield Strength",
-            "Core Health",
-            "Life Support Tanks",
-            "Solar Panel Power",
-            "Fuel Efficiency",
-            "Sprint Distance"
-          ],
-          "icons": [71],
-          "kinds": [
-            "text",
-            "text",
-            "text",
-            "text",
-            "text",
-            "text",
-            "text",
-            "text",
-            "text"
-          ],
-          "note": "What one install of each Exosuit, salvaged upgrade module rolls, exact over every install. Stats raised: how often its card shows each number of stats. Near best: how often it adds at least nine tenths of the most Shield Strength any install of its kind adds, a dash where Shield Strength has one value. Each stat: how often an install raises it.",
-          "rows": [
-            [
-              "Salvaged",
-              "2: 63.7%\n3: 20.2%\n4: 16.1%",
-              "8.7%",
-              "42.1%",
-              "42.2%",
-              "42.2%",
-              "41.8%",
-              "42%",
-              "42.2%"
-            ]
-          ],
-          "sprite": { "columns": 16, "src": "/modules/exosuit-modules.webp" },
-          "text": 9
-        },
-        "robosuitTop": {
-          "head": [
-            "Module",
-            "Shield Strength",
-            "Core Health",
-            "Life Support Tanks",
-            "Solar Panel Power",
-            "Fuel Efficiency",
-            "Sprint Distance"
-          ],
-          "icons": [71],
-          "kinds": ["text", "text", "text", "text", "text", "text", "text"],
-          "note": "How often a raised stat of each Exosuit, salvaged upgrade module lands in the top tenth of its limits, a dash where the module has no such stat or the stat has one value.",
-          "rows": [
-            ["Salvaged", "14.6%", null, "14.8%", "14.8%", "4.4%", "14.8%"]
-          ],
-          "sprite": { "columns": 16, "src": "/modules/exosuit-modules.webp" },
-          "text": 7
-        },
-        "sentsuit": {
-          "head": [
-            "Module",
-            "Stats raised",
-            "Shield Strength",
-            "Core Health",
-            "Life Support Tanks",
-            "Solar Panel Power",
-            "Fuel Efficiency",
-            "Sprint Distance"
-          ],
-          "icons": [70],
-          "kinds": [
-            "text",
-            "text",
-            "text",
-            "text",
-            "text",
-            "text",
-            "text",
-            "text"
-          ],
-          "note": "Exosuit, Forbidden upgrade modules, their limits as the game's card prints them. Stats raised is how many stats one install shows on its card.",
-          "rows": [
-            [
-              "Forbidden",
-              "2 to 4",
-              "+10% to +35%",
-              "+33%",
-              "+5% to +110%",
-              "+1% to +75%",
-              "+6% to +31%",
-              "+10% to +60%"
-            ]
-          ],
-          "sprite": { "columns": 16, "src": "/modules/exosuit-modules.webp" },
-          "text": 2
-        },
-        "sentsuitRolls": {
-          "head": [
-            "Module",
-            "Stats raised",
-            "Near best Shield Strength",
-            "Shield Strength",
-            "Core Health",
-            "Life Support Tanks",
-            "Solar Panel Power",
-            "Fuel Efficiency",
-            "Sprint Distance"
-          ],
-          "icons": [70],
-          "kinds": [
-            "text",
-            "text",
-            "text",
-            "text",
-            "text",
-            "text",
-            "text",
-            "text",
-            "text"
-          ],
-          "note": "What one install of each Exosuit, Forbidden upgrade module rolls, exact over every install. Stats raised: how often its card shows each number of stats. Near best: how often it adds at least nine tenths of the most Shield Strength any install of its kind adds, a dash where Shield Strength has one value. Each stat: how often an install raises it.",
-          "rows": [
-            [
-              "Forbidden",
-              "2: 63.7%\n3: 20.2%\n4: 16.1%",
-              "8.7%",
-              "42.1%",
-              "42.2%",
-              "42.2%",
-              "41.8%",
-              "42%",
-              "42.2%"
-            ]
-          ],
-          "sprite": { "columns": 16, "src": "/modules/exosuit-modules.webp" },
-          "text": 9
-        },
-        "sentsuitTop": {
-          "head": [
-            "Module",
-            "Shield Strength",
-            "Core Health",
-            "Life Support Tanks",
-            "Solar Panel Power",
-            "Fuel Efficiency",
-            "Sprint Distance"
-          ],
-          "icons": [70],
-          "kinds": ["text", "text", "text", "text", "text", "text", "text"],
-          "note": "How often a raised stat of each Exosuit, Forbidden upgrade module lands in the top tenth of its limits, a dash where the module has no such stat or the stat has one value.",
-          "rows": [
-            ["Forbidden", "14.6%", null, "14.8%", "14.8%", "4.4%", "14.8%"]
-          ],
-          "sprite": { "columns": 16, "src": "/modules/exosuit-modules.webp" },
-          "text": 7
         },
         "shield": {
           "head": ["Module", "Stats raised", "Shield Strength", "Core Health"],
@@ -9433,23 +9164,6 @@
           ],
           "text": 1
         },
-        "special": {
-          "head": ["Fish", "Size", "Planet type", "When"],
-          "icons": [0, 1],
-          "kinds": ["text", "text", "text", "text"],
-          "note": "Fish with a tile of another colour than their grade's: special catches.",
-          "rows": [
-            ["Child of Aquarius", "Small", "Any but gas giants", "Any time"],
-            [
-              "Spawn of Arcadia",
-              "Small",
-              "Any but gas giants",
-              "During its mission"
-            ]
-          ],
-          "sprite": { "columns": 16, "src": "/creatures/fish.webp" },
-          "text": 4
-        },
         "uncommon": {
           "head": ["Fish", "Size", "Planet type", "When"],
           "icons": [
@@ -10316,18 +10030,6 @@
             [0.9, 5],
             [1, 6]
           ]
-        },
-        "offerings": {
-          "head": ["Gives", "Costs"],
-          "kinds": ["text", "text"],
-          "note": "Offerings outside the stock, each from its own option of the merchant's talk.",
-          "rows": [
-            [
-              "Larva Cannon",
-              { "t": "{0} Preserved Grub", "v": [{ "k": "plain", "v": 5 }] }
-            ]
-          ],
-          "text": 2
         },
         "sources": {
           "head": [
@@ -11504,6 +11206,27 @@
         "derelictFirst": "5,000,000",
         "derelictS": { "k": "share", "v": 0.05 },
         "derelictSecond": "10,000,000",
+        "frComAAtTypicalS": "0%",
+        "frComAOverBestS": "0%",
+        "frComAUnderWorstS": "100%",
+        "frExpAAtTypicalS": "0%",
+        "frExpAOverBestS": "0%",
+        "frExpAUnderWorstS": "100%",
+        "frFuelAAtTypicalS": "0%",
+        "frFuelAOverBestS": "0%",
+        "frFuelAUnderWorstS": "100%",
+        "frHypAAtTypicalS": "0%",
+        "frHypAOverBestS": "0%",
+        "frHypAUnderWorstS": "100%",
+        "frMineAAtTypicalS": "0%",
+        "frMineAOverBestS": "0%",
+        "frMineAUnderWorstS": "100%",
+        "frSpeedAAtTypicalS": "0%",
+        "frSpeedAOverBestS": "0%",
+        "frSpeedAUnderWorstS": "100%",
+        "frTradeAAtTypicalS": "0%",
+        "frTradeAOverBestS": "0%",
+        "frTradeAUnderWorstS": "100%",
         "hyperdriveS": "200 ly to 250 ly"
       },
       "tables": {
@@ -12067,24 +11790,6 @@
             ["High", 0.08631649098, 0.3, 0.4, 0.28, 0.02],
             ["Pirate", 0.08842702465, 0.85, 0.05, 0.05, 0.05]
           ]
-        },
-        "kinds": {
-          "head": ["Freighter", "Where you get it", "Size"],
-          "kinds": ["text", "text", "text"],
-          "note": "The size sets the slots a freighter starts with, not the most it can hold.",
-          "rows": [
-            [
-              "Regular",
-              "In the fleets of a system: buy it from its captain",
-              "Small nearly always, Medium now and then"
-            ],
-            [
-              "Capital",
-              "Saved from a battle, from your third on",
-              "Medium or Large, half each, the same in every battle of a system"
-            ]
-          ],
-          "text": 3
         },
         "limits": {
           "head": [
@@ -14441,9 +14146,11 @@
         "ofDissonant": { "k": "share", "v": 0.6778322573 },
         "otherAdjacent": { "k": "share", "v": 0.008726771617 },
         "otherSquare": { "k": "share", "v": 0.07553214735 },
+        "otherSquareAll": { "k": "share", "v": 0.0006591517997 },
         "pirateS": { "k": "share", "v": 0.04991701057 },
         "planets": { "k": "share", "v": 0.03611252009 },
         "square": { "k": "share", "v": 0.08409895307 },
+        "squareAll": { "k": "share", "v": 0.0009840111285 },
         "wrecks": { "k": "share", "v": 0.02699705233 }
       },
       "tables": {
@@ -14467,33 +14174,6 @@
             ["Blue", 0.1150511775, 0.09677037817],
             ["Red", 0.1181799474, 0.08776388149],
             ["Waterworld", 0.2361346, 0]
-          ]
-        },
-        "compare": {
-          "head": [
-            "Ship",
-            "Adjacent",
-            "Figure, no square",
-            "Square",
-            "Square, of adjacent"
-          ],
-          "kinds": ["text", "share", "share", "share", "share"],
-          "note": "Wrecks in Euclid, with the four slots each holds at class S.",
-          "rows": [
-            [
-              "Other wrecks",
-              0.008726771617,
-              0.008067619817,
-              0.0006591517997,
-              0.07553214735
-            ],
-            [
-              "Interceptor",
-              0.0117006347,
-              0.01071662357,
-              0.0009840111285,
-              0.08409895307
-            ]
           ]
         },
         "wealth": {
@@ -14592,7 +14272,20 @@
     },
     "minotaur-modules": {
       "fact": "The Minotaur Flamethrower has no C-Class upgrade: its modules run from B to S.",
-      "numbers": {},
+      "numbers": {
+        "mcengAAtTypicalS": "0%",
+        "mcengAOverBestS": "0%",
+        "mcengAUnderWorstS": "100%",
+        "mcgunAAtTypicalS": "0%",
+        "mcgunAOverBestS": "0%",
+        "mcgunAUnderWorstS": "100%",
+        "mclasAAtTypicalS": "0%",
+        "mclasAOverBestS": "0%",
+        "mclasAUnderWorstS": "100%",
+        "mfireAAtTypicalS": "0%",
+        "mfireAOverBestS": "0%",
+        "mfireAUnderWorstS": "100%"
+      },
       "tables": {
         "built": {
           "head": ["Module", "What it does", "Built from"],
@@ -15090,7 +14783,65 @@
     },
     "multitool-modules": {
       "fact": "An S-Class Mining Beam upgrade always raises all four of its stats, a C-Class one only one or two.",
-      "numbers": {},
+      "numbers": {
+        "boltAAtTypicalS": "16.3%",
+        "boltAOverBestS": "0%",
+        "boltAUnderWorstS": "40%",
+        "boltXAtTypicalS": "17.5%",
+        "boltXOverBestS": "10.9%",
+        "boltXUnderWorstS": "41.1%",
+        "cannonAAtTypicalS": "0%",
+        "cannonAOverBestS": "0%",
+        "cannonAUnderWorstS": "100%",
+        "cannonXAtTypicalS": "23%",
+        "cannonXOverBestS": "0%",
+        "cannonXUnderWorstS": "71.9%",
+        "grenAAtTypicalS": "10.5%",
+        "grenAOverBestS": "0%",
+        "grenAUnderWorstS": "0%",
+        "grenXAtTypicalS": "11.8%",
+        "grenXOverBestS": "8.8%",
+        "grenXUnderWorstS": "0%",
+        "grenadeAAtTypicalS": "7.8%",
+        "grenadeAOverBestS": "0%",
+        "grenadeAUnderWorstS": "0%",
+        "grenadeXAtTypicalS": "14.3%",
+        "grenadeXOverBestS": "10.5%",
+        "grenadeXUnderWorstS": "0%",
+        "laserAAtTypicalS": "16.3%",
+        "laserAOverBestS": "0%",
+        "laserAUnderWorstS": "77%",
+        "laserXAtTypicalS": "4.7%",
+        "laserXOverBestS": "0%",
+        "laserXUnderWorstS": "93.5%",
+        "railAAtTypicalS": "0%",
+        "railAOverBestS": "0%",
+        "railAUnderWorstS": "100%",
+        "railXAtTypicalS": "21.2%",
+        "railXOverBestS": "15%",
+        "railXUnderWorstS": "76.4%",
+        "scanAAtTypicalS": "4%",
+        "scanAOverBestS": "0%",
+        "scanAUnderWorstS": "78.2%",
+        "scanXAtTypicalS": "13.2%",
+        "scanXOverBestS": "9.3%",
+        "scanXUnderWorstS": "77.6%",
+        "sentgunForbiddenLimits": "Damage +1% to +2%, Reload Time -1% to -15%, and Fire Rate +1% to +21%",
+        "sentgunForbiddenNear": "9.1%",
+        "sentgunForbiddenStats": "two 63.7%, three 36.3%",
+        "shotgunAAtTypicalS": "4.2%",
+        "shotgunAOverBestS": "0%",
+        "shotgunAUnderWorstS": "90%",
+        "shotgunXAtTypicalS": "36.1%",
+        "shotgunXOverBestS": "19.4%",
+        "shotgunXUnderWorstS": "57.2%",
+        "smgAAtTypicalS": "8.8%",
+        "smgAOverBestS": "0%",
+        "smgAUnderWorstS": "87.5%",
+        "smgXAtTypicalS": "28.6%",
+        "smgXOverBestS": "19.5%",
+        "smgXUnderWorstS": "67.7%"
+      },
       "tables": {
         "bolt": {
           "head": [
@@ -16000,34 +15751,6 @@
           "sprite": { "columns": 16, "src": "/modules/multitool-modules.webp" },
           "text": 5
         },
-        "onlyAtlantid": {
-          "head": ["Module", "What it does"],
-          "icons": [41],
-          "kinds": ["text", "text"],
-          "note": "Modules only the atlantid multitool takes.",
-          "rows": [
-            [
-              "Runic Lens",
-              "The geometric heart of this ancient weapon is the Runic Lens. Its impossible geometry not only concentrates light into a high-powered Mining Laser, but can also warp the local electromagnetic field so as to render the user invisible."
-            ]
-          ],
-          "sprite": { "columns": 16, "src": "/modules/multitool-modules.webp" },
-          "text": 2
-        },
-        "onlySentinel": {
-          "head": ["Module", "What it does"],
-          "icons": [40],
-          "kinds": ["text", "text"],
-          "note": "Modules only the sentinel multitool takes.",
-          "rows": [
-            [
-              "Hijacked Laser",
-              "This Multi-Tool is made with material and methods known to no conventional manufacturer, its core a unfathomable array of impossible optics and glassy foam. Nonetheless, there is a layer of recogniseable technology. It shows signs of having been tampered with by an unknown craftsman, who has repurposed its scanner array into a high-powered mining laser."
-            ]
-          ],
-          "sprite": { "columns": 16, "src": "/modules/multitool-modules.webp" },
-          "text": 2
-        },
         "rail": {
           "head": ["Module", "Stats raised", "Damage", "Time to Full Power"],
           "icons": [70, 71, 72, 73, 74],
@@ -16237,50 +15960,6 @@
           ],
           "sprite": { "columns": 16, "src": "/modules/multitool-modules.webp" },
           "text": 5
-        },
-        "sentgun": {
-          "head": [
-            "Module",
-            "Stats raised",
-            "Damage",
-            "Reload Time",
-            "Fire Rate"
-          ],
-          "icons": [90],
-          "kinds": ["text", "text", "text", "text", "text"],
-          "note": "Multi-Tool upgrade modules, their limits as the game's card prints them. Stats raised is how many stats one install shows on its card.",
-          "rows": [
-            ["Forbidden", "2 to 3", "+1% to +2%", "-1% to -15%", "+1% to +21%"]
-          ],
-          "sprite": { "columns": 16, "src": "/modules/multitool-modules.webp" },
-          "text": 2
-        },
-        "sentgunRolls": {
-          "head": [
-            "Module",
-            "Stats raised",
-            "Near best damage per second",
-            "Damage",
-            "Reload Time",
-            "Fire Rate"
-          ],
-          "icons": [90],
-          "kinds": ["text", "text", "text", "text", "text", "text"],
-          "note": "What one install of each Multi-Tool upgrade module rolls, exact over every install. Stats raised: how often its card shows each number of stats. Near best: how often it adds at least nine tenths of the most damage per second any install of its kind adds, a dash where damage per second has one value. Each stat: how often an install raises it.",
-          "rows": [
-            ["Forbidden", "2: 63.7%\n3: 36.3%", "9.1%", "79%", "78.6%", "78.7%"]
-          ],
-          "sprite": { "columns": 16, "src": "/modules/multitool-modules.webp" },
-          "text": 6
-        },
-        "sentgunTop": {
-          "head": ["Module", "Damage", "Reload Time", "Fire Rate"],
-          "icons": [90],
-          "kinds": ["text", "text", "text", "text"],
-          "note": "How often a raised stat of each Multi-Tool upgrade module lands in the top tenth of its limits, a dash where the module has no such stat or the stat has one value.",
-          "rows": [["Forbidden", "12.8%", "10.2%", "12.9%"]],
-          "sprite": { "columns": 16, "src": "/modules/multitool-modules.webp" },
-          "text": 4
         },
         "shotgun": {
           "head": [
@@ -16872,7 +16551,14 @@
     },
     "nautilon-modules": {
       "fact": "An S-Class Humboldt Drive upgrade raises all three of its stats.",
-      "numbers": {},
+      "numbers": {
+        "subAAtTypicalS": "0%",
+        "subAOverBestS": "0%",
+        "subAUnderWorstS": "100%",
+        "subgunAAtTypicalS": "0%",
+        "subgunAOverBestS": "0%",
+        "subgunAUnderWorstS": "100%"
+      },
       "tables": {
         "built": {
           "head": ["Module", "What it does", "Built from"],
@@ -17022,7 +16708,20 @@
     },
     "nomad-modules": {
       "fact": "The Nomad takes every land exocraft module on 26 technology slots: with every module on it, room is left for eight upgrade modules, not the twelve of three of each kind.",
-      "numbers": {},
+      "numbers": {
+        "boostAAtTypicalS": "0%",
+        "boostAOverBestS": "0%",
+        "boostAUnderWorstS": "100%",
+        "exengAAtTypicalS": "6.3%",
+        "exengAOverBestS": "0%",
+        "exengAUnderWorstS": "89.5%",
+        "exgunAAtTypicalS": "0%",
+        "exgunAOverBestS": "0%",
+        "exgunAUnderWorstS": "100%",
+        "exlasAAtTypicalS": "0%",
+        "exlasAOverBestS": "0%",
+        "exlasAUnderWorstS": "100%"
+      },
       "tables": {
         "boost": {
           "head": ["Module", "Stats raised", "Boost Power", "Boost Tank Size"],
@@ -17883,7 +17582,20 @@
     },
     "pilgrim-modules": {
       "fact": "The Pilgrim takes every land exocraft module on 26 technology slots: with every module on it, room is left for eight upgrade modules, not the twelve of three of each kind.",
-      "numbers": {},
+      "numbers": {
+        "boostAAtTypicalS": "0%",
+        "boostAOverBestS": "0%",
+        "boostAUnderWorstS": "100%",
+        "exengAAtTypicalS": "6.3%",
+        "exengAOverBestS": "0%",
+        "exengAUnderWorstS": "89.5%",
+        "exgunAAtTypicalS": "0%",
+        "exgunAOverBestS": "0%",
+        "exgunAUnderWorstS": "100%",
+        "exlasAAtTypicalS": "0%",
+        "exlasAOverBestS": "0%",
+        "exlasAUnderWorstS": "100%"
+      },
       "tables": {
         "boost": {
           "head": ["Module", "Stats raised", "Boost Power", "Boost Tank Size"],
@@ -27245,7 +26957,20 @@
     },
     "roamer-modules": {
       "fact": "The Roamer takes every land exocraft module on 28 technology slots, and an S-Class Mounted Cannon upgrade raises all three of its stats.",
-      "numbers": {},
+      "numbers": {
+        "boostAAtTypicalS": "0%",
+        "boostAOverBestS": "0%",
+        "boostAUnderWorstS": "100%",
+        "exengAAtTypicalS": "6.3%",
+        "exengAOverBestS": "0%",
+        "exengAUnderWorstS": "89.5%",
+        "exgunAAtTypicalS": "0%",
+        "exgunAOverBestS": "0%",
+        "exgunAUnderWorstS": "100%",
+        "exlasAAtTypicalS": "0%",
+        "exlasAOverBestS": "0%",
+        "exlasAUnderWorstS": "100%"
+      },
       "tables": {
         "boost": {
           "head": ["Module", "Stats raised", "Boost Power", "Boost Tank Size"],
@@ -31367,7 +31092,62 @@
     },
     "starship-modules": {
       "fact": "Figurines and starship trails are not only looks: an Atlas Figurine adds 50 light years to the hyperdrive, and every trail adds 1% to boost.",
-      "numbers": {},
+      "numbers": {
+        "hdriveAAtTypicalS": "0%",
+        "hdriveAOverBestS": "0%",
+        "hdriveAUnderWorstS": "100%",
+        "hdriveXAtTypicalS": "19.4%",
+        "hdriveXOverBestS": "15.6%",
+        "hdriveXUnderWorstS": "79.3%",
+        "launcherAAtTypicalS": "0%",
+        "launcherAOverBestS": "0%",
+        "launcherAUnderWorstS": "100%",
+        "launcherXAtTypicalS": "16%",
+        "launcherXOverBestS": "16%",
+        "launcherXUnderWorstS": "84%",
+        "shipblobAAtTypicalS": "20.9%",
+        "shipblobAOverBestS": "0%",
+        "shipblobAUnderWorstS": "70.7%",
+        "shipblobXAtTypicalS": "20.1%",
+        "shipblobXOverBestS": "15.4%",
+        "shipblobXUnderWorstS": "78.3%",
+        "shipgunAAtTypicalS": "1.6%",
+        "shipgunAOverBestS": "0%",
+        "shipgunAUnderWorstS": "92%",
+        "shipgunXAtTypicalS": "13.5%",
+        "shipgunXOverBestS": "10.1%",
+        "shipgunXUnderWorstS": "84.5%",
+        "shipjumpAAtTypicalS": "27.9%",
+        "shipjumpAOverBestS": "0%",
+        "shipjumpAUnderWorstS": "28%",
+        "shipjumpXAtTypicalS": "31.5%",
+        "shipjumpXOverBestS": "15.7%",
+        "shipjumpXUnderWorstS": "61.6%",
+        "shiplasAAtTypicalS": "0%",
+        "shiplasAOverBestS": "0%",
+        "shiplasAUnderWorstS": "100%",
+        "shiplasXAtTypicalS": "20.1%",
+        "shiplasXOverBestS": "15.6%",
+        "shiplasXUnderWorstS": "78.2%",
+        "shipminiAAtTypicalS": "20.9%",
+        "shipminiAOverBestS": "0%",
+        "shipminiAUnderWorstS": "70.7%",
+        "shipminiXAtTypicalS": "20.1%",
+        "shipminiXOverBestS": "15.4%",
+        "shipminiXUnderWorstS": "78.3%",
+        "shipshldAAtTypicalS": "0%",
+        "shipshldAOverBestS": "0%",
+        "shipshldAUnderWorstS": "100%",
+        "shipshldXAtTypicalS": "21.8%",
+        "shipshldXOverBestS": "21.8%",
+        "shipshldXUnderWorstS": "78.2%",
+        "shipshotAAtTypicalS": "0%",
+        "shipshotAOverBestS": "0%",
+        "shipshotAUnderWorstS": "100%",
+        "shipshotXAtTypicalS": "20.9%",
+        "shipshotXOverBestS": "0%",
+        "shipshotXUnderWorstS": "78.3%"
+      },
       "tables": {
         "built": {
           "head": ["Module", "What it does", "Built from"],
